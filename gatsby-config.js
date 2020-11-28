@@ -8,15 +8,16 @@ module.exports = {
 	pathPrefix: '/next',
 	plugins: [
 		{
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-162017401-1",
-        head: true,
+			resolve: `gatsby-plugin-google-analytics`,
+			options: {
+				trackingId: 'UA-162017401-1',
+				head: true,
 				anonymize: true,
-        respectDNT: true,
-      },
-    },
+				respectDNT: true
+			}
+		},
 		`gatsby-plugin-sitemap`,
+		`gatsby-plugin-netlify-cms`,
 		`gatsby-remark-responsive-iframe`,
 		`gatsby-plugin-react-helmet`,
 		`gatsby-transformer-sharp`,
@@ -100,11 +101,11 @@ module.exports = {
 			}
 		},
 		{
-      resolve: 'gatsby-plugin-zopfli',
-      options: {
-        extensions: ['css', 'html', 'js', 'svg']
-      }
-    },
+			resolve: 'gatsby-plugin-zopfli',
+			options: {
+				extensions: [ 'css', 'html', 'js', 'svg' ]
+			}
+		},
 		`gatsby-plugin-meta-redirect`
 	]
 };

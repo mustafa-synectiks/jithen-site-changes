@@ -49,16 +49,19 @@ const Header = () => {
 								<NavDropdown title='Solutions' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/microservices/index.html'>Microservices</NavDropdown.Item>
 									<NavDropdown.Item href='/hybrid-cloud/index.html'>Hybrid Cloud</NavDropdown.Item>
+								</NavDropdown>
+								<NavDropdown title='Cloud Services' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/landing-page/index.html'>
 										Secure Hosted & Business Continuity
 									</NavDropdown.Item>
-								</NavDropdown>
-								<NavDropdown title='Services' id='basic-nav-dropdown'>
-									<NavDropdown.Item href='/office-migration/index.html'>
-										O365 Migration
+									<NavDropdown.Item href='/business-cyber-sub-landing/index.html'>
+										Business Continuity & Cyber security
 									</NavDropdown.Item>
-									<NavDropdown.Item href='/private-cloud-hosting-services/index.html'>
-										Private Cloud Hosting
+									<NavDropdown.Item href='/iaas/index.html'>
+										Synectiks Secure & Custom Hosted Infrastructure
+									</NavDropdown.Item>
+									<NavDropdown.Item href='/digital-workspace/index.html'>
+										Cloud-Hosted Virtual Desktop Service
 									</NavDropdown.Item>
 								</NavDropdown>
 								<NavDropdown title='Resources' id='basic-nav-dropdown'>
