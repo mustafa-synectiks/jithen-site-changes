@@ -6,7 +6,7 @@ import { FaBars } from 'react-icons/fa';
 import '../../components/layout.css';
 import styled from 'styled-components';
 import self from '../../images/ManagedBackup/Self Service Portal.png';
-import cloudImaged from '../../images/ManagedBackup/Backup.png';
+import cloudImaged from '../../images/ManagedBackup/backup.png';
 import security from '../../images/ManagedBackup/Security.png';
 import geolocation from '../../images/ManagedBackup/MultipleSecureGeoLocations.png';
 import backupStorage from '../../images/ManagedBackup/BackupStorage.png';
@@ -42,16 +42,19 @@ const PrimaryCloudHosting = () => {
 	const toggleTab = () => {
 		setNav((isOpen) => !isOpen);
 	};
-const onTop = () => {
-	window.scroll(0,0);
-}
+	const onTop = () => {
+		window.scroll(0, 0);
+	};
 	return (
 		<Layout>
-		<Helmet>
-<meta name='description' content='Synectiks Secure Cloud Hosted Services supports a variety of workloads & Disaster Recovery with a high degree of control, security and simplicity. Support your mission-critical applications and workloads with instant and scalable infrastructure. With Synectiks Cloud Hosted Services, you can focus on your business needs instead of spending the time and money it takes to plan, procure, secure and manage the right infrastructure to meet your application demands.'/>
-<link rel='canonical' href='https://synectiks.com/private-cloud-hosting-services/index.html'/>
-		</Helmet>
-			<SEO title='Private Cloud Hosting'  />
+			<Helmet>
+				<meta
+					name='description'
+					content='Synectiks Secure Cloud Hosted Services supports a variety of workloads & Disaster Recovery with a high degree of control, security and simplicity. Support your mission-critical applications and workloads with instant and scalable infrastructure. With Synectiks Cloud Hosted Services, you can focus on your business needs instead of spending the time and money it takes to plan, procure, secure and manage the right infrastructure to meet your application demands.'
+				/>
+				<link rel='canonical' href='https://synectiks.com/private-cloud-hosting-services/index.html' />
+			</Helmet>
+			<SEO title='Private Cloud Hosting' />
 			<PrimaryCloudHostingWrapper>
 				<div className='bg-lightgrey container-fluid'>
 					<div className='text-justify'>
@@ -69,7 +72,8 @@ const onTop = () => {
 											className={classnames({ active: activeTab === '1' })}
 											onClick={() => {
 												toggle('1');
-											toggleTab(); onTop();
+												toggleTab();
+												onTop();
 											}}>
 											CLOUD HOSTED INSFRASTRUCTURE
 										</NavLink>
@@ -80,7 +84,8 @@ const onTop = () => {
 											className={classnames({ active: activeTab === '2' })}
 											onClick={() => {
 												toggle('2');
-											toggleTab(); onTop();
+												toggleTab();
+												onTop();
 											}}>
 											CLOUD BACKUP
 										</NavLink>
@@ -406,7 +411,6 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
 export default PrimaryCloudHosting;
 
 const PrimaryCloudHostingWrapper = styled.div`
-
 	.w75 {
 		width: 100%;
 	}
@@ -482,15 +486,15 @@ const PrimaryCloudHostingWrapper = styled.div`
 		width: 100%;
 	}
 	.one:hover {
-	z-index: 99999;
-	background: rgb(0,124,194);
-}
-.navbar-light .navbar-nav .nav-link {
-    color: rgba(0,0,0,.9);
-}
-.navbar-light .navbar-nav .nav-link:hover {
- color:white;
-}
+		z-index: 99999;
+		background: rgb(0, 124, 194);
+	}
+	.navbar-light .navbar-nav .nav-link {
+		color: rgba(0, 0, 0, .9);
+	}
+	.navbar-light .navbar-nav .nav-link:hover {
+		color: white;
+	}
 
 	ul.tabList.nav.flex-column {
 		position: relative;

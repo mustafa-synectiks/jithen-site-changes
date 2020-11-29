@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import Topbar from './Topbar';
+import Topbar from './topbar';
 import logo from '../images/logo.png';
 import styled from 'styled-components';
 
