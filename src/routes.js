@@ -41,6 +41,10 @@ module.exports = [
 		component: path.resolve(`src/pages/Solutions/SecureBusiness.js`)
 	},
 	{
+		path: '/protect-cloud/index.html',
+		component: path.resolve(`src/pages/Services/ProtectCloud.js`)
+	},
+	{
 		path: '/office-migration/index.html',
 		component: path.resolve(`src/pages/Services/OfficeMigration.js`)
 	},

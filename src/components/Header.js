@@ -57,6 +57,15 @@ const Header = () => {
 									<NavDropdown.Item href='/business-cyber-sub-landing/index.html'>
 										Business Continuity & Cyber security
 									</NavDropdown.Item>
+									<NavDropdown.Item className='sublist' href='/protect-cloud/index.html'>
+										Protect Cloud
+									</NavDropdown.Item>
+									<NavDropdown.Item className='sublist' href='/business/index.html'>
+										Baas
+									</NavDropdown.Item>
+									<NavDropdown.Item className='sublist' href='/disaster-service/index.html'>
+										DRaas
+									</NavDropdown.Item>
 									<NavDropdown.Item href='/iaas/index.html'>
 										Synectiks Secure & Custom Hosted Infrastructure
 									</NavDropdown.Item>
@@ -148,6 +157,9 @@ const Header = () => {
 export default Header;
 
 const HeaderNav = styled.div`
+	a.sublist.dropdown-item {
+		padding-left: 3rem;
+	}
 	.navbar-light .navbar-toggler {
 		color: rgba(0, 0, 0, .5);
 		border-color: rgba(0, 0, 0, 0);
