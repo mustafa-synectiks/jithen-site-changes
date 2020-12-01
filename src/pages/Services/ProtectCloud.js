@@ -120,81 +120,82 @@ const ProtectCloud = () => {
 										</p>
 									</div>
 									<div>
-										<h3>Cell that spans two rows:</h3>
 										<table border='1'>
 											<thead rowspan='2'>
 												<th />
-												<th>Features</th>
-												<th colspan='3'>
+												<th className='tdfont'>Features</th>
+												<th colspan='3' className='tdfont'>
 													Protected Cloud
-													<td>Essential</td>
-													<td>Standard</td>
-													<td>Advanced</td>
+													<td className='tdwidth'>Essential</td>
+													<td className='tdwidth'>Standard</td>
+													<td className='tdwidth'>Advanced</td>
 												</th>
-												<th colspan='2'>
+												<th colspan='2' className='tdfont'>
 													Backup Cloud
-													<td>Standard</td>
+													<td className='tdwidth'>Standard</td>
 												</th>
 											</thead>
 											<tbody>
 												<tr>
-													<th rowspan='13'>Backup:</th>
+													<th rowspan='13' className='tdfont'>
+														Backup:
+													</th>
 													<td>Backup Workstations, Servers (Windows, Linux, Mac) backup</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
 												</tr>
 												<tr>
 													<td>Virtual Machine Backup</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
 												</tr>
 												<tr>
 													<td>File Backup</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
 												</tr>
 												<tr>
 													<td>Image Backup</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineLine />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
 												</tr>
@@ -203,16 +204,16 @@ const ProtectCloud = () => {
 														Standard application backup (Microsoft 365, G Suite, Microsoft
 														Exchange, Microsoft SQL, Microsoft SharePoint)
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineLine />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
 												</tr>
@@ -221,31 +222,31 @@ const ProtectCloud = () => {
 														Advanced application backup (Microsoft SQL and Microsoft
 														Exchange clusters, Oracle DB, SAP HANA)
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineLine />
 													</td>
-													<td>
+													<td className='tdwidth'>
+														<AiOutlineLine />
+													</td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
-														<AiOutlineCheck />
-													</td>
-													<td>
-														<AiOutlineCheck />
+													<td className='tdwidth'>
+														<AiOutlineLine />
 													</td>
 												</tr>
 												<tr>
 													<td>Network share backup</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineLine />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
 												</tr>
@@ -253,44 +254,44 @@ const ProtectCloud = () => {
 													<td>
 														Backup options (Backup Window, multi-destination, retention)
 													</td>
-													<td>Limited</td>
-													<td>
+													<td className='tdwidth'>Limited</td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
 												</tr>
 												<tr>
 													<td>Backup to local storage</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineLine />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
 												</tr>
 												<tr>
 													<td>Backup to Cloud storage</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
 												</tr>
@@ -299,84 +300,84 @@ const ProtectCloud = () => {
 														Cloud storage included into device license (amount depends on
 														device type and edition)
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
-														<AiOutlineCheck />
+													<td className='tdwidth'>
+														<AiOutlineLine />
 													</td>
 												</tr>
 												<tr>
 													<td>Data protection map</td>
-													<td>
+													<td className='tdwidth'>
+														<AiOutlineLine />
+													</td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
-														<AiOutlineCheck />
-													</td>
-													<td>
-														<AiOutlineCheck />
+													<td className='tdwidth'>
+														<AiOutlineLine />
 													</td>
 												</tr>
 												<tr>
 													<td>Disaster Recovery optional Add-on Feature</td>
-													<td>
+													<td className='tdwidth'>
+														<AiOutlineLine />
+													</td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
-														<AiOutlineCheck />
-													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
 												</tr>
 
 												<tr>
-													<th rowspan='3'>Security:</th>
+													<th rowspan='3' className='tdfont'>
+														Security:
+													</th>
 													<td>
 														Security Vulnerability assessment (VA) and patch management (PM)
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
-														<AiOutlineCheck />
-													</td>
+													<td className='tdwidth'>VA Only</td>
 												</tr>
 												<tr>
 													<td>
 														Antivirus and anti-malware protection, Exploit prevention, URL
 														filtering
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
-														<AiOutlineCheck />
+													<td className='tdwidth'>
+														<AiOutlineLine />
 													</td>
 												</tr>
 												<tr>
@@ -384,107 +385,109 @@ const ProtectCloud = () => {
 														Forensic mode, scan backups for malware, safe recovery,
 														corporate whitelist
 													</td>
-													<td>
+													<td className='tdwidth'>
+														<AiOutlineLine />
+													</td>
+													<td className='tdwidth'>
+														<AiOutlineLine />
+													</td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
-														<AiOutlineCheck />
-													</td>
-													<td>
-														<AiOutlineCheck />
-													</td>
-													<td>
-														<AiOutlineCheck />
+													<td className='tdwidth'>
+														<AiOutlineLine />
 													</td>
 												</tr>
 												<tr>
-													<th rowspan='6'>Protection Management:</th>
+													<th rowspan='6' className='tdfont'>
+														Protection Management:
+													</th>
 													<td>Protection Management Group management of devices</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineLine />
 													</td>
 												</tr>
 												<tr>
 													<td>Centralized plans management</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineLine />
 													</td>
 												</tr>
 												<tr>
 													<td>Dashboards and reports</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
-														<AiOutlineLine />
+													<td className='tdwidth'>
+														<AiOutlineCheck />
 													</td>
 												</tr>
 												<tr>
 													<td>Drive health monitoring</td>
-													<td>
+													<td className='tdwidth'>
+														<AiOutlineLine />
+													</td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
-														<AiOutlineCheck />
-													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineLine />
 													</td>
 												</tr>
 												<tr>
 													<td>Remote desktop and Remote assistance</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineLine />
 													</td>
 												</tr>
 												<tr>
 													<td>Software and hardware inventory*</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
-													<td>
+													<td className='tdwidth'>
 														<AiOutlineLine />
 													</td>
 												</tr>
@@ -673,6 +676,15 @@ const ProctectCloudWrapper = styled.div`
 	}
 
 	@media (min-width: 576px) {
+		.tdfont {
+			font-size: 16px;
+			text-align: center;
+		}
+		.tdwidth {
+			width: 8rem !important;
+			font-weight: normal;
+			text-align: center;
+		}
 		.splhead {
 			font-size: 1.3rem !important;
 			line-height: 1.4;
