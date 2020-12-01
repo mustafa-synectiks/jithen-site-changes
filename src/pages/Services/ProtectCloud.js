@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import Layout from '../../components/layout';
 import { Modal, ModalHeader, ModalBody, Table } from 'reactstrap';
 import { FaBars } from 'react-icons/fa';
+import { AiOutlineCheck, AiOutlineLine } from 'react-icons/ai';
 import '../../components/layout.css';
 import styled from 'styled-components';
 import self from '../../images/ManagedBackup/Self Service Portal.png';
@@ -119,36 +120,376 @@ const ProtectCloud = () => {
 										</p>
 									</div>
 									<div>
-										<Table>
-											<thead>
-												<tr>
-													<th>#</th>
-													<th>First Name</th>
-													<th>Last Name</th>
-													<th>Username</th>
-												</tr>
+										<h3>Cell that spans two rows:</h3>
+										<table border='1'>
+											<thead rowspan='2'>
+												<th />
+												<th>Features</th>
+												<th colspan='3'>
+													Protected Cloud
+													<td>Essential</td>
+													<td>Standard</td>
+													<td>Advanced</td>
+												</th>
+												<th colspan='2'>
+													Backup Cloud
+													<td>Standard</td>
+												</th>
 											</thead>
 											<tbody>
 												<tr>
-													<th scope='row'>1</th>
-													<td>Mark</td>
-													<td>Otto</td>
-													<td>@mdo</td>
+													<th rowspan='13'>Backup:</th>
+													<td>Backup Workstations, Servers (Windows, Linux, Mac) backup</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
 												</tr>
 												<tr>
-													<th scope='row'>2</th>
-													<td>Jacob</td>
-													<td>Thornton</td>
-													<td>@fat</td>
+													<td>Virtual Machine Backup</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
 												</tr>
 												<tr>
-													<th scope='row'>3</th>
-													<td>Larry</td>
-													<td>the Bird</td>
-													<td>@twitter</td>
+													<td>File Backup</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+												</tr>
+												<tr>
+													<td>Image Backup</td>
+													<td>
+														<AiOutlineLine />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Standard application backup (Microsoft 365, G Suite, Microsoft
+														Exchange, Microsoft SQL, Microsoft SharePoint)
+													</td>
+													<td>
+														<AiOutlineLine />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Advanced application backup (Microsoft SQL and Microsoft
+														Exchange clusters, Oracle DB, SAP HANA)
+													</td>
+													<td>
+														<AiOutlineLine />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+												</tr>
+												<tr>
+													<td>Network share backup</td>
+													<td>
+														<AiOutlineLine />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Backup options (Backup Window, multi-destination, retention)
+													</td>
+													<td>Limited</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+												</tr>
+												<tr>
+													<td>Backup to local storage</td>
+													<td>
+														<AiOutlineLine />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+												</tr>
+												<tr>
+													<td>Backup to Cloud storage</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Cloud storage included into device license (amount depends on
+														device type and edition)
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+												</tr>
+												<tr>
+													<td>Data protection map</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+												</tr>
+												<tr>
+													<td>Disaster Recovery optional Add-on Feature</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+												</tr>
+
+												<tr>
+													<th rowspan='3'>Security:</th>
+													<td>
+														Security Vulnerability assessment (VA) and patch management (PM)
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Antivirus and anti-malware protection, Exploit prevention, URL
+														filtering
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Forensic mode, scan backups for malware, safe recovery,
+														corporate whitelist
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+												</tr>
+												<tr>
+													<th rowspan='6'>Protection Management:</th>
+													<td>Protection Management Group management of devices</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineLine />
+													</td>
+												</tr>
+												<tr>
+													<td>Centralized plans management</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineLine />
+													</td>
+												</tr>
+												<tr>
+													<td>Dashboards and reports</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineLine />
+													</td>
+												</tr>
+												<tr>
+													<td>Drive health monitoring</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineLine />
+													</td>
+												</tr>
+												<tr>
+													<td>Remote desktop and Remote assistance</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineLine />
+													</td>
+												</tr>
+												<tr>
+													<td>Software and hardware inventory*</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineCheck />
+													</td>
+													<td>
+														<AiOutlineLine />
+													</td>
 												</tr>
 											</tbody>
-										</Table>
+										</table>
 									</div>
 								</div>
 							</div>
