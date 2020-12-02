@@ -118,6 +118,7 @@ const ProtectCloud = () => {
 											from the following, mix and match the licenses as needed by each device in
 											your environment
 										</p>
+										<h3>Editions: Feature Comparison </h3>
 									</div>
 									<div>
 										<table border='1'>
@@ -493,6 +494,18 @@ const ProtectCloud = () => {
 												</tr>
 											</tbody>
 										</table>
+									</div>
+
+									<div>
+										<p>Protection levels: Proactive, Active & Reactive.</p>
+										<p>
+											Contact us at &nbsp;
+											<a href='mailto:info@synectiks.com' target='_top'>
+												info@synectiks.com
+											</a>&nbsp; to setup a quick Protect Cloud Trail and check out all the rich
+											protect features and manage all your devices in your environment using one
+											web-console.
+										</p>
 									</div>
 								</div>
 							</div>

@@ -20,13 +20,13 @@ const Sublanding = () => {
 						<div className='col mt-2 mb-n3'>
 							<p>
 								Build Business Resiliency with modern Synectiks-Business Continuity solutions. Synectiks
-								Cyber Protect Cloud changes the game by integrating Data protection with Cybersecurity.
-								This synergy eliminates the complexity and makes security a center point of your
-								solutions, keeping your Business protected and your costs down. With its full-stack
-								anti-malware protection and comprehensive endpoint management, Synectiks Cyber Protect
-								Cloud combats advanced cyberattacks with a unique integration of protection technologies
-								while simplifying daily IT operations, endpoint deployments and management, and
-								reporting. meeting SOC2 & HIPPA compliance standards.
+								-Protect Cloud changes the game by integrating Data protection with security. This
+								synergy eliminates the complexity and makes security a center point of your solutions,
+								keeping your Business protected and your costs down. With its full-stack anti-malware
+								protection and comprehensive endpoint management, Synectiks -Protect Cloud combats
+								advanced cyberattacks with a unique integration of protection technologies while
+								simplifying daily IT operations, endpoint deployments and management, and reporting.
+								meeting SOC2 & HIPPA compliance standards
 							</p>
 						</div>
 					</div>
@@ -34,6 +34,10 @@ const Sublanding = () => {
 				<div className=''>
 					<div className='row justify-content-center align-items-start'>
 						<div className='col-md-6 py-4 px-4 mt-md-4'>
+							<div className='excerpt'>
+								<a href='/protect-cloud/index.html'>Protect Cloud</a>
+								<p>Protect your Host with one single agent and one console.</p>
+							</div>
 							<div className='excerpt'>
 								<a href='/business/index.html'>Secure Cloud Backup as a Service (BaaS):</a>
 								<p>Secure, Reliable & Very Affordable Cloud Backup Solution.</p>
