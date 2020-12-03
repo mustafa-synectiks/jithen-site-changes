@@ -30,6 +30,16 @@ const SecureBusiness = () => {
 					<div className='row justify-content-center align-items-center'>
 						<div className='col-md-6 py-4 px-0'>
 							<div className='excerpt'>
+								<a href='/business-cyber-sub-landing/index.html'>
+									Business Continuity & Cyber Security:
+								</a>
+								<p>
+									Build Business Resiliency with modern Synectiks-Business Continuity solutions.
+									Synectiks Cyber Protect Cloud changes the game by integrating Data protection with
+									Cybersecurity.
+								</p>
+							</div>
+							<div className='excerpt'>
 								<a href='/iaas/index.html'>
 									Synectiks Secure & Custom Hosted Infrastructure Solutions:
 								</a>
@@ -44,16 +54,6 @@ const SecureBusiness = () => {
 									Synectiks is an efficient DaaS provider that scales your workspace to the cloud,
 									driving the highest performance in speed, uptime and scalability at an affordable
 									price.
-								</p>
-							</div>
-							<div className='excerpt'>
-								<a href='/business-cyber-sub-landing/index.html'>
-									Business Continuity & Cyber Security:
-								</a>
-								<p>
-									Build Business Resiliency with modern Synectiks-Business Continuity solutions.
-									Synectiks Cyber Protect Cloud changes the game by integrating Data protection with
-									Cybersecurity.
 								</p>
 							</div>
 						</div>

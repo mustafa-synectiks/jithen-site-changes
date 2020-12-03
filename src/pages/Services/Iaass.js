@@ -68,12 +68,11 @@ const Iaas = () => {
 									<div className='text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex'>
 										<div className='w-100  pl-3 pr-3 text-black'>
 											<p className='lineHeight-24 ptext spl-head mt-md-4 mt-1'>
-												Meet modern IT demands with a scale-out, cost-efficient, and
-												multi-purpose Cloud solution for the edge. Synectiks Secure Cloud Hosted
-												Services supports a wide variety of workloads & Disaster Recovery with a
-												high degree of control, security, and simplicity. Supports your
-												mission-critical applications and workloads with instant and scalable
-												infrastructure meeting SOC2 & HIPPA compliance standards.
+												Synectiks Secure Cloud Hosted Services supports a wide variety of
+												workloads & Disaster Recovery with a high degree of control, security,
+												and simplicity. Supports your mission-critical applications and
+												workloads with instant and scalable infrastructure meeting SOC2 & HIPPA
+												compliance standards.
 											</p>
 										</div>
 										<div className='w-100 ml-md-auto' data-aos='fade-up'>

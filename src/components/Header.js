@@ -47,6 +47,9 @@ const Header = () => {
 									</NavDropdown.Item>
 								</NavDropdown>
 								<NavDropdown title='Solutions' id='basic-nav-dropdown'>
+									<NavDropdown.Item href='/office-migration/index.html'>
+										O365 Migration
+									</NavDropdown.Item>
 									<NavDropdown.Item href='/microservices/index.html'>Microservices</NavDropdown.Item>
 									<NavDropdown.Item href='/hybrid-cloud/index.html'>Hybrid Cloud</NavDropdown.Item>
 								</NavDropdown>
