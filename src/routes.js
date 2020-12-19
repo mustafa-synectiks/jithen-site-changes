@@ -21,6 +21,10 @@ module.exports = [
 		component: path.resolve(`src/pages/Services/Iaass.js`)
 	},
 	{
+		path: '/aws-managed-services/index.html',
+		component: path.resolve(`src/pages/Services/AwsManaged.js`)
+	},
+	{
 		path: '/business/index.html',
 		component: path.resolve(`src/pages/Solutions/Business.js`)
 	},

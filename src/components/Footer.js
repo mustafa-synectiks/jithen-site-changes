@@ -37,14 +37,14 @@ export class Footer extends React.Component {
 					<MdClose className='closeBtn' type='submit' id='hide' />
 				</div>
 
-				<div className='d-sm-flex justify-content-sm-between d-md-flex  justify-content-md-center d-lg-flex justify-content-lg-center d-xl-flex justify-content-xl-center bgFooter px-2 pt-2 px-md-5 pt-md-5'>
+				<div className='d-sm-flex justify-content-sm-between d-md-flex  justify-content-md-center d-lg-flex justify-content-lg-center d-xl-flex justify-content-xl-center bgFooter px-2 pt-2 pb-3 px-md-5 pt-md-5'>
 					<div className='w-35vw mx-0 mx-md-4 px-2 px-md-0'>
 						{/* <h3 className='text-light text-capitalize'>Synectiks</h3> */}
 						<a href='/'>
 							<img src={logo} alt='' className='w-65 mt-0 mt-md-2' />
 						</a>
 						{/* <h4 className='text-light text-capitalize'>U.S.A</h4> */}
-						<p className='text-light mt-0 mt-md-3 ptext'>
+						<p className='text-light mt-0 mt-md-3 ptext lht'>
 							{/* We are a team of highly qualified and experienced professionals from various fields who are
 							determined and dedicated to delivering world class professional services to our patrons. */}
 							As an Open Product based Cloud Solution provider, we help enterprises take advantage of
@@ -116,6 +116,9 @@ const FooterWrapper = styled.div`
 		}
 		.ptext {
 			text-align: left;
+		}
+		.lht {
+			line-height: 1.5;
 		}
 		.w-65 {
 			width: 50%;

@@ -34,7 +34,7 @@ import support from '../../images/synectiks-secure/support.svg';
 import EndComputing from '../../images/EndComputing.svg';
 import EndSecurity from '../../images/EndSecurity.svg';
 import DigitalWorkspace from '../../images/DigitalWorkspace.svg';
-import vdi from '../../images/vdi.jpg';
+import vdi from '../../images/virtual-desktop.jpg';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarToggler, Navbar } from 'reactstrap';
 import classnames from 'classnames';
 import SEO from '../../components/seo.js';
@@ -71,7 +71,7 @@ const Daas = () => {
 					<div className='text-justify'>
 						<BreadCrumbs
 							title='Home'
-							subtitle='Secure Hosted & Business Continuity'
+							subtitle='Synectiks Hosted Infrastructure & Business Continuity'
 							pageTitle='Cloud-Hosted Virtual Desktop'
 						/>
 					</div>
@@ -79,18 +79,18 @@ const Daas = () => {
 						<div className='px-2 px-md-0 mb-3 col-md-12'>
 							<div className='bg-lightgrey mb-0 pb-3'>
 								<div className=''>
-									<h2>Cloud-Hosted Virtual Desktop Service</h2>
+									<h2>Cloud-Hosted Virtual Desktop</h2>
 									<div className='text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex'>
 										<div className='w-100  pl-3 pr-3 text-black'>
-											<p className='lineHeight-24 ptext mt-md-4 mt-1 splhead'>
+											<p className='lineHeight-24 ptext mt-md-4 mt-1'>
 												Synectiks Cloud-Hosted Virtual Desktop Service is a modern platform for
 												secure delivery of virtual desktops and apps. Our best-in-class
-												virtualization technologies enables scalability , uptime at an
-												affordable price. Powered by the Blast Extreme protocol, delivers an
-												immersive, feature-rich user experience for end users across devices,
-												locations, media and network connections. Enabled by enterprise-grade
-												management capabilities and a deep technology ecosystem, it extends the
-												digital workspace to all apps and secure productivity use cases.
+												virtualization technologies enables scalability, uptime at an affordable
+												price. Powered by VMware Blast Extreme protocol, delivers an immersive,
+												feature-rich user experience for end users across devices, locations,
+												media and network connections. Enabled by enterprise-grade management
+												capabilities and a deep technology ecosystem, it extends the digital
+												workspace to all apps and secure productivity use cases.
 											</p>
 										</div>
 										<div className='w-100 ml-md-auto' data-aos='fade-up'>
@@ -158,13 +158,6 @@ const Daas = () => {
 												Follow the Sun model - 24/7/365 days support from both onshore and
 												offshore Teams.
 											</p>
-										</div>
-									</div>
-									<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
-										<img class='w-12 mr-0 mr-md-5' src={CS} alt='Support' />
-										<div>
-											<h5>Compliance</h5>
-											<p className='mt-2 pcenter'>SOC2 & HIPPA complaint.</p>
 										</div>
 									</div>
 								</div>

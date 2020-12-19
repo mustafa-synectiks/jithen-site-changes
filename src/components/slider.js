@@ -957,7 +957,7 @@ p{
 		#owl-demo .item img {
 			display: block;
 			width: 100%;
-			height: 460px;
+			height: auto;
 			margin-top: 15px;
 		}
 		ul {

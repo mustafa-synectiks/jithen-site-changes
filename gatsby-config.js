@@ -100,12 +100,12 @@ module.exports = {
 				path: `${__dirname}/src/routes.js`
 			}
 		},
-		{
-			resolve: 'gatsby-plugin-zopfli',
-			options: {
-				extensions: [ 'css', 'html', 'js', 'svg' ]
-			}
-		},
+		// {
+		// 	resolve: 'gatsby-plugin-zopfli',
+		// 	options: {
+		// 		extensions: [ 'css', 'html', 'js', 'svg' ]
+		// 	}
+		// },
 		`gatsby-plugin-meta-redirect`
 	]
 };

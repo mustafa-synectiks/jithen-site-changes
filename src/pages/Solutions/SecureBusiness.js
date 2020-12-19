@@ -11,9 +11,13 @@ const SecureBusiness = () => {
 		<Layout>
 			<SecureWrapper>
 				<div className='text-justify'>
-					<BreadCrumbs title='Home' subtitle='Solutions' pageTitle='Secure Hosted & Business Continuity' />
+					<BreadCrumbs
+						title='Home'
+						subtitle='Cloud Services'
+						pageTitle='Synectiks Hosted Infrastructure & Business Continuity'
+					/>
 					<SEO title='Secure Hosted & Business Continuity' />
-					<h2 className='ml-n1'>Secure Hosted & Business Continuity</h2>
+					<h2 className='ml-n1'>Synectiks Hosted Infrastructure & Business Continuity</h2>
 				</div>
 				<div className='container-fluid mx-0'>
 					<div className='row pt-2'>
@@ -35,14 +39,12 @@ const SecureBusiness = () => {
 								</a>
 								<p>
 									Build Business Resiliency with modern Synectiks-Business Continuity solutions.
-									Synectiks Cyber Protect Cloud changes the game by integrating Data protection with
+									Synectiks Protect Cloud changes the game by integrating Data protection with
 									Cybersecurity.
 								</p>
 							</div>
 							<div className='excerpt'>
-								<a href='/iaas/index.html'>
-									Synectiks Secure & Custom Hosted Infrastructure Solutions:
-								</a>
+								<a href='/iaas/index.html'>Secure & Custom Hosted Infrastructure:</a>
 								<p>
 									Meet modern IT demands with a scale-out, cost-efficient, and multi-purpose Cloud
 									solution.
@@ -51,14 +53,14 @@ const SecureBusiness = () => {
 							<div className='excerpt'>
 								<a href='/digital-workspace/index.html'>Cloud-Hosted Virtual Desktop:</a>
 								<p>
-									Synectiks is an efficient DaaS provider that scales your workspace to the cloud,
-									driving the highest performance in speed, uptime and scalability at an affordable
-									price.
+									Synectiks is an efficient Desktop as a Service provider that scales your workspace
+									to the cloud, driving the highest performance in speed, uptime and scalability at an
+									affordable price.
 								</p>
 							</div>
 						</div>
 						<div className='col-md-6 py-4 px-0'>
-							<img src={syn} alt='' />
+							<img src={syn} alt='' className='w-75' />
 						</div>
 					</div>
 				</div>

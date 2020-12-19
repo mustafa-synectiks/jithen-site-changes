@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Row, Col } from 'reactstrap';
 import PoweredBySynectiks from '../../images/HomePage/PoweredBySynectiks.png';
 import thc1 from '../../images/areofxpertise/Microservices.svg';
 import hx2 from '../../images/areofxpertise/Area Of Expertise.svg';
@@ -107,7 +108,90 @@ const Tabs = () => {
 	return (
 		<TabsWrapper>
 			<div id='accordion' role='tablist'>
-				<div className='card'>
+				<div className='card '>
+					<div className='card-header' role='tab' id='headingTwo'>
+						<a
+							className='collapsed'
+							data-toggle='collapse'
+							href='#collapseTwo'
+							aria-expanded='false'
+							aria-controls='collapseTwo'>
+							Transformation
+						</a>
+					</div>
+					<div
+						id='collapseTwo'
+						className='collapse'
+						role='tabpanel'
+						aria-labelledby='headingTwo'
+						data-parent='#accordion'>
+						<div className='card-body pl-4 pr-3'>
+							<div className='row'>
+								<div className='col-sm-12'>
+									<h2 className='text-center'>Transformation Services </h2>
+									<p className='py-1 py-md-3'>
+										Synectiks Transformation services elevate your business by optimizing every
+										aspect of your operations for the public cloud or Hybrid cloud – your people,
+										infrastructure, applications and data.
+									</p>
+								</div>
+							</div>
+							<div className='row'>
+								<div className='col-sm-12  p-1'>
+									<div className='py-1'>
+										<div className='border-bottom my-n1 my-md-n0 text-center'>
+											<a href='/infrastructure/index.html' className='text-center heading-h3'>
+												Infrastructure Transformation
+											</a>
+											<p className='ptext  f-14 px-2 px-md-4'>
+												Make sure that every bit of your hardware environment is directly
+												supporting your business objectives. Transition from a hardware centric
+												to a software Defined organization make huge difference in CapEx and
+												Opex.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div className='col-sm-12  p-1'>
+									<div className='py-1'>
+										<div className='border-bottom my-n1 my-md-n0 text-center'>
+											<a
+												href='/application-transformation/index.html'
+												className='text-center heading-h3'>
+												Application Transformation
+											</a>
+											<p className='ptext  f-14 px-4'>
+												Applications that power your enterprise are key to generating a strong
+												competitive advantage. Bring innovation, agility and outstanding
+												customer experience through modern architectures and cloud first
+												approach.
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div className='col-sm-12  p-1'>
+									<div className='py-1'>
+										<div className='border-bottom my-n1 my-md-n0 text-center'>
+											<a
+												href='/devops-transformation/index.html'
+												className='text-center heading-h3'>
+												DevOps Transformation
+											</a>
+											<p className='ptext  f-14 px-1 px-md-4'>
+												Adopting a DevOps culture starts by transforming your people, tech and
+												processes. Accelerate your DevOps adaption by using our open Automation
+												platform and skilled resources.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div className='card my-4'>
 					<div className='card-header' role='tab' id='headingOne'>
 						<a data-toggle='collapse' href='#collapseOne' aria-expanded='false' aria-controls='collapseOne'>
 							Open Platform
@@ -142,79 +226,7 @@ const Tabs = () => {
 						</div>
 					</div>
 				</div>
-				<div className='card my-4'>
-					<div className='card-header' role='tab' id='headingTwo'>
-						<a
-							className='collapsed'
-							data-toggle='collapse'
-							href='#collapseTwo'
-							aria-expanded='false'
-							aria-controls='collapseTwo'>
-							Transformation
-						</a>
-					</div>
-					<div
-						id='collapseTwo'
-						className='collapse'
-						role='tabpanel'
-						aria-labelledby='headingTwo'
-						data-parent='#accordion'>
-						<div className='card-body pl-4 pr-3'>
-							<div className='row'>
-								<div className='col-sm-12'>
-									<h2 className='text-center'>Transformation Services </h2>
-									<p className='py-1 py-md-3'>
-										Synectiks Transformation services elevate your business by optimizing every
-										aspect of your operations for the public cloud or Hybrid cloud – your people,
-										infrastructure, applications and data.
-									</p>
-								</div>
-							</div>
-							<div className='row'>
-								<div className='col-sm-12  p-1'>
-									<div className='py-1'>
-										<div className='border-bottom my-n1 my-md-n0 text-center'>
-											<a href='/infrastructure/index.html'  className='text-center heading-h3'>Infrastructure Transformation</a>
-											<p className='ptext  f-14 px-2 px-md-4'>
-												Make sure that every bit of your hardware environment is directly
-												supporting your business objectives. Transition from a hardware centric
-												to a software Defined organization make huge difference in CapEx and
-												Opex.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div className='col-sm-12  p-1'>
-									<div className='py-1'>
-										<div className='border-bottom my-n1 my-md-n0 text-center'>
-											<a  href='/application-transformation/index.html' className='text-center heading-h3'>Application Transformation</a>
-											<p className='ptext  f-14 px-4'>
-												Applications that power your enterprise are key to generating a strong
-												competitive advantage. Bring innovation, agility and outstanding
-												customer experience through modern architectures and cloud first
-												approach.
-											</p>
-										</div>
-									</div>
-								</div>
 
-								<div className='col-sm-12  p-1'>
-									<div className='py-1'>
-										<div className='border-bottom my-n1 my-md-n0 text-center'>
-											<a href='/devops-transformation/index.html' className='text-center heading-h3'>DevOps Transformation</a>
-											<p className='ptext  f-14 px-1 px-md-4'>
-												Adopting a DevOps culture starts by transforming your people, tech and
-												processes. Accelerate your DevOps adaption by using our open Automation
-												platform and skilled resources.
-											</p>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
 				<div className='card'>
 					<div className='card-header' role='tab' id='headingThree'>
 						<a
@@ -330,6 +342,114 @@ const Tabs = () => {
 						</div>
 					</div>
 				</div>
+
+				<div className='card'>
+					<div className='card-header' role='tab' id='headingFour'>
+						<a
+							className='collapsed'
+							data-toggle='collapse'
+							href='#collapseFour'
+							aria-expanded='false'
+							aria-controls='collapseFour'>
+							Cloud Services
+						</a>
+					</div>
+					<div
+						id='collapseFour'
+						className='collapse'
+						role='tabpanel'
+						aria-labelledby='headingFour'
+						data-parent='#accordion'>
+						<div className='card-body pl-3 pr-3'>
+							<Row className='px-3'>
+								<p>
+									Capture true value of cloud with highly secured, scalable, and customizable
+									SYNECTIKS Hosted Cloud Solutions at an affordable pricing. Modern, Innovative could
+									solutions for wide range of Server workloads, Cloud-Hosted Desktops/Workspaces, and
+									Containers along with highly Secure Backup & Disaster Recovery options meeting SOC2
+									& HIPPA compliance standards.
+								</p>
+							</Row>
+							<Row>
+								<Col sm='12' className='p-1'>
+									<div className='py-1 py-md-3 h-100'>
+										<div className='border-right text-center'>
+											<a href='/infrastructure/index.html' className='text-center heading-h3 h6'>
+												Business Continuity & Cyber Security Services
+											</a>
+											<p className='f-14 px-2 px-md-4'>
+												Build Business Resiliency with modern Synectiks-Business Continuity
+												solutions. Synectiks -Protect Cloud changes the game by integrating Data
+												protection with high security. This synergy eliminates the complexity
+												and makes security a center point of your solutions, keeping your
+												Business protected and within you budget with no compromise on quality.
+											</p>
+										</div>
+									</div>
+								</Col>
+								<Col sm='12' className='p-1'>
+									<div className='py-3 h-100'>
+										<div className='border-right text-center'>
+											<a
+												href='/application-transformation/index.html'
+												className='text-center heading-h3 h6'>
+												Secure & Custom Hosted Infrastructure Services
+											</a>
+											<p className='f-14 px-4'>
+												Synectiks Secure Cloud Hosted Services supports a wide variety of
+												workloads & Disaster Recovery with a high degree of control, security,
+												and simplicity. Supports your mission-critical applications and
+												workloads with instant and scalable infrastructure meeting business
+												compliance standards.
+											</p>
+										</div>
+									</div>
+								</Col>
+								<Col sm='12' className='p-1'>
+									<div className='py-1 py-md-3 h-100'>
+										<div className='border-right text-center'>
+											<a
+												href='/devops-transformation/index.html'
+												className='text-center heading-h3 h6'>
+												Cloud-Hosted Virtual Desktop Services
+											</a>
+											<p className='f-14 px-1 px-md-4'>
+												Synectiks Cloud-Hosted Virtual Desktop Service is a modern platform for
+												secure delivery of virtual desktops and apps. Our best-in-class
+												virtualization technologies enables scalability, uptime at an affordable
+												price. Powered by VMware Blast Extreme protocol, delivers an immersive,
+												feature-rich user experience for end users across devices, locations,
+												media and network connections.
+												<br />
+												<br />
+											</p>
+										</div>
+									</div>
+								</Col>
+								<Col sm='12' className='p-1'>
+									<div className='py-1 py-md-3 h-100'>
+										<div className='border-right text-center'>
+											<a
+												href='/devops-transformation/index.html'
+												className='text-center heading-h3 h6'>
+												AWS managed Services
+											</a>
+											<p className='f-14 px-1 px-md-4'>
+												SYNECTIKS aws Managed Services enables companies to accelerate the
+												adoption of the public cloud, lower operating costs, and mitigate
+												security and compliance risks in a cost-effective monthly consumption
+												model. As AWS Consulting Services Partner, our experts ensure that your
+												workloads meet the requirements of the AWS Well-Architected Framework
+												for efficient migration and operation in the AWS secured landing zones.
+												<br />
+											</p>
+										</div>
+									</div>
+								</Col>
+							</Row>
+						</div>
+					</div>
+				</div>
 			</div>
 		</TabsWrapper>
 	);
@@ -383,6 +503,19 @@ const TabsWrapper = styled.section`
 			a {
 				padding: 1rem;
 				background: var(--synectiksBlue);
+				color: var(--synectiksWhite);
+				text-decoration: none;
+				box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.3);
+				position: relative;
+				display: block;
+				text-align: center;
+    margin: -4% 0;
+}
+			}
+		#headingFour {
+			a {
+				padding: 1rem;
+				background: var(--synectiksLightRed);
 				color: var(--synectiksWhite);
 				text-decoration: none;
 				box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.3);

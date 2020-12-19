@@ -35,7 +35,7 @@ import support from '../../images/synectiks-secure/support.svg';
 import EndComputing from '../../images/EndComputing.svg';
 import EndSecurity from '../../images/EndSecurity.svg';
 import DigitalWorkspace from '../../images/DigitalWorkspace.svg';
-import vdi from '../../images/vdi.jpg';
+import vdi from '../../images/protect-cloud.jpg';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarToggler, Navbar } from 'reactstrap';
 import classnames from 'classnames';
 import SEO from '../../components/seo.js';
@@ -72,8 +72,8 @@ const ProtectCloud = () => {
 					<div className='text-justify'>
 						<BreadCrumbs
 							title='Home'
-							subtitle='Secure Hosted & Business Continuity'
-							pageTitle='Cloud-Hosted Virtual Desktop'
+							subtitle='Business Continuity & Cyber Security'
+							pageTitle='Protect Cloud'
 						/>
 					</div>
 					<Row className='d-flex justify-content-start'>
@@ -83,13 +83,12 @@ const ProtectCloud = () => {
 									<h2>Protect Cloud</h2>
 									<div className='text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex'>
 										<div className='w-100  pl-3 pr-3 text-black'>
-											<p className='lineHeight-24 ptext mt-md-4 mt-1 splhead'>
-												Eliminate security breaches, downtime and data loss at a very affordable
-												low monthly pricing. Protect Cloud is the only solution that natively
-												integrates cloud security, data protection and management to protect
-												endpoints, systems and data. Integration and automation provide
-												unmatched protection making it simple to manage all your devices from
-												one web-based console.
+											<p className='lineHeight-24 ptext mt-md-4 mt-1'>
+												Eliminate security breaches, downtime and data loss. Protect Cloud is
+												the only solution that natively integrates cloud security, data
+												protection and management to protect endpoints, systems and data.
+												Integration and automation provide unmatched protection making it simple
+												to manage all the devices in your environment.
 											</p>
 										</div>
 										<div className='w-100 ml-md-auto' data-aos='fade-up'>
@@ -104,36 +103,54 @@ const ProtectCloud = () => {
 									{/* <h4> Why choose SYNECTIKS Cloud Hosted Infrastructure Services? </h4> */}
 									<div>
 										<p>
-											Protect Cloud is an ALL-IN-ONE Web-Based innovative powerful integrated
-											solution with one agent on any given Server/End-point device to serve all
-											Backup & Disaster Recovery along with basic necessary features like
-											Anti-Virus , Anti-Malware, Venerability Assessment, Windows- Patch
-											management, Remote Diagnostic assistance and URL-filtering. This way all
-											devices in your infrastructure are easily managed from a single web-based
-											console and well protected to meet all Business continuity, Security and
-											compliances requirements.
+											No need to get software’s from different vendors & No need to install
+											multiple agents on the same machine to have all the following basic security
+											and protection features:
+										</p>
+										<ul>
+											<li> Antivirus</li>
+											<li>Anti-Malware</li>
+											<li> Exploit Prevention </li>
+											<li> Ransomware Protection </li>
+											<li> Security Vulnerability Assessment</li>
+											<li> Patch Management </li>
+											<li> URL-filtering </li>
+											<li>Data protection Map</li>
+											<li>Remote desktop & Remote assistance </li>
+											<li>Backup</li>
+											<li>Disaster Recovery</li>
+										</ul>
+										<p>
+											<strong>Protect Cloud</strong> is a SaaS based readily available ALL-IN-ONE
+											Web-Based innovative powerful integrated solution with one-agent on any
+											given Server/End-point device to serve all Backup & Disaster Recovery needs
+											along with basic necessary features like Anti-Virus, Anti-Malware,
+											Venerability Assessment, Windows - Patch management, Remote Diagnostic
+											assistance, and URL-filtering. All devices in your infrastructure are easily
+											managed from a single web console and well protected to meet all Business
+											continuity, Security and compliances requirements.
 										</p>
 										<p>
 											Pick and choose the required license type for each server/end-point device
 											from the following, mix and match the licenses as needed by each device in
-											your environment
+											your environment:
 										</p>
 										<h3>Editions: Feature Comparison </h3>
 									</div>
 									<div>
-										<table border='1'>
+										<Table border='1'>
 											<thead rowspan='2'>
 												<th />
-												<th className='tdfont'>Features</th>
-												<th colspan='3' className='tdfont'>
+												<th className='tdfont bxl bxr'>Features</th>
+												<th colspan='3' className='tdfont bxr'>
 													Protected Cloud
-													<td className='tdwidth'>Essential</td>
-													<td className='tdwidth'>Standard</td>
-													<td className='tdwidth'>Advanced</td>
+													<td className='tdwidth b'>Essential</td>
+													<td className='tdwidth b'>Standard</td>
+													<td className='tdwidth b'>Advanced</td>
 												</th>
-												<th colspan='2' className='tdfont'>
+												<th colspan='2' className='tdfont bxr'>
 													Backup Cloud
-													<td className='tdwidth'>Standard</td>
+													<td className='tdwidth b'>Standard</td>
 												</th>
 											</thead>
 											<tbody>
@@ -141,7 +158,7 @@ const ProtectCloud = () => {
 													<th rowspan='13' className='tdfont'>
 														Backup:
 													</th>
-													<td>Backup Workstations, Servers (Windows, Linux, Mac) backup</td>
+													<td>Workstations, Servers (Windows, Linux, Mac) backup </td>
 													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
@@ -156,7 +173,7 @@ const ProtectCloud = () => {
 													</td>
 												</tr>
 												<tr>
-													<td>Virtual Machine Backup</td>
+													<td>Virtual machine backup</td>
 													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
@@ -171,7 +188,7 @@ const ProtectCloud = () => {
 													</td>
 												</tr>
 												<tr>
-													<td>File Backup</td>
+													<td>File backup </td>
 													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
@@ -186,7 +203,7 @@ const ProtectCloud = () => {
 													</td>
 												</tr>
 												<tr>
-													<td>Image Backup</td>
+													<td>Image backup </td>
 													<td className='tdwidth'>
 														<AiOutlineLine />
 													</td>
@@ -237,7 +254,7 @@ const ProtectCloud = () => {
 													</td>
 												</tr>
 												<tr>
-													<td>Network share backup</td>
+													<td>Network share backup </td>
 													<td className='tdwidth'>
 														<AiOutlineLine />
 													</td>
@@ -267,7 +284,7 @@ const ProtectCloud = () => {
 													</td>
 												</tr>
 												<tr>
-													<td>Backup to local storage</td>
+													<td>Backup to local storage </td>
 													<td className='tdwidth'>
 														<AiOutlineLine />
 													</td>
@@ -282,7 +299,7 @@ const ProtectCloud = () => {
 													</td>
 												</tr>
 												<tr>
-													<td>Backup to Cloud storage</td>
+													<td>Backup to cloud storage </td>
 													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
@@ -315,7 +332,7 @@ const ProtectCloud = () => {
 													</td>
 												</tr>
 												<tr>
-													<td>Data protection map</td>
+													<td>Data protection map </td>
 													<td className='tdwidth'>
 														<AiOutlineLine />
 													</td>
@@ -346,12 +363,12 @@ const ProtectCloud = () => {
 												</tr>
 
 												<tr>
-													<th rowspan='3' className='tdfont'>
+													<th
+														rowspan='3'
+														className='tdfont bgclr border-secondary border-top border-bottom'>
 														Security:
 													</th>
-													<td>
-														Security Vulnerability assessment (VA) and patch management (PM)
-													</td>
+													<td>Vulnerability assessment (VA) and patch management (PM)</td>
 													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
@@ -403,7 +420,7 @@ const ProtectCloud = () => {
 													<th rowspan='6' className='tdfont'>
 														Protection Management:
 													</th>
-													<td>Protection Management Group management of devices</td>
+													<td>Group management of devices</td>
 													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
@@ -433,7 +450,7 @@ const ProtectCloud = () => {
 													</td>
 												</tr>
 												<tr>
-													<td>Dashboards and reports</td>
+													<td>Dashboards and reports </td>
 													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
@@ -463,7 +480,7 @@ const ProtectCloud = () => {
 													</td>
 												</tr>
 												<tr>
-													<td>Remote desktop and Remote assistance</td>
+													<td>Remote desktop and Remote assistance </td>
 													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
@@ -478,7 +495,7 @@ const ProtectCloud = () => {
 													</td>
 												</tr>
 												<tr>
-													<td>Software and hardware inventory*</td>
+													<td>Software and hardware inventory* </td>
 													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
@@ -493,18 +510,18 @@ const ProtectCloud = () => {
 													</td>
 												</tr>
 											</tbody>
-										</table>
+										</Table>
 									</div>
 
 									<div>
-										<p>Protection levels: Proactive, Active & Reactive.</p>
+										{' '}
 										<p>
 											Contact us at &nbsp;
 											<a href='mailto:info@synectiks.com' target='_top'>
 												info@synectiks.com
 											</a>&nbsp; to setup a quick Protect Cloud Trail and check out all the rich
 											protect features and manage all your devices in your environment using one
-											web-console.
+											readily available secure web-console.
 										</p>
 									</div>
 								</div>
@@ -533,6 +550,22 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
 export default ProtectCloud;
 
 const ProctectCloudWrapper = styled.div`
+	td {
+		font-size: 12px;
+	}
+	.table td,
+	.table th {
+		padding: 5px;
+	}
+	.bxl {
+		border-left: 2px solid white;
+	}
+	.bxr {
+		border-left: 2px solid white;
+	}
+	table.table {
+		font-size: 12px;
+	}
 	.bx {
 		border: 5px solid white;
 		box-shadow: 0px 0px 9px 0px black;
@@ -689,14 +722,32 @@ const ProctectCloudWrapper = styled.div`
 	}
 
 	@media (min-width: 576px) {
+		tr:nth-child(even) {
+			background: #ccc;
+		}
+		.bgclr {
+			background: #f7f8fb !important;
+			border-top: 1px solid balck;
+			border-bottom: 1px solid balck;
+		}
+		.table thead th {
+			vertical-align: middle;
+			border-bottom: 2px solid #dee2e6;
+			background: #007cc2;
+			color: white;
+		}
 		.tdfont {
-			font-size: 16px;
+			font-size: 14px;
 			text-align: center;
 		}
 		.tdwidth {
 			width: 8rem !important;
 			font-weight: normal;
 			text-align: center;
+			padding: 0px;
+		}
+		.b {
+			border: 0px !important;
 		}
 		.splhead {
 			font-size: 1.3rem !important;

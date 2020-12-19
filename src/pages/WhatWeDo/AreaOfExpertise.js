@@ -11,10 +11,13 @@ import { Helmet } from 'react-helmet';
 const AreaOfExpertise = ({ location }) => {
 	return (
 		<Layout>
-		<Helmet>
-		<meta name='description' content="Across our outcome-driven consulting and managed services, it's our open product driven software solutions, our deep expertise on modern application architecture and our cloud culture that makes the difference."/>
-		<link rel='canonical' href='https://synectiks.com/area-expertise/index.html'/>
-		</Helmet>
+			<Helmet>
+				<meta
+					name='description'
+					content='Across our outcome-driven consulting and managed services, it&#39;s our open product driven software solutions, our deep expertise on modern application architecture and our cloud culture that makes the difference.'
+				/>
+				<link rel='canonical' href='https://synectiks.com/area-expertise/index.html' />
+			</Helmet>
 			<SEO title='Area of Expertise' />
 			<AreaOfExpertiseWrapper>
 				<div className=''>
@@ -25,10 +28,13 @@ const AreaOfExpertise = ({ location }) => {
 					<p>
 						Across our outcome-driven consulting and managed services, it's our open product driven software
 						solutions, our deep expertise on modern application architecture and our cloud culture that
-						makes the difference.
+						makes the difference. We primarily help customers in Cloud Migration, Modernization &
+						Management. Modernize your legacy applications and Infrastructure using cloud-native
+						technologies and deliver predictive and deterministic business outcome. Fully manage cloud
+						environment with CloudOps delivery enabled with DevSecOPs capabilities.
 					</p>
 				</div>
-				<div className='my-2 my-md-4'>
+				{/* <div className='my-2 my-md-4'>
 					<h3 className='my-2 text-center text-md-left'>
 						We are primarily helping customers on the following areas:
 					</h3>
@@ -56,7 +62,7 @@ const AreaOfExpertise = ({ location }) => {
 							</p>
 						</div>
 					</div>
-				</div>
+				</div> */}
 				<div className='my-2 my-md-4'>
 					<h2 className='text-center my-2 my-md-4 py-2 py-md-4'>
 						Area of Expertise for Outcome-based Solution offerings

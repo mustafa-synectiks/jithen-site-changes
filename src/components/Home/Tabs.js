@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { BsArrowRight } from 'react-icons/bs';
 import {
 	TabContent,
 	TabPane,
@@ -43,7 +44,7 @@ const Tabs = () => {
 									<img className='card-img-top' src={tab2} alt='Foundation' />
 								</div>
 								<div className='card-body'>
-									<h3 className='text-center text-uppercase'>Open Platform</h3>
+									<h4 className='text-center text-uppercase'>Transformation</h4>
 									<h6 className='pointerDown arrow-down'>&#187;</h6>
 								</div>
 							</div>
@@ -61,7 +62,7 @@ const Tabs = () => {
 									<img className='card-img-top' src={tab1} alt='Transformation' />
 								</div>
 								<div className='card-body'>
-									<h3 className='text-center text-uppercase'>Transformation</h3>
+									<h4 className='text-center text-uppercase'>Open Platform</h4>
 								</div>
 								<h6 className='pointerDown arrow-down'>&#187;</h6>
 							</div>
@@ -74,44 +75,38 @@ const Tabs = () => {
 							onClick={() => {
 								toggle('3');
 							}}>
+							<div className='Homecard-shadow card'>
+								<div className='bgRed ct1'>
+									<img className='card-img-top' src={tab3} alt='Transformation' />
+								</div>
+								<div className='card-body'>
+									<h4 className='text-center text-uppercase'>Solutions</h4>
+								</div>
+								<h6 className='pointerDown arrow-down'>&#187;</h6>
+							</div>
+						</NavLink>
+					</NavItem>
+					<NavItem className='p-0'>
+						<NavLink
+							id='tab4'
+							className={classnames({ active: activeTab === '4' })}
+							onClick={() => {
+								toggle('4');
+							}}>
 							<div className='Homecard-shadow  card'>
-								<div className='bgBlue ct1'>
+								<div className='bgBlue ct4'>
 									<img className='card-img-top' src={tab3} alt='Operation' />
 								</div>
 								<div className='card-body'>
-									<h3 className='text-center text-uppercase'>Solutions</h3>
+									<h4 className='text-center text-uppercase'>Cloud Services</h4>
 								</div>
 								<h6 className='pointerDown arrow-down'>&#187;</h6>
 							</div>
 						</NavLink>
 					</NavItem>
 				</Nav>
-				<TabContent activeTab={activeTab} className='bgWhite'>
+				<TabContent activeTab={activeTab} className='bgWhite border-three'>
 					<TabPane tabId='1' className='borderHomePageTab1'>
-						<Row>
-							<Col sm='12 hiding'>
-								<div className='p-2 p-md-4'>
-									<img src={PoweredBySynectiks} width='100%' alt='Xformation' className='w-100' />
-								</div>
-								<h2>What is Xformation?</h2>
-								<p>
-									It's a platform that provides peace of mind, governance, efficiency and control of
-									multi-cloud environments. Xformation helps you to migrate and modernize your legacy
-									business, take advantage of cloud and microservice architecture and thereby
-									accelerate your transformation journey @50% time & cost.  <br />{' '}
-									<span className='h5 b'>Its primary goals are:</span>
-								</p>
-								<ul className='showul'>
-									<li>Accelerated Cloud Adoption</li>
-									<li>Multi-cloud container orchestration</li>
-									<li>App-centric Optimization </li>
-									<li>Continuous Delivery / Compliance / Automation.</li>
-									<li> Automated Performance Monitoring and Cost Control</li>
-								</ul>
-							</Col>
-						</Row>
-					</TabPane>
-					<TabPane tabId='2' className='borderHomePageTab2'>
 						<Row>
 							<Col sm='12'>
 								<h2 className='text-center'>Transformation Services </h2>
@@ -140,7 +135,9 @@ const Tabs = () => {
 							<Col sm='12' md='4' className='p-1'>
 								<div className='py-3 h-100'>
 									<div className='border-right text-center'>
-										<a href='/application-transformation/index.html' className='text-center heading-h3 h3'>
+										<a
+											href='/application-transformation/index.html'
+											className='text-center heading-h3 h3'>
 											Application<br /> Transformation
 										</a>
 										<p className='f-14 px-4'>
@@ -154,7 +151,9 @@ const Tabs = () => {
 							<Col sm='12' md='4' className='p-1'>
 								<div className='py-1 py-md-3 h-100'>
 									<div className='border-right text-center'>
-										<a href='/devops-transformation/index.html' className='text-center heading-h3 h3'>
+										<a
+											href='/devops-transformation/index.html'
+											className='text-center heading-h3 h3'>
 											DevOps <br />Transformation
 										</a>
 										<p className='f-14 px-1 px-md-4'>
@@ -167,29 +166,123 @@ const Tabs = () => {
 									</div>
 								</div>
 							</Col>
-{/*
-							<Col sm='12' md='3' className='p-1'>
-								<div className='py-1 py-md-3 h-100'>
-									<div className='text-left'>
-										<h3 className='text-center heading-h3'>
-											Data <br />Transformation
-										</h3>
-										<p className=' f-14 px-2 px-md-4'>
-											Consolidate your unstructured, semi structure and strtucture data and get
-											maximum business insights & real time with minimal TCO of data management
-											and its governance.
-											<br />
-											<br />
-										</p>
-									</div>
+						</Row>
+					</TabPane>
+					<TabPane tabId='2' className='borderHomePageTab2'>
+						<Row>
+							<Col sm='12 hiding'>
+								<div className='p-2 p-md-4'>
+									<img src={PoweredBySynectiks} width='100%' alt='Xformation' className='w-100' />
 								</div>
-							</Col> */}
+								<h2>What is Xformation?</h2>
+								<p>
+									It's a platform that provides peace of mind, governance, efficiency and control of
+									multi-cloud environments. Xformation helps you to migrate and modernize your legacy
+									business, take advantage of cloud and microservice architecture and thereby
+									accelerate your transformation journey @50% time & cost.  <br />{' '}
+									<span className='h5 b'>Its primary goals are:</span>
+								</p>
+								<ul className='showul'>
+									<li>Accelerated Cloud Adoption</li>
+									<li>Multi-cloud container orchestration</li>
+									<li>App-centric Optimization </li>
+									<li>Continuous Delivery / Compliance / Automation.</li>
+									<li> Automated Performance Monitoring and Cost Control</li>
+								</ul>
+							</Col>
 						</Row>
 					</TabPane>
 					<TabPane tabId='3' className='borderHomePageTab3'>
 						<Row>
 							<Col sm='12'>
 								<Hexagon />
+							</Col>
+						</Row>
+					</TabPane>
+					<TabPane tabId='4' className='borderHomePageTab3'>
+						<Row className='px-3'>
+							<p>
+								Capture true value of cloud with highly secured, scalable, and customizable SYNECTIKS
+								Hosted Cloud Solutions at an affordable pricing. Modern, Innovative could solutions for
+								wide range of Server workloads, Cloud-Hosted Desktops/Workspaces, and Containers along
+								with highly Secure Backup & Disaster Recovery options meeting SOC2 & HIPPA compliance
+								standards.
+							</p>
+						</Row>
+						<Row>
+							<Col sm='12' md='3' className='p-1'>
+								<div className='py-1 py-md-3 h-100'>
+									<div className='border-right text-center'>
+										<a href='/infrastructure/index.html' className='text-center heading-h3 h6'>
+											Business Continuity & Cyber Security Services
+										</a>
+										<p className='f-14 px-2 px-md-4'>
+											Build Business Resiliency with modern Synectiks-Business Continuity
+											solutions. Synectiks -Protect Cloud changes the game by integrating Data
+											protection with high security. This synergy eliminates the complexity and
+											makes security a center point of your solutions, keeping your Business
+											protected and within you budget with no compromise on quality.
+										</p>
+									</div>
+								</div>
+							</Col>
+							<Col sm='12' md='3' className='p-1'>
+								<div className='py-3 h-100'>
+									<div className='border-right text-center'>
+										<a
+											href='/application-transformation/index.html'
+											className='text-center heading-h3 h6'>
+											Secure & Custom Hosted Infrastructure Services
+										</a>
+										<p className='f-14 px-4'>
+											Synectiks Secure Cloud Hosted Services supports a wide variety of workloads
+											& Disaster Recovery with a high degree of control, security, and simplicity.
+											Supports your mission-critical applications and workloads with instant and
+											scalable infrastructure meeting business compliance standards.
+										</p>
+									</div>
+								</div>
+							</Col>
+							<Col sm='12' md='3' className='p-1'>
+								<div className='py-1 py-md-3 h-100'>
+									<div className='border-right text-center'>
+										<a
+											href='/devops-transformation/index.html'
+											className='text-center heading-h3 h6'>
+											Cloud-Hosted Virtual Desktop Services
+										</a>
+										<p className='f-14 px-1 px-md-4'>
+											Synectiks Cloud-Hosted Virtual Desktop Service is a modern platform for
+											secure delivery of virtual desktops and apps. Our best-in-class
+											virtualization technologies enables scalability, uptime at an affordable
+											price. Powered by VMware Blast Extreme protocol, delivers an immersive,
+											feature-rich user experience for end users across devices, locations, media
+											and network connections.
+											<br />
+											<br />
+										</p>
+									</div>
+								</div>
+							</Col>
+							<Col sm='12' md='3' className='p-1'>
+								<div className='py-1 py-md-3 h-100'>
+									<div className='border-right text-center'>
+										<a
+											href='/devops-transformation/index.html'
+											className='text-center heading-h3 h6'>
+											AWS managed Services
+										</a>
+										<p className='f-14 px-1 px-md-4'>
+											SYNECTIKS aws Managed Services enables companies to accelerate the adoption
+											of the public cloud, lower operating costs, and mitigate security and
+											compliance risks in a cost-effective monthly consumption model. As AWS
+											Consulting Services Partner, our experts ensure that your workloads meet the
+											requirements of the AWS Well-Architected Framework for efficient migration
+											and operation in the AWS secured landing zones.
+											<br />
+										</p>
+									</div>
+								</div>
 							</Col>
 						</Row>
 					</TabPane>
@@ -208,7 +301,7 @@ const TabsWrapper = styled.div`
 .hiding{
 	display:none;
 }
-.ct1,.ct2,.ct3{
+.ct1,.ct2,.ct3,.ct4{
 	width:0rem;
 	height:0rem;
 	padding:0;
@@ -240,7 +333,7 @@ const TabsWrapper = styled.div`
 .card-body {
     padding: 1rem 0rem 0rem 0rem;
 }
-.ct1,.ct2,.ct3{
+.ct1,.ct2,.ct3,.ct4{
     padding: 3rem;
     border-radius: 50%;
     width: 10rem;
@@ -258,12 +351,20 @@ const TabsWrapper = styled.div`
 			z-index: 0;
 			border-radius: 25px;
 }
-.borderHomePageTab3{
+.borderHomePageTab4{
 	border: 4px solid var(--synectiksBlue);
 			padding: 1rem;
 			position: relative;
 			z-index: 0;
 			border-radius: 25px;
+			border-radius: 25px;
+    border-top-right-radius: 0;
+}
+.borderHomePageTab3{
+	border: 4px solid var(--synectiksBlue);
+			padding: 1rem;
+			position: relative;
+			z-index: 0;
 			border-radius: 25px;
     border-top-right-radius: 0;
 }
@@ -273,13 +374,11 @@ const TabsWrapper = styled.div`
 			position: relative;
 			z-index: 0;
 			border-radius: 25px;
-			border-radius: 25px;
     border-top-left-radius: 0;
-		/* display: block; */
 		}
 
 		.Homecard-shadow {
-			width:18rem;
+			width:14rem;
 			border-radius: 25px;
 			-webkit-border-radius: 25px  ;
 			-moz-border-radius: 25px ;
@@ -307,7 +406,7 @@ const TabsWrapper = styled.div`
 			border-radius: 25px;
     border-top-left-radius: 0;
 		}
-		#tab1,#tab2,#tab3 {
+		#tab1,#tab2,#tab3,#tab4 {
 			padding: 1.5rem 1.5rem 0rem 1.5rem;
 			box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 			/* border-bottom: 5rem solid white !important; */
@@ -345,6 +444,14 @@ a#tab3:not(.active) {
 			-ms-border-radius: 30px ;
 			-o-border-radius: 30px;
 }
+a#tab4:not(.active) {
+			border: 4px solid rgba(255,255,255,1);
+				border-radius: 30px;
+			-webkit-border-radius: 30px;
+			-moz-border-radius: 30px;
+			-ms-border-radius: 30px ;
+			-o-border-radius: 30px;
+}
 
 		 a#tab1.active h2{
 color:var(--synectiksOrange);
@@ -353,6 +460,9 @@ color:var(--synectiksOrange);
 color:var(--synectiksRed);
 			}
 		 a#tab3.active h2{
+color:var(--synectiksBlue);
+			}
+		 a#tab4.active h2{
 color:var(--synectiksBlue);
 			}
 		 a#tab1.active{
@@ -384,6 +494,20 @@ color:var(--synectiksBlue);
     border-bottom: 0px;
 				}
 		a#tab3.active{
+			border: 4px solid var(--synectiksBlue);
+    color: var(--synectiksBlue);
+    position: relative;
+    z-index: 999;
+    /* right: -20px; */
+    top: 0.5%;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: 0px 0px 0px transparent;
+    margin-bottom: -1%;
+    height: 22rem;
+    border-bottom: 0px;
+					}
+		a#tab4.active{
 			border: 4px solid var(--synectiksBlue);
     color: var(--synectiksBlue);
     position: relative;

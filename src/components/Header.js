@@ -1,5 +1,7 @@
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
 import React from 'react';
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Container, DropdownButton, ButtonGroup } from 'react-bootstrap';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import Topbar from './topbar';
 import logo from '../images/logo.png';
@@ -17,14 +19,14 @@ const Header = () => {
 				<div className='bg-top pt-2 pl-md-0 py-md-1'>
 					<Topbar />
 				</div>
-				<Navbar expand='lg' className='z pl-3 pr-3 px-md-5'>
+				{/* <Navbar expand='lg' className='z pl-3 pr-3 px-md-5'>
 					<Container fluid={true}>
 						<Navbar.Brand href='/'>
 							<img src={logo} alt='synectiks' />
 						</Navbar.Brand>
-						<Navbar.Toggle className='navbar-toggler-right' aria-controls='basic-navbar-nav'>
-							{/* <span className='navbar-toggler-icon' /> */}
-							<AiOutlineMenu className='navbar-toggler-icon' />
+						<Navbar.Toggle className='navbar-toggler-right' aria-controls='basic-navbar-nav'> */}
+				{/* <span className='navbar-toggler-icon' /> */}
+				{/* <AiOutlineMenu className='navbar-toggler-icon' />
 							<AiOutlineClose className='my-1 mx-2 close' />
 						</Navbar.Toggle>
 						<Navbar.Collapse id='basic-navbar-nav'>
@@ -46,35 +48,48 @@ const Header = () => {
 										DevOps Transformation
 									</NavDropdown.Item>
 								</NavDropdown>
+								<NavDropdown
+									title='Cloud Services'
+									id='basic-nav-dropdown'
+									menuAlign={{ lg: 'left' }}
+									className='main-tab'>
+									<NavDropdown.Item href='/landing-page/index.html' className='main-nav-tab '>
+										Synectiks Hosted Infrastructure & Business Continuity
+									</NavDropdown.Item>
+									<div className='sub-menu-tab-nav'>
+										<NavDropdown.Item
+											className='main-sub-menu'
+											href='/business-cyber-sub-landing/index.html'>
+											Business Continuity & Cyber Security
+										</NavDropdown.Item>
+										<NavDropdown.Item className='main-sub-menu' href='/protect-cloud/index.html'>
+											Protect Cloud
+										</NavDropdown.Item>
+										<NavDropdown.Item className='main-sub-menu' href='/business/index.html'>
+											Backup as a Service
+										</NavDropdown.Item>
+										<NavDropdown.Item className='main-sub-menu' href='/disaster-service/index.html'>
+											Disaster Recovery as a Service
+										</NavDropdown.Item>
+										<NavDropdown.Item className='main-sub-menu' href='/iaas/index.html'>
+											Secure & Custom Hosted Infrastructure
+										</NavDropdown.Item>
+										<NavDropdown.Item
+											className='main-sub-menu'
+											href='/digital-workspace/index.html'>
+											Cloud-Hosted Virtual Desktop
+										</NavDropdown.Item>
+									</div>
+									<NavDropdown.Item className='' href='/aws-managed-services/index.html'>
+										AWS Managed Services
+									</NavDropdown.Item>
+								</NavDropdown>
 								<NavDropdown title='Solutions' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/office-migration/index.html'>
 										O365 Migration
 									</NavDropdown.Item>
 									<NavDropdown.Item href='/microservices/index.html'>Microservices</NavDropdown.Item>
 									<NavDropdown.Item href='/hybrid-cloud/index.html'>Hybrid Cloud</NavDropdown.Item>
-								</NavDropdown>
-								<NavDropdown title='Cloud Services' id='basic-nav-dropdown'>
-									<NavDropdown.Item href='/landing-page/index.html'>
-										Secure Hosted & Business Continuity
-									</NavDropdown.Item>
-									<NavDropdown.Item href='/business-cyber-sub-landing/index.html'>
-										Business Continuity & Cyber security
-									</NavDropdown.Item>
-									<NavDropdown.Item className='sublist' href='/protect-cloud/index.html'>
-										Protect Cloud
-									</NavDropdown.Item>
-									<NavDropdown.Item className='sublist' href='/business/index.html'>
-										Baas
-									</NavDropdown.Item>
-									<NavDropdown.Item className='sublist' href='/disaster-service/index.html'>
-										DRaas
-									</NavDropdown.Item>
-									<NavDropdown.Item href='/iaas/index.html'>
-										Synectiks Secure & Custom Hosted Infrastructure
-									</NavDropdown.Item>
-									<NavDropdown.Item href='/digital-workspace/index.html'>
-										Cloud-Hosted Virtual Desktop Service
-									</NavDropdown.Item>
 								</NavDropdown>
 								<NavDropdown title='Resources' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/featured/index.html'>Featured</NavDropdown.Item>
@@ -86,82 +101,31 @@ const Header = () => {
 									<NavDropdown.Item href='/Contact-us.html'>Contact Us</NavDropdown.Item>
 								</NavDropdown>
 							</Nav>
-						</Navbar.Collapse>
-					</Container>
-				</Navbar>
+						</Navbar.Collapse> */}
+				{/* </Container>
+				</Navbar> */}
 			</div>
 		</HeaderNav>
-		// <HeaderNav>
-		// 	{/* <div className=''> */}
-		// 	<div className='FixedHeader'>
-		// 		<div className='bg-top pt-2 pl-md-0 py-md-1'>
-		// 			<Topbar />
-		// 		</div>
-		// 		<Navbar expand='lg' className='z pl-3 pr-3 px-md-5'>
-		// 			<Container fluid={true}>
-		// 				<Navbar.Brand href='https://synectiks.com'>
-		// 					<img src={logo} alt='synectiks' />
-		// 				</Navbar.Brand>
-		// 				<Navbar.Toggle className='navbar-toggler-right' aria-controls='basic-navbar-nav'>
-		// 					{/* <span className='navbar-toggler-icon' /> */}
-		// 					<AiOutlineMenu className='navbar-toggler-icon' />
-		// 					<AiOutlineClose className='my-1 mx-2 close' />
-		// 				</Navbar.Toggle>
-		// 				<Navbar.Collapse id='basic-navbar-nav'>
-		// 					<Nav className='ml-auto'>
-		// 						<NavDropdown title='What we Do' id='basic-nav-dropdown'>
-		// 							<NavDropdown.Item href='https://synectiks.com/area-expertise/index.html'>
-		// 								Area Of Expertise
-		// 							</NavDropdown.Item>
-		// 							<NavDropdown.Item href='https://synectiks.com/casestudy/index.html'>Case Studies</NavDropdown.Item>
-		// 						</NavDropdown>
-		// 						<NavDropdown title='Migration & Modernization' id='basic-nav-dropdown'>
-
-		// 							<NavDropdown.Item href='https://synectiks.com/infrastructure/index.html'>
-		// 								Infrastructure Transformation
-		// 							</NavDropdown.Item>
-		// 							<NavDropdown.Item href='https://synectiks.com/application-transformation/index.html'>
-		// 								Application Transformation
-		// 							</NavDropdown.Item>
-		// 							<NavDropdown.Item href='https://synectiks.com/devops-transformation/index.html'>
-		// 								DevOps Transformation
-		// 							</NavDropdown.Item>
-		// 						</NavDropdown>
-		// 						<NavDropdown title='Solutions' id='basic-nav-dropdown'>
-		// 							<NavDropdown.Item href='https://synectiks.com/microservices/index.html'>Microservices</NavDropdown.Item>
-		// 							<NavDropdown.Item href='https://synectiks.com/hybrid-cloud/index.html'>Hybrid Cloud</NavDropdown.Item>
-		// 						</NavDropdown>
-		// 						<NavDropdown title='Services' id='basic-nav-dropdown'>
-		// 							<NavDropdown.Item href='https://synectiks.com/office-migration/index.html'>
-		// 								O365 Migration
-		// 							</NavDropdown.Item>
-		// 							<NavDropdown.Item href='https://synectiks.com/private-cloud-hosting-services/index.html'>
-		// 								Private Cloud Hosting
-		// 							</NavDropdown.Item>
-		// 						</NavDropdown>
-		// 						<NavDropdown title='Resources' id='basic-nav-dropdown'>
-		// 							<NavDropdown.Item href='https://synectiks.com/featured/index.html'>Featured</NavDropdown.Item>
-		// 							<NavDropdown.Item href='https://synectiks.com/blog/index.html'>Blog</NavDropdown.Item>
-		// 						</NavDropdown>
-		// 						<NavDropdown title='Company' id='basic-nav-dropdown'>
-		// 							<NavDropdown.Item href='https://synectiks.com/about-us/index.html'>About Us</NavDropdown.Item>
-		// 							<NavDropdown.Item href='https://synectiks.com/careers/index.html'>Careers</NavDropdown.Item>
-		// 							<NavDropdown.Item href='https://synectiks.com/Contact-us.html'>Contact Us</NavDropdown.Item>
-		// 						</NavDropdown>
-		// 					</Nav>
-		// 				</Navbar.Collapse>
-		// 			</Container>
-		// 		</Navbar>
-		// 	</div>
-		// </HeaderNav>
 	);
 };
 
+Header.propTypes = {
+	siteTitle: PropTypes.string
+};
+
+Header.defaultProps = {
+	siteTitle: ``
+};
 export default Header;
 
 const HeaderNav = styled.div`
-	a.sublist.dropdown-item {
+	a.main-sub-menu.dropdown-item {
 		padding-left: 3rem;
+		font-size: 0.8rem;
+	}
+	a.sublist.dropdown-item {
+		padding-left: 5rem;
+		font-size: 0.7rem;
 	}
 	.navbar-light .navbar-toggler {
 		color: rgba(0, 0, 0, .5);

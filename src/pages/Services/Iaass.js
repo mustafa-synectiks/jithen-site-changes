@@ -55,11 +55,11 @@ const Iaas = () => {
 					<div className='text-justify'>
 						<BreadCrumbs
 							title='Home'
-							subtitle='Solutions'
-							pageTitle='Synectiks Secure & Custom Hosted Infrastructure Solutions'
+							subtitle='Synectiks Hosted Infrastructure & Business Continuity'
+							pageTitle='Secure & Custom Hosted Infrastructure'
 						/>
 						{/* <h1>IAAS</h1> */}
-						<h2 className='ml-n1'>Synectiks Secure & Custom Hosted Infrastructure Solutions</h2>
+						<h2 className='ml-n1'>Secure & Custom Hosted Infrastructure</h2>
 					</div>
 					<Row className='d-flex justify-content-start'>
 						<div className='px-2 px-md-0 mb-3 col-md-12'>
@@ -67,12 +67,15 @@ const Iaas = () => {
 								<div className=''>
 									<div className='text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex'>
 										<div className='w-100  pl-3 pr-3 text-black'>
-											<p className='lineHeight-24 ptext spl-head mt-md-4 mt-1'>
+											<p className='lineHeight-24 ptext mt-md-4 mt-1'>
 												Synectiks Secure Cloud Hosted Services supports a wide variety of
 												workloads & Disaster Recovery with a high degree of control, security,
 												and simplicity. Supports your mission-critical applications and
-												workloads with instant and scalable infrastructure meeting SOC2 & HIPPA
-												compliance standards.
+												workloads with instant and scalable infrastructure meeting business
+												compliance standards. With Synectiks Cloud Hosted Services, you can
+												focus on your business needs instead of spending the time and money it
+												takes to plan, procure, secure, and manage the right infrastructure to
+												meet your business demands.
 											</p>
 										</div>
 										<div className='w-100 ml-md-auto' data-aos='fade-up'>
@@ -88,7 +91,7 @@ const Iaas = () => {
 									<div className='d-flex flex-column flex-md-row align-items-center align-items-md-start mt-1 mt-md-3'>
 										<img class='w-12 mr-0 mr-md-5' src={multiple} alt='Security' />
 										<div>
-											<h5>Multi-layered Security</h5>
+											<h5>Multi-Layered Security</h5>
 											<p className='mt-2 pcenter'>
 												“Never trade-off security when moving to cloud”. Synectiks Secure Cloud
 												incorporates Multi-factor Authentication, SSL-VPN, Data-At-Rest
@@ -105,11 +108,10 @@ const Iaas = () => {
 											alt='Availability & Reliable Performance'
 										/>
 										<div>
-											<h5>Single Pane Self-Service Portal</h5>
+											<h5>Self-Service Portal</h5>
 											<p className='mt-2 pcenter'>
-												Manage and control all your company Hosted infrastructure, Backup,
-												Anti-Virus, and Patch Management with one easy self-service and a single
-												console portal.
+												Manage and control all your company Hosted infrastructure, Backup, DR,
+												Anti-Virus, Patch Management with an easy self-service portal.
 											</p>
 										</div>
 									</div>
@@ -118,7 +120,7 @@ const Iaas = () => {
 										<div>
 											<h5>Affordable Pricing</h5>
 											<p className='mt-2 pcenter'>
-												 Our customized secure Hosted solutions Pricing is very aggressive and
+												Our customized secure Hosted solutions Pricing is very aggressive and
 												affordable when compared with any Cloud Service Provider available in
 												the Market. Contact us at &nbsp;
 												<a href='mailto:info@synectiks.com' target='_top'>
@@ -127,13 +129,7 @@ const Iaas = () => {
 											</p>
 										</div>
 									</div>
-									<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
-										<img class='w-12 mr-0 mr-md-5' src={CS} alt='Self-service portal' />
-										<div>
-											<h5>Compliance</h5>
-											<p className='mt-2 pcenter'>SOC2 & HIPPA complaint.</p>
-										</div>
-									</div>
+
 									<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
 										<img class='w-12 mr-0 mr-md-5' src={host} alt='Self-service portal' />
 										<div>
@@ -157,20 +153,26 @@ const Iaas = () => {
 											<h5>Storage</h5>
 											<p className='mt-2 pcenter'>
 												Safeguard data at rest with AES-256 encryption. Scale from terabytes to
-												tens of petabytes for seamless business growth. No Capax. We offer a
+												tens of petabytes for seamless business growth. No Capex. We offer a
 												wide variety of Storage Solutions at an Aggressive and Affordable
-												Monthly Pricing: S3 Storage as low as $0.015 per GB with no Ingress &
-												Egress Charges (only charged for the Storage Consumed) Backup Storage as
-												low as $0.015 per GB with no Ingress & Egress charges (only charged for
-												the Storage Consumed after deep compression) <br /> High Performance SSD
-												Storage for Server or VDI’s - as low as $0.06 per GB.
+												Monthly Pricing:
 											</p>
+											<small>
+												S3 Storage as low as $0.015 per GB with no Ingress & Egress Charges
+												(only charged for the Storage Consumed)
+												<br />
+												Backup Storage as low as $0.015 per GB with no Ingress & Egress charges
+												(only charged for the Storage Consumed after deep compression)
+												<br />
+												High Performance SSD block Storage for Server or VDI’s - as low as $0.06
+												per GB
+											</small>
 										</div>
 									</div>
 									<div className='d-flex flex-column flex-md-row  align-items-center  align-items-md-end mt-1 mt-md-5'>
 										<img class='w-12 mr-0 mr-md-5' src={MSGL} alt='Multi Secure Geo Locations' />
 										<div>
-											<h5>Multi Secure Geo Locations</h5>
+											<h5>Multi-Secure Geo Locations</h5>
 											<p className='mt-2 pcenter'>
 												Different Secure Geo Locations for Customers to choose from. Each
 												location separated by Seismic Zone, Power Grid to make sure your
@@ -196,9 +198,8 @@ const Iaas = () => {
 											<p className='mt-2 pcenter'>
 												Business Continuity is one of our important core values in the Hosted
 												Cloud Solution. Whether its mission critical server or any end point
-												device…. Choose from the wide variety of Cloud Backup & Disaster
-												Recovery Options available with a Great in-built Cyber Protection
-												feature.
+												device. Choose from the wide variety of Cloud Backup & Disaster Recovery
+												Options available with an in-built Cyber Protection feature.
 											</p>
 										</div>
 									</div>
@@ -227,7 +228,7 @@ const Iaas = () => {
 											<h5>Support</h5>
 											<p className='mt-2 pcenter'>
 												Follow the Sun-Model - 24/7/365 Support from On-shore and Off-shore
-												Teams.
+												Teams
 											</p>
 										</div>
 									</div>

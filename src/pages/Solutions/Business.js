@@ -62,64 +62,36 @@ const Business = () => {
 				/>
 				<link rel='canonical' href='https://synectiks.com/private-cloud-hosting-services/index.html' />
 			</Helmet>
-			<SEO title='Backup as a Service' />
+			<SEO title='Secure Cloud Backup as a Service' />
 			<BusinessWrapper>
 				<div className='bg-lightgrey container-fluid'>
 					<div className='text-justify'>
-						<BreadCrumbs title='Home' subtitle='Solutions' pageTitle='Backup as a Service' />
+						<BreadCrumbs
+							title='Home'
+							subtitle='Business Continuity & Cyber Security'
+							pageTitle='Secure Cloud Backup as a Service'
+						/>
 						{/* <h1>Business Continuity & Cyber Security</h1> */}
 					</div>
 					<Row className='d-flex justify-content-start'>
-						{/* <Navbar color='light' light='light' expand='md' className='topNav ml-n2'>
-							<NavbarToggler onClick={toggleNavbar} className='mr-2' />
-							<Collapse isOpen={!collapsed} navbar>
-								<Nav navbar className='bgWhite d-flex justify-content-between my-4 w-85'>
-									<NavItem className='one'>
-										<NavLink
-											id='bgL'
-											className={classnames({ active: activeTab === '1' })}
-											onClick={() => {
-												toggle('1');
-												toggleTab();
-												onTop();
-											}}>
-											Backup as a Service
-										</NavLink>
-									</NavItem>
-									<NavItem className='one'>
-										<NavLink
-											id='bgLL'
-											className={classnames({ active: activeTab === '2' })}
-											onClick={() => {
-												toggle('2');
-												toggleTab();
-												onTop();
-											}}>
-											Disaster Recovery as a Service
-										</NavLink>
-									</NavItem>
-								</Nav>
-							</Collapse>
-						</Navbar> */}
 						<div className='px-2 px-md-0 mb-3 col-md-12'>
 							<div className='bg-lightgrey mb-0 pb-3'>
 								<div className=''>
-									<h2>Backup as a Service</h2>
+									<h2>Secure Cloud Backup as a Service </h2>
 									<div className='text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex'>
 										<div className='w-100  pl-3 pr-3 text-black'>
 											<h4 className='my-1 my-md-3'>
-												Secure, Reliable & Very Affordable Cloud Backup Solution
+												Secure, Reliable & Very Affordable Cloud Backup Solution.
 											</h4>
 											<p className='lineHeight-24 ptext mt-md-4 mt-1'>
-												At Synectiks, Data Protection is at the topmost priority and is
-												monitored with utmost vigilance. Synectiks Cloud Backup with front line
-												innovation reinforcement arrangements offers a simple, secure and
-												moderate cloud offsite backup needs. You can have your backup offsite
-												with sureness at Synectiks Cloud establishment at Preferred Geo
-												Locations. Synectiks backup solutions provide exceptional, customizable
-												backup and storage management solutions for any system setup: physical
-												servers, virtual machines, PCs, business-critical applications,
-												Databases and more.
+												At Synectiks, Data Protection is topmost priority and is monitored with
+												utmost vigilance. Synectiks Cloud Backup with front line innovation
+												reinforcement arrangements offers a simple, secure and moderate cloud
+												offsite backup needs. You can have your backup offsite with sureness at
+												Synectiks Cloud establishment at Preferred Geo Locations. Synectiks
+												backup solutions provide exceptional, customizable backup and storage
+												management solutions for any system setup: physical servers, virtual
+												machines, PCs, business-critical applications, Databases and more.
 											</p>
 										</div>
 										<div className='w-100 ml-md-auto' data-aos='fade-up'>
@@ -137,11 +109,11 @@ const Business = () => {
 										<div>
 											<h5>Security</h5>
 											<p className='mt-2 pcenter'>
-												Make sure your vendor offers strong security, including encryption. It
-												doesn't matter how well you have protected your primary systems if your
-												backup systems present an easy target for attackers. Any cloud backup
-												service you use needs to have the same level of security that your
-												primary systems have.
+												Make sure your cloud backup provider offers strong security, including
+												encryption. It doesn't matter how well you have protected your primary
+												systems if your backup systems present an easy target for attackers. Any
+												cloud backup service you use needs to have the same level of security
+												that your primary systems have.
 												<br />
 												END to END Encryption: In-Flight and Data-At-Rest Encryption.
 												<br />
@@ -153,11 +125,12 @@ const Business = () => {
 									<div className='d-flex flex-column flex-md-row  align-items-center align-items-md-start mt-1 mt-md-5'>
 										<img class='w-12 mr-0 mr-md-5' src={agent} alt='Affordable Pricing' />
 										<div>
-											<h5>One agent for all</h5>
+											<h5>Self-service portal</h5>
 											<p className='mt-2 pcenter'>
-												Same Backup agent in the Windows Machine(Server or Desktop) serves as
-												Patch Management tool,  Anti-Malware tool and can be easily managed from
-												the same single central could-based backup console.
+												Manage and control all your company Backups with easy self-service
+												portal. The same self-service portal can be used to manage
+												Server/End-point device Anti-Virus protection, Patch management and
+												disaster recovery.
 											</p>
 										</div>
 									</div>
@@ -165,10 +138,19 @@ const Business = () => {
 									<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
 										<img class='w-12 mr-0 mr-md-5' src={AP} alt='Self-service portal' />
 										<div>
-											<h5>Affordable Backup Storage Pricing</h5>
+											<h5>Affordable Cloud Backup Storage Pricing</h5>
 											<p className='mt-2 pcenter'>
-												Backup Storage as low as $0.015 per GB with no Ingress & Egress charges
-												(only charged for the storage consumed after deep compression).
+												Cloud Backup Storage as low as $0.015 per GB with no Ingress & Egress
+												charges (only charged for the storage consumed after deep compression).
+											</p>
+										</div>
+									</div>
+									<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
+										<img class='w-12 mr-0 mr-md-5' src={AP} alt='Self-service portal' />
+										<div>
+											<h5>Efficient Backup Storage Usage</h5>
+											<p className='mt-2 pcenter'>
+												Deep Compression technologies used to optimize backup storage capacity.
 											</p>
 										</div>
 									</div>
@@ -200,13 +182,13 @@ const Business = () => {
 										</div>
 									</div>
 
-									<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
-										<img class='w-12 mr-0 mr-md-5' src={CS} alt='Support' />
-										<div>
-											<h5>Compliance</h5>
-											<p className='mt-2 pcenter'>SOC2 & HIPPA complaint.</p>
-										</div>
-									</div>
+									{/* <div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
+											<img class='w-12 mr-0 mr-md-5' src={CS} alt='Support' />
+											<div>
+												<h5>Compliance</h5>
+												<p className='mt-2 pcenter'>SOC2 & HIPPA complaint.</p>
+											</div>
+										</div> */}
 									<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
 										<img class='w-12 mr-0 mr-md-5' src={support} alt='Support' />
 										<div>

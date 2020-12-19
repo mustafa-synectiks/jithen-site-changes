@@ -6,8 +6,7 @@ import { FaBars } from 'react-icons/fa';
 import '../../components/layout.css';
 import styled from 'styled-components';
 import self from '../../images/ManagedBackup/Self Service Portal.png';
-import cloudImaged from '../../images/ManagedBackup/backup.png';
-// import cloudImaged from '../../images/ManagedBackup/Backup.png';
+import cloudImaged from '../../images/synectiks-secure/baas.jpg';
 import security from '../../images/ManagedBackup/Security.png';
 import geolocation from '../../images/ManagedBackup/MultipleSecureGeoLocations.png';
 import backupStorage from '../../images/ManagedBackup/BackupStorage.png';
@@ -15,30 +14,33 @@ import efficientStorage from '../../images/ManagedBackup/EfficientBackupStorageU
 import protection from '../../images/ManagedBackup/ProtectionforAnyworkload.png';
 import restore from '../../images/ManagedBackup/Restore.png';
 // import support from '../../images/ManagedBackup/Support.png';
-import support from '../../images/synectiks-secure/support.svg';
-import CS from '../../images/Hybrid/Compliance&Security.png';
 import price from '../../images/ManagedBackup/affordableprice.png';
-import AP from '../../images/ManagedBackup/AffordablePricing.png';
 import ARP from '../../images/ManagedBackup/Availability&ReliablePerformance.png';
-import HW from '../../images/ManagedBackup/Hostanyworkload.png';
 import MS from '../../images/ManagedBackup/MigrationServices.png';
-import MSGL from '../../images/ManagedBackup/MultiSecureGeoLocations.png';
 import SCR from '../../images/ManagedBackup/HSecurity.png';
-import ST from '../../images/ManagedBackup/StorageTypesavailable.png';
 import SPT from '../../images/ManagedBackup/HSupport.png';
-// import HostedInfra from '../../images/synectiks-secure/dras.jpg';
-import HostedInfra from '../../images/DRaas_S2.jpg';
+import CS from '../../images/Hybrid/Compliance&Security.png';
 import WO from '../../images/Hybrid/Optimization Service.png';
 import EA from '../../images/Hybrid/Extreme Automation.png';
+import HostedInfra from '../../images/ManagedBackup/HostedInfra.png';
+import HW from '../../images/ManagedBackup/Hostanyworkload.png';
+import MSGL from '../../images/ManagedBackup/MultiSecureGeoLocations.png';
+import ST from '../../images/ManagedBackup/StorageTypesavailable.png';
+import AP from '../../images/ManagedBackup/AffordablePricing.png';
+import ADT from '../../images/Hybrid/ApplicationDevelopmentandTesting.png';
 import agent from '../../images/oneAgentForall.svg';
-import backupDis from '../../images/AllBackup.svg';
-import failover from '../../images/failovernrestore.svg';
+import complete from '../../images/CompleteProtection.svg';
+import support from '../../images/synectiks-secure/support.svg';
+import EndComputing from '../../images/EndComputing.svg';
+import EndSecurity from '../../images/EndSecurity.svg';
+import DigitalWorkspace from '../../images/DigitalWorkspace.svg';
+import vdi from '../../images/disaster-recovery.jpg';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarToggler, Navbar } from 'reactstrap';
 import classnames from 'classnames';
 import SEO from '../../components/seo.js';
 import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
-import secureDRass from '../../images/Secure-Draas-Solution.svg';
-const Disaster = () => {
+
+const DisasterRecovery = () => {
 	const [ activeTab, setActiveTab ] = useState('1');
 	const toggle = (tab) => {
 		if (activeTab !== tab) setActiveTab(tab);
@@ -63,178 +65,146 @@ const Disaster = () => {
 				/>
 				<link rel='canonical' href='https://synectiks.com/private-cloud-hosting-services/index.html' />
 			</Helmet>
-			<SEO title='Disaster Recovery as a Service' />
-			<DisasterWrapper>
-				<div className='bg-lightgrey'>
+			<SEO title='Cloud-Hosted Virtual Desktop' />
+			<DisasterRecoveryWrapper>
+				<div className='bg-lightgrey container-fluid'>
 					<div className='text-justify'>
-						<BreadCrumbs title='Home' subtitle='Solutions' pageTitle='Disaster Recovery as a Service' />
-						{/* <h1>Business Continuity & Cyber Security</h1> */}
+						<BreadCrumbs
+							title='Home'
+							subtitle='Business Continuity & Cyber Security'
+							pageTitle='Secure Cloud Disaster Recovery as a Service'
+						/>
 					</div>
-
-					<div className='' data-aos='fade-up'>
-						{/* <img class='box-shadow' src={HostedInfra} width='100%' alt='Hosted Infrastructure' /> */}
-						<div className='mt-4'>
-							<h2 className='ml-n1'>Secure Cloud Disaster Recovery as a Service</h2>
-						</div>
-						<div id='background-image' />
-					</div>
-					<Row className='d-flex justify-content-start p-full contain-fluid'>
+					<Row className='d-flex justify-content-start'>
 						<div className='px-2 px-md-0 mb-3 col-md-12'>
-							<div>
-								<div className='bg-lightgrey text-black w-100  pb-md-4 pb-2 flex-column  d-flex align-items-center'>
-									<div className='w-100  pl-3 pr-3 text-black'>
-										<h4 className='my-1 my-md-3'>
-											Secure & Modern Innovative Cloud Disaster Recovery Solution.
-										</h4>
-										<p className='lineHeight-24 ptext mt-md-4 mt-1'>
-											Business Continuity with a Turn-key DRaaS Solution. our platform makes it
-											seamless to create a comprehensive recovery solution that enables the
-											implementation and management of systems, servers, and applications that
-											fall under a disaster recovery (DR) scenario using the same management
-											model. With an easy-to-use user interface, you can effortlessly automate
-											runbooks, testing, and failover to the Synectiks Cyber Disaster Recovery
-											Cloud during a DR event.
-										</p>
+							<div className='bg-lightgrey mb-0 pb-3'>
+								<div className=''>
+									<h2>Secure Cloud Disaster Recovery as a Service</h2>
+									<div className='text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex'>
+										<div className='w-100  pl-3 pr-3 text-black'>
+											<p className='lineHeight-24 ptext mt-md-4 mt-1'>
+												Protection for on-premises and cloud workloads with a turn-key Disaster
+												Recovery solution.
+												<br />
+												Disaster recovery with the flip of a switch. Protect your workloads when
+												disaster strikes by instantly spinning up systems in our Disaster
+												Recovery Cloud. Adding this service ensures the data is immediately
+												available – and with Synectiks it’s as easy as flipping a switch. With
+												an easy-to-use user interface, you can effortlessly automate runbooks,
+												testing, and failover to the Disaster Recovery Cloud during a DR event.
+											</p>
+										</div>
+										<div className='w-100 ml-md-auto' data-aos='fade-up'>
+											<img
+												class='w75 ml-md-5 bx'
+												src={vdi}
+												width='100%'
+												alt='Hosted Infrastructure'
+											/>
+										</div>
 									</div>
-								</div>
+									{/* <h4> Why choose SYNECTIKS Cloud Hosted Infrastructure Services? </h4> */}
+									<div className='d-flex flex-column flex-md-row align-items-center align-items-md-start mt-1 mt-md-3'>
+										<img class='w-12 mr-0 mr-md-5' src={agent} alt='Security' />
+										<div>
+											<h5>All-in-one Backup, Disaster Recovery and Protection Services</h5>
+											<p className='mt-2 pcenter'>
+												Enable multi-layer protection for your entire environment with greater
+												ease-of-use and a lower cost – as compared to purchasing and maintaining
+												separate DR and backup solutions. Manage and control all your company DR
+												& Backups with easy self-service portal. Also, the same self-service
+												portal can be used to manage Server/End-point device Anti-Virus
+												protection, Patch management.
+											</p>
+										</div>
+									</div>
 
-								{/* <h4>Why choose SYNECTIKS Cloud Backup Solution?</h4> */}
-								<div className='d-flex flex-column flex-md-row align-items-center align-items-md-start mt-1 mt-md-3'>
-									<img class='w-12 mr-55' src={agent} alt='Security' />
-									<div>
-										<h5>All-in-one backup and disaster recovery solution</h5>
-										<p className='pcenter'>
-											Enable multi-layer protection for your entire environment with greater
-											ease-of-use and a lower cost – as compared to purchasing and maintaining
-											separate DR and backup solutions. Manage and control all your company DR &
-											Backups with easy self-service portal. The same self-service portal can be
-											used to manage all Windows server Patch management & Anti-Virus.
-										</p>
+									<div className='d-flex flex-column flex-md-row  align-items-center align-items-md-start mt-1 mt-md-5'>
+										<img class='w-12 mr-0 mr-md-5' src={AP} alt='Affordable Pricing' />
+										<div>
+											<h5>No-Disaster Recovery Cloud Compute Reservation Cost</h5>
+											<p className='mt-2 pcenter'>
+												Only pay when you use the compute resources in the disaster recovery
+												could billed in hourly increments.
+											</p>
+										</div>
 									</div>
-								</div>
-								<div className='d-flex flex-column flex-md-row align-items-center align-items-md-start mt-1 mt-md-3'>
-									<img class='w-5 mr-0 mr-56 ml-3' src={AP} alt='Security' />
-									<div>
-										<h5>No-Compute Hardware Reservation cost</h5>
-										<p className='pcenter'>
-											In Our Cloud Disaster Recovery services we don’t charge any ongoing Hardware
-											reservation fees, pay only when you spin a Virtual Machine billed hourly,
-											You just pay for the cloud backup storage consumed on regular monthly basis.
-										</p>
+
+									<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
+										<img class='w-12 mr-0 mr-md-5' src={HW} alt='Self-service portal' />
+										<div>
+											<h5>Disaster recovery for virtual and physical workloads</h5>
+											<p className='mt-2 pcenter'>
+												Support all popular workloads including Windows and Linux physical
+												servers and VMs, major hypervisors, and Microsoft business applications.
+											</p>
+										</div>
 									</div>
-								</div>
-								<div className='d-flex flex-column flex-md-row  align-items-center align-items-md-center mt-3'>
-									<img class='w-9 mr6' src={backupDis} alt='Availability & Reliable Performance' />
-									<div>
-										<h5>A secure DRaaS solution</h5>
-										<p className='pcenter'>
-											Ensure data safety and security with features like encrypted backups during
-											failover, proactive AI-based ransomware protection, and two-factor
-											authentication for the portal login.
-										</p>
+									<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
+										<img class='w-12 mr-0 mr-md-5' src={self} alt='Support' />
+										<div>
+											<h5>Off-site failover to the Disaster Recovery cloud site</h5>
+											<p className='mt-2 pcenter'>
+												Get back to business in mere minutes no matter how severe the incident
+												is – from a single server failure to a full site outage or loss – by
+												switching your production workloads to machines in a disaster recovery
+												site. Achieve both RPOs and RTOs shorter than 15 minutes.
+											</p>
+										</div>
 									</div>
-								</div>
-								<div className='d-flex flex-column flex-md-row  align-items-center align-items-md-start mt-1 mt-md-5'>
-									<img class='w-12 mr-0 mr-6' src={HW} alt='Affordable Pricing' />
-									<div>
-										<h5>Disaster recovery for virtual and physical workloads</h5>
-										<p className='pcenter'>
-											Support all popular workloads including Windows and Linux physical servers
-											and VMs, major hypervisors, and Microsoft business applications.
-										</p>
+									<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
+										<img class='w-12 mr-0 mr-md-5' src={efficientStorage} alt='Support' />
+										<div>
+											<h5>Seamless extension of local networks to the cloud recovery site</h5>
+											<p className='mt-2 pcenter'>
+												Extend up to five local networks to the Synectiks cloud recovery site to
+												provide transparent remote access to recovery servers in failover mode.
+												Our VPN virtual appliance makes it simple.
+											</p>
+										</div>
 									</div>
-								</div>
-								<div className='d-flex flex-column flex-md-row  align-items-center align-items-md-start mt-1 mt-md-5'>
-									<img class='w-12 mr-0 mr-6' src={self} alt='Affordable Pricing' />
-									<div>
-										<h5>Off-site failover to the Synectiks cloud recovery site</h5>
-										<p className='pcenter'>
-											Get back to business in mere minutes no matter how severe the incident is –
-											from a single server failure to a full site outage or loss – by switching
-											your production workloads to machines in an Synectiks cloud data center at
-											varies Geo-location to choose. Achieve both RPOs and RTOs shorter than 15
-											minutes*. The innovative RunVM engine enables best-in-class production and
-											test failover speed, while flexible backup frequency policies lead to
-											tighter RPOs.
-										</p>
-										<small className='small'>
-											* The exact time required to start a copy of the VM on the Synectiks cloud
-											recovery site depends on the operating system configuration and usually
-											varies from two to five minutes.
-										</small>
+									<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
+										<img class='w-12 mr-0 mr-md-5' src={WO} alt='Support' />
+										<div>
+											<h5>Disaster recovery orchestration with runbooks</h5>
+											<p className='mt-2 pcenter'>
+												Automate key disaster recovery scenarios and ensure your systems will be
+												recovered in the correct order to address interdependencies between
+												applications.
+											</p>
+										</div>
 									</div>
-								</div>
-								<div className='d-flex flex-column flex-md-row  align-items-center align-items-md-start mt-1 mt-md-5'>
-									<img class='w-12 mr-0 mr-6' src={efficientStorage} alt='Affordable Pricing' />
-									<div>
-										<h5>Seamless extension of local networks to the cloud recovery site</h5>
-										<p className='pcenter'>
-											Extend up to five local networks to the Synectiks cloud recovery site to
-											provide transparent remote access to recovery servers in failover mode. Our
-											VPN virtual appliance makes it simple.
-										</p>
+									<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
+										<img class='w-12 mr-0 mr-md-5' src={EA} alt='Support' />
+										<div>
+											<h5>Automated testing of all key disaster recovery scenarios</h5>
+											<p className='mt-2 pcenter'>
+												Verify the integrity of your disaster recovery plans by executing
+												runbooks in test-mode via the web console and isolating testing from the
+												production network.
+											</p>
+										</div>
 									</div>
-								</div>
-								<div className='d-flex flex-column flex-md-row  align-items-center align-items-md-start mt-1 mt-md-5'>
-									<img class='w-12 mr-0 mr-6' src={WO} alt='Affordable Pricing' />
-									<div>
-										<h5>Disaster recovery orchestration with runbooks</h5>
-										<p className='pcenter'>
-											Automate key disaster recovery scenarios and ensure your systems will be
-											recovered in the correct order to address interdependencies between
-											applications.
-										</p>
+									<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
+										<img class='w-12 mr-0 mr-md-5' src={protection} alt='Support' />
+										<div>
+											<h5>Dissimilar hardware recovery with Universal Restore</h5>
+											<p className='mt-2 pcenter'>
+												Restore Windows and Linux systems to the same, similar, or dissimilar
+												hardware during a failback procedure, including bare-metal, physical,
+												virtual, or cloud.
+											</p>
+										</div>
 									</div>
-								</div>
-								<div className='d-flex flex-column flex-md-row  align-items-center align-items-md-start mt-1 mt-md-5'>
-									<img class='w-12 mr-0 mr-6' src={EA} alt='Affordable Pricing' />
-									<div>
-										<h5>Automated testing of all key disaster recovery scenarios</h5>
-										<p className='pcenter'>
-											Verify the integrity of your disaster recovery plans by executing runbooks
-											in test-mode via the web console and isolating testing from the production
-											network.
-										</p>
-									</div>
-								</div>
-								<div className='d-flex flex-column flex-md-row  align-items-center align-items-md-start mt-1 mt-md-5'>
-									<img class='w-12 mr-0 mr-6' src={protection} alt='Affordable Pricing' />
-									<div>
-										<h5>Dissimilar hardware recovery with Universal Restore</h5>
-										<p className='pcenter'>
-											Restore Windows and Linux systems to the same, similar, or dissimilar
-											hardware during a failback procedure, including bare-metal, physical,
-											virtual, or cloud.
-										</p>
-									</div>
-								</div>
-								<div className='d-flex flex-column flex-md-row  align-items-center align-items-md-start mt-1 mt-md-5'>
-									<img class='w-12 mr-0 mr-6' src={failover} alt='Affordable Pricing' />
-									<div>
-										<h5>Local failover with Instant Restore</h5>
-										<p className='pcenter'>
-											In the event of single server failures, you can leverage the existing
-											on-premises infrastructure resources by spinning up any physical or virtual
-											Windows or Linux system locally in seconds, directly from the backup storage
-											on your existing Microsoft Hyper-V or VMware vSphere ESXi host.
-										</p>
-									</div>
-								</div>
-								<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
-									<img class='w-12 mr-0 mr-6' src={support} alt='Support' />
-									<div>
-										<h5>Support</h5>
-										<p className='pcenter'>
-											Follow the Sun model - 24/7/365 days support from both onshore and offshore
-											Teams.
-										</p>
-									</div>
-								</div>
-								<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
-									<img class='w-12 mr-0 mr-6' src={CS} alt='Support' />
-									<div>
-										<h5>Compliance</h5>
-										<p className='pcenter'>SOC2 & HIPPA complaint.</p>
+									<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
+										<img class='w-12 mr-0 mr-md-5' src={support} alt='Support' />
+										<div>
+											<h5>Support</h5>
+											<p className='mt-2 pcenter'>
+												Follow the Sun model - 24/7/365 days support from both onshore and
+												offshore Teams
+											</p>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -254,16 +224,17 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
 						}}
 					/>
 				</Helmet>
-			</DisasterWrapper>
+			</DisasterRecoveryWrapper>
 		</Layout>
 	);
 };
 
-export default Disaster;
+export default DisasterRecovery;
 
-const DisasterWrapper = styled.div`
-	.small {
-		font-size: 50% !important;
+const DisasterRecoveryWrapper = styled.div`
+	.bx {
+		border: 5px solid white;
+		box-shadow: 0px 0px 9px 0px black;
 	}
 	.w75 {
 		width: 100%;
@@ -271,8 +242,6 @@ const DisasterWrapper = styled.div`
 	.pcenter {
 		text-align: center;
 	}
-	/* .p-full {
-	} */
 	padding: 5rem 1rem;
 	.topNav {
 		position: fixed;
@@ -403,13 +372,13 @@ const DisasterWrapper = styled.div`
 		padding: 0rem;
 	}
 	.w-6 {
-		width: 5rem;
+		width: 6rem;
 	}
 	.w-7 {
-		width: 4rem;
+		width: 7rem;
 	}
 	.w-8 {
-		width: 4rem;
+		width: 8rem;
 	}
 	.position-relative {
 		top: 2rem;
@@ -417,23 +386,14 @@ const DisasterWrapper = styled.div`
 	.w-12 {
 		width: 25%;
 	}
-	.mr6 {
-		margin-right: 0px;
-	}
+
 	@media (min-width: 576px) {
-		#background-image {
-			background-image: url(${HostedInfra});
-			width: 100%;
-			height: 75vh;
-			background-size: cover;
-			background-position: center;
-		}
-		.small {
-			font-size: 50% !important;
+		.splhead {
+			font-size: 1.3rem !important;
+			line-height: 1.4;
 		}
 		.w75 {
-			width: 95%;
-			height: 50vh;
+			width: 80%;
 		}
 		.pcenter {
 			text-align: left;
@@ -441,8 +401,6 @@ const DisasterWrapper = styled.div`
 		.ptext {
 			text-align: justify !important;
 		}
-		/* .p-full {
-		} */
 		padding: 3rem 4rem;
 		.topNav {
 			position: relative;
@@ -456,26 +414,8 @@ const DisasterWrapper = styled.div`
 			background: white;
 			width: auto;
 		}
-		.w-5 {
-			width: 5rem;
-		}
-		.w-9 {
-			width: 6rem;
-		}
-		.mr-6 {
-			margin-right: 5.5rem !important;
-		}
-		.mr6 {
-			margin-right: 4rem !important;
-		}
-		.mr-56 {
-			margin-right: 4rem !important;
-		}
-		.mr-55 {
-			margin-right: 5rem !important;
-		}
 		.w-12 {
-			width: 4.6rem;
+			width: 5rem;
 		}
 		ul {
 			text-align: justify;
@@ -611,9 +551,6 @@ const DisasterWrapper = styled.div`
 		}
 	}
 	@media (min-width: 768px) {
-		.small {
-			font-size: 50% !important;
-		}
 		a#bgL.active:after {
 			top: 100%;
 			left: 50%;
