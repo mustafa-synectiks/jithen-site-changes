@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'gatsby';
+import { BsArrowDownRight } from 'react-icons/bs';
 import styled from 'styled-components';
 import { breakpoints } from '../utils/breakpoints';
 import logo from '../images/logo.png';
@@ -30,7 +31,7 @@ const DesktopNavMenu = () => {
 			<ul>
 				<li>
 					<span>What We Do</span>
-					<ul className='sub-menu-wwd'>
+					<ul className='sub-menu'>
 						<ul>
 							<li>
 								<Link to='/area-expertise/index.html'>Area Of Expertise</Link>
@@ -43,7 +44,7 @@ const DesktopNavMenu = () => {
 				</li>
 				<li>
 					<span>Migration & Modernization</span>
-					<ul className='sub-menu-mm'>
+					<ul className='sub-menu'>
 						<ul>
 							<li>
 								<Link to='/infrastructure/index.html'>Infrastructure Transformation</Link>
@@ -58,60 +59,90 @@ const DesktopNavMenu = () => {
 					</ul>
 				</li>
 				<li>
-					<span>Solutions</span>
-					<ul className='sub-menu-solutions'>
-						<li>
-							<Link to='/office-migration/index.html'>O365 Migration</Link>
-						</li>
-						<li>
-							<Link to='/microservices/index.html'>Microservices</Link>
-						</li>
-						<li>
-							<Link to='/hybrid-cloud/index.html'>Hybrid Cloud</Link>
-						</li>
+					<span>Cloud Services</span>
+					<ul className='sub-menu'>
+						<ul>
+							<li className='nested-sub-menu'>
+								<Link to='/landing-page/index.html'>
+									Synectiks Hosted Infrastructure & Business Continuity
+									<BsArrowDownRight className='fnt' />
+								</Link>
+
+								<ul className='nested-menu'>
+									<li>
+										<Link to='/business-cyber-sub-landing/index.html'>
+											Business Continuity & Cyber Security
+										</Link>
+									</li>
+									<li>
+										<Link to='/protect-cloud/index.html'>Protect Cloud</Link>
+									</li>
+									<li>
+										<Link to='/business/index.html'>Backup as a Service</Link>
+									</li>
+									<li>
+										<Link to='/disaster-service/index.html'>Disaster Recovery as a Service</Link>
+									</li>
+									<li>
+										<Link to='/iaas/index.html'>Secure & Custom Hosted Infrastructure</Link>
+									</li>
+								</ul>
+							</li>
+
+							<li>
+								<Link to='/iaas/index.html'>Secure & Custom Hosted Infrastructure</Link>
+							</li>
+
+							<li>
+								<Link to='/digital-workspace/index.html'>Cloud-Hosted Virtual Desktop</Link>
+							</li>
+						</ul>
 					</ul>
 				</li>
 				<li>
-					<span>Cloud Services</span>
-					<ul className='sub-menu-cloud'>
-						<li>
-							<Link to='/landing-page/index.html'>
-								Synectiks Hosted Infrastructure & Business Continuity
-							</Link>
-						</li>
-
-						<li>
-							<Link to='/iaas/index.html'>Secure & Custom Hosted Infrastructure</Link>
-						</li>
-
-						<li>
-							<Link to='/digital-workspace/index.html'>Cloud-Hosted Virtual Desktop</Link>
-						</li>
+					<span>Solutions</span>
+					<ul className='sub-menu'>
+						<ul>
+							<li>
+								<Link to='/office-migration/index.html'>O365 Migration</Link>
+							</li>
+							<li>
+								<Link to='/microservices/index.html'>Microservices</Link>
+							</li>
+							<li>
+								<Link to='/hybrid-cloud/index.html'>Hybrid Cloud</Link>
+							</li>
+						</ul>
 					</ul>
 				</li>
+
 				<li>
 					<span>Resources</span>
-					<ul className='sub-menu-resources'>
-						<li>
-							<Link to='/featured/index.html'>Featured</Link>
-						</li>
-						<li>
-							<Link to='/blog/index.html'>Blog</Link>
-						</li>
+					<ul className='sub-menu'>
+						<ul>
+							<li>
+								<Link to='/featured/index.html'>Featured</Link>
+							</li>
+							<li>
+								<Link to='/blog/index.html'>Blog</Link>
+							</li>
+						</ul>
 					</ul>
 				</li>
 				<li>
 					<span>Company</span>
-					<ul className='sub-menu-com'>
-						<li>
-							<Link to='/about-us/index.html'>About Us</Link>
-						</li>
-						<li>
-							<Link to='/careers/index.html'>Careers</Link>
-						</li>
-						<li>
-							<Link to='/Contact-us.html'>Contact Us</Link>
-						</li>
+					<ul className='sub-menu'>
+						<ul>
+							<li>
+								<Link to='/about-us/index.html'>About Us</Link>
+							</li>
+							<li>
+								<Link to='/careers/index.html'>Careers</Link>
+							</li>
+							<li>
+								<Link to='/Contact-us.html'>Contact Us</Link>
+							</li>
+						</ul>
 					</ul>
 				</li>
 			</ul>
@@ -122,6 +153,9 @@ const DesktopNavMenu = () => {
 export default DesktopNavMenu;
 
 const StyledHeader = styled.header`
+	.fnt {
+		font-size: 1.5rem;
+	}
 	display: none;
 	@media ${breakpoints.lg} {
 		display: flex;
@@ -148,23 +182,36 @@ const StyledHeader = styled.header`
 					text-decoration: none;
 					color: #292929;
 					transition: color 300ms;
-
+					font-size: 0.9rem
 					:hover {
 						color: red;
 					}
 				}
 			}
 
-			ul.sub-menu-wwd,
+			/* ul.sub-menu-wwd,
 			ul.sub-menu-mm,
 			ul.sub-menu-com,
 			ul.sub-menu-resources,
 			ul.sub-menu-cloud,
 			ul.sub-menu-solutions {
 				display: none;
+			} */
+			ul.sub-menu {
+				display: none;
 			}
 
-			li:hover ul.sub-menu-wwd {
+			li:hover ul.sub-menu {
+				display: block;
+				position: absolute;
+				background: transparent;
+				padding: 1rem;
+				width: 100vw;
+				left: -3.5rem;
+				top: 0;
+				/* width: 25rem; */
+			}
+			/* li:hover ul.sub-menu-wwd {
 				display: block;
 				position: absolute;
 				background: transparent;
@@ -253,12 +300,38 @@ const StyledHeader = styled.header`
 				flex-direction: column;
 				align-items: baseline;
 				background: white;
+			} */
+			ul.sub-menu ul li a {
+				font-size: 12px;
 			}
-			ul.sub-menu-solutions ul {
+			ul.sub-menu ul {
 				display: flex;
 				flex-direction: column;
 				align-items: baseline;
 				background: white;
+				position: absolute;
+				top: 1.6rem;
+				padding: 0.5rem 1rem;
+				width: auto;
+			}
+			ul.sub-menu ul li {
+				padding: .5rem 0rem .5rem 1rem;
+			}
+			/* ul.sub-menu-solutions ul {
+				display: flex;
+				flex-direction: column;
+				align-items: baseline;
+				background: white;
+			} */
+			ul.nested-menu {
+				display: none !important;
+			}
+			li.nested-sub-menu:hover ul.nested-menu {
+				display: block !important;
+				position: absolute;
+				right: -15rem;
+				top: 2.5rem;
+				z-index: 99;
 			}
 		}
 	}
