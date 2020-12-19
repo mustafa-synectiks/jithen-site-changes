@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { breakpoints } from '../utils/breakpoints';
-
+import logo from '../images/logo.png';
 const MobileNavMenu = () => {
 	const [ menuOpen, toggleMenuOpen ] = useState(false);
 
 	return (
 		<MenuBar>
-			<Link to='/'>Home</Link>
+			<div>
+				<img src={logo} alt='synectiks' />
+			</div>
 			<MenuIconContainer>
 				<MenuIcon menuOpen={menuOpen} onClick={() => toggleMenuOpen(!menuOpen)}>
 					<div />

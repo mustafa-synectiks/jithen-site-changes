@@ -6,6 +6,8 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import Topbar from './topbar';
 import logo from '../images/logo.png';
 import styled from 'styled-components';
+import DesktopNavMenu from './DesktopNav';
+import MobileNavMenu from './MobileNav';
 
 // const z = {
 //   zIndex: "9999 !important",
@@ -19,6 +21,8 @@ const Header = () => {
 				<div className='bg-top pt-2 pl-md-0 py-md-1'>
 					<Topbar />
 				</div>
+				<DesktopNavMenu />
+				<MobileNavMenu />
 				{/* <Navbar expand='lg' className='z pl-3 pr-3 px-md-5'>
 					<Container fluid={true}>
 						<Navbar.Brand href='/'>
