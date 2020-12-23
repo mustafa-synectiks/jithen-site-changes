@@ -125,7 +125,7 @@ const DisasterRecovery = () => {
 											<h5>No-Disaster Recovery Cloud Compute Reservation Cost</h5>
 											<p className='mt-2 pcenter'>
 												Only pay when you use the compute resources in the disaster recovery
-												could billed in hourly increments.
+												could billed in hourly increments
 											</p>
 										</div>
 									</div>
@@ -202,7 +202,7 @@ const DisasterRecovery = () => {
 											<h5>Support</h5>
 											<p className='mt-2 pcenter'>
 												Follow the Sun model - 24/7/365 days support from both onshore and
-												offshore Teams
+												offshore Teams.
 											</p>
 										</div>
 									</div>

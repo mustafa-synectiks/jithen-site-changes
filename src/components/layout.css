@@ -531,6 +531,9 @@ a.dropdown-toggle.nav-link:hover {
 	display: block;
 	transition: all 0.3s ease-in-out 0s;
 }
+.nav-link {
+	color: var(--textColor) !important;
+}
 a.dropdown-toggle.nav-link {
 	transition: all 0.3s ease-in-out 0s;
 	color: var(--textColor) !important;

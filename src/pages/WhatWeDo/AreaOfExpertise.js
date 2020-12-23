@@ -24,14 +24,15 @@ const AreaOfExpertise = ({ location }) => {
 					<BreadCrumbs title='Home' subtitle='What We Do' pageTitle='Area Of Expertise' />
 				</div>
 				<div className='my-4'>
-					<h1>Area Of Expertise</h1>
+					<h1>What We Do</h1>
 					<p>
-						Across our outcome-driven consulting and managed services, it's our open product driven software
-						solutions, our deep expertise on modern application architecture and our cloud culture that
-						makes the difference. We primarily help customers in Cloud Migration, Modernization &
-						Management. Modernize your legacy applications and Infrastructure using cloud-native
-						technologies and deliver predictive and deterministic business outcome. Fully manage cloud
-						environment with CloudOps delivery enabled with DevSecOPs capabilities.
+						Cloud - an opportunity to envision possibilities, Power to Transform!
+						<br />
+						<br />
+						To make you realize this: We at SYNECTIKS - design and build scalable technology solutions;
+						perform digital transformation at speed and scale; bring together applications, infrastructure,
+						and security to leverage the full potential of cloud; automate to DevOps and PODS; migrate and
+						modernize; optimize and simplify cloud management.
 					</p>
 				</div>
 				{/* <div className='my-2 my-md-4'>

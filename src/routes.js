@@ -101,7 +101,7 @@ module.exports = [
 		component: path.resolve(`src/pages/CaseStudies/Softwaredefined.js`)
 	},
 	{
-		path: '/area-expertise/index.html',
+		path: '/what-we-do/index.html',
 		component: path.resolve(`src/pages/WhatWeDo/AreaOfExpertise.js`)
 	},
 	{

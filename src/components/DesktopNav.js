@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'gatsby';
-import { BsArrowDownRight } from 'react-icons/bs';
+import { BsArrowRight } from 'react-icons/bs';
 import styled from 'styled-components';
 import { breakpoints } from '../utils/breakpoints';
 import logo from '../images/logo.png';
@@ -43,6 +43,49 @@ const DesktopNavMenu = () => {
 					</ul>
 				</li>
 				<li>
+					<span>Cloud Services</span>
+					<ul className='sub-menu'>
+						<div className='nested-sub-menu'>
+							<ul className='s1'>
+								<li>
+									<Link to='/landing-page/index.html'>
+										Hosted Infrastructure & Business Continuity
+										<BsArrowRight className='fnt' />
+									</Link>
+								</li>
+								<li>
+									<Link to='/aws-managed-services/index.html'>AWS Managed Services</Link>
+								</li>
+							</ul>
+							<ul className='s2'>
+								<li>
+									<Link to='/business-cyber-sub-landing/index.html'>
+										Business Continuity & Cyber Security
+										<BsArrowRight className='fnt' />
+									</Link>
+								</li>
+								<li>
+									<Link to='/iaas/index.html'>Secure & Custom Hosted Infrastructure</Link>
+								</li>
+								<li>
+									<Link to='/digital-workspace/index.html'>Cloud-Hosted Virtual Desktop</Link>
+								</li>
+							</ul>
+							<ul className='s3'>
+								<li>
+									<Link to='/protect-cloud/index.html'>Protect Cloud</Link>
+								</li>
+								<li>
+									<Link to='/business/index.html'>Backup as a Service</Link>
+								</li>
+								<li>
+									<Link to='/disaster-service/index.html'>Disaster Recovery as a Service</Link>
+								</li>
+							</ul>
+						</div>
+					</ul>
+				</li>
+				<li>
 					<span>Migration & Modernization</span>
 					<ul className='sub-menu'>
 						<ul>
@@ -58,47 +101,7 @@ const DesktopNavMenu = () => {
 						</ul>
 					</ul>
 				</li>
-				<li>
-					<span>Cloud Services</span>
-					<ul className='sub-menu'>
-						<ul>
-							<li className='nested-sub-menu'>
-								<Link to='/landing-page/index.html'>
-									Synectiks Hosted Infrastructure & Business Continuity
-									<BsArrowDownRight className='fnt' />
-								</Link>
 
-								<ul className='nested-menu'>
-									<li>
-										<Link to='/business-cyber-sub-landing/index.html'>
-											Business Continuity & Cyber Security
-										</Link>
-									</li>
-									<li>
-										<Link to='/protect-cloud/index.html'>Protect Cloud</Link>
-									</li>
-									<li>
-										<Link to='/business/index.html'>Backup as a Service</Link>
-									</li>
-									<li>
-										<Link to='/disaster-service/index.html'>Disaster Recovery as a Service</Link>
-									</li>
-									<li>
-										<Link to='/iaas/index.html'>Secure & Custom Hosted Infrastructure</Link>
-									</li>
-								</ul>
-							</li>
-
-							<li>
-								<Link to='/iaas/index.html'>Secure & Custom Hosted Infrastructure</Link>
-							</li>
-
-							<li>
-								<Link to='/digital-workspace/index.html'>Cloud-Hosted Virtual Desktop</Link>
-							</li>
-						</ul>
-					</ul>
-				</li>
 				<li>
 					<span>Solutions</span>
 					<ul className='sub-menu'>
@@ -153,12 +156,15 @@ const DesktopNavMenu = () => {
 export default DesktopNavMenu;
 
 const StyledHeader = styled.header`
+	padding: 0rem 3rem;
 	.fnt {
 		font-size: 1.5rem;
+		margin-left: 5px;
 	}
 	display: none;
 	@media ${breakpoints.lg} {
 		display: flex;
+		justify-content: space-around;
 		position: fixed;
 		width: 100%;
 		top: 40px;
@@ -169,14 +175,15 @@ const StyledHeader = styled.header`
 
 		ul {
 			display: flex;
+			justify-content: center;
 			align-items: center;
-			width: 100%;
-			justify-content: space-around;
+			width: auto;
 			margin: 0;
 
 			li {
 				list-style: none;
 				position: relative;
+				margin-right: 2rem;
 
 				a {
 					text-decoration: none;
@@ -189,14 +196,6 @@ const StyledHeader = styled.header`
 				}
 			}
 
-			/* ul.sub-menu-wwd,
-			ul.sub-menu-mm,
-			ul.sub-menu-com,
-			ul.sub-menu-resources,
-			ul.sub-menu-cloud,
-			ul.sub-menu-solutions {
-				display: none;
-			} */
 			ul.sub-menu {
 				display: none;
 			}
@@ -206,101 +205,10 @@ const StyledHeader = styled.header`
 				position: absolute;
 				background: transparent;
 				padding: 1rem;
-				width: 100vw;
 				left: -3.5rem;
-				top: 0;
-				/* width: 25rem; */
+				top: .5rem;
 			}
-			/* li:hover ul.sub-menu-wwd {
-				display: block;
-				position: absolute;
-				background: transparent;
-				padding: 1rem;
-				width: auto;
-				left: -3.5rem;
-				top: 0;
-				width: 25rem;
-			}
-			li:hover ul.sub-menu-mm {
-				display: block;
-				position: absolute;
-				background: transparent;
-				padding: 1rem;
-				width: auto;
-				left: -3.5rem;
-				top: 0;
-				width: 25rem;
-			}
-			li:hover ul.sub-menu-solutions {
-				display: block;
-				position: absolute;
-				background: transparent;
-				padding: 1rem;
-				width: auto;
-				left: -3.5rem;
-				top: 0;
-				width: 25rem;
-			}
-			li:hover ul.sub-menu-com {
-				display: block;
-				position: absolute;
-				background: transparent;
-				padding: 1rem;
-				width: auto;
-				left: -3.5rem;
-				top: 0;
-				width: 25rem;
-			}
-			li:hover ul.sub-menu-resources {
-				display: block;
-				position: absolute;
-				background: transparent;
-				padding: 1rem;
-				width: auto;
-				left: -3.5rem;
-				top: 0;
-				width: 25rem;
-			}
-			li:hover ul.sub-menu-cloud {
-				display: block;
-				position: absolute;
-				background: transparent;
-				padding: 1rem;
-				width: auto;
-				left: -3.5rem;
-				top: 0;
-				width: 25rem;
-			}
-			ul.sub-menu-wwd ul {
-				display: flex;
-				flex-direction: column;
-				align-items: baseline;
-				background: white;
-			}
-			ul.sub-menu-mm ul {
-				display: flex;
-				flex-direction: column;
-				align-items: baseline;
-				background: white;
-			}
-			ul.sub-menu-com ul {
-				display: flex;
-				flex-direction: column;
-				align-items: baseline;
-				background: white;
-			}
-			ul.sub-menu-cloud ul {
-				display: flex;
-				flex-direction: column;
-				align-items: baseline;
-				background: white;
-			}
-			ul.sub-menu-resources ul {
-				display: flex;
-				flex-direction: column;
-				align-items: baseline;
-				background: white;
-			} */
+
 			ul.sub-menu ul li a {
 				font-size: 12px;
 			}
@@ -316,22 +224,45 @@ const StyledHeader = styled.header`
 			}
 			ul.sub-menu ul li {
 				padding: .5rem 0rem .5rem 1rem;
+				width: max-content;
 			}
-			/* ul.sub-menu-solutions ul {
-				display: flex;
-				flex-direction: column;
-				align-items: baseline;
-				background: white;
-			} */
+
 			ul.nested-menu {
 				display: none !important;
 			}
 			li.nested-sub-menu:hover ul.nested-menu {
 				display: block !important;
 				position: absolute;
-				right: -15rem;
+				right: -8rem;
 				top: 2.5rem;
 				z-index: 99;
+			}
+			.nested-sub-menu {
+				width: 75vw;
+				display: flex !important;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: center;
+				background: white;
+				padding: 1rem;
+				position: absolute;
+				left: -17rem;
+				height: 25vh;
+				ul.s1 {
+					position: absolute;
+					left: 0;
+					padding: 0;
+				}
+				ul.s2 {
+					position: absolute;
+					left: 24rem;
+					padding: 0;
+				}
+				ul.s3 {
+					position: absolute;
+					right: 1rem;
+					padding: 0;
+				}
 			}
 		}
 	}

@@ -213,7 +213,9 @@ const Tabs = () => {
 							<Col sm='12' md='3' className='p-1'>
 								<div className='py-1 py-md-3 h-100'>
 									<div className='border-right text-center'>
-										<a href='/infrastructure/index.html' className='text-center heading-h3 h6'>
+										<a
+											href='/business-cyber-sub-landing/index.html'
+											className='text-center heading-h3 h6'>
 											Business Continuity & Cyber Security Services
 										</a>
 										<p className='f-14 px-2 px-md-4'>
@@ -229,9 +231,7 @@ const Tabs = () => {
 							<Col sm='12' md='3' className='p-1'>
 								<div className='py-3 h-100'>
 									<div className='border-right text-center'>
-										<a
-											href='/application-transformation/index.html'
-											className='text-center heading-h3 h6'>
+										<a href='/iaas/index.html' className='text-center heading-h3 h6'>
 											Secure & Custom Hosted Infrastructure Services
 										</a>
 										<p className='f-14 px-4'>
@@ -246,9 +246,7 @@ const Tabs = () => {
 							<Col sm='12' md='3' className='p-1'>
 								<div className='py-1 py-md-3 h-100'>
 									<div className='border-right text-center'>
-										<a
-											href='/devops-transformation/index.html'
-											className='text-center heading-h3 h6'>
+										<a href='/digital-workspace/index.html' className='text-center heading-h3 h6'>
 											Cloud-Hosted Virtual Desktop Services
 										</a>
 										<p className='f-14 px-1 px-md-4'>
@@ -268,9 +266,9 @@ const Tabs = () => {
 								<div className='py-1 py-md-3 h-100'>
 									<div className='border-right text-center'>
 										<a
-											href='/devops-transformation/index.html'
+											href='/aws-managed-services/index.html'
 											className='text-center heading-h3 h6'>
-											AWS managed Services
+											AWS Managed Services
 										</a>
 										<p className='f-14 px-1 px-md-4'>
 											SYNECTIKS aws Managed Services enables companies to accelerate the adoption
@@ -278,7 +276,7 @@ const Tabs = () => {
 											compliance risks in a cost-effective monthly consumption model. As AWS
 											Consulting Services Partner, our experts ensure that your workloads meet the
 											requirements of the AWS Well-Architected Framework for efficient migration
-											and operation in the AWS secured landing zones.
+											and operation in the AWS secured landing zones
 											<br />
 										</p>
 									</div>

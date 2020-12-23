@@ -5,7 +5,7 @@ import styled from 'styled-components';
 // import syn from '../../images/secure-cyber.svg';
 import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
 import SEO from '../../components/seo.js';
-import syn from '../../images/Sample.svg';
+import syn from '../../images/secure-hosted.svg';
 const SecureBusiness = () => {
 	return (
 		<Layout>

@@ -162,9 +162,10 @@ const Business = () => {
 												We at Synectiks aim for 3-2-1 rule of Thumb to protect the Data, which
 												implies that you should always have three copies of your data, that you
 												keep it backed up on at least two different types of storage media, and
-												that you have at least one copy of the data offsite. Synectiks have
-												different backup Secure Geo locations with different power grids to make
-												sure your data is available when disaster strike in one location.
+												that you have at least one copy of the data offsite.
+												<br />Synectiks have different backup Secure Geo locations with
+												different power grids to make sure your data is available when disaster
+												strike in one location.
 											</p>
 										</div>
 									</div>

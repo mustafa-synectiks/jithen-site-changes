@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import Layout from '../../components/layout';
 import styled from 'styled-components';
 // import syn from '../../images/Business.svg';
-import syn from '../../images/protectcloud.svg';
+import syn from '../../images/BC and CS_Updated.svg';
 // import syn from '../../images/BCNCS.svg';
 import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
 import SEO from '../../components/seo.js';
@@ -43,8 +43,8 @@ const Sublanding = () => {
 								<p>
 									ALL-IN-ONE Web-Based innovative powerful integrated solution with one-agent on any
 									given Server/End-point device to serve all Backup & Disaster Recovery needs along
-									with basic necessary features like Anti-Virus, Anti-Malware, Venerability
-									Assessment, Windows- Patch management, Remote Diagnostic assistance and
+									with basic necessary features like Anti-Virus, Anti-Malware, Vulnerability
+									Assessment, Windows- Patch management, Remote Diagnostic assistance, and
 									URL-filtering.
 								</p>
 							</div>
@@ -65,7 +65,7 @@ const Sublanding = () => {
 									systems in our Disaster Recovery Cloud. Adding this service ensures the data is
 									immediately available – and with Synectiks it’s as easy as flipping a switch. With
 									an easy-to-use user interface, you can effortlessly automate runbooks, testing, and
-									failover to the Disaster Recovery Cloud during a DR event.
+									failover to the Disaster Recovery Cloud during a DR event
 								</p>
 							</div>
 						</div>

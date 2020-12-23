@@ -108,13 +108,13 @@ const ProtectCloud = () => {
 											and protection features:
 										</p>
 										<ul>
-											<li> Antivirus</li>
+											<li>Antivirus</li>
 											<li>Anti-Malware</li>
-											<li> Exploit Prevention </li>
-											<li> Ransomware Protection </li>
-											<li> Security Vulnerability Assessment</li>
-											<li> Patch Management </li>
-											<li> URL-filtering </li>
+											<li>Exploit Prevention </li>
+											<li>Ransomware Protection </li>
+											<li>Security Vulnerability Assessment</li>
+											<li>Patch Management </li>
+											<li>URL-filtering </li>
 											<li>Data protection Map</li>
 											<li>Remote desktop & Remote assistance </li>
 											<li>Backup</li>
@@ -125,10 +125,10 @@ const ProtectCloud = () => {
 											Web-Based innovative powerful integrated solution with one-agent on any
 											given Server/End-point device to serve all Backup & Disaster Recovery needs
 											along with basic necessary features like Anti-Virus, Anti-Malware,
-											Venerability Assessment, Windows - Patch management, Remote Diagnostic
-											assistance, and URL-filtering. All devices in your infrastructure are easily
+											vulnerability Assessment, Windows- Patch management, Remote Diagnostic
+											assistance and URL-filtering. All devices in your infrastructure are easily
 											managed from a single web console and well protected to meet all Business
-											continuity, Security and compliances requirements.
+											continuity, Security, and compliances requirements.
 										</p>
 										<p>
 											Pick and choose the required license type for each server/end-point device
@@ -158,7 +158,7 @@ const ProtectCloud = () => {
 													<th rowspan='13' className='tdfont'>
 														Backup:
 													</th>
-													<td>Workstations, Servers (Windows, Linux, Mac) backup </td>
+													<td>Workstations, Servers (Windows, Linux, Mac) backup</td>
 													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
@@ -284,7 +284,7 @@ const ProtectCloud = () => {
 													</td>
 												</tr>
 												<tr>
-													<td>Backup to local storage </td>
+													<td>Backup to local storage</td>
 													<td className='tdwidth'>
 														<AiOutlineLine />
 													</td>
@@ -299,7 +299,7 @@ const ProtectCloud = () => {
 													</td>
 												</tr>
 												<tr>
-													<td>Backup to cloud storage </td>
+													<td>Backup to cloud storage</td>
 													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
@@ -450,7 +450,7 @@ const ProtectCloud = () => {
 													</td>
 												</tr>
 												<tr>
-													<td>Dashboards and reports </td>
+													<td>Dashboards and reports</td>
 													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
@@ -480,7 +480,7 @@ const ProtectCloud = () => {
 													</td>
 												</tr>
 												<tr>
-													<td>Remote desktop and Remote assistance </td>
+													<td>Remote desktop and Remote assistance</td>
 													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
@@ -495,7 +495,7 @@ const ProtectCloud = () => {
 													</td>
 												</tr>
 												<tr>
-													<td>Software and hardware inventory* </td>
+													<td>Software and hardware inventory*</td>
 													<td className='tdwidth'>
 														<AiOutlineCheck />
 													</td>
@@ -519,9 +519,9 @@ const ProtectCloud = () => {
 											Contact us at &nbsp;
 											<a href='mailto:info@synectiks.com' target='_top'>
 												info@synectiks.com
-											</a>&nbsp; to setup a quick Protect Cloud Trail and check out all the rich
-											protect features and manage all your devices in your environment using one
-											readily available secure web-console.
+											</a>&nbsp; to setup a quick <strong>Protect Cloud </strong>Trail and check
+											out all the rich protect features and manage all your devices in your
+											environment using one readily available secure web-console.
 										</p>
 									</div>
 								</div>

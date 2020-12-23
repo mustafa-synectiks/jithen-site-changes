@@ -93,7 +93,7 @@ const Iaas = () => {
 										<div>
 											<h5>Multi-Layered Security</h5>
 											<p className='mt-2 pcenter'>
-												“Never trade-off security when moving to cloud”. Synectiks Secure Cloud
+												"Never trade-off security when moving to cloud”. Synectiks Secure Cloud
 												incorporates Multi-factor Authentication, SSL-VPN, Data-At-Rest
 												Encryption, Anti-Virus, Anti-Malware, Vulnerability Scans, Intrusion
 												Prevention System (IPS), Denial of Service (DoS), IOC Detection with
@@ -135,7 +135,7 @@ const Iaas = () => {
 										<div>
 											<h5>Host wide variety of workloads</h5>
 											<p className='mt-2 pcenter'>
-												Your mission-critical applications powered by Linux, Windows,  major
+												Your mission-critical applications powered by Linux, Windows, major
 												Applications and Databases, Synectiks offers support for these and other
 												workloads, including your favorite Open Source Technologies, choose from
 												a wide variety of Virtual Machine Configuration and Storage Performance
@@ -159,13 +159,13 @@ const Iaas = () => {
 											</p>
 											<small>
 												S3 Storage as low as $0.015 per GB with no Ingress & Egress Charges
-												(only charged for the Storage Consumed)
+												(only charged for the Storage Consumed).
 												<br />
 												Backup Storage as low as $0.015 per GB with no Ingress & Egress charges
-												(only charged for the Storage Consumed after deep compression)
+												(only charged for the Storage Consumed after deep compression).
 												<br />
 												High Performance SSD block Storage for Server or VDI’s - as low as $0.06
-												per GB
+												per GB.
 											</small>
 										</div>
 									</div>
@@ -186,8 +186,8 @@ const Iaas = () => {
 										<div>
 											<h5>Availability & Reliable Performance</h5>
 											<p className='mt-2 pcenter'>
-												Built with best of the bread technologies, our infrastructure can
-												support any workload with reliable and consistent performance.
+												uilt with best of the bread technologies, our infrastructure can support
+												any workload with reliable and consistent performance.
 											</p>
 										</div>
 									</div>
@@ -228,7 +228,7 @@ const Iaas = () => {
 											<h5>Support</h5>
 											<p className='mt-2 pcenter'>
 												Follow the Sun-Model - 24/7/365 Support from On-shore and Off-shore
-												Teams
+												Teams.
 											</p>
 										</div>
 									</div>
