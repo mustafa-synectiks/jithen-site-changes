@@ -17,6 +17,16 @@ const Layout = ({ children }) => {
 				}
 			});
 		});
+		$(function($) {
+			let url = window.location.href;
+			$('ul li a').each(function() {
+				if (this.href === url) {
+					$(this).addClass('active');
+					// $(this).parents('.nav-item').find('a.fnt-nav.nav-link').addClass('active');
+				}
+			});
+		});
+
 		// changes url on tab click
 		$('.nav').click(function(e) {
 			e.preventDefault();

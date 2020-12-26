@@ -81,7 +81,7 @@ const Daas = () => {
 								<div className=''>
 									<h2>Cloud-Hosted Virtual Desktop</h2>
 									<div className='text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex'>
-										<div className='w-100  pl-3 pr-3 text-black'>
+										<div className='w-100  pl-3 text-black mr-0 mr-md-5'>
 											<p className='lineHeight-24 ptext mt-md-4 mt-1'>
 												Synectiks Cloud-Hosted Virtual Desktop Service is a modern platform for
 												secure delivery of virtual desktops and apps. Our best-in-class
@@ -93,7 +93,7 @@ const Daas = () => {
 												workspace to all apps and secure productivity use cases.
 											</p>
 										</div>
-										<div className='w-100 ml-md-auto' data-aos='fade-up'>
+										<div className='w-100 ml-auto ml-md-5' data-aos='fade-up'>
 											<img
 												class='w75 ml-md-5 bx'
 												src={vdi}
@@ -347,7 +347,7 @@ const DaasWrapper = styled.div`
 			line-height: 1.4;
 		}
 		.w75 {
-			width: 80%;
+			width: 60%;
 		}
 		.pcenter {
 			text-align: left;

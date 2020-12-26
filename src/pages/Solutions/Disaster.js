@@ -94,14 +94,14 @@ const DisasterRecovery = () => {
 												testing, and failover to the Disaster Recovery Cloud during a DR event.
 											</p>
 										</div>
-										<div className='w-100 ml-md-auto' data-aos='fade-up'>
+										{/* <div className='w-100 ml-md-auto' data-aos='fade-up'>
 											<img
 												class='w75 ml-md-5 bx'
 												src={vdi}
 												width='100%'
 												alt='Hosted Infrastructure'
 											/>
-										</div>
+										</div> */}
 									</div>
 									{/* <h4> Why choose SYNECTIKS Cloud Hosted Infrastructure Services? </h4> */}
 									<div className='d-flex flex-column flex-md-row align-items-center align-items-md-start mt-1 mt-md-3'>

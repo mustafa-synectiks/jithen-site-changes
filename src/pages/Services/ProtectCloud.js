@@ -35,6 +35,7 @@ import support from '../../images/synectiks-secure/support.svg';
 import EndComputing from '../../images/EndComputing.svg';
 import EndSecurity from '../../images/EndSecurity.svg';
 import DigitalWorkspace from '../../images/DigitalWorkspace.svg';
+import ProCloud from '../../images/Protect_Cloud_Updated.jpg';
 import vdi from '../../images/protect-cloud.jpg';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarToggler, Navbar } from 'reactstrap';
 import classnames from 'classnames';
@@ -81,45 +82,26 @@ const ProtectCloud = () => {
 							<div className='bg-lightgrey mb-0 pb-3'>
 								<div className=''>
 									<h2>Protect Cloud</h2>
-									<div className='text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex'>
-										<div className='w-100  pl-3 pr-3 text-black'>
-											<p className='lineHeight-24 ptext mt-md-4 mt-1'>
-												Eliminate security breaches, downtime and data loss. Protect Cloud is
-												the only solution that natively integrates cloud security, data
-												protection and management to protect endpoints, systems and data.
-												Integration and automation provide unmatched protection making it simple
-												to manage all the devices in your environment.
-											</p>
-										</div>
-										<div className='w-100 ml-md-auto' data-aos='fade-up'>
-											<img
-												class='w75 ml-md-5 bx'
-												src={vdi}
-												width='100%'
-												alt='Hosted Infrastructure'
-											/>
-										</div>
+									<div className='pr-img'>
+										{/* <img
+											className='w85 my-4 mx-auto'
+											src={ProCloud}
+											alt='Antivirus,Anti-Malware,Exploit Prevention,Ransomware Protection,Security Vulnerability Assessment,Patch Management,URL-filtering,Data protection Map,Remote desktop & Remote assistance,Backup,Disaster Recovery'
+										/> */}
 									</div>
-									{/* <h4> Why choose SYNECTIKS Cloud Hosted Infrastructure Services? </h4> */}
-									<div>
+									<div className='text-black py-4'>
+										<p className='lineHeight-24 ptext mt-md-4 mt-1'>
+											Eliminate security breaches, downtime and data loss. Protect Cloud is the
+											only solution that natively integrates cloud security, data protection and
+											management to protect endpoints, systems and data. Integration and
+											automation provide unmatched protection making it simple to manage all the
+											devices in your environment.
+										</p>
 										<p>
 											No need to get software’s from different vendors & No need to install
 											multiple agents on the same machine to have all the following basic security
 											and protection features:
 										</p>
-										<ul>
-											<li>Antivirus</li>
-											<li>Anti-Malware</li>
-											<li>Exploit Prevention </li>
-											<li>Ransomware Protection </li>
-											<li>Security Vulnerability Assessment</li>
-											<li>Patch Management </li>
-											<li>URL-filtering </li>
-											<li>Data protection Map</li>
-											<li>Remote desktop & Remote assistance </li>
-											<li>Backup</li>
-											<li>Disaster Recovery</li>
-										</ul>
 										<p>
 											<strong>Protect Cloud</strong> is a SaaS based readily available ALL-IN-ONE
 											Web-Based innovative powerful integrated solution with one-agent on any
@@ -135,9 +117,10 @@ const ProtectCloud = () => {
 											from the following, mix and match the licenses as needed by each device in
 											your environment:
 										</p>
-										<h3>Editions: Feature Comparison </h3>
 									</div>
+
 									<div>
+										<h3>Editions: Feature Comparison </h3>
 										<Table border='1'>
 											<thead rowspan='2'>
 												<th />
@@ -573,6 +556,9 @@ const ProctectCloudWrapper = styled.div`
 	.w75 {
 		width: 100%;
 	}
+	.w85 {
+		width: 100%;
+	}
 	.pcenter {
 		text-align: center;
 	}
@@ -754,7 +740,10 @@ const ProctectCloudWrapper = styled.div`
 			line-height: 1.4;
 		}
 		.w75 {
-			width: 80%;
+			width: 60%;
+		}
+		.w85 {
+			width: 85%;
 		}
 		.pcenter {
 			text-align: left;

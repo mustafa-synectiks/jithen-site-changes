@@ -21,7 +21,7 @@ const AreaOfExpertise = ({ location }) => {
 			<SEO title='Area of Expertise' />
 			<AreaOfExpertiseWrapper>
 				<div className=''>
-					<BreadCrumbs title='Home' subtitle='What We Do' pageTitle='Area Of Expertise' />
+					<BreadCrumbs title='Home' subtitle='What We Do' />
 				</div>
 				<div className='my-4'>
 					<h1>What We Do</h1>

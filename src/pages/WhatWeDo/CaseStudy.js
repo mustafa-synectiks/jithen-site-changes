@@ -19,11 +19,11 @@ const CaseStudy = () => {
 		<Layout>
 			<SEO title='Case Studies' />
 			<CaseStudyWrapper>
-			<Helmet>
-			<link rel='canonical' href='https://synectiks.com/casestudy/index.html'/>
-			</Helmet>
+				<Helmet>
+					<link rel='canonical' href='https://synectiks.com/casestudy/index.html' />
+				</Helmet>
 				<div className='text-justify'>
-					<BreadCrumbs title='Home' subtitle='What We Do' pageTitle='Case Studies' />
+					<BreadCrumbs title='Home' subtitle='Resources' pageTitle='Case Studies' />
 				</div>
 				<h1 className='my-2 my-md-4'>Case Studies</h1>
 				<div className='content'>

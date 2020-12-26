@@ -37,7 +37,7 @@ const Header = () => {
 							<AiOutlineClose className='my-1 mx-2 close' />
 						</Navbar.Toggle>
 						<Navbar.Collapse id='basic-navbar-nav'>
-							<Nav className='ml-auto'>
+							<Nav className='ml-auto' as='ul' id='navitemlink'>
 								{/*
 								<NavDropdown
 									title='What we Do'
@@ -48,6 +48,11 @@ const Header = () => {
 									</NavDropdown.Item>
 								</NavDropdown>
 									 */}
+								<Nav.Item as='li'>
+									<Nav.Link className='fnt-nav' href='/what-we-do/index.html'>
+										WHAT WE DO
+									</Nav.Link>
+								</Nav.Item>
 
 								<NavDropdown title='Cloud Services' id='basic-nav-dropdown' className='main-tab'>
 									<Container fluid={true}>
@@ -104,9 +109,6 @@ const Header = () => {
 										</Row>
 									</Container>
 								</NavDropdown>
-								<Nav.Link className='fnt-nav' href='/what-we-do/index.html'>
-									WHAT WE DO
-								</Nav.Link>
 								<NavDropdown title='Migration & Modernization' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/infrastructure/index.html'>
 										Infrastructure Transformation
@@ -159,6 +161,8 @@ const HeaderNav = styled.div`
 	}
 	.fnt-nav {
 		font-size: 14px;
+		margin-top: 2px;
+		margin-left: 8px;
 	}
 	.bcdr {
 		border-right: 1px solid rgba(0, 0, 0, 0.09) !important;
@@ -209,7 +213,7 @@ const HeaderNav = styled.div`
 		.main-tab.dropdown.nav-item > .dropdown-menu {
 			width: max-content;
 			position: absolute;
-			left: -10rem;
+			left: -15rem;
 		}
 		.nav-item > a.active,
 		.nav-item > a:active {

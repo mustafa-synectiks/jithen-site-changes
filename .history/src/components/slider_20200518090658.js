@@ -1010,7 +1010,7 @@ p{
 		}
 
 		.Homecard-shadow {
-			width:18rem;
+			width:16rem;
 			border-radius: 25px;
 			-webkit-border-radius: 25px  ;
 			-moz-border-radius: 25px ;

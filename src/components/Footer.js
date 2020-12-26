@@ -44,7 +44,7 @@ export class Footer extends React.Component {
 							<img src={logo} alt='' className='w-65 mt-0 mt-md-2' />
 						</a>
 						{/* <h4 className='text-light text-capitalize'>U.S.A</h4> */}
-						<p className='text-light mt-0 mt-md-3 ptext lht'>
+						<p className='text-light mt-0 mt-md-3 text-left lht'>
 							{/* We are a team of highly qualified and experienced professionals from various fields who are
 							determined and dedicated to delivering world class professional services to our patrons. */}
 							As an Open Product based Cloud Solution provider, we help enterprises take advantage of
