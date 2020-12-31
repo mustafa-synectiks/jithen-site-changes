@@ -84,6 +84,7 @@ font-style: normal; */
 	--synectiksRed: #ee284b;
 	--synectiksBlue: #007cc2;
 	--synectiksOrange: #eeb12d;
+	--synectiksGreen: #17c671;
 	--textColor: #292929;
 	--backgroundColor: #efefef;
 	--synectiksWhite: #ffffff;
@@ -250,6 +251,9 @@ body {
 }
 .bgBlue {
 	background: var(--synectiksBlue);
+}
+.bgGreen {
+	background: var(--synectiksGreen);
 }
 .bgBlueLight {
 	background: var(--synectiksLightBlue);
@@ -1248,9 +1252,10 @@ background-color: #007bff!important;
 	color: #007cc2 !important;
 }
 .text-black {
-	color: #000000 !important;
-	font-size: 18px;
-	font-weight: normal;
+	color: #292929 !important;
+}
+.w-mx {
+	width: max-content;
 }
 #AWS {
 	transform: rotate(-45deg);

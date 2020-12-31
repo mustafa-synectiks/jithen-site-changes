@@ -49,7 +49,7 @@ const Header = () => {
 								</NavDropdown>
 									 */}
 								<Nav.Item as='li'>
-									<Nav.Link className='fnt-nav' href='/what-we-do/index.html'>
+									<Nav.Link className='fnt-nav w-mx' href='/what-we-do/index.html'>
 										WHAT WE DO
 									</Nav.Link>
 								</Nav.Item>

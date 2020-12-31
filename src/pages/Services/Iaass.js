@@ -186,8 +186,8 @@ const Iaas = () => {
 										<div>
 											<h5>Availability & Reliable Performance</h5>
 											<p className='mt-2 pcenter'>
-												uilt with best of the bread technologies, our infrastructure can support
-												any workload with reliable and consistent performance.
+												Built with best of the bread technologies, our infrastructure can
+												support any workload with reliable and consistent performance.
 											</p>
 										</div>
 									</div>

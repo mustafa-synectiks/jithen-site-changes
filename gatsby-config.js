@@ -3,19 +3,20 @@ module.exports = {
 		title: `Synectiks - Cloud Solutions`,
 		description: `As an Open Product based Cloud Solution provider, we help enterprises take advantage of public & private cloud and its infinite resources to migrate and modernize their business so that they outperform their peers by becoming truly disruptive.`,
 		author: `Synectiks`,
-		siteUrl: `https://synectiks.com`
+		// siteUrl: `https://synectiks.com`
+		siteUrl: `https://localhost.com`
 	},
 	pathPrefix: '/next',
 	plugins: [
-		{
-			resolve: `gatsby-plugin-google-analytics`,
-			options: {
-				trackingId: 'UA-162017401-1',
-				head: true,
-				anonymize: true,
-				respectDNT: true
-			}
-		},
+		// {
+		// 	resolve: `gatsby-plugin-google-analytics`,
+		// 	options: {
+		// 		trackingId: 'UA-162017401-1',
+		// 		head: true,
+		// 		anonymize: true,
+		// 		respectDNT: true
+		// 	}
+		// },
 		`gatsby-plugin-sitemap`,
 		`gatsby-plugin-netlify-cms`,
 		`gatsby-remark-responsive-iframe`,
@@ -42,14 +43,14 @@ module.exports = {
 				// optional: if you are using path prefix
 			}
 		},
-		{
-			resolve: 'gatsby-plugin-robots-txt',
-			options: {
-				host: 'https://synectiks.com',
-				sitemap: 'https://synectiks.com/sitemap.xml',
-				policy: [ { userAgent: '*', allow: '/' } ]
-			}
-		},
+		// {
+		// 	resolve: 'gatsby-plugin-robots-txt',
+		// 	options: {
+		// 		host: 'https://synectiks.com',
+		// 		sitemap: 'https://synectiks.com/sitemap.xml',
+		// 		policy: [ { userAgent: '*', allow: '/' } ]
+		// 	}
+		// },
 		{
 			resolve: `gatsby-plugin-styled-components`,
 			options: {
@@ -60,9 +61,9 @@ module.exports = {
 			resolve: `gatsby-plugin-s3`,
 			options: {
 				// bucketName: 'synectiks-testwebsite',
-				bucketName: 'synectiks-latest-website',
-				protocol: 'https',
-				hostname: 'synectiks.com'
+				bucketName: 'test-mustafa'
+				// protocol: 'https',
+				// hostname: 'synectiks.com'
 			}
 		},
 		{
@@ -80,19 +81,19 @@ module.exports = {
 			}
 		},
 
-		{
-			resolve: `gatsby-plugin-manifest`,
-			options: {
-				name: `Synectiks`,
-				short_name: `synectiks`,
-				start_url: `/`,
-				background_color: `#663399`,
-				theme_color: `#663399`,
-				display: `minimal-ui`,
-				icon: `src/favicon/android-icon-36x36.png`
-				// This path is relative to the root of the site.
-			}
-		},
+		// {
+		// 	resolve: `gatsby-plugin-manifest`,
+		// 	options: {
+		// 		name: `Synectiks`,
+		// 		short_name: `synectiks`,
+		// 		start_url: `/`,
+		// 		background_color: `#663399`,
+		// 		theme_color: `#663399`,
+		// 		display: `minimal-ui`,
+		// 		icon: `src/favicon/android-icon-36x36.png`
+		// 		// This path is relative to the root of the site.
+		// 	}
+		// },
 		{
 			resolve: `gatsby-plugin-routes`,
 			options: {
@@ -100,12 +101,12 @@ module.exports = {
 				path: `${__dirname}/src/routes.js`
 			}
 		},
-		// {
-		// 	resolve: 'gatsby-plugin-zopfli',
-		// 	options: {
-		// 		extensions: [ 'css', 'html', 'js', 'svg' ]
-		// 	}
-		// },
+		{
+			resolve: 'gatsby-plugin-zopfli',
+			options: {
+				extensions: [ 'css', 'html', 'js', 'svg' ]
+			}
+		},
 		`gatsby-plugin-meta-redirect`
 	]
 };

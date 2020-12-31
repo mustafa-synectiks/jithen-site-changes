@@ -20,6 +20,7 @@ import classnames from 'classnames';
 import tab1 from '../../images/HomePage/Transformation_Icon.png';
 import tab2 from '../../images/HomePage/OpenPlatform.png';
 import tab3 from '../../images/HomePage/Solution.png';
+import tab4 from '../../images/HomePage/cloud-service_white.svg';
 import PoweredBySynectiks from '../../images/HomePage/PoweredBySynectiks.png';
 
 const Tabs = () => {
@@ -76,7 +77,7 @@ const Tabs = () => {
 								toggle('3');
 							}}>
 							<div className='Homecard-shadow card'>
-								<div className='bgRed ct1'>
+								<div className='bgBlue ct1'>
 									<img className='card-img-top' src={tab3} alt='Transformation' />
 								</div>
 								<div className='card-body'>
@@ -94,8 +95,8 @@ const Tabs = () => {
 								toggle('4');
 							}}>
 							<div className='Homecard-shadow  card'>
-								<div className='bgBlue ct4'>
-									<img className='card-img-top' src={tab3} alt='Operation' />
+								<div className='bgGreen ct4'>
+									<img className='card-img-top textWhite' src={tab4} alt='Cloud Services' />
 								</div>
 								<div className='card-body'>
 									<h4 className='text-center text-uppercase'>Cloud Services</h4>
@@ -105,7 +106,7 @@ const Tabs = () => {
 						</NavLink>
 					</NavItem>
 				</Nav>
-				<TabContent activeTab={activeTab} className='bgWhite border-three'>
+				<TabContent activeTab={activeTab} className='bgWhite border-three hiding'>
 					<TabPane tabId='1' className='borderHomePageTab1'>
 						<Row>
 							<Col sm='12'>
@@ -150,7 +151,7 @@ const Tabs = () => {
 							</Col>
 							<Col sm='12' md='4' className='p-1'>
 								<div className='py-1 py-md-3 h-100'>
-									<div className='border-right text-center'>
+									<div className='text-center'>
 										<a
 											href='/devops-transformation/index.html'
 											className='text-center heading-h3 h3'>
@@ -199,7 +200,7 @@ const Tabs = () => {
 							</Col>
 						</Row>
 					</TabPane>
-					<TabPane tabId='4' className='borderHomePageTab3'>
+					<TabPane tabId='4' className='borderHomePageTab4'>
 						<Row className='px-3'>
 							<p>
 								Capture true value of cloud with highly secured, scalable, and customizable SYNECTIKS
@@ -264,7 +265,7 @@ const Tabs = () => {
 							</Col>
 							<Col sm='12' md='3' className='p-1'>
 								<div className='py-1 py-md-3 h-100'>
-									<div className='border-right text-center'>
+									<div className='text-center'>
 										<a
 											href='/aws-managed-services/index.html'
 											className='text-center heading-h3 h6'>
@@ -331,8 +332,18 @@ const TabsWrapper = styled.div`
 .card-body {
     padding: 1rem 0rem 0rem 0rem;
 }
-.ct1,.ct2,.ct3,.ct4{
+.ct1,.ct2,.ct3{
     padding: 3rem;
+    border-radius: 50%;
+    width: 10rem;
+    margin: 0 auto;
+				height: 10rem;
+				img{
+					display:block
+				}
+}
+.ct4{
+    padding: 2rem;
     border-radius: 50%;
     width: 10rem;
     margin: 0 auto;
@@ -350,7 +361,7 @@ const TabsWrapper = styled.div`
 			border-radius: 25px;
 }
 .borderHomePageTab4{
-	border: 4px solid var(--synectiksBlue);
+	border: 4px solid var(--synectiksGreen);
 			padding: 1rem;
 			position: relative;
 			z-index: 0;
@@ -461,7 +472,7 @@ color:var(--synectiksRed);
 color:var(--synectiksBlue);
 			}
 		 a#tab4.active h2{
-color:var(--synectiksBlue);
+color:var(--synectiksGreen);
 			}
 		 a#tab1.active{
 			 border: 4px solid var(--synectiksOrange);
@@ -506,8 +517,8 @@ color:var(--synectiksBlue);
     border-bottom: 0px;
 					}
 		a#tab4.active{
-			border: 4px solid var(--synectiksBlue);
-    color: var(--synectiksBlue);
+			border: 4px solid var(--synectiksGreen);
+    color: var(--synectiksGreen);
     position: relative;
     z-index: 999;
     /* right: -20px; */

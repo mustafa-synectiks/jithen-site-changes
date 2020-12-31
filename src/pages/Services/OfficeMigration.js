@@ -16,13 +16,16 @@ export class OfficeMigraton extends React.Component {
 	render() {
 		return (
 			<Layout>
-			<Helmet>
-			<meta name='description' content="Microsoft is the recognized leader in cloud productivity solutions for business with Office 365 transforming the workplace experience. With a certified team of Microsoft Partner Professionals, SYNECTIKS delivers on all Microsoft Cloud Solutions, including Office 365, SharePoint, Skype for Business, Teams, Power BI, Microsoft 365 (Office 365 + Enterprise Mobility + Security) and Azure."/>
-			<link rel='canonical' href='https://synectiks.com/office-migration/index.html'/>
-			</Helmet>
+				<Helmet>
+					<meta
+						name='description'
+						content='Microsoft is the recognized leader in cloud productivity solutions for business with Office 365 transforming the workplace experience. With a certified team of Microsoft Partner Professionals, SYNECTIKS delivers on all Microsoft Cloud Solutions, including Office 365, SharePoint, Skype for Business, Teams, Power BI, Microsoft 365 (Office 365 + Enterprise Mobility + Security) and Azure.'
+					/>
+					<link rel='canonical' href='https://synectiks.com/office-migration/index.html' />
+				</Helmet>
 				<OfficeMigratonWrapper>
 					<SEO title='Office 365' />
-					<BreadCrumbs title='Home' subtitle='Services' pageTitle='Office Migration' />
+					<BreadCrumbs title='Home' subtitle='Cloud Services' pageTitle='Office Migration' />
 					<div className='bg-lightgrey'>
 						<h1 className='text-left mt-2 mt-md-4'>Office 365</h1>
 

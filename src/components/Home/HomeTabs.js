@@ -515,7 +515,7 @@ const TabsWrapper = styled.section`
 		#headingFour {
 			a {
 				padding: 1rem;
-				background: var(--synectiksLightRed);
+				background: var(--synectiksGreen);
 				color: var(--synectiksWhite);
 				text-decoration: none;
 				box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.3);
