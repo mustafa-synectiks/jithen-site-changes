@@ -54,18 +54,18 @@ export class Footer extends React.Component {
 					</div>
 					<div className='w-30vw mx-0 mx-md-5  px-2 px-md-0'>
 						<h3 className='text-light text-capitalize'>USA</h3>
-						<p className='text-light mt-0 mt-md-3'>300 Alexander Park Drive, Suite 215,</p>
-						<p className='text-light'> Princeton, NJ 08540 </p>
-						<span className='text-light webText'>Sales: +1 (609) 608-0429 X 102 </span>
-						<br />
-						<span className='text-light webText'>Office: +1 (609) 608-0429</span>
+						<p className='text-light mt-0 mt-md-3'>300 Alexander Park Drive,</p>
+						<p className='text-light'>Suite 215,</p>
+						<p className='text-light'>Princeton, NJ 08540 </p>
+						<p className='text-light '>Sales: +1 (609) 608-0429 X 102 </p>
+						{/* <br /> */}
+						<p className='text-light '>Office: +1 (609) 608-0429</p>
 						{/* <h3 className='text-light text-capitalize py-3'>privacy &copy; 2020</h3> */}
 					</div>
 					<div className='w-30vw mx-0 ml-md-3  px-2 px-md-0'>
 						<h3 className='text-light text-capitalize'>INDIA</h3>
-						<p className='text-light mt-0 mt-md-3 footaddleft'>
-							Ground Floor, SK Feature, <br />Plot 105 & 106, Lumbini Layout,
-						</p>
+						<p className='text-light mt-0 mt-md-3 footaddleft'>Ground Floor, SK Feature,</p>
+						<p className='text-light footaddleft'>Plot 105 & 106, Lumbini Layout,</p>
 						<p className='text-light footaddleft'> Hitech City Main Rd, </p>
 						<p className='text-light footaddleft'> Gachibowli, Hyderabad 500032 </p>
 						<p className='text-light webText'>Office: +91 (40) 4857 4411</p>
@@ -79,7 +79,7 @@ export class Footer extends React.Component {
 									<u>Privacy Policy</u>
 								</a>
 							</h4>
-							<h3 className='text-light  text-capitalize mt-2 mt-md-3'>Social</h3>
+							<h4 className='text-light  text-capitalize mt-2 mt-md-3'>Social</h4>
 							<div className='d-flex flex-column'>
 								{Social.map((item, index) => {
 									return (
@@ -95,7 +95,7 @@ export class Footer extends React.Component {
 									);
 								})}
 							</div>
-							<h3 className='text-light text-capitalize py-3'>privacy &copy; 2020</h3>
+							<h4 className='text-light text-capitalize py-3'>privacy &copy; 2020</h4>
 						</div>
 					</div>
 				</div>
@@ -113,6 +113,7 @@ const FooterWrapper = styled.div`
 		}
 		.webText {
 			webkit-text-fill-color: white;
+			font-size: 12px !important;
 		}
 		.ptext {
 			text-align: left;
@@ -125,16 +126,16 @@ const FooterWrapper = styled.div`
 		}
 		background: var(--textColor);
 		p {
-			font-size: 1rem;
-			line-height: 2.3;
+			font-size: 12px !important;
+			line-height: 24px;
 			margin-bottom: 0px;
 			font-style: normal;
 			font-weight: 200;
 		}
 		ul {
-			line-height: 2.3;
+			line-height: 24px;
 			list-style: none;
-			font-size: 1rem;
+			font-size: 12px !important;
 		}
 		a {
 			font-weight: 300;
@@ -206,8 +207,12 @@ const FooterWrapper = styled.div`
 		a {
 			font-weight: 300;
 		}
+		.webText {
+			webkit-text-fill-color: white;
+			font-size: 14px !important;
+		}
 		p {
-			font-size: 1rem;
+			font-size: 14px !important;
 			line-height: 2.3;
 			margin-bottom: 0px;
 			font-style: normal;
@@ -216,7 +221,7 @@ const FooterWrapper = styled.div`
 		ul {
 			line-height: 2.3;
 			list-style: none;
-			font-size: 1rem;
+			font-size: 14px !important;
 		}
 	}
 `;

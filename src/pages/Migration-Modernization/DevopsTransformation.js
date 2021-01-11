@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 // import { Modal, ModalHeader, ModalBody } from "reactstrap"
 // import ModalContact from "../../components/ModalContact"
@@ -48,30 +48,32 @@ const DevopsTransformation = ({ location }) => {
 	const toggleTab = () => {
 		setNav((isOpen) => !isOpen);
 	};
-const onTop = () => {
-	window.scroll(0,0);
-}
+	const onTop = () => {
+		window.scroll(0, 0);
+	};
 	return (
 		<Layout>
-		<Helmet>
-		<meta name='description' content="DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes. This speed enables organizations to better serve their customers and compete more effectively in the market."/>
-		<link rel='canonical' href='https://synectiks.com/devops-transformation/index.html'/>
-		</Helmet>
-			<SEO title='DevOps Transformation'/>
-
+			<Helmet>
+				<meta
+					name='description'
+					content='DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes. This speed enables organizations to better serve their customers and compete more effectively in the market.'
+				/>
+				<link rel='canonical' href='https://synectiks.com/devops-transformation/index.html' />
+			</Helmet>
 			<DevopsTWrapper>
-				<div className=''>
-					<div className='text-justify'>
+				<SEO title='DevOps Transformation' />
+				<div className='container-fluid p-0'>
+					<div className=''>
 						<BreadCrumbs
 							title='Home'
-							subtitle='Migration / Modernization'
+							subtitle='Migration & Modernization'
 							pageTitle='Devops Transformation'
 						/>
-						<h1 className='text-left mt-md-4 ml-n1'>DevOps Transformation</h1>
+						<h1>DevOps Transformation</h1>
 					</div>
 					<div className=''>
 						<Row className='position-relative'>
-							<div className='col-md-12'>
+							<div className='col-sm-12 col-md-12'>
 								<Navbar color='light' light expand='lg' className='topNav' id='devopsTabs'>
 									{/* <NavbarToggler onClick={toggleNavbar} className='mr-2'> */}
 									<AiOutlineMenu onClick={toggleNavbar} className='mr-2 svgcolor mobile-show mb-n4' />
@@ -146,7 +148,7 @@ const onTop = () => {
 								<TabContent activeTab={activeTab}>
 									<TabPane tabId='1'>
 										<div>
-											<h3 className='text--left'>Understanding the DevOps Transformation</h3>
+											<h5 className='text--left ft'>Understanding the DevOps Transformation</h5>
 											<p className='ptext'>
 												DevOps is the combination of cultural philosophies, practices, and tools
 												that increases an organization’s ability to deliver applications and
@@ -158,7 +160,9 @@ const onTop = () => {
 										</div>
 
 										<div className=''>
-											<h3>Why DevOps Transformation matter in Today’s Business?</h3>
+											<h5 className='ft'>
+												Why DevOps Transformation matter in Today’s Business?
+											</h5>
 											<div className='my-3 d-flex flex-row justify-content-around'>
 												{/* <img src={AI} alt="" className="w-50" /> */}
 												<p className='ptext'>
@@ -170,25 +174,30 @@ const onTop = () => {
 													of their legacy stack and operate in more fast and competitive way
 													taking DevOps as key strategic drivers. As companies embrace DevOps,
 													they must address both technology and the human side of change. The
-													most important need for technology and human side are as follows:
+													most important need for technology and the human side are as
+													follows:
 												</p>
 											</div>
 											<div className='my-3 d-flex  justify-content-around align-items-start flex-column'>
 												<div>
-													<h3>Technology Shift</h3>
+													<h5 className='ft'>Technology Shift</h5>
 													<p className=''>
-														Small services delivered in extreme agile manner and runs in
-														multi cloud hybrid ecosystem in lowest Capex & Opex with highest
-														security.
+														Small services delivered in an extreme agile manner and run in
+														multi cloud hybrid ecosystem in lowest Capex & Opex with the
+														highest security.
 													</p>
 												</div>
 												<div className='mx-auto'>
-													<img src={one} alt='Technology Shift' className='w-100 box-shadow' />
+													<img
+														src={one}
+														alt='Technology Shift'
+														className='w-100 box-shadow'
+													/>
 												</div>
 											</div>
 											<div className='my-3 d-flex flex-column justify-content-around align-items-center'>
 												<div>
-													<h3>Cultural Shift</h3>
+													<h5 className='ft'>Cultural Shift</h5>
 													<p className=''>
 														A culture with less roles, much E2E responsibilities, which
 														innovates fast accepting high speed feedback and respond with
@@ -202,7 +211,7 @@ const onTop = () => {
 									</TabPane>
 									<TabPane tabId='2'>
 										<div>
-											<h3 className=''>Getting Started To DevOps</h3>
+											<h3 className='ft'>Getting Started To DevOps</h3>
 											<p className='ptext'>
 												The first step is for CIOs to connect with the business to establish
 												clear lines of communication and to set common goals. Within the IT
@@ -218,9 +227,13 @@ const onTop = () => {
 											</p>
 										</div>
 										<div className='text-center '>
-											<h2 className='my-5'>Where do you find your current DevOps Maturity?</h2>
+											<h5 className='my-5 ft'>Where do you find your current DevOps Maturity?</h5>
 											<div className='w-100 mx-auto'>
-												<img src={six} alt='Devops Maturity' className='boxshdd w-100 mobile-show' />
+												<img
+													src={six}
+													alt='Devops Maturity'
+													className='boxshdd w-100 mobile-show'
+												/>
 											</div>
 
 											<div className='d-flex justify-content-start flex-column flex-md-row my-2 my-md-4 mobile-hide'>
@@ -436,7 +449,7 @@ const onTop = () => {
 														<ul className='pt-3 DreenLight ulfont ulht w-100'>
 															<li>Zero touch deployment</li>
 															<li>Elastic automation cluster</li>
-															<li>Parallel  continuous delivery</li>
+															<li>Parallel continuous delivery</li>
 															<li>
 																Containerized build environments for different language
 															</li>
@@ -463,13 +476,13 @@ const onTop = () => {
 												</div>
 											</div>
 
-												<div>
-												<h2 className='text-center mt-3 mt-md-5'>
+											<div>
+												<h5 className='text-center mt-3 mt-md-5 ft'>
 													Our DevOps Gap analysis process briefly as follows:
-												</h2>
+												</h5>
 
 												<div>
-													<h3 className='fw6 text-center'>Gap Analysis</h3>
+													<h5 className='fw6 text-center'>Gap Analysis</h5>
 													<h6 className='text-center'>4 Phased - 5 days</h6>
 												</div>
 
@@ -573,7 +586,7 @@ const onTop = () => {
 									</TabPane>
 									<TabPane tabId='3'>
 										<div>
-											<h3> How Synectiks can help?</h3>
+											<h5 className='ft'> How Synectiks can help?</h5>
 											<p className='ptext'>
 												Enterprises looking for modernization of their legacy stack and operate
 												in more fast and competitive way, can use the Synectiks open platform
@@ -583,7 +596,7 @@ const onTop = () => {
 												coupled with our experience and expertise accelerate the project
 												execution @50% time & cost.
 											</p>
-											<h3>Technology Transformation</h3>
+											<h5 className='ft'>Technology Transformation</h5>
 											<p className='ptext'>
 												“Over 85% of enterprise IT organizations will commit to multi-cloud
 												architectures by 2018, IDC. End User experience, Security, Agility,
@@ -603,7 +616,7 @@ const onTop = () => {
 												the workload runs seamlessly with highest security, performance,
 												scalability and availability.
 											</p>
-											<h3>Cultural Transformation </h3>
+											<h5 className='ft'>Cultural Transformation </h5>
 											<p className='ptext'>
 												Need? A culture with less Roles , much E2E responsibilities Innovate /
 												Deliver Fast High Speed Feedback and Superfast Delivery Lower Capex,
@@ -668,17 +681,17 @@ const onTop = () => {
 											</div>
 
 											<div className='row'>
-												<h3 className='pt-0 pt-md-0 pb-2 pb-md-3'>
+												<h5 className='pt-0 pt-md-0 pb-2 pb-md-3 ft px-2 px-md-0'>
 													Synectiks can enable your enterprise journey to DevOps, regardless
 													of your starting point.
-												</h3>
+												</h5>
 												<div className='d-flex flex-column flex-md-row align-items-center'>
 													<img
 														src={four}
 														alt='Discover and Assessment'
 														className='w15 mr-5'
 													/>
-													<div>
+													<div className='px-2 px-md-0'>
 														<h5>Discover & Assessment</h5>
 														<p>
 															Our discovery and assessment services can help you draft a
@@ -692,7 +705,7 @@ const onTop = () => {
 												</div>
 												<div className='d-flex flex-column flex-md-row align-items-center'>
 													<img src={five} alt='Transformation Services' className='w9 mr-5' />
-													<div className='ml-4'>
+													<div className='ml-2 ml-md-4'>
 														<h5>Transformation Services</h5>
 														<p>
 															You can access our open Xformation platform products and
@@ -728,7 +741,7 @@ const onTop = () => {
 														<h5 className='mb-4'>Expertise</h5>
 													</div>
 													<p>
-														Experience Team with proven track record of CloudOps delivery
+														Experience Team with a proven track record of CloudOps delivery
 														enabled with DevSecOps Capabilities.
 													</p>
 												</div>
@@ -750,8 +763,8 @@ const onTop = () => {
 														<h5 className='mt-3'>Contribution</h5>
 													</div>
 													<p>
-														We are continuously contributing open XFormation platform that
-														is accelerating the transformation @50% Time & Cost.
+														We are continuously contributing an open XFormation platform
+														that is accelerating the transformation @50% Time & Cost.
 													</p>
 												</div>
 											</div>
@@ -763,7 +776,7 @@ const onTop = () => {
 													<img src={Engagement} alt='Engagement Model' className='tw m-0' />
 													<h5 className='mt-3'>Engagement Model</h5>
 												</div>
-												<p>Our every engagement focused on empowerment not dependency.</p>
+												<p>Our every engagement focused on empowerment, not dependency.</p>
 											</div>
 											<div className='col-sm-4 col-md-4 text-center'>
 												<div className='d-flex align-items-center flex-column'>
@@ -812,7 +825,7 @@ const onTop = () => {
 													, operations, security in hybrid IT environment.
 												</p>
 											</div>
-											<div>
+											<div className='px-2 px-md-0'>
 												<p>
 													Finally, we help you to do people / process / technology
 													transformation it all at a lower cost using CloudOps delivery
@@ -828,20 +841,18 @@ const onTop = () => {
 									</TabPane>
 									<TabPane tabId='5'>
 										<div>
-											<h3>Key benefits you get by choosing Synectiks as DevOps partner</h3>
+											<h5 className='ft'>
+												Key benefits you get by choosing Synectiks as DevOps partner
+											</h5>
 
-												<h4 className='pt-0 pt-md-0 pb-2 pb-md-3'>
-													Synectiks can enable your enterprise journey to DevOps, regardless
-													of your starting point.
-												</h4>
+											<h5 className='pt-0 pt-md-0 pb-2 pb-md-3 ft'>
+												Synectiks can enable your enterprise journey to DevOps, regardless of
+												your starting point.
+											</h5>
 											<div className='row'>
 												<div className='d-flex flex-column flex-md-row align-items-center'>
-													<img
-														src={maxFac}
-														alt='Maximum Flexibility'
-														className='w9 mr-5'
-													/>
-													<div>
+													<img src={maxFac} alt='Maximum Flexibility' className='w9 mr-5' />
+													<div className='px-2 px-md-0'>
 														<h5>Maximum Flexibility</h5>
 														<p className='mb-1 mb-md-4'>
 															Synectiks xformation platform coupled with its Hybrid cross
@@ -852,11 +863,7 @@ const onTop = () => {
 													</div>
 												</div>
 												<div className='d-flex flex-column flex-md-row align-items-center mt-0 mt-md-3'>
-													<img
-														src={fastDeliv}
-														alt='Faster Delivery'
-														className='w9 mr-5'
-													/>
+													<img src={fastDeliv} alt='Faster Delivery' className='w9 mr-5' />
 													<div className='ml-2'>
 														<h5>Faster Delivery</h5>
 														<p className='mb-1 mb-4'>
@@ -869,11 +876,7 @@ const onTop = () => {
 													</div>
 												</div>
 												<div className='d-flex flex-column flex-md-row align-items-center mt-0 mt-md-3'>
-													<img
-														src={betterQual}
-														alt='Better Quality'
-														className='w7 mr-5'
-													/>
+													<img src={betterQual} alt='Better Quality' className='w7 mr-5' />
 													<div className='ml-4'>
 														<h5>Better Quality</h5>
 														<p className=' mb-1 mb-4 ptext'>
@@ -886,11 +889,7 @@ const onTop = () => {
 													</div>
 												</div>
 												<div className='d-flex flex-column flex-md-row align-items-center mt-0 mt-md-3'>
-													<img
-														src={lowCost}
-														alt='Lower Costs'
-														className='w9 mr-5'
-													/>
+													<img src={lowCost} alt='Lower Costs' className='w9 mr-5' />
 													<div className='ml-2'>
 														<h5>Lower Costs</h5>
 														<p className='ptext'>
@@ -904,7 +903,7 @@ const onTop = () => {
 												</div>
 											</div>
 
-											<p className='ptext'>
+											<p className='ptext px-2 px-md-0'>
 												Now is the time to act. Don’t be disrupted be the disruptor. Let us help
 												you innovate and transform to differentiate with speed and quality.
 												That’s Synectiks. That’s transformation Delivered in open product based
@@ -1134,7 +1133,7 @@ padding:6rem 1rem;
 .w-85{
   /* width: 87vw; */
 	position: relative;
-	top: 0px;
+	top: -12px;
 	/* left: 3%; */
     border: 1px solid var(--textColor);
     background: var(--synectiksWhite);
@@ -1340,6 +1339,7 @@ padding:6rem 1rem;
 		}
 	}
 	@media (min-width: 768px) {
+		padding: 2.5rem 4rem;
 
 	.ulfont {
 		font-size: 1rem;
@@ -1350,7 +1350,6 @@ padding:6rem 1rem;
 .mobile-hide{
 	display: flex !important;
 }
-		padding: 2rem 4.2rem;
 		.navbar{
 			padding: 0 !important;
 		}

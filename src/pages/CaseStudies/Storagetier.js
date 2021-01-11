@@ -10,24 +10,24 @@ const Storagetier = () => {
 	return (
 		<Layout>
 			<StorageWrapper>
-			<Helmet>
-			<link rel="canonical" href="https://www.synectiks.com/storage-tier/index.html"/>
-			</Helmet>
+				<Helmet>
+					<link rel='canonical' href='https://www.synectiks.com/storage-tier/index.html' />
+				</Helmet>
 				<SEO title='Storagetier' />
 				<div className='softwareDefined_wrap'>
 					<CaseBreadCrumbs
 						title='Home'
-						casetitle='What We Do'
+						casetitle='Resources'
 						subtitle='Case Studies'
 						pageTitle='
 			Storage Tier'
 					/>
 					<h1>Storage Tier</h1>
 					<div className='softwareDefined_image'>
-						<h3>Indian Meteorology Department - Case Study</h3>
+						<h5 className='ft'>Indian Meteorology Department - Case Study</h5>
 						<p className='blueBorder pl-2 pl-md-5 py-1 py-3'>
-							Indian Meteorology Department is an agency of the Ministry of Earth Sciences of
-							the Government of India. The agency harvests the meteorological observations, weather
+							Indian Meteorology Department is an agency of the Ministry of Earth Sciences of the
+							Government of India. The agency harvests the meteorological observations, weather
 							forecasting and seismology reports and also responsible for communicating and forecasting
 							weather services.
 						</p>
@@ -35,30 +35,30 @@ const Storagetier = () => {
 					</div>
 					<div className='softwareDefined_div d-flex flex-column flex-md-row justify-content-around py-1 py-md-5'>
 						<div className='column w-100 px-1 px-5 orangeBorder'>
-							<h4>Industry</h4>
+							<h5 className='ft'>Industry</h5>
 							<p>Automobiles</p>
 						</div>
 						<div className='column w-100 px-1 px-5 blueBorder'>
-							<h4> Business Objective </h4>
+							<h5 className='ft'> Business Objective </h5>
 							<p>
 								Transformation towards becoming hardware / Os / Vender / Operation agnostic. Make
 								everything software defined.
 							</p>
 						</div>
 						<div className='column w-100 px-1 px-5 redBorder'>
-							<h4>Technologies</h4>
+							<h5 className='ft'>Technologies</h5>
 							<p> AWS, Infrastructure as a code, microservices, DevOps</p>
 						</div>
 					</div>
 					<div>
-						<h4>Overview</h4>
+						<h5 className='ft'>Overview</h5>
 						<p>
 							Background- Indian Meteorology Department is an agency of the Ministry of Earth Sciences of
 							the Government of India. The agency harvests the meteorological observations, weather
 							forecasting and seismology reports and also responsible for communicating and forecasting
 							weather services.
 						</p>
-						<h4>Challenges</h4>
+						<h5 className='ft'>Challenges</h5>
 						<p>
 							They wanted a lightweight script that must integrate into their existing application
 							environment which is Java Based Image Processing UI. The solution must cater multi-staging
@@ -66,7 +66,7 @@ const Storagetier = () => {
 						</p>
 					</div>
 					<div>
-						<h4>Solutions</h4>
+						<h5 className='ft'>Solutions</h5>
 						<ul>
 							<li>
 								After analyzing and understanding their core problem, we initiated our process with the
@@ -99,7 +99,7 @@ const Storagetier = () => {
 						</ul>
 					</div>
 					<div>
-						<h4>Mapping a Multi-Tier data staging solution with incredible ease.</h4>
+						<h5 className='ft'>Mapping a Multi-Tier data staging solution with incredible ease.</h5>
 						<p>
 							“Stop looking at the problem like a problem” sounds great but the sentence proved correct
 							when we implemented the same. Understanding the problem and getting to the roots of it
@@ -118,7 +118,7 @@ const Storagetier = () => {
 							access data.
 						</p>
 
-						<h4>OUTCOME</h4>
+						<h5 className='ft'>OUTCOME</h5>
 						<p>
 							The resulted solution helped IMD to save cost on primary storage by 50%. They also reduced
 							90% operations job of moving data in different storage tiers. We helped them stage huge data

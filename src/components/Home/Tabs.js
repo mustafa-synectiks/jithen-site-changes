@@ -110,7 +110,7 @@ const Tabs = () => {
 					<TabPane tabId='1' className='borderHomePageTab1'>
 						<Row>
 							<Col sm='12'>
-								<h2 className='text-center'>Transformation Services </h2>
+								<h5 className='text-center ft'>Transformation Services </h5>
 								<p className='py-1 py-md-3'>
 									Synectiks Transformation services elevate your business by optimizing every aspect
 									of your operations for the public cloud or Hybrid cloud – your people,
@@ -122,13 +122,13 @@ const Tabs = () => {
 							<Col sm='12' md='4' className='p-1'>
 								<div className='py-1 py-md-3 h-100'>
 									<div className='border-right text-center'>
-										<a href='/infrastructure/index.html' className='text-center heading-h3 h3'>
+										<a href='/infrastructure/index.html' className='text-center heading-h3 h6'>
 											Infrastructure <br />Transformation
 										</a>
 										<p className='f-14 px-2 px-md-4'>
-											Make sure that every bit of your hardware environment is directly supporting
-											your business objectives. Transition from a hardware centric to a software
-											Defined organization make huge difference in CapEx and Opex.
+											Ensure every bit of your hardware environment is directly supporting your
+											business objectives. The transition from a hardware-centric to a
+											software-defined organization makes a huge difference in CapEx and OpEx.
 										</p>
 									</div>
 								</div>
@@ -138,13 +138,13 @@ const Tabs = () => {
 									<div className='border-right text-center'>
 										<a
 											href='/application-transformation/index.html'
-											className='text-center heading-h3 h3'>
+											className='text-center heading-h3 h6'>
 											Application<br /> Transformation
 										</a>
 										<p className='f-14 px-4'>
 											Applications that power your enterprise are key to generating a strong
 											competitive advantage. Bring innovation, agility and outstanding customer
-											experience through modern architectures and cloud first approach.
+											experience through modern architectures and a cloud-first approach.
 										</p>
 									</div>
 								</div>
@@ -154,11 +154,11 @@ const Tabs = () => {
 									<div className='text-center'>
 										<a
 											href='/devops-transformation/index.html'
-											className='text-center heading-h3 h3'>
+											className='text-center heading-h3 h6'>
 											DevOps <br />Transformation
 										</a>
 										<p className='f-14 px-1 px-md-4'>
-											Adopting a DevOps culture starts by transforming your people, tech and
+											Adopting a DevOps culture starts by transforming your people, technology and
 											processes. Accelerate your DevOps adaption by using our open Automation
 											platform and skilled resources.
 											<br />
@@ -175,13 +175,13 @@ const Tabs = () => {
 								<div className='p-2 p-md-4'>
 									<img src={PoweredBySynectiks} width='100%' alt='Xformation' className='w-100' />
 								</div>
-								<h2>What is Xformation?</h2>
+								<h5 className='ft'>What is Xformation?</h5>
 								<p>
 									It's a platform that provides peace of mind, governance, efficiency and control of
 									multi-cloud environments. Xformation helps you to migrate and modernize your legacy
 									business, take advantage of cloud and microservice architecture and thereby
-									accelerate your transformation journey @50% time & cost.  <br />{' '}
-									<span className='h5 b'>Its primary goals are:</span>
+									accelerate your transformation journey @50% time & cost.  <br />
+									<span className='h5 ft'>Its primary goals are:</span>
 								</p>
 								<ul className='showul'>
 									<li>Accelerated Cloud Adoption</li>

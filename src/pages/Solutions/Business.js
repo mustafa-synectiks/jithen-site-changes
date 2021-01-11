@@ -64,25 +64,24 @@ const Business = () => {
 			</Helmet>
 			<SEO title='Secure Cloud Backup as a Service' />
 			<BusinessWrapper>
-				<div className='bg-lightgrey container-fluid'>
-					<div className='text-justify'>
+				<div className='bg-lightgrey container-fluid p-0'>
+					<div>
 						<BreadCrumbs
 							title='Home'
 							subtitle='Business Continuity & Cyber Security'
 							pageTitle='Secure Cloud Backup as a Service'
 						/>
-						{/* <h1>Business Continuity & Cyber Security</h1> */}
+						<h1>Secure Cloud Backup as a Service </h1>
 					</div>
 					<Row className='d-flex justify-content-start'>
 						<div className='px-2 px-md-0 mb-3 col-md-12'>
 							<div className='bg-lightgrey mb-0 pb-3'>
 								<div className=''>
-									<h2>Secure Cloud Backup as a Service </h2>
 									<div className='text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex'>
 										<div className='w-100  pl-3 pr-3 text-black'>
-											<h4 className='my-1 my-md-3'>
+											<h5 className='my-1 my-md-3 ft'>
 												Secure, Reliable & Very Affordable Cloud Backup Solution.
-											</h4>
+											</h5>
 											<p className='lineHeight-24 ptext mt-md-4 mt-1'>
 												At Synectiks, Data Protection is topmost priority and is monitored with
 												utmost vigilance. Synectiks Cloud Backup with front line innovation
@@ -146,7 +145,11 @@ const Business = () => {
 										</div>
 									</div>
 									<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
-										<img class='w-12 mr-0 mr-md-5' src={AP} alt='Self-service portal' />
+										<img
+											class='w-12 mr-0 mr-md-5'
+											src={efficientStorage}
+											alt='Self-service portal'
+										/>
 										<div>
 											<h5>Efficient Backup Storage Usage</h5>
 											<p className='mt-2 pcenter'>
@@ -230,7 +233,9 @@ const BusinessWrapper = styled.div`
 		border: 5px solid white;
 		box-shadow: 0px 0px 9px 0px black;
 	}
-
+	.ft {
+		font-weight: 400 !important;
+	}
 	.w75 {
 		width: 100%;
 	}
@@ -392,7 +397,7 @@ const BusinessWrapper = styled.div`
 		.ptext {
 			text-align: justify !important;
 		}
-		padding: 3rem 4rem;
+		padding: 2.5rem 4rem;
 		.topNav {
 			position: relative;
 			top: 0px;

@@ -17,7 +17,7 @@ const SecureBusiness = () => {
 						pageTitle='Synectiks Hosted Infrastructure & Business Continuity'
 					/>
 					<SEO title='Secure Hosted & Business Continuity' />
-					<h2 className='ml-n1'>Synectiks Hosted Infrastructure & Business Continuity</h2>
+					<h1>Synectiks Hosted Infrastructure & Business Continuity</h1>
 				</div>
 				<div className='container-fluid mx-0'>
 					<div className='row pt-2'>
@@ -73,5 +73,23 @@ export default SecureBusiness;
 
 const SecureWrapper = styled.section`
 	/* background-color: rgba(221, 121, 231, .7); */
-	padding: 3rem 4rem;
+	padding: 2rem 1rem;
+	h2 {
+		font-weight: 400 !important;
+		font-style: normal !important;
+		font-size: 1.6rem !important;
+		/* line-height: 44px !important; */
+		text-align: left !important;
+		letter-spacing: normal !important;
+	}
+	@media (min-width: 576px) {
+		h2 {
+			font-weight: 400 !important;
+			font-style: normal !important;
+			font-size: 2.56rem !important;
+			line-height: 44px !important;
+			letter-spacing: normal !important;
+		}
+		padding: 2.5rem 4rem;
+	}
 `;

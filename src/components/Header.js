@@ -73,7 +73,7 @@ const Header = () => {
 													O365 Migration
 												</NavDropdown.Item>
 											</Col>
-											<Col className='p-0 bcdl mx-3 pl-md-3'>
+											<Col className='p-0 bcdl mx-md-3 pl-md-3'>
 												<NavDropdown.Item
 													className='main-sub-menu pl-2 py-0 lt-colr '
 													href='/business-cyber-sub-landing/index.html'>
@@ -109,7 +109,10 @@ const Header = () => {
 										</Row>
 									</Container>
 								</NavDropdown>
-								<NavDropdown title='Migration & Modernization' id='basic-nav-dropdown'>
+								<NavDropdown
+									className='ml-01'
+									title='Migration & Modernization'
+									id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/infrastructure/index.html'>
 										Infrastructure Transformation
 									</NavDropdown.Item>
@@ -121,16 +124,16 @@ const Header = () => {
 									</NavDropdown.Item>
 								</NavDropdown>
 
-								<NavDropdown title='Solutions' id='basic-nav-dropdown'>
+								<NavDropdown className='ml-01' title='Solutions' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/microservices/index.html'>Microservices</NavDropdown.Item>
 									<NavDropdown.Item href='/hybrid-cloud/index.html'>Hybrid Cloud</NavDropdown.Item>
 								</NavDropdown>
-								<NavDropdown title='Resources' id='basic-nav-dropdown'>
+								<NavDropdown className='ml-01' title='Resources' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/featured/index.html'>Featured</NavDropdown.Item>
 									<NavDropdown.Item href='/blog/index.html'>Blog</NavDropdown.Item>
 									<NavDropdown.Item href='/casestudy/index.html'>Case Studies</NavDropdown.Item>
 								</NavDropdown>
-								<NavDropdown title='Company' id='basic-nav-dropdown'>
+								<NavDropdown className='ml-01' title='Company' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/about-us/index.html'>About Us</NavDropdown.Item>
 									<NavDropdown.Item href='/careers/index.html'>Careers</NavDropdown.Item>
 									<NavDropdown.Item href='/Contact-us.html'>Contact Us</NavDropdown.Item>
@@ -154,6 +157,10 @@ Header.defaultProps = {
 export default Header;
 
 const HeaderNav = styled.div`
+	display: none !important;
+	.main-tab {
+		margin-left: -12px !important;
+	}
 	.icon-fnt {
 		font-size: 2rem;
 		color: white;
@@ -209,7 +216,18 @@ const HeaderNav = styled.div`
 	.bg-top {
 		background: var(--synectiksBlue) !important;
 	}
+
+	.ml-01 {
+		margin-left: -10px !important;
+	}
 	@media (min-width: 576px) {
+		display: block !important;
+		.ml-01 {
+			margin-left: 0px !important;
+		}
+		.main-tab {
+			margin-left: 0 !important;
+		}
 		.main-tab.dropdown.nav-item > .dropdown-menu {
 			width: max-content;
 			position: absolute;

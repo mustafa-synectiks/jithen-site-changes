@@ -218,7 +218,7 @@ export class AwsManaged extends React.Component {
 									<br />
 									We can help!
 								</p>
-								<a className='btn btn-primary' href='https://synectiks.com/Contact-us.html'>
+								<a className='btn btn-primary mb-3' href='https://synectiks.com/Contact-us.html'>
 									Let's Talk
 								</a>
 							</div>
@@ -270,7 +270,7 @@ const AwsManagedWrapper = styled.div`
 		.w90 {
 			width: 90% !important;
 		}
-		padding: 3rem 0rem;
+		padding: 2.5rem 0rem;
 		.ptext {
 			text-align: justify;
 		}

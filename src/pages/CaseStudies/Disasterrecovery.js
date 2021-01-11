@@ -9,48 +9,48 @@ const Disasterrecovery = () => {
 	return (
 		<Layout>
 			<DisasterWrapper>
-			<Helmet>
-			<link rel='canonical' href='https://www.synectiks.com/disaster-recovery/index.html'/>
-			</Helmet>
+				<Helmet>
+					<link rel='canonical' href='https://www.synectiks.com/disaster-recovery/index.html' />
+				</Helmet>
 
 				<SEO title='Disaster Recovery' />
 				<div className=''>
 					<CaseBreadCrumbs
 						title='Home'
-						casetitle='What We Do'
+						casetitle='Resources'
 						subtitle='Case Studies'
 						pageTitle='Disaster Recovery'
 					/>
 					<h1>Disaster Recovery</h1>
 					<div className='softwareDefined_image'>
 						<p className='blueBorder pl-2 pl-md-5 py-1 py-3'>
-						 As we all know, a potential business disorder will directly impact CAPEX and
-							OPEX of the business. When a proper disaster recovery plan is set, any business can continue
-							to run its critical operations without thwarting their customer expectations. That is
-							exactly what we offered Indian defense, a solution that can manage and provide necessary
-							outcomes in case of any DR issues.
+							As we all know, a potential business disorder will directly impact CAPEX and OPEX of the
+							business. When a proper disaster recovery plan is set, any business can continue to run its
+							critical operations without thwarting their customer expectations. That is exactly what we
+							offered Indian defense, a solution that can manage and provide necessary outcomes in case of
+							any DR issues.
 						</p>
 						<img src={ds} alt='Disaster Recovery' className='w-100 my-3 my-md-0' />
 					</div>
 					<div className='softwareDefined_div d-flex flex-column flex-md-row justify-content-around py-1 py-md-5'>
 						<div className='column w-100 px-1 px-5 orangeBorder'>
-							<h4>Sector - Defence</h4>
+							<h5 className='ft'> Sector - Defence</h5>
 							<p>Automobiles</p>
 						</div>
 						<div className='column w-100 px-1 px-5 blueBorder'>
-							<h4>Business Objective</h4>
+							<h5 className='ft'> Business Objective</h5>
 							<p>
 								Transformation towards becoming hardware / Os / Vender / Operation agnostic. Make
 								everything software defined.
 							</p>
 						</div>
 						<div className='column w-100 px-1 px-5 redBorder'>
-							<h4>Technologies</h4>
+							<h5 className='ft'> Technologies</h5>
 							<p> AWS, Infrastructure as a code, microservices, DevOps</p>
 						</div>
 					</div>
 					<div>
-						<h4>Overview</h4>
+						<h5 className='ft'> Overview</h5>
 						<p>
 							As we all know, a potential business disorder will directly impact CAPEX and OPEX of the
 							business. When a proper disaster recovery plan is set, any business can continue to run its
@@ -58,7 +58,7 @@ const Disasterrecovery = () => {
 							offered Indian defense, a solution that can manage and provide necessary outcomes in case of
 							any DR issues.
 						</p>
-						<h4>Challenges</h4>
+						<h5 className='ft'> Challenges</h5>
 						<p>The Indian defense had only 4 Mbps site to site leased line for data transfer. </p>
 						<p>They were using email, intranet and few BPM applications on SAN-based storage.</p>
 						<p>
@@ -71,7 +71,7 @@ const Disasterrecovery = () => {
 						</p>
 					</div>
 					<div>
-						<h4>Solutions</h4>
+						<h5 className='ft'> Solutions</h5>
 						<ul>
 							<li>
 								Thorough planning and execution proved to be successful. Firstly, we used copy-on-write
@@ -99,7 +99,10 @@ const Disasterrecovery = () => {
 						</ul>
 					</div>
 					<div>
-						<h4>That old Cliché “DR is resilient enough to implement in one go” we proved it wrong!</h4>
+						<h5 className='ft'>
+							{' '}
+							That old Cliché “DR is resilient enough to implement in one go” we proved it wrong!
+						</h5>
 						<p>
 							Designing and deploying a total DR solution was not a rocket science for us. However, there
 							were few challenges to face though; we had only 4 Mbps site to site leased line for data
@@ -111,7 +114,7 @@ const Disasterrecovery = () => {
 							time and the recovery time is almost zero.
 						</p>
 
-						<h4>OUTCOME</h4>
+						<h5 className='ft'> OUTCOME</h5>
 						<p>
 							The DR solution was 10% low compared to a licensed DR product. They were able to restore the
 							data instantly and the recovery time was less than 10 min which is almost zero. The

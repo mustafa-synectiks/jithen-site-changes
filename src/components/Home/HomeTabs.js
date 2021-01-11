@@ -128,7 +128,7 @@ const Tabs = () => {
 						<div className='card-body pl-4 pr-3'>
 							<div className='row'>
 								<div className='col-sm-12'>
-									<h2 className='text-center'>Transformation Services </h2>
+									<h5 className='text-center ft'>Transformation Services </h5>
 									<p className='py-1 py-md-3'>
 										Synectiks Transformation services elevate your business by optimizing every
 										aspect of your operations for the public cloud or Hybrid cloud – your people,
@@ -144,10 +144,9 @@ const Tabs = () => {
 												Infrastructure Transformation
 											</a>
 											<p className='ptext  f-14 px-2 px-md-4'>
-												Make sure that every bit of your hardware environment is directly
-												supporting your business objectives. Transition from a hardware centric
-												to a software Defined organization make huge difference in CapEx and
-												Opex.
+												Ensure every bit of your hardware environment is directly supporting
+												your business objectives. The transition from a hardware-centric to a
+												software-defined organization makes a huge difference in CapEx and OpEx.
 											</p>
 										</div>
 									</div>
@@ -163,7 +162,7 @@ const Tabs = () => {
 											<p className='ptext  f-14 px-4'>
 												Applications that power your enterprise are key to generating a strong
 												competitive advantage. Bring innovation, agility and outstanding
-												customer experience through modern architectures and cloud first
+												customer experience through modern architectures and a cloud-first
 												approach.
 											</p>
 										</div>
@@ -179,9 +178,9 @@ const Tabs = () => {
 												DevOps Transformation
 											</a>
 											<p className='ptext  f-14 px-1 px-md-4'>
-												Adopting a DevOps culture starts by transforming your people, tech and
-												processes. Accelerate your DevOps adaption by using our open Automation
-												platform and skilled resources.
+												Adopting a DevOps culture starts by transforming your people, technology
+												and processes. Accelerate your DevOps adaption by using our open
+												Automation platform and skilled resources.
 											</p>
 										</div>
 									</div>
@@ -343,7 +342,7 @@ const Tabs = () => {
 					</div>
 				</div>
 
-				<div className='card'>
+				<div className='card mt-4'>
 					<div className='card-header' role='tab' id='headingFour'>
 						<a
 							className='collapsed'
@@ -374,7 +373,9 @@ const Tabs = () => {
 								<Col sm='12' className='p-1'>
 									<div className='py-1 py-md-3 h-100'>
 										<div className='border-right text-center'>
-											<a href='/infrastructure/index.html' className='text-center heading-h3 h6'>
+											<a
+												href='/business-cyber-sub-landing/index.html'
+												className='text-center heading-h3 h6'>
 												Business Continuity & Cyber Security Services
 											</a>
 											<p className='f-14 px-2 px-md-4'>
@@ -390,9 +391,7 @@ const Tabs = () => {
 								<Col sm='12' className='p-1'>
 									<div className='py-3 h-100'>
 										<div className='border-right text-center'>
-											<a
-												href='/application-transformation/index.html'
-												className='text-center heading-h3 h6'>
+											<a href='/iaas/index.html' className='text-center heading-h3 h6'>
 												Secure & Custom Hosted Infrastructure Services
 											</a>
 											<p className='f-14 px-4'>
@@ -409,7 +408,7 @@ const Tabs = () => {
 									<div className='py-1 py-md-3 h-100'>
 										<div className='border-right text-center'>
 											<a
-												href='/devops-transformation/index.html'
+												href='/digital-workspace/index.html'
 												className='text-center heading-h3 h6'>
 												Cloud-Hosted Virtual Desktop Services
 											</a>
@@ -430,7 +429,7 @@ const Tabs = () => {
 									<div className='py-1 py-md-3 h-100'>
 										<div className='border-right text-center'>
 											<a
-												href='/devops-transformation/index.html'
+												href='aws-managed-services/index.html'
 												className='text-center heading-h3 h6'>
 												AWS managed Services
 											</a>

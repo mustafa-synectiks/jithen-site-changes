@@ -25,6 +25,7 @@ import ND from '../images/case/CS_NetworkDesign.jpg';
 import ST from '../images/case/CS_StorageTier.jpg';
 import DR from '../images/case/CS_DisasterRecovery.jpg';
 import PoweredBySynectiks from '../images/HomePage/PoweredBySynectiks.png';
+import ProtectCloud from '../images/Protect_Cloud_Updated.jpg';
 import Hexagon from './Home/Hexagon';
 import HomeTabs from './Home/HomeTabs';
 import Tabs from './Home/Tabs';
@@ -113,7 +114,7 @@ microsoft cloud service provider,
 					<div id='owl-demo' className='owl-carousel owl-theme'>
 						<div className='item'>
 							<div className='caption'>
-								<h3 className='animated delay-1s slow fadeInRight'>
+								<h3 className='animated delay-1s slow fadeInRight text-white'>
 									Accelerate your migration <br />& modernization Journey
 								</h3>
 								<p className='animated delay-2s slow fadeInRight'>
@@ -166,6 +167,26 @@ microsoft cloud service provider,
 								alt='modernize your business, adopt cloud native microservices architecture'
 							/>
 						</div>
+						{/* <div className='item'>
+							<div className='caption'>
+								<h3 className='textColor'>
+									Eliminate security breaches, <br />downtime and data loss.
+								</h3>
+								<p className='textColor'>
+									Protect Cloud is a SaaS based readily available ALL-IN-ONE <br />Web-Based
+									innovative powerful integrated
+								</p>
+								<a href='https://synectiks.com/microservices/index.html' className='btn btn-primary'>
+									Learn More
+								</a>
+							</div>
+
+							<img
+								src={ProtectCloud}
+								className='w-50 right-img'
+								alt='modernize your business, adopt cloud native microservices architecture'
+							/>
+						</div> */}
 					</div>
 					<div id='progbar' />
 				</div>
@@ -173,9 +194,9 @@ microsoft cloud service provider,
 			<div className='container-fluid bgBlue px-2 px-md-5 '>
 				<div className='row'>
 					<div className='col heading1 mt-3 mt-md-0 pt-4 pt-md-0'>
-						<h1 className='textWhite text-left px-1 px-md-3'>
+						<h2 className='textWhite text-left px-1 px-md-3'>
 							We’ve always done things differently<span className='fa-3x l-0'>...</span>
-						</h1>
+						</h2>
 						<div className='circleFlex'>
 							<ScrollAnimation animateIn='fadeInUp'>
 								<div className='circle'>
@@ -206,7 +227,7 @@ microsoft cloud service provider,
 			<div className='bgMain'>
 				<div className='container-fluid bgWhite pt-0 px-0 pb-3 pb-md-0 p-md-5'>
 					<div className='tabsHeading'>
-						<h2 className='py-3'>Area Of Expertise For Outcome Based Solution Offerings</h2>
+						<h2 className='py-3'>Areas of Expertise for Outcome Based Solution Offerings</h2>
 					</div>
 					<HomeTabs />
 					<Tabs />
@@ -581,7 +602,10 @@ p{
 		text-align: left;
 	}
 
-
+.right-img{
+	position: relative;
+	right: -34rem;
+}
 
 h1{
 	font-size: 3.2rem;
@@ -1315,7 +1339,7 @@ color:var(--synectiksBlue);
 			}
 		}
 	.circlebig{
-			width:21.1em;
+			width:26em;
 			height:24rem;
 			border-radius: 50%;
 			margin-top: 15px;

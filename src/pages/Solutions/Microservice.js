@@ -33,22 +33,26 @@ const Microservice = () => {
 	const toggleTab = () => {
 		setNav((isOpen) => !isOpen);
 	};
-const onTop = () => {
-	window.scroll(0,0);
-}
+	const onTop = () => {
+		window.scroll(0, 0);
+	};
 	return (
 		<Layout>
-		<Helmet>
-		<meta name='description' content="SYNECTIKS, a trusted partner with experience migrating monolithic applications to cloud and microservices architecture, can help make the process seamless. Let us help you make the shift so you can capitalize on business opportunities faster."/>
-		<link rel='canonical' href='https://synectiks.com/microservices/index.html'/>
-		</Helmet>
-			<SEO title='Microservices'
-			 />
+			<Helmet>
+				<meta
+					name='description'
+					content='SYNECTIKS, a trusted partner with experience migrating monolithic applications to cloud and microservices architecture, can help make the process seamless. Let us help you make the shift so you can capitalize on business opportunities faster.'
+				/>
+				<link rel='canonical' href='https://synectiks.com/microservices/index.html' />
+			</Helmet>
 			<MicroserviceWrapper>
-				<div className=''>
-					<BreadCrumbs title='Home' subtitle='Solutions' pageTitle='Micro services' />
+				<SEO title='Microservices' />
+				<div className='container-fluid p-0'>
+					<div>
+						<BreadCrumbs title='Home' subtitle='Solutions' pageTitle='Micro services' />
+						<h1>Microservices</h1>
+					</div>
 					<div className=''>
-						<h1 className='mt-2 mt-md-4'>Microservices</h1>
 						<Row className='position-relative'>
 							<div className='col-sm-12 col-md-12'>
 								<Navbar color='light' light='light' expand='xl' className='topNav'>
@@ -67,7 +71,8 @@ const onTop = () => {
 													})}
 													onClick={() => {
 														toggle('1');
-													toggleTab(); onTop();
+														toggleTab();
+														onTop();
 													}}>
 													BRIEF
 												</NavLink>
@@ -80,7 +85,8 @@ const onTop = () => {
 													})}
 													onClick={() => {
 														toggle('2');
-													toggleTab(); onTop();
+														toggleTab();
+														onTop();
 													}}>
 													BENEFITS
 												</NavLink>
@@ -93,7 +99,8 @@ const onTop = () => {
 													})}
 													onClick={() => {
 														toggle('3');
-													toggleTab(); onTop();
+														toggleTab();
+														onTop();
 													}}>
 													CHALLENGES
 												</NavLink>
@@ -106,7 +113,8 @@ const onTop = () => {
 													})}
 													onClick={() => {
 														toggle('4');
-													toggleTab(); onTop();
+														toggleTab();
+														onTop();
 													}}>
 													HOW SYNECTIKS CAN HELP YOU?
 												</NavLink>
@@ -154,13 +162,17 @@ const onTop = () => {
 													divides the functionality into cohesive verticals by implementing a
 													specific domain.
 												</p>
-												<img src={ms2} alt='monolllith microservice' className='imgshadow microser mx-auto' />
+												<img
+													src={ms2}
+													alt='monolllith microservice'
+													className='imgshadow microser mx-auto'
+												/>
 											</div>
 										</div>
 									</TabPane>
 									<TabPane tabId='2'>
 										<div className=''>
-											<h4>Product Quality.</h4>
+											<h5 className='ft'>Product Quality.</h5>
 											<ul>
 												<li>
 													Optimize Scalability: React fluidly with smaller, self-contained
@@ -180,7 +192,7 @@ const onTop = () => {
 												</li>
 											</ul>
 
-											<h4 className='mt-2 mt-md-4'>Process & Culture.</h4>
+											<h5 className='mt-2 mt-md-4 ft'>Process & Culture.</h5>
 											<ul>
 												<li>
 													Streamline Feature Development: Sprint faster to keep up with
@@ -295,8 +307,10 @@ const onTop = () => {
 											develop and deploy on a dime.
 										</p>
 										<div className='my-0 my-md-4	'>
-											<h3>Three key Technology Drivers to Address Microservices Challenges.</h3>
-											<h3 className='my-0 mb-md-2	'>Hardware Aggregation.</h3>
+											<h5 className='ft'>
+												Three key Technology Drivers to Address Microservices Challenges.
+											</h5>
+											<h5 className='my-0 mb-md-2	ft'>Hardware Aggregation.</h5>
 											<p className='ptext'>
 												As you refactor one large monolith application into multiple independent
 												services with their own services and data layer, you probably would end
@@ -312,25 +326,25 @@ const onTop = () => {
 												centers and geographies.
 											</p>
 											<div className='mt-2 mt-md-4'>
-												<h3 className='my-0 mb-md-2	'>
+												<h5 className='my-0 mb-md-2 ft	'>
 													Containerization & Continuous Delivery.
-												</h3>
+												</h5>
 												<p className='ptext'>
-													As you transform monolith to microservices, your big X become 100
-													small x. If you deploy those 100 x as layered stack in discrete
-													servers in different way, your deployment complexity would multiply
-													to 1000X. To address this challenge, you definitely need to unify
-													the delivery of services, make sure your services are delivered in
-													the same way and they are staged to production environment through
-													some stringent quality gates. To unify the delivery of multiple
-													services in the same way, Containerization play a big role and
-													Containers along with Continuous Delivery channel brings down your
-													1000X complexity to a factor of X.
+													As you transform monolith to microservices, your big X becomes 100
+													small x. If you deploy that 100 x as a layered stack in discrete
+													servers in a different way, your deployment complexity would
+													multiply to 1000X. To address this challenge, you definitely need to
+													unify the delivery of services, make sure your services are
+													delivered in the same way and they are staged to the production
+													environment through some stringent quality gates. To unify the
+													delivery of multiple services in the same way, Containerization play
+													a big role and Containers along with the Continuous Delivery channel
+													brings down your 1000X complexity to a factor of X.
 												</p>
 											</div>
 											<div className='d-flex flex-column align-items-start flex-md-row justify-md-between  px-2 px-md-0 mt-2 mt-md-5'>
 												<div className='pr-0 pr-md-5 w-100'>
-													<h3 className='my-0 mb-md-2	mt-md-n3'>Operation Automation.</h3>
+													<h5 className='my-0 mb-md-2	mt-md-n3 ft'>Operation Automation.</h5>
 													<p className='ptext'>
 														An ideal microservices hosting platform is based on
 														geographically spanned cluster and hardware agnostic. While this
@@ -355,7 +369,11 @@ const onTop = () => {
 													</p>
 												</div>
 												<div className='w-100'>
-													<img src={ms4} alt='Operation Automation' className='w-100 imgshadow' />
+													<img
+														src={ms4}
+														alt='Operation Automation'
+														className='my-2 my-md-0 w-100 imgshadow'
+													/>
 												</div>
 											</div>
 
@@ -363,7 +381,7 @@ const onTop = () => {
 												<div className='my-2 my-md-4'>
 													<div className='d-flex'>
 														<div className='d-flex flex-column justify-content-around bgOrange'>
-															<div className='rotate bgOrange'>
+															<div className='rotate bgOrange vert-text'>
 																<h6>Activites</h6>
 															</div>
 														</div>
@@ -444,14 +462,12 @@ const onTop = () => {
 
 													<div className='d-flex'>
 														<div className='d-flex flex-column justify-content-around bgOrange'>
-
-															<div className='rotate bgOrange'>
+															<div className='rotate bgOrange vert-text'>
 																<h6>Output</h6>
 															</div>
 														</div>
 														<div className='d-flex flex-column flex-md-row justify-content-md-around bgRedLight text-light px-md-3 py-md-1'>
 															<div className='aggregate col'>
-
 																<div className='d-flex'>
 																	<div>
 																		<ul className='p-3'>
@@ -469,7 +485,6 @@ const onTop = () => {
 																</div>
 															</div>
 															<div className='extend col'>
-
 																<div className='d-flex'>
 																	<div>
 																		<ul className='p-3'>
@@ -484,7 +499,6 @@ const onTop = () => {
 																</div>
 															</div>
 															<div className='devops col'>
-
 																<div className='d-flex'>
 																	<div>
 																		<ul className='p-3'>
@@ -495,7 +509,6 @@ const onTop = () => {
 																</div>
 															</div>
 															<div className='Operate col'>
-
 																<div className='d-flex'>
 																	<div>
 																		<ul className='p-3'>
@@ -512,7 +525,7 @@ const onTop = () => {
 													</div>
 												</div>
 
-												<h3>One Key Cultural Driver.</h3>
+												<h5 className='ft'>One Key Cultural Driver.</h5>
 												<p className='ptext'>
 													Simply speaking the microservice world is “Solve small problems,
 													with small teams with measurable outcomes vs solving 1 big problem
@@ -528,7 +541,11 @@ const onTop = () => {
 													contributes 90% towards your success. A typical culturally changed
 													organization will look like as below:
 												</p>
-												<img src={ms6} alt='One Key Cultural Driver' className='microser imgshadow mx-auto' />
+												<img
+													src={ms6}
+													alt='One Key Cultural Driver'
+													className='microser imgshadow mx-auto'
+												/>
 											</div>
 										</div>
 									</TabPane>
@@ -540,9 +557,15 @@ const onTop = () => {
 												process seamless. Let us help you make the shift so you can capitalize
 												on business opportunities faster.
 											</p>
-												<p>SYNECTIKS has a flexible and effective way of migrating monolithic
-												applications to microservices, which includes the following steps:</p>
-											<img src={ms7} alt='migrating monolithic ' className='my-0 mt-md-4 microIm imgshadow' />
+											<p>
+												SYNECTIKS has a flexible and effective way of migrating monolithic
+												applications to microservices, which includes the following steps:
+											</p>
+											<img
+												src={ms7}
+												alt='migrating monolithic '
+												className='my-2 mt-md-4 microIm imgshadow'
+											/>
 										</div>
 										<div>
 											<div className='d-flex flex-column flex-md-row justify-content-between my-0 my-md-5'>
@@ -642,7 +665,7 @@ const onTop = () => {
 													<img
 														src={ms9}
 														alt='SYNECTIKS Xformation platform'
-														className='my-0 my-md-5 microser imgshadow mx-auto'
+														className='my-2 my-md-5 microser imgshadow mx-auto'
 													/>
 												</div>
 												<div>
@@ -662,15 +685,15 @@ const onTop = () => {
 															that you can leverage lot of existing code and reuse your
 															maximum existing codebase. A typical large transformation
 															project can take a year long effort and often don’t yield
-															results. We recommend taking bottom up approach, take a
+															results. We recommend taking bottom - up approach, take a
 															small piece of functionality, and develop the services and
 															foundation for it rapidly by using existing application
 															blocks and automation framework. You would minimize your
 															risks by investing a small time & money and continue to do
 															so when you see a significant ROI. The key aspect is time.
 															The advantage of making us your microservices partner is,
-															our open source contribution helps us to deliver values vary
-															rapidly.
+															our open source contribution helps us to deliver values that
+															vary rapidly.
 														</li>
 														<li>
 															Embrace DevOps centric culture by delivering you skilled
@@ -678,13 +701,13 @@ const onTop = () => {
 														</li>
 													</ul>
 													<div className='my-0 my-md-5'>
-														<h3>
+														<h5 className='ft'>
 															Why SYNECTIKS should be your trusted microservice partner?
-														</h3>
+														</h5>
 														<img
 															src={ms8}
 															alt='microservice partner'
-															className='my-0 mt-md-4 microser70 imgshadow mx-auto'
+															className='my-2 mt-md-4 microser70 imgshadow mx-auto'
 														/>
 													</div>
 												</div>
@@ -717,6 +740,10 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
 export default Microservice;
 
 const MicroserviceWrapper = styled.div`{
+	.vert-text{
+		width: 10px;
+    padding: 0px 18px 0px 10px;
+	}
 .nav-link{
   /* background: var(--synectiksBlue); */
   color: var(--synectiksWhite);
@@ -920,7 +947,7 @@ ul.tabList.nav.flex-column {
     text-align: center;
     color: var(--synectiksWhite);
 }
-	padding: 3rem 4rem;
+	padding: 2.5rem 4rem;
 	p{
 		text-align: justify;
 	}

@@ -46,25 +46,28 @@ const Infrastructure = () => {
 		setNav((isOpen) => !isOpen);
 	};
 	const onTop = () => {
-	window.scroll(0,0);
-}
+		window.scroll(0, 0);
+	};
 
 	return (
 		<Layout>
-		<Helmet>
-		<meta name='description' content="The Modernize and Consolidate Data Center and Infrastructure Platform Blueprint available in Synectiks Xformation platform helps businesses roll out new IT systems and practices to meet the increased agility and price-performance demands of the digital enterprise. By following the blueprint’s and Powerful automation you can reduce workload and technology sprawl, streamline operations, and improve automation, so you can respond to the needs of the business more efficiently, quickly and cost-effectively."/>
-		<link rel='canonical' href='https://synectiks.com/infrastructure/index.html'/>
-		</Helmet>
+			<Helmet>
+				<meta
+					name='description'
+					content='The Modernize and Consolidate Data Center and Infrastructure Platform Blueprint available in Synectiks Xformation platform helps businesses roll out new IT systems and practices to meet the increased agility and price-performance demands of the digital enterprise. By following the blueprint’s and Powerful automation you can reduce workload and technology sprawl, streamline operations, and improve automation, so you can respond to the needs of the business more efficiently, quickly and cost-effectively.'
+				/>
+				<link rel='canonical' href='https://synectiks.com/infrastructure/index.html' />
+			</Helmet>
 			<HybridWrapper>
-			<SEO title='Infrastructure Transformation'/>
-				<div className='container-fluid p-1'>
+				<SEO title='Infrastructure Transformation' />
+				<div className='container-fluid p-0'>
 					<div className=''>
 						<BreadCrumbs
 							title='Home'
 							subtitle='Migration-Modernization'
 							pageTitle='Infrastructure Transformation'
 						/>
-						<h1 className='mt-4 ml-n2'>Infrastructure Transformation</h1>
+						<h1 className=''>Infrastructure Transformation</h1>
 					</div>
 					<div className=''>
 						<Row className='position-relative'>
@@ -133,18 +136,18 @@ const Infrastructure = () => {
 								<TabContent activeTab={activeTab}>
 									<TabPane tabId='1'>
 										<div>
-											<h3 className='text-left'>
-												Understanding the Software Defined Transformation:{' '}
-											</h3>
+											<h5 className='text-left ft'>
+												Understanding the Software-Defined Transformation:
+											</h5>
 											<p className='ptext'>
 												Software-defined infrastructure is the definition of technical computing
-												infrastructure entirely under the control of software with no operator
-												or human intervention. It operates independent of any hardware-specific
-												dependencies and is programmatically extensible”.{' '}
+												infrastructure entirely under the control of software with no human
+												intervention. It operates independent of hardware-specific dependencies
+												and is programmatically extensible.
 											</p>
-											<h3 className='mt-4'>
-												Why Software Defined Infrastructure matter in todays business?
-											</h3>
+											<h5 className='mt-4 ft'>
+												Why Software-defined Infrastructure matters in today’s business?
+											</h5>
 											<div className='table-responsive-md'>
 												<table className='table'>
 													<thead className='thead-light'>
@@ -160,11 +163,11 @@ const Infrastructure = () => {
 														</tr>
 														<tr>
 															<td>Discrete & Under-utilized </td>
-															<td>Pooled and Optimize</td>
+															<td>Pooled and Optimal usage</td>
 														</tr>
 														<tr>
 															<td>Sized upto maximum need</td>
-															<td>Elastic, Grow/Shrink when requires</td>
+															<td>Elastic, Grow/Shrink when required</td>
 														</tr>
 														<tr>
 															<td>Less than 10% Utilization</td>
@@ -178,34 +181,35 @@ const Infrastructure = () => {
 														</tr>
 														<tr>
 															<td>Less Secure, Error prone</td>
-															<td>High Secure, resilient </td>
+															<td>Highly Secure, resilient </td>
 														</tr>
 													</tbody>
 												</table>
 											</div>
 											<div>
 												<p className='ptext'>
-													The Capex and Opex of maintaining large, complex heterogeneous data
-													centers taxing many businesses driven by legacy applications and
-													infrastructure. To maintain competitive edge in a highly dynamic
-													market, business need to re-imagine the customer experience in lower
-													economics. The challenge is that today’s competitive environment is
-													accelerating faster than most conventional infrastructure can
-													support it. Business need an entirely new, cloud-native approach –
-													that’s primed for innovation and agility from the ground-up. With
-													the emergence of cloud and virtualization, combined with dramatic
-													cost reductions for data center hardware, have driven an evolution
-													to large homogeneous, Hybrid IT which are comparatively easy and
-													cost effective to manage. Enterprises are looking for dramatically
-													reducing the provisioning cycle for compute / storage / network and
-													deliver the scale, stability, speed and efficiency required to
-													support rapidly evolving enterprises. Software Defined
-													Infrastructure (SDI) mainly drives this change. Infrastructure
-													transformation is the first technology waypoint on the cloud native
-													approach. Business need to lay the foundation for innovation by
-													forensically re-architecting the existing legacy environment in
-													support of business objectives. Whether that’s controlling costs,
-													supporting growth, driving efficiency or otherwise.
+													The CapEx and OpEx of maintaining large, complex heterogeneous data
+													centers taxing many businesses driven by legacy applications and
+													infrastructure. To maintain a competitive edge in a highly dynamic
+													market, businesses need to re-imagine the customer experience in
+													lower economies. The challenge is that today’s competitive
+													environment is accelerating faster than the most convenient
+													infrastructure can support. Businesses need an entirely new,
+													cloud-native approach – that is primed for innovation and agility
+													from the ground up. The emergence of cloud and virtualization,
+													combined with dramatic cost reductions for data center hardware, has
+													driven an evolution to a large homogeneous, Hybrid IT which is
+													comparatively easy and cost effective to manage. Enterprises are
+													looking for an exponential reduction in the provisioning cycle for
+													compute / storage / network while delivering the scalability,
+													stability, speed and efficiency required to support rapidly evolving
+													businesses. Software-defined infrastructure (SDI) mainly drives this
+													change. Infrastructure transformation is the first technology
+													waypoint on the cloud-native approach. Businesses need to lay the
+													foundation for innovation by forensically re-architecting the
+													existing legacy environment in support of business objectives such
+													as controlling costs, supporting growth, driving efficiency and
+													more.
 												</p>
 												<p className='ptext'>
 													Forward-looking IT organizations are modernizing and consolidating
@@ -214,16 +218,16 @@ const Infrastructure = () => {
 													cloud-native services and digital businesses. Innovative
 													organizations are re-architecting applications for a Hybrid IT
 													agenda, incorporating innovations such as hyper-scaling and
-													aggregated infrastructure to reduce total cost of ownership improve
-													service velocity and accelerate the pace of business.
+													aggregated infrastructure to reduce total cost of ownership, improve
+													service velocity, and accelerate the pace of business.
 												</p>
 											</div>
 											<div>
 												<div className='my-2 my-md-5'>
-													<h4 className='text-center'>
+													<h5 className='text-center ft'>
 														A Blueprint for Modernizing and Consolidating Data Center and
 														Platforms as below:
-													</h4>
+													</h5>
 													<img
 														src={mcit}
 														alt='Modernize and Consolidate IT Infrastructure'
@@ -231,9 +235,9 @@ const Infrastructure = () => {
 													/>
 												</div>
 												<div className='py-2 py-md-4'>
-													<h3 className=' text-center'>
+													<h5 className=' text-center ft'>
 														Synectiks Software Defined Reference Architecture
-													</h3>
+													</h5>
 													<img
 														src={ms4}
 														alt='Synectiks Software Defined Reference Architecture'
@@ -390,9 +394,9 @@ const Infrastructure = () => {
 									<TabPane tabId='2'>
 										<div>
 											<div>
-												<h3 className='text-left'>
+												<h5 className='text-left ft'>
 													Getting Started To Software Defined Transformation
-												</h3>
+												</h5>
 
 												<div className='confidence row my-md-5'>
 													<div className='leftcol col-md-4'>
@@ -430,8 +434,8 @@ const Infrastructure = () => {
 															<span className='rightcolOneh3' />
 															<h3 className=''>Software Defined Transformation</h3>
 															<p className=''>
-																 Modernize and Consolidate Data Center and
-																Infrastructure Blueprint and continuously optimize it.
+																Modernize and Consolidate Data Center and Infrastructure
+																Blueprint and continuously optimize it.
 															</p>
 														</div>
 														<div className='rightcolTwo'>
@@ -447,18 +451,19 @@ const Infrastructure = () => {
 												<div className='bottomCol'>
 													{/* <span className='bottomColh3' /> */}
 													{/* <h3 className='text-center mt-2 mt-md-4'>Migration</h3> */}
-													<p>The very first step discovery
-																and assessment with automated tool will clearly give you
-																insights on the hardware inventory, application
-																dependency and resource consumption.</p>
+													<p>
+														The very first step, discovery and assessment with automated
+														tool will clearly give you insights on the hardware inventory,
+														application dependency and resource consumption.
+													</p>
 													<p className=''>
 														You can make informed decisions to balance workloads and
-														optimize resources and thereby to create a roadmap to guide the
-														journey to Software Defined Organization. This roadmap should
+														optimize resources and thereby, to create a roadmap to guide the
+														journey to Software-Defined Organization. This roadmap should
 														map people, process, technology change requirement, consider IT
 														policy and operating model factors; and ultimately produce
 														clear, data-based recommendations with a proposed execution plan
-														to enable Software Defined Transformation to happen. Getting
+														to enable Software-Defined Transformation to happen. Getting
 														there will require significant upliftment of people skills,
 														impart modern tools and technologies, transforming and migrating
 														applications, integrating and orchestrating environments,
@@ -478,15 +483,15 @@ const Infrastructure = () => {
 													Platform Blueprint available in Synectiks Xformation platform helps
 													businesses roll out new IT systems and practices to meet the
 													increased agility and price-performance demands of the digital
-													enterprise. By following the blueprint’s and Powerful automation you
+													enterprise. By following the blueprint and Powerful automation, you
 													can reduce workload and technology sprawl, streamline operations,
 													and improve automation, so you can respond to the needs of the
 													business more efficiently, quickly and cost-effectively.
 												</p>
-												<h3> Synectiks Xformation platform can help you</h3>
+												<h5 className='ft'> Synectiks Xformation platform can help you</h5>
 												<ul className='ptext'>
 													<li>
-														Reduce CAPEX and OPEX by consolidating infrastructure, pooling
+														Reduce CapEx and OpEx by consolidating infrastructure, pooling
 														resources and eliminating stranded capacity
 													</li>
 													<li>
@@ -495,7 +500,7 @@ const Infrastructure = () => {
 													</li>
 													<li>
 														Improve customer satisfaction and avoid shadow IT by introducing
-														service orchestration tools and selfserve portals
+														service orchestration tools and self-service portals
 													</li>
 													<li>
 														Meet stringent IoT scalability requirements by collecting and
@@ -505,15 +510,15 @@ const Infrastructure = () => {
 												<p className='ptext'>
 													The Synectiks Xformation Platform delivers cloud speed, scalability
 													and economics. Synectiks can enable your enterprise journey to
-													Software Defined Transformation, regardless of your starting point.
+													Software-Defined Transformation, regardless of your starting point.
 												</p>
 											</div>
 
 											<div className='row'>
-												<h4 className='pt-0 pt-md-0 pb-2 pb-md-3'>
+												<h5 className='pt-0 pt-md-0 pb-2 pb-md-3 ft'>
 													Synectiks can enable your enterprise journey to DevOps, regardless
 													of your starting point.
-												</h4>
+												</h5>
 												<div className='d-flex flex-column flex-md-row align-items-center'>
 													<img src={ds} alt='Discover and Assessment' className='w16 mr-5' />
 													<div>
@@ -521,8 +526,8 @@ const Infrastructure = () => {
 															Synectiks offers a variety of advisory services to assist
 															with your modernization and consolidation Journey. Our
 															discovery and assessment services can help you draft a
-															Software Defined roadmap with a clearly defined business
-															case and mapping of peoples / process / technologies along
+															Software-Defined roadmap with a clearly defined business
+															case and mapping of people / process / technologies along
 															with prioritized recommendations. Our recommendations
 															reflect deep industry knowledge and contextual knowledge
 															about your business.
@@ -535,7 +540,7 @@ const Infrastructure = () => {
 														<p className='ptexticon'>
 															You can access our open Xformation platform products and
 															resource teams to adopt technology and cultural changes
-															quickly from Software Defined Transformation, People skill
+															quickly from Software-Defined Transformation, People skill
 															and process transformation and integration to cloud-native
 															apps development. We have vast experience helping businesses
 															plan, design, optimize and manage the transitions necessary
@@ -558,7 +563,7 @@ const Infrastructure = () => {
 												</p>
 
 												<h5 className='text-center'>
-													Top 9 Reasons to select Synectiks as your Software Defined Partner:
+													Top 9 reasons to select Synectiks as your Software-Defined Partner:
 												</h5>
 											</div>
 											<div className='my-2 my-md-4'>
@@ -644,11 +649,11 @@ const Infrastructure = () => {
 																alt='Security and Compliance'
 																className='tw m-0'
 															/>
-															<h5 className='my-2 my-md-3'> Security & Compliance</h5>
+															<h5 className='my-2 my-md-3'>Security & Compliance</h5>
 														</div>
 														<p className='text-center'>
-															Provision and change infrastructure through well defined
-															blueprints and pipelines that adheres to highest level of
+															Provision and change infrastructure through well-defined
+															blueprints and pipelines that adhere to highest level of
 															security & compliance.
 														</p>
 													</div>
@@ -700,6 +705,9 @@ const HybridWrapper = styled.div`{
 }
 .w-sm-50{
 	width: 100%;
+}
+.ft{
+	font-weight:400 !important;
 }
 	.bottomColh3{
 		width: 10%;
@@ -1016,7 +1024,7 @@ ul.tabList.nav.flex-column {
 .ptexticon{
 	text-align: justify;
 }
-	padding: 3rem 4rem;
+	padding: 2.5rem 4rem;
 .disimal{
  width: 60%;
 }

@@ -65,24 +65,24 @@ const Daas = () => {
 				/>
 				<link rel='canonical' href='https://synectiks.com/private-cloud-hosting-services/index.html' />
 			</Helmet>
-			<SEO title='Cloud-Hosted Virtual Desktop' />
 			<DaasWrapper>
-				<div className='bg-lightgrey container-fluid'>
+				<SEO title='Cloud-Hosted Virtual Desktop' />
+				<div className='bg-lightgrey container-fluid p-0'>
 					<div className='text-justify'>
 						<BreadCrumbs
 							title='Home'
 							subtitle='Synectiks Hosted Infrastructure & Business Continuity'
 							pageTitle='Cloud-Hosted Virtual Desktop'
 						/>
+						<h1>Cloud-Hosted Virtual Desktop</h1>
 					</div>
 					<Row className='d-flex justify-content-start'>
 						<div className='px-2 px-md-0 mb-3 col-md-12'>
 							<div className='bg-lightgrey mb-0 pb-3'>
 								<div className=''>
-									<h2>Cloud-Hosted Virtual Desktop</h2>
 									<div className='w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex'>
 										<div className='w-100  pl-3  mr-0 mr-md-5'>
-											<p className='lineHeight-24 ptext mt-md-4 mt-1'>
+											<p className='lineHeight-24 ptext mt-md-2 mt-1'>
 												Synectiks Cloud-Hosted Virtual Desktop Service is a modern platform for
 												secure delivery of virtual desktops and apps. Our best-in-class
 												virtualization technologies enables scalability, uptime at an affordable
@@ -355,7 +355,7 @@ const DaasWrapper = styled.div`
 		.ptext {
 			text-align: justify !important;
 		}
-		padding: 3rem 4rem;
+		padding: 2.5rem 4rem;
 		.topNav {
 			position: relative;
 			top: 0px;

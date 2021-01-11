@@ -149,7 +149,7 @@ const Hexagon = () => {
 					</div>
 					<div className='col-md-6 pr-7'>
 						<div className='text-center my-4'>
-							<h2>Expertise</h2>
+							<h5 className='ft'>Expertise</h5>
 							<p className='text-uppercase mb-4'>
 								{/* Delivering purpose-built solutions based on open products and frameworks */}
 								Open Solutions Delivered in Multi Cloud Container Ecosystem to supercharge the Data
@@ -157,35 +157,35 @@ const Hexagon = () => {
 							</p>
 						</div>
 						<div className='show' id='hc1'>
-							<h2>Microservices</h2>
+							<h5 className='ft'>Microservices</h5>
 							<p>Modernization traditional application and legacy infrastructure.</p>
 						</div>
 						<div className='hide' id='hc2'>
-							<h2>DevOps</h2>
+							<h5 className='ft'>DevOps</h5>
 							<p>
 								Empowering Organization to adopt DevOps culture with through specialized people, tools
 								and training.
 							</p>
 						</div>
 						<div className='hide' id='hc3'>
-							<h2>Cloud</h2>
+							<h5 className='ft'>Cloud</h5>
 							<p>
 								Accelerating cloud adoption and software defined transformation through open tools and
 								frameworks.
 							</p>
 						</div>
 						<div className='hide' id='hc4'>
-							<h2>Monitoring</h2>
+							<h5 className='ft'>Monitoring</h5>
 							<p>Develop purpose-build monitoring solutions based on proven open frameworks.</p>
 						</div>
 						<div className='hide' id='hc5'>
-							<h2>Analytics</h2>
+							<h5 className='ft'>Analytics</h5>
 							<p>
 								Develop purpose-built Fast Data and Big Data solutions based on proven open frameworks.
 							</p>
 						</div>
 						<div className='hide' id='hc6'>
-							<h2>RAD</h2>
+							<h5 className='ft'>RAD</h5>
 							<p>
 								Rapidly build App Blocks based business application in predictable and deterministic
 								way.

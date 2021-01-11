@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Header from './Header';
+import MobileHeader from './MobileNav';
 // import $ from 'jquery';
 // import * as jquery from 'jquery';
 import Footer from './Footer';
@@ -327,6 +328,7 @@ const Layout = ({ children }) => {
 	return (
 		<div>
 			<Header />
+			<MobileHeader />
 			<main>{children}</main>
 			<Footer />
 		</div>

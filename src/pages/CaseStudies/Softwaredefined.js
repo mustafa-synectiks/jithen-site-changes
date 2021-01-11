@@ -14,20 +14,20 @@ const Softwaredefined = () => {
 	return (
 		<Layout>
 			<SoftwaredefinedWrapper>
-			<Helmet>
-			<link rel='canonical' href='https://www.synectiks.com/software-defined/index.html'/>
-			</Helmet>
+				<Helmet>
+					<link rel='canonical' href='https://www.synectiks.com/software-defined/index.html' />
+				</Helmet>
 				<SEO title='Software Defined' />
 				<div className='softwareDefined_wrap'>
 					<CaseBreadCrumbs
 						title='Home'
-						casetitle='What We Do'
+						casetitle='Resources'
 						subtitle='Case Studies'
 						pageTitle='Software Defined'
 					/>
 					<h1>Software Defined</h1>
 					<div className='softwareDefined_image'>
-						<h3>Large Motor Company</h3>
+						<h5 className='ft'>Large Motor Company</h5>
 						<p className='blueBorder pl-2 pl-md-5 py-1 py-3'>
 							The leadership took a decision to become Hardware/OS/Operation/vendor agnostic and achieve
 							scalability and reliability across the organization. We helped them with all the
@@ -39,45 +39,46 @@ const Softwaredefined = () => {
 					</div>
 					<div className='softwareDefined_div d-flex flex-column flex-md-row justify-content-around py-1 py-md-5'>
 						<div className='column w-100 px-1 px-5 orangeBorder'>
-							<h4>Industry</h4>
+							<h5 className='ft'>Industry</h5>
 							<p classname='textAlign'>Automobiles</p>
 						</div>
 						<div className='column w-100 px-1 px-5 blueBorder'>
-							<h4>Business Objective</h4>
+							<h5 className='ft'>Business Objective</h5>
 							<p classname='textAlign'>
 								Transformation towards becoming hardware / Os / Vender / Operation agnostic. Make
 								everything software defined.
 							</p>
 						</div>
 						<div className='column w-100 px-1 px-5 redBorder'>
-							<h4>Technologies</h4>
+							<h5 className='ft'>Technologies</h5>
 							<p classname='pleft'>AWS, Infrastructure as a code, microservices, DevOps</p>
 						</div>
 					</div>
 					<div>
-						<h4>Overview</h4>
+						<h5 className='ft'>Overview</h5>
 						<p classname='textAlign'>
 							Four data centers and more than two thousand servers running 24/7, with twenty plus
 							applications and two hundred operations team, Large Motor Company handles massive daily
 							operations round the clock to give the best world class service to their customers.
 						</p>
-						<h4>Challenges</h4>
+						<h5 className='ft'>Challenges</h5>
 						<p classname='textAlign'>
-							<b className='fw-500'> Scalability</b>: This was the primary and pertinent challenge of Large Motor Company as
-							their applications were not horizontally scalable due to which their applications, faced
-							many performance issues. <br />
-							<b className='fw-500'>Reliability</b>: They had difficulty in confronting hardware downtime, unplanned outages
-							have directly impacted software downtime and baffled their IT operations, applications and
-							data. <br />
-							<b className='fw-500'>Vendor Dependency</b>: They were running licensed products for HA clustering, system
-							monitoring and security. Most of the products were licensed.<br />
-							<b className='fw-500'>Traditional IT infrastructure</b>: With traditional Infrastructure, it is not only
-							difficult to manage a data center but also hard to improve costs in maintaining the physical
-							resources. The Large Motor company was not using more than 10% of their physical resources.
+							<b className='fw-500'> Scalability</b>: This was the primary and pertinent challenge of
+							Large Motor Company as their applications were not horizontally scalable due to which their
+							applications, faced many performance issues. <br />
+							<b className='fw-500'>Reliability</b>: They had difficulty in confronting hardware downtime,
+							unplanned outages have directly impacted software downtime and baffled their IT operations,
+							applications and data. <br />
+							<b className='fw-500'>Vendor Dependency</b>: They were running licensed products for HA
+							clustering, system monitoring and security. Most of the products were licensed.<br />
+							<b className='fw-500'>Traditional IT infrastructure</b>: With traditional Infrastructure, it
+							is not only difficult to manage a data center but also hard to improve costs in maintaining
+							the physical resources. The Large Motor company was not using more than 10% of their
+							physical resources.
 						</p>
 					</div>
 					<div>
-						<h4>Solutions</h4>
+						<h5 className='ft'>Solutions</h5>
 						<ul>
 							<li>
 								We remodeled their legacy IT infrastructure into an entirely software-defined
@@ -107,10 +108,10 @@ const Softwaredefined = () => {
 						</ul>
 					</div>
 					<div>
-						<h4>
+						<h5 className='ft'>
 							Synectiks providing a customized solution and targeting the pain points of Large Motor
 							Systems.
-						</h4>
+						</h5>
 						<p classname='textAlign'>
 							When Large Motor Company approached Synectiks, they were handling multiple tasks with
 							traditional infrastructure model. They have reached a point on the edge where they can no
@@ -123,7 +124,9 @@ const Softwaredefined = () => {
 							areas were on scalability, agility and reliability issues. Once fixed, they can outperform
 							in their core areas and compete in their line of business for better business prospects.
 						</p>
-						<h4>How did Synectiks Consolidate, Validate and Outline the issues of Large Motor Systems?</h4>
+						<h5 className='ft'>
+							How did Synectiks Consolidate, Validate and Outline the issues of Large Motor Systems?
+						</h5>
 						<p classname='textAlign'>
 							We believe in harvesting information as much as possible that will yield a better solution.
 							That is exactly what we did with Large Motor Company. Upon analyzing their queries on a
@@ -138,7 +141,7 @@ const Softwaredefined = () => {
 							required data security, governance and compliance requirements in the cloud.
 						</p>
 
-						<h4>OUTCOME</h4>
+						<h5 className='ft'>OUTCOME</h5>
 						<p classname='textAlign'>
 							The entire business system is now managed by few resources reducing CAPEX by 80% and OPEX by
 							70%. Large Motor Company’s legacy infrastructure is entirely a new transformed
@@ -175,18 +178,19 @@ export default Softwaredefined;
 const SoftwaredefinedWrapper = styled.div`
 	 {
 		padding: 2rem 1rem;
-	.pleft,p {
+		.pleft,
+		p {
 			text-align: left;
 		}
 	}
 
 	@media screen and (min-width: 576px) {
 		padding: 3rem 4rem;
-		.pleft{
+		.pleft {
 			text-align: left !important;
 		}
 		p {
-			text-align: justify ;
+			text-align: justify;
 		}
 	}
 `;

@@ -46,17 +46,20 @@ const Infrastructure = () => {
 		setNav((isOpen) => !isOpen);
 	};
 	const onTop = () => {
-	window.scroll(0,0);
-}
+		window.scroll(0, 0);
+	};
 
 	return (
 		<Layout>
-		<Helmet>
-		<meta name='description' content="The Modernize and Consolidate Data Center and Infrastructure Platform Blueprint available in Synectiks Xformation platform helps businesses roll out new IT systems and practices to meet the increased agility and price-performance demands of the digital enterprise. By following the blueprint’s and Powerful automation you can reduce workload and technology sprawl, streamline operations, and improve automation, so you can respond to the needs of the business more efficiently, quickly and cost-effectively."/>
-		<link rel='canonical' href='https://synectiks.com/infrastructure/index.html'/>
-		</Helmet>
+			<Helmet>
+				<meta
+					name='description'
+					content='The Modernize and Consolidate Data Center and Infrastructure Platform Blueprint available in Synectiks Xformation platform helps businesses roll out new IT systems and practices to meet the increased agility and price-performance demands of the digital enterprise. By following the blueprint’s and Powerful automation you can reduce workload and technology sprawl, streamline operations, and improve automation, so you can respond to the needs of the business more efficiently, quickly and cost-effectively.'
+				/>
+				<link rel='canonical' href='https://synectiks.com/infrastructure/index.html' />
+			</Helmet>
 			<HybridWrapper>
-			<SEO title='Infrastructure Transformation'/>
+				<SEO title='Infrastructure Transformation' />
 				<div className='container-fluid p-1'>
 					<div className=''>
 						<BreadCrumbs
@@ -430,8 +433,8 @@ const Infrastructure = () => {
 															<span className='rightcolOneh3' />
 															<h3 className=''>Software Defined Transformation</h3>
 															<p className=''>
-																 Modernize and Consolidate Data Center and
-																Infrastructure Blueprint and continuously optimize it.
+																Modernize and Consolidate Data Center and Infrastructure
+																Blueprint and continuously optimize it.
 															</p>
 														</div>
 														<div className='rightcolTwo'>
@@ -447,10 +450,11 @@ const Infrastructure = () => {
 												<div className='bottomCol'>
 													{/* <span className='bottomColh3' /> */}
 													{/* <h3 className='text-center mt-2 mt-md-4'>Migration</h3> */}
-													<p>The very first step discovery
-																and assessment with automated tool will clearly give you
-																insights on the hardware inventory, application
-																dependency and resource consumption.</p>
+													<p>
+														The very first step, discovery and assessment with automated
+														tool will clearly give you insights on the hardware inventory,
+														application dependency and resource consumption.
+													</p>
 													<p className=''>
 														You can make informed decisions to balance workloads and
 														optimize resources and thereby to create a roadmap to guide the

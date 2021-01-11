@@ -37,6 +37,7 @@ import EndSecurity from '../../images/EndSecurity.svg';
 import DigitalWorkspace from '../../images/DigitalWorkspace.svg';
 import ProCloud from '../../images/Protect_Cloud_Updated.jpg';
 import vdi from '../../images/protect-cloud.jpg';
+import timg from '../../images/table-img.png';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarToggler, Navbar } from 'reactstrap';
 import classnames from 'classnames';
 import SEO from '../../components/seo.js';
@@ -67,21 +68,21 @@ const ProtectCloud = () => {
 				/>
 				<link rel='canonical' href='https://synectiks.com/private-cloud-hosting-services/index.html' />
 			</Helmet>
-			<SEO title='Cloud-Hosted Virtual Desktop' />
 			<ProctectCloudWrapper>
-				<div className='bg-lightgrey container-fluid'>
+				<SEO title='Cloud-Hosted Virtual Desktop' />
+				<div className='bg-lightgrey container-fluid p-0'>
 					<div className='text-justify'>
 						<BreadCrumbs
 							title='Home'
 							subtitle='Business Continuity & Cyber Security'
 							pageTitle='Protect Cloud'
 						/>
+						<h1>Protect Cloud</h1>
 					</div>
 					<Row className='d-flex justify-content-start'>
 						<div className='px-2 px-md-0 mb-3 col-md-12'>
 							<div className='bg-lightgrey mb-0 pb-3'>
 								<div className=''>
-									<h2>Protect Cloud</h2>
 									<div className='pr-img'>
 										{/* <img
 											className='w85 my-4 mx-auto'
@@ -97,11 +98,7 @@ const ProtectCloud = () => {
 											automation provide unmatched protection making it simple to manage all the
 											devices in your environment.
 										</p>
-										<p>
-											No need to get software’s from different vendors & No need to install
-											multiple agents on the same machine to have all the following basic security
-											and protection features:
-										</p>
+
 										<p>
 											<strong>Protect Cloud</strong> is a SaaS based readily available ALL-IN-ONE
 											Web-Based innovative powerful integrated solution with one-agent on any
@@ -113,15 +110,23 @@ const ProtectCloud = () => {
 											continuity, Security, and compliances requirements.
 										</p>
 										<p>
+											No need to get software’s from multiple vendors & No need to install
+											multiple agents on the same machine to have all basic security and
+											protection features. <br />
 											Pick and choose the required license type for each server/end-point device
-											from the following, mix and match the licenses as needed by each device in
+											from the following, mix and match the licenses as needed for each device in
 											your environment:
 										</p>
 									</div>
-
 									<div>
-										<h3>Editions: Feature Comparison </h3>
-										<Table border='1'>
+										<h5 className='ft'>Editions: Feature Comparison </h5>
+										<div className='table-img my-3 my-md-0 text-center'>
+											<span className='text-info'>
+												* View table in landscape mode for better view.
+											</span>
+											<img src={timg} alt='' />
+										</div>
+										<Table border='1' className='protect-table'>
 											<thead rowspan='2'>
 												<th />
 												<th className='tdfont bxl bxr'>Features</th>
@@ -533,6 +538,15 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
 export default ProtectCloud;
 
 const ProctectCloudWrapper = styled.div`
+	.protect-table {
+		display: none;
+	}
+	.table-img {
+		display: block;
+		img {
+			width: 100%;
+		}
+	}
 	td {
 		font-size: 12px;
 	}
@@ -562,7 +576,7 @@ const ProctectCloudWrapper = styled.div`
 	.pcenter {
 		text-align: center;
 	}
-	padding: 5rem 1rem;
+	padding: 2rem 1rem;
 	.topNav {
 		position: fixed;
 		top: 97px;
@@ -659,7 +673,7 @@ const ProctectCloudWrapper = styled.div`
 		font-size: 1.4rem;
 	}
 	h2 {
-		font-size: 1.3rem;
+		font-size: 1.6rem;
 	}
 	h3 {
 		font-size: 1.2rem;
@@ -708,6 +722,12 @@ const ProctectCloudWrapper = styled.div`
 	}
 
 	@media (min-width: 576px) {
+		.protect-table {
+			display: block;
+		}
+		.table-img {
+			display: none;
+		}
 		tr:nth-child(even) {
 			background: #ccc;
 		}
@@ -751,7 +771,7 @@ const ProctectCloudWrapper = styled.div`
 		.ptext {
 			text-align: justify !important;
 		}
-		padding: 3rem 4rem;
+		padding: 2.5rem 4rem;
 		.topNav {
 			position: relative;
 			top: 0px;

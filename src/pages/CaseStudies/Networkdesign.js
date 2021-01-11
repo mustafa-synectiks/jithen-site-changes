@@ -10,20 +10,20 @@ const Networkdesign = () => {
 	return (
 		<Layout>
 			<NetworkWrapper>
-			<Helmet>
-			<link rel='canonical' href='https://www.synectiks.com/network-design/index.html'/>
+				<Helmet>
+					<link rel='canonical' href='https://www.synectiks.com/network-design/index.html' />
 				</Helmet>
 				<SEO title='Network Designing' />
 				<div className='softwareDefined_wrap'>
 					<CaseBreadCrumbs
 						title='Home'
-						casetitle='What We Do'
+						casetitle='Resources'
 						subtitle='Case Studies'
 						pageTitle='Network Design'
 					/>
 					<h1>Network Design</h1>
 					<div className='softwareDefined_image'>
-						<h3>Cloud Automation For Medfusion Inc</h3>
+						<h5 className='ft'>Cloud Automation For Medfusion Inc</h5>
 						<p className='blueBorder pl-2 pl-md-5 py-1 py-3'>
 							Complete network backbone design with highest security for retail.
 						</p>
@@ -31,23 +31,23 @@ const Networkdesign = () => {
 					</div>
 					<div className='softwareDefined_div d-flex flex-column flex-md-row justify-content-around py-1 py-md-5'>
 						<div className='column w-100 px-1 px-md-5 orangeBorder'>
-							<h4>Industry</h4>
+							<h5 className='ft'>Industry</h5>
 							<p>Medfusion</p>
 						</div>
 						<div className='column w-100 px-1 px-md-5 blueBorder'>
-							<h4>Business Objective</h4>
+							<h5 className='ft'>Business Objective</h5>
 							<p>
 								Transformation towards becoming hardware / Os / Vender / Operation agnostic. Make
 								everything software defined.
 							</p>
 						</div>
 						<div className='column w-100 px-1 px-md-5 redBorder'>
-							<h4>Technologies</h4>
+							<h5 className='ft'>Technologies</h5>
 							<p>AWS, Infrastructure as a code, microservices, DevOps.</p>
 						</div>
 					</div>
 					<div>
-						<h4>Overview</h4>
+						<h5 className='ft'>Overview</h5>
 						<p>
 							Medfusion is a leading patient-provider communications platform and it is used to streamline
 							workflows that enable healthcare facilities to function more efficiently. The Medfusion’s
@@ -62,7 +62,7 @@ const Networkdesign = () => {
 							and weren’t going along perfectly fine when the resources get retired. They had to face the
 							challenges below.
 						</p>
-						<h4>Challenges</h4>
+						<h5 className='ft'>Challenges</h5>
 						<p>
 							Medfusion wanted a solution based on their existing tools which is much easier to build and
 							manage their operations. They need a solution to cater any automations that can be hooked
@@ -73,7 +73,7 @@ const Networkdesign = () => {
 						</p>
 					</div>
 					<div>
-						<h4>Solutions</h4>
+						<h5 className='ft'>Solutions</h5>
 						<ul>
 							<li>
 								Medfusion was already using Jira service desk as their ticketing tool and Jenkins for
@@ -102,7 +102,7 @@ const Networkdesign = () => {
 						</ul>
 					</div>
 					<div>
-						<h4>Automating their current resource provisioning process.</h4>
+						<h5 className='ft'>Automating their current resource provisioning process.</h5>
 						<p>
 							When Medfusion approached Synectiks, they were handling most of the requests from service
 							desk manually and once approved the resources would be provisioned from an automation
@@ -119,7 +119,9 @@ const Networkdesign = () => {
 							changed automatically, and their customer would get an email about the completion of the job
 							process.
 						</p>
-						<h4>How did Synectiks Consolidate, Validate and Outline the issues of Large Motor Systems?</h4>
+						<h5 className='ft'>
+							How did Synectiks Consolidate, Validate and Outline the issues of Large Motor Systems?
+						</h5>
 						<p>
 							We believe in harvesting information as much as possible that will yield a better solution.
 							That is exactly what we did with Large Motor Company. Upon analyzing their queries on a
@@ -134,7 +136,7 @@ const Networkdesign = () => {
 							required data security, governance and compliance requirements in the cloud.
 						</p>
 
-						<h4>OUTCOME</h4>
+						<h5 className='ft'>OUTCOME</h5>
 						<p>
 							We tailored a complete automation solution with their existing tools. On the first note, we
 							saved 60% time and 50% operations cost. We improved the resource provisioning SLA time to

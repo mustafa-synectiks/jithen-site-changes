@@ -52,14 +52,13 @@ const Iaas = () => {
 			<IaasWrapper>
 				<SEO title='Secure & Custom Hosted Infrastructure Solutions' />
 				<div className='bg-lightgrey container-fluid px-0'>
-					<div className='text-justify'>
+					<div>
 						<BreadCrumbs
 							title='Home'
 							subtitle='Synectiks Hosted Infrastructure & Business Continuity'
 							pageTitle='Secure & Custom Hosted Infrastructure'
 						/>
-						{/* <h1>IAAS</h1> */}
-						<h2 className='ml-n1'>Secure & Custom Hosted Infrastructure</h2>
+						<h1>Secure & Custom Hosted Infrastructure</h1>
 					</div>
 					<Row className='d-flex justify-content-start'>
 						<div className='px-2 px-md-0 mb-3 col-md-12'>
@@ -67,7 +66,7 @@ const Iaas = () => {
 								<div className=''>
 									<div className='text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex'>
 										<div className='w-100  pl-3 pr-3 text-black'>
-											<p className='lineHeight-24 ptext mt-md-4 mt-1'>
+											<p className='lineHeight-24 ptext mt-md-2 mt-1'>
 												Synectiks Secure Cloud Hosted Services supports a wide variety of
 												workloads & Disaster Recovery with a high degree of control, security,
 												and simplicity. Supports your mission-critical applications and
@@ -427,7 +426,7 @@ const IaasWrapper = styled.div`
 		.ptext {
 			text-align: justify !important;
 		}
-		padding: 3rem 4rem;
+		padding: 2.5rem 4rem;
 		.topNav {
 			position: relative;
 			top: 0px;

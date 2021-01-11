@@ -11,20 +11,20 @@ const Storagemigration = () => {
 	return (
 		<Layout>
 			<StorageWrapper>
-			<Helmet>
-			<link rel='canonical' href='https://www.synectiks.com/storage-migration/index.html'/>
-			</Helmet>
+				<Helmet>
+					<link rel='canonical' href='https://www.synectiks.com/storage-migration/index.html' />
+				</Helmet>
 				<SEO title='Storage Migration' />
 				<div className='softwareDefined_wrap'>
 					<CaseBreadCrumbs
 						title='Home'
-						casetitle='What We Do'
+						casetitle='Resources'
 						subtitle='Case Studies'
 						pageTitle='Storage Migration'
 					/>
 					<h1>Storage Migration</h1>
 					<div className='softwareDefined_image'>
-						<h3>SAN connectivity via Synectiks Storage Network Solutions</h3>
+						<h5 className='ft'>SAN connectivity via Synectiks Storage Network Solutions</h5>
 						<p className='blueBorder pl-2 pl-md-5 py-1 py-3'>
 							The leadership took a decision to become hardware/OS/Operation/vendor agnostic and achieve
 							scalability and reliability across the organisation. We helped them with all the
@@ -36,7 +36,7 @@ const Storagemigration = () => {
 					</div>
 					<div className='d-flex flex-column flex-md-row justify-content-around py-2 py-md-5'>
 						<div className='px-2 px-md-5'>
-							<h4>Cloud Implement Services</h4>
+							<h5 className='ft'>Cloud Implement Services</h5>
 							<p>
 								Production servers require storage consolidation to scale the growth of digital data.
 								Business requires efficient and robust storage solutions based on application needs.
@@ -51,7 +51,7 @@ const Storagemigration = () => {
 						</div>
 					</div>
 					<div>
-						<h4> Synectiks SAN model</h4>
+						<h5 className='ft'> Synectiks SAN model</h5>
 						<p>
 							Over the years, we have developed expertise around SAN storage that led us in creating
 							robust solutions for organizations across the globe in different domains and stages
@@ -59,14 +59,14 @@ const Storagemigration = () => {
 					</div>
 					<div className='softwareDefined_div d-flex flex-column flex-md-row justify-content-around py-1 py-md-5'>
 						<div className='column w-100 px-1 px-5 orangeBorder'>
-							<h4>Network Model</h4>
+							<h5 className='ft'>Network Model</h5>
 							<p className='pleft'>
 								Our unique core-edge SAN network offering works best for the applications providing
 								availability and load balancing.
 							</p>
 						</div>
 						<div className='column w-100 px-1 px-5 blueBorder'>
-							<h4> Business Objective </h4>
+							<h5 className='ft'> Business Objective </h5>
 							<p className='pleft'>
 								Our strength in offering raw block devices of various sizes delivers best i/o response
 								time with a high-end performance of the applications. We design and implement 3 data
@@ -74,7 +74,7 @@ const Storagemigration = () => {
 							</p>
 						</div>
 						<div className='column w-100 px-1 px-5 redBorder'>
-							<h4>File Model</h4>
+							<h5 className='ft'>File Model</h5>
 							<p>
 								We design and build customized NAS solutions for enterprises based on their needs and
 								demands. We construct robust networking file access to windows and Unix based clients.
@@ -82,11 +82,11 @@ const Storagemigration = () => {
 						</div>
 					</div>
 					<div>
-						<h4>Synectiks Cloud Solutions</h4>
+						<h5 className='ft'>Synectiks Cloud Solutions</h5>
 					</div>
 					<div className='softwareDefined_div d-flex flex-column flex-md-row justify-content-around py-1 py-md-5'>
 						<div className='column w-100 px-1 px-5 orangeBorder'>
-							<h4>L1-L2-L3-L4 support</h4>
+							<h5 className='ft'>L1-L2-L3-L4 support</h5>
 							<p>
 								It is our support to enterprises at various levels brought us where we are today. We
 								support operations at multiple stages to achieve customer SLAs and we succeeded.
@@ -94,14 +94,14 @@ const Storagemigration = () => {
 							</p>
 						</div>
 						<div className='column w-100 px-1 px-5 blueBorder'>
-							<h4>Build Solutions</h4>
+							<h5 className='ft'>Build Solutions</h5>
 							<p>
 								We offer a wide range of industry-specific storage box builds for specific niche
 								industry domains.
 							</p>
 						</div>
 						<div className='column w-100 px-1 px-5 redBorder'>
-							<h4> Active - Active Solutions</h4>
+							<h5 className='ft'> Active - Active Solutions</h5>
 							<p>
 								Our active-active solutions enable application clusters to work and maintain zero
 								downtime.
@@ -109,13 +109,13 @@ const Storagemigration = () => {
 						</div>
 					</div>
 					<div>
-						<h4>
+						<h5 className='ft'>
 							We follow ITIL process and methodologies to support various levels of supports for the
 							enterprises.
-						</h4>
+						</h5>
 						<div className='d-flex flex-column flex-md-row'>
 							<div className='px-2 px-md-5'>
-								<h4>Storage Automation</h4>
+								<h5 className='ft'>Storage Automation</h5>
 								<p>
 									Our core strength is to automate the end to end storage operations. We use various
 									DevOps tools to automate most of the storage jobs and with this, we receive customer
@@ -123,7 +123,7 @@ const Storagemigration = () => {
 								</p>
 							</div>
 							<div className='px-2 px-md-5'>
-								<h4>Block and File migration</h4>
+								<h5 className='ft'>Block and File migration</h5>
 								<p>
 									We are experts in migrating block data across multiple storage boxes. We offer
 									solutions and services to accelerate the migration of storage hardware and data.
@@ -133,7 +133,7 @@ const Storagemigration = () => {
 					</div>
 
 					<div>
-						<h4>Cloud across the globe with 187 data centers foot print.</h4>
+						<h5 className='ft'>Cloud across the globe with 187 data centers foot print.</h5>
 						<ul>
 							<li>180+ Data centers across the globe.</li>
 							<li>50+ Storage experts.</li>
@@ -170,13 +170,14 @@ export default Storagemigration;
 const StorageWrapper = styled.div`
 	 {
 		padding: 2rem 1rem;
-	.pleft,	p {
+		.pleft,
+		p {
 			text-align: left;
 		}
 	}
 	@media (min-width: 576px) {
 		padding: 3rem 4rem;
-		.pleft{
+		.pleft {
 			text-align: left;
 		}
 		p {

@@ -22,52 +22,23 @@ const AreaOfExpertise = ({ location }) => {
 			<AreaOfExpertiseWrapper>
 				<div className=''>
 					<BreadCrumbs title='Home' subtitle='What We Do' />
+					<h1>What We Do</h1>
 				</div>
 				<div className='my-4'>
-					<h1>What We Do</h1>
 					<p>
 						Cloud - an opportunity to envision possibilities, Power to Transform!
 						<br />
 						<br />
-						To make you realize this: We at SYNECTIKS - design and build scalable technology solutions;
-						perform digital transformation at speed and scale; bring together applications, infrastructure,
-						and security to leverage the full potential of cloud; automate to DevOps and PODS; migrate and
-						modernize; optimize and simplify cloud management.
+						To make you realize this: We at SYNECTIKS - design and build scalable technology solutions,
+						perform digital transformation at speed and scale, bring together applications, infrastructure,
+						and security to leverage the full potential of cloud, automate to DevOps and PODS, migrate and
+						modernize, optimize and simplify cloud management.
 					</p>
 				</div>
-				{/* <div className='my-2 my-md-4'>
-					<h3 className='my-2 text-center text-md-left'>
-						We are primarily helping customers on the following areas:
-					</h3>
-					<div className='d-flex flex-column align-items-center flex-md-row justify-md-content-start my-2 my-md-4'>
-						<div className=''>
-							<img src={img2} alt='Migration & Modernization' className='w-7 mr-md-5' />
-						</div>
-						<div>
-							<h4 className='text-center text-md-left'>Migration & Modernization</h4>
-							<p>
-								Modernize your legacy applications and Infrastructure using cloud-native technologies
-								and deliver predictive and deterministic business outcome.
-							</p>
-						</div>
-					</div>
-					<div className='d-flex flex-column align-items-center flex-md-row justify-md-content-start my-2 my-md-4'>
-						<div className=''>
-							<img src={img1} alt='Cloud Management' className='w-7 mr-md-5' />
-						</div>
-						<div>
-							<h4 className='text-center text-md-left'>Cloud Management</h4>
-							<p>
-								Fully manage your customers cloud environment with CloudOps delivery enabled with
-								DevSecOPs capabilities.
-							</p>
-						</div>
-					</div>
-				</div> */}
 				<div className='my-2 my-md-4'>
-					<h2 className='text-center my-2 my-md-4 py-2 py-md-4'>
+					<h5 className='text-center my-2 my-md-4 py-2 py-md-4 ft'>
 						Area of Expertise for Outcome-based Solution offerings
-					</h2>
+					</h5>
 					<HomeTabs />
 					<Tabs />
 				</div>
@@ -102,7 +73,7 @@ const AreaOfExpertiseWrapper = styled.div`
 		}
 	}
 	@media screen and (min-width: 576px) {
-		padding: 3rem 4rem;
+		padding: 2.5rem 4rem;
 		.blockquote-custom {
 			position: relative;
 			font-size: 1.1rem;

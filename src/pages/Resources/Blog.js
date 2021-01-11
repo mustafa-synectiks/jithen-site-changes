@@ -10,13 +10,13 @@ const Blog = () => {
 	return (
 		<Layout>
 			<BlogWrapper>
-			<Helmet>
- 			<link rel='canonical' href='https://synectiks.com/blog/index.html'/>
-			</Helmet>
-				<SEO title='Blogs' />
+				<Helmet>
+					<link rel='canonical' href='https://synectiks.com/blog/index.html' />
+				</Helmet>
 				<div className=''>
+					<SEO title='Blogs' />
 					<BreadCrumbs title='Home' subtitle='Resources' pageTitle='Blog' />
-					<h1 className='my-2 my-md-4'>Synectiks Blog</h1>
+					<h1 className=''>Synectiks Blog</h1>
 				</div>
 				<div>
 					<div className='w-450'>
@@ -56,7 +56,7 @@ const BlogWrapper = styled.div`
 		}
 	}
 	@media (min-width: 576px) {
-		padding: 3rem 4rem;
+		padding: 2.5rem 4rem;
 		.w-450 {
 			width: 400px;
 			padding: 0;

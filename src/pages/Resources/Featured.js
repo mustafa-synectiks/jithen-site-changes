@@ -19,15 +19,17 @@ export class Featured extends React.Component {
 		return (
 			<Layout>
 				<FeaturedWrapper>
-				<Helmet>
-				<link rel='canonical' href='https://synectiks.com/featured/index.html'/>
-				</Helmet>
+					<Helmet>
+						<link rel='canonical' href='https://synectiks.com/featured/index.html' />
+					</Helmet>
 					<div className='bg-lightgrey'>
 						<SEO title='Featured' />
-						<BreadCrumbs title='Home' subtitle='Resources' pageTitle='Featured' />
+						<div>
+							<BreadCrumbs title='Home' subtitle='Resources' pageTitle='Featured' />
+							<h1 className=''>Featured</h1>
+						</div>
 
 						<div className=''>
-							<h1 className='mt-2 mt-md-4'>Featured</h1>
 							<div className='d-flex flex-column flex-md-row justify-content-around flex-fill  align-items-center flex-col'>
 								<div>
 									<div className='p-1 p-md-5'>
@@ -149,7 +151,7 @@ const FeaturedWrapper = styled.div`
 		width: 100% !important;
 	}
 	@media (min-width: 576px) {
-		padding: 3rem 4rem;
+		padding: 2.5rem 4rem;
 		.w-img {
 			width: 100% !important;
 		}

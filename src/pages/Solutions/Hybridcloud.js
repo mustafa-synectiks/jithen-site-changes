@@ -80,10 +80,10 @@ const Hybridcloud = () => {
 				/>
 				<link rel='canonical' href='https://synectiks.com/hybrid-cloud/index.html' />
 			</Helmet>
-			<SEO title='Hybrid Cloud' />
 			<HybridWrapper>
-				<div className='container-fluid '>
-					<div className='px-1 px-md-5 py-2 pt-md-5 text-justify'>
+				<SEO title='Hybrid Cloud' />
+				<div className='container-fluid p-0'>
+					<div className=''>
 						<BreadCrumbs title='Home' subtitle='Solutions' pageTitle='Hybrid Cloud' />
 						<h1>Hybrid Cloud</h1>
 					</div>
@@ -165,8 +165,10 @@ const Hybridcloud = () => {
 														alt='Hybrid Cloud'
 													/>
 
-													<h3 className=''>Why Hybrid Cloud?</h3>
-													<h4 className='py-1 py-md-3'>Public, Private, and Hybrid Clouds</h4>
+													<h5 className='ft'>Why Hybrid Cloud?</h5>
+													<h5 className='py-1 py-md-3 ft'>
+														Public, Private, and Hybrid Clouds
+													</h5>
 													<p className='ptext'>
 														Public cloud is what people think of when they hear the word
 														“cloud.” It’s ideal for application development, scientific data
@@ -205,7 +207,7 @@ const Hybridcloud = () => {
 											</div>
 										</div>
 										<div className='shadow p-4 p-md-4 bgWhite'>
-											<h3>Key Drivers for Hybrid cloud adoption is:</h3>
+											<h5 className='ft'>Key Drivers for Hybrid cloud adoption is:</h5>
 											<div className=''>
 												<div className='my-1 my-md-3 d-flex flex-column flex-md-row justify-content-around align-items-center'>
 													<img
@@ -299,7 +301,7 @@ const Hybridcloud = () => {
 											</div>
 										</div>
 										<div className='textColor text-center p-2 p-md-5'>
-											<h3>Hybrid Cloud Challenges</h3>
+											<h5 className='ft'>Hybrid Cloud Challenges</h5>
 											<p className='ptext'>
 												Migration of workloads and integration between the private and public
 												clouds are primary challenges. Ensuring that applications and data do
@@ -375,7 +377,7 @@ const Hybridcloud = () => {
 										</div>
 										<div>
 											<div>
-												<h3> How Can I Use a Hybrid Cloud?</h3>
+												<h5 className='ft'> How Can I Use a Hybrid Cloud?</h5>
 												<p className='ptext'>
 													From being able to migrate between clouds to supporting local data
 													regulations, hybrid cloud enables the advanced level of management
@@ -484,7 +486,7 @@ const Hybridcloud = () => {
 													Data Extract, Transform, and Load (ETL) processes can be quite
 													resource-intensive and thus overwhelm the capabilities of an
 													internal cloud and datacenter. Machine learning and other analysis
-													tasks can also be moved based on lowest cost and availability.
+													tasks can also be moved based on the lowest cost and availability.
 												</p>
 											</div>
 											<div>
@@ -594,12 +596,12 @@ const Hybridcloud = () => {
 													<img
 														src={HybridCloud}
 														alt='Key Strategic Drivers'
-														className='w-75'
+														className='w-75 my-2 my-md-0'
 													/>
 												</div>
 											</div>
 											<div>
-												<h4>Key Strategic Drivers</h4>
+												<h5 className='ft'>Key Strategic Drivers</h5>
 												<p className='ptext'>
 													As companies embrace hybrid Cloud, they must address both technology
 													and the human side of change. There are several key actions to take:
@@ -612,7 +614,7 @@ const Hybridcloud = () => {
 														alt='Embrace Cultural Changes'
 														className='w15 mr-5'
 													/>
-													<div>
+													<div className='px-2 px-md-0'>
 														<h5>Embrace Cultural Changes</h5>
 														<p className='ptext'>
 															As the organization start embracing hybrid cloud and take
@@ -635,7 +637,7 @@ const Hybridcloud = () => {
 														alt='Revamp Change Management'
 														className='w15 mr-5'
 													/>
-													<div>
+													<div className='px-2 px-md-0'>
 														<h5>Revamp Change Management</h5>
 														<p className='ptext'>
 															The existing governance processes, gates and approval
@@ -655,7 +657,7 @@ const Hybridcloud = () => {
 														alt='Integrate Cloud Operations'
 														className='w15 mr-5'
 													/>
-													<div>
+													<div className='px-2 px-md-0'>
 														<h5>Integrate Cloud Operations</h5>
 														<p className='ptext'>
 															As organizations move workloads to the cloud, the IT
@@ -674,7 +676,7 @@ const Hybridcloud = () => {
 											<div className='row'>
 												<div className='d-flex flex-column flex-md-row align-items-center mt-0 mt-md-3'>
 													<img src={AS} alt='Automate support' className='w15 mr-5' />
-													<div>
+													<div className='px-2 px-md-0'>
 														<h5>Automate support</h5>
 														<p className='ptext'>
 															To the extent possible, automate IT support functions. For
@@ -694,7 +696,7 @@ const Hybridcloud = () => {
 											<div className='row mlr '>
 												<div className='d-flex flex-column flex-md-row align-items-center mt-0 mt-md-3'>
 													<img src={ST} alt='Manage “Shadow IT”' className='w15 mr-5' />
-													<div>
+													<div className='px-2 px-md-0'>
 														<h5>Manage “Shadow IT”</h5>
 														<p className='ptext'>
 															Business units are often acquiring the cloud services they
@@ -727,7 +729,7 @@ const Hybridcloud = () => {
 														alt='Discovery & Assessment'
 														className='w10 mr-0 mr-md-5 mt-n3'
 													/>
-													<div>
+													<div className='px-2 px-md-0'>
 														<h5>Discovery & Assessment</h5>
 														<p className='ptext'>
 															Our discovery and assessment services can help you draft a
@@ -747,7 +749,7 @@ const Hybridcloud = () => {
 														alt='Transformation Services'
 														className='w15 mr-md-5 mr-0 mt-n3'
 													/>
-													<div className='ml-0 ml-md-4'>
+													<div className='ml-0 ml-md-4 px-2 px-md-0'>
 														<h5>Transformation Services</h5>
 														<p className='ptext'>
 															You can access our open Xformation platform products and
@@ -817,7 +819,7 @@ const Hybridcloud = () => {
 															<h5 className='my-2 my-md-4'>Expertise</h5>
 														</div>
 														<p>
-															Experience Team with proven track record of CloudOps
+															Experience Team with a proven track record of CloudOps
 															delivery enabled with DevSecOps Capabilities
 														</p>
 													</div>
@@ -873,8 +875,8 @@ const Hybridcloud = () => {
 															<h5 className='my-2 my-md-4'>Compliance & Security</h5>
 														</div>
 														<p>
-															Our compliance and security assessment tools makes sure your
-															hybrid cloud journey meet your business compliance.
+															Our compliance and security assessment tools make sure your
+															hybrid cloud journey meets your business compliance.
 														</p>
 													</div>
 												</div>
@@ -919,9 +921,10 @@ const Hybridcloud = () => {
 																	<h5 className='my-2 my-md-3'>Demo Environment</h5>
 																</div>
 																<p>
-																	Avail the opportunity to quickly create demo hybrid
-																	cloud setup in our existing hybrid IT environment
-																	and testify you key business use cases.
+																	Avail the opportunity to quickly create a demo
+																	hybrid cloud setup in our existing hybrid IT
+																	environment and testify to you key business use
+																	cases.
 																</p>
 															</div>
 														</div>
@@ -1169,7 +1172,7 @@ p{
       cursor: pointer;
     }
       .tab-content>.active{
-        padding:0rem 0.5rem;
+        padding:0rem 0rem;
       }
       	.whbd9 {
 		width: 25%;
@@ -1195,7 +1198,7 @@ p{
 	.ptext{
 		text-align: justify;
 	}
-	padding: 0rem 1rem;
+	padding: 2.5rem 4rem;
 	.topNav{
 	position: relative;
 	top: 0px;
@@ -1242,7 +1245,7 @@ p{
   /* width: 87vw; */
 	position: relative;
 	top: 0px;
-	left: 3%;
+	left: 0;
     border: 1px solid var(--textColor);
     background: var(--synectiksWhite);
     justify-content: flex-start;
@@ -1271,7 +1274,7 @@ p{
     cursor: pointer;
   }
  .tab-content>.active{
-        padding:0rem 4rem;
+        padding:0rem 0rem;
       }
 	}
   a#bgL,a#bgLL,a#bgLLL{

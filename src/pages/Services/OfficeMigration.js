@@ -24,11 +24,12 @@ export class OfficeMigraton extends React.Component {
 					<link rel='canonical' href='https://synectiks.com/office-migration/index.html' />
 				</Helmet>
 				<OfficeMigratonWrapper>
-					<SEO title='Office 365' />
-					<BreadCrumbs title='Home' subtitle='Cloud Services' pageTitle='Office Migration' />
+					<div>
+						<SEO title='Office 365' />
+						<BreadCrumbs title='Home' subtitle='Cloud Services' pageTitle='Office Migration' />
+						<h1>Office 365</h1>
+					</div>
 					<div className='bg-lightgrey'>
-						<h1 className='text-left mt-2 mt-md-4'>Office 365</h1>
-
 						<div class=''>
 							<div />
 							<div className='px-1 ' data-aos='fade-up' data-aos-duration='2000'>
@@ -55,10 +56,7 @@ export class OfficeMigraton extends React.Component {
 										Security) and Azure.
 										<br />
 									</p>
-									<p className='lineHeight-24'>
-										Imagine what we can do for you!
-										<br />
-									</p>
+									<p className='lineHeight-24'>Imagine what we can do for you!</p>
 									<p className='lineHeight-24 ptext'>
 										We don’t just move you to Office 365. We help you create and sustain a
 										cost-efficient, highly responsive and secure evergreen workplace platform. We
@@ -67,9 +65,9 @@ export class OfficeMigraton extends React.Component {
 										<br />
 									</p>
 									<p className='lineHeight-24'>
-										<p>
-											<b>We can help accelerate your move to a digital workplace through our :</b>
-										</p>
+										<h5 className='ft'>
+											We can help accelerate your move to a digital workplace through our:
+										</h5>
 										<ul className='lineHeight-34'>
 											<li>
 												Experience in unlocking the full productivity potential of Office 365
@@ -92,9 +90,7 @@ export class OfficeMigraton extends React.Component {
 							</div>
 
 							<div className='w-100 text-black' data-aos='fade-up' data-aos-duration='2000'>
-								<p className='lineHeight-24'>
-									<b>Find Out Why Users Are Choosing Office 365</b>
-								</p>
+								<h5 className='ft lineHeight-24'>Find Out Why Users Are Choosing Office 365</h5>
 							</div>
 							<div
 								className='d-flex  py-3 flex-col flex-column flex-md-row text-center col-lg-12 text-light'
@@ -153,9 +149,7 @@ export class OfficeMigraton extends React.Component {
 								data-aos-duration='2000'>
 								<div className='w-100  text-black'>
 									<p className='lineHeight-24 '>
-										<p>
-											<b>Built by Microsoft, Made Easy by SYNECTIKS</b>
-										</p>
+										<h5 className='ft'>Built by Microsoft, Made Easy by SYNECTIKS</h5>
 										<ul className='lineHeight-34 ptext'>
 											<li>
 												<b>Reliable Support:</b> 24x7x365 support via phone or ticket. 15-minute
@@ -211,7 +205,7 @@ const OfficeMigratonWrapper = styled.div`
 		}
 	}
 	@media (min-width: 576px) {
-		padding: 3rem 4rem;
+		padding: 2.5rem 4rem;
 		.ptext {
 			text-align: justify;
 		}

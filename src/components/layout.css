@@ -85,7 +85,7 @@ font-style: normal; */
 	--synectiksBlue: #007cc2;
 	--synectiksOrange: #eeb12d;
 	--synectiksGreen: #17c671;
-	--textColor: #292929;
+	--textColor: #1b1b1b;
 	--backgroundColor: #efefef;
 	--synectiksWhite: #ffffff;
 	--synectiksLightBlue: #a5d8e9;
@@ -96,9 +96,9 @@ body {
 	padding: 0;
 	overflow-x: hidden;
 	font-family: montserrat !important;
-	font-weight: 300 !important;
+	font-weight: 400 !important;
 	font-style: normal;
-	font-size: 18px !important;
+	font-size: 0.9rem !important;
 	line-height: 26px;
 	background-color: #efefef;
 	word-break: break-word;
@@ -265,8 +265,25 @@ body {
 	background: var(--synectiksWhite);
 	background: linear-gradient(to bottom, #ffffff 80%, #efefef 80%);
 }
+.pro-bg {
+	background-image: linear-gradient(
+		to right top,
+		#f2f2f2,
+		#f3f3f3,
+		#f4f4f4,
+		#f5f5f5,
+		#f6f6f6,
+		#f7f7f7,
+		#f8f8f8,
+		#f9f9f9,
+		#fbfbfe,
+		#fefefe,
+		#fdfdfd,
+		#fcfcfc
+	);
+}
 .textColor {
-	color: #292929;
+	color: #292929 !important;
 }
 .Footerbg {
 	background: #cbcbcb;
@@ -274,6 +291,9 @@ body {
 }
 .fw-500 {
 	font-weight: 500;
+}
+.ft {
+	font-weight: 400 !important;
 }
 /* Devops Maturity Image Starts */
 .Dred {
@@ -442,20 +462,18 @@ a#tab4:not(.active) .arrow-down {
 	display: flex;
 	width: 100%;
 	height: auto;
-	background-image: url("../images/Synectiks Logo/optamizecloud.jpg"),
-		linear-gradient(to right bottom, #142630, #162833, #182a37, #1a2c3b, #1d2e3e);
 	background-repeat: no-repeat;
 	background-size: 100%, 100%;
 	background-position: center center;
-	color: white;
+	/* color: white; */
 }
 .pr-img {
 	display: flex;
 	width: 100%;
-	height: 85vh;
+	height: 25vh;
 	background-image: url("../images/Protect_Cloud_Updated.jpg");
 	background-repeat: no-repeat;
-	background-size: 90%;
+	background-size: 100%;
 	background-position: center center;
 	color: white;
 }
@@ -573,6 +591,9 @@ a.dropdown-toggle.nav-link {
 	/* background: rgb(34, 166, 230); */
 	background: white;
 }
+h1 {
+	font-size: 1.3rem !important;
+}
 
 @media screen and(max-width: 576px) {
 	.marHybrid {
@@ -580,7 +601,7 @@ a.dropdown-toggle.nav-link {
 	}
 
 	h1 {
-		font-size: 1.875rem !important;
+		font-size: 1.3rem !important;
 	}
 	h2 {
 		font-size: 1.6rem !important;
@@ -1979,15 +2000,37 @@ a.dropdown-toggle.nav-link {
 	height: 50vh;
 }
 @media (min-width: 576px) {
+	.bk-managed {
+		display: flex;
+		width: 100%;
+		height: auto;
+		background-image: url("../images/Synectiks Logo/optamizecloud.jpg"),
+			linear-gradient(to right bottom, #142630, #162833, #182a37, #1a2c3b, #1d2e3e);
+		background-repeat: no-repeat;
+		background-size: 100%, 100%;
+		background-position: center center;
+		color: white;
+	}
+	.pr-img {
+		display: flex;
+		width: 100%;
+		height: 55vh;
+		background-image: url("../images/Protect_Cloud_Updated.jpg");
+		background-repeat: no-repeat;
+		background-size: 60%;
+		background-position: center center;
+		color: white;
+	}
+	tbody,
 	p,
 	ul {
-		font-size: 1rem !important;
+		font-size: 0.9rem !important;
 	}
 	h1 {
 		font-family: montserrat, sans-serif;
 		font-weight: 300 !important;
 		font-style: normal !important;
-		font-size: 3.6rem !important;
+		font-size: 1.8rem !important;
 		line-height: 62px !important;
 		letter-spacing: normal !important;
 		/* color: #007cc2 !important; */
@@ -1996,7 +2039,7 @@ a.dropdown-toggle.nav-link {
 		font-family: montserrat, sans-serif;
 		font-weight: 400 !important;
 		font-style: normal !important;
-		font-size: 2.56rem !important;
+		font-size: 2.26rem !important;
 		line-height: 44px !important;
 		letter-spacing: normal !important;
 		/* color: #007cc2 !important; */

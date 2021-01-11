@@ -45,26 +45,27 @@ export class Careers extends React.Component {
 	render() {
 		return (
 			<Layout>
-			<Helmet>
-			<meta name='description' content="Work where you’re encouraged to explore your passions, where your skills are nurtured and respected. Introduce with leading-edge technologies on absolutely the coolest undertakings you'll be able to envision. What's more, get the tools you have to continue learning and developing, so you remain consistently on top of things while making a difference in the world."/>
-			<link rel='canonical' href='https://synectiks.com/careers/index.html'/>
-			</Helmet>
+				<Helmet>
+					<meta
+						name='description'
+						content='Work where you’re encouraged to explore your passions, where your skills are nurtured and respected. Introduce with leading-edge technologies on absolutely the coolest undertakings you&#39;ll be able to envision. What&#39;s more, get the tools you have to continue learning and developing, so you remain consistently on top of things while making a difference in the world.'
+					/>
+					<link rel='canonical' href='https://synectiks.com/careers/index.html' />
+				</Helmet>
 				<CareerWrapper>
 					<SEO title='Careers' />
 					<div className='bg-lightgrey'>
 						<div>
 							{/* <img className='  text-center pb-2 ' src={career} width='100%' alt='Careers' /> */}
 						</div>
-						<div className='container-fluid p-1'>
+						<div className='container-fluid p-0'>
 							<div className=''>
 								<BreadCrumbs title='Home' subtitle='Company' pageTitle='Careers' />
-							</div>
-							<div className='text-left pb-3 lineHeight-24 mt-2 mt-md-4'>
 								<h1>Careers</h1>
 							</div>
 
 							<div className='w-100  text-black ptext'>
-								<h2>Changing the game takes talent - Yours!</h2>
+								<h5 className='ft'>Changing the game takes talent - Yours!</h5>
 								<p className='lineHeight-24 pb-3 ptext'>
 									Work where you’re encouraged to explore your passions, where your skills are
 									nurtured and respected. Introduce with leading-edge technologies on absolutely the
@@ -75,44 +76,32 @@ export class Careers extends React.Component {
 								</p>
 								<div className='col-lg-12 d-flex flex-col flex-column flex-md-row'>
 									<div className='pt-3 col-sm-4 px-4'>
-										<a className='navlink navfont noLine'>
-											Data &amp; Analytics
-										</a>
+										<a className='navlink navfont noLine'>Data &amp; Analytics</a>
 									</div>
 									<div className='pt-3 col-sm-4 px-4'>
-										<a className='navlink navfont noLine' >
-											Design &amp; UX
-										</a>
+										<a className='navlink navfont noLine'>Design &amp; UX</a>
 									</div>
 									<div className='pt-3 col-sm-4 px-4'>
-										<a className='navlink navfont noLine'>
-											Engineering &amp; Technology
-										</a>
+										<a className='navlink navfont noLine'>Engineering &amp; Technology</a>
 									</div>
 								</div>
 								<div className='col-lg-12 d-flex flex-col flex-column flex-md-row'>
 									<div className='pt-3 col-sm-4 px-4'>
-										<a className='navlink navfont noLine'>
-											Internships
-										</a>
+										<a className='navlink navfont noLine'>Internships</a>
 									</div>
 									<div className='pt-3 col-sm-4 px-4'>
-										<a className='navlink navfont noLine' >
-											Sales &amp; Marketing
-										</a>
+										<a className='navlink navfont noLine'>Sales &amp; Marketing</a>
 									</div>
 									<div className='pt-3 col-sm-4 px-4'>
-										<a className='navlink navfont noLine' >
-											Software Development
-										</a>
+										<a className='navlink navfont noLine'>Software Development</a>
 									</div>
 								</div>
 								<div className='my-md-5'>
 									<p className='lineHeight-24 borderbtm-grey-1px my-md-3'>
-										<h2>Open positions in all locations</h2>
+										<h5 className='ft'>Open positions in all locations</h5>
 									</p>
 
-										<div>
+									<div>
 										<div>
 											<Button
 												color='primary'
@@ -124,46 +113,128 @@ export class Careers extends React.Component {
 											<Collapse isOpen={this.state.collapse5} className='pb-3'>
 												<Card>
 													<CardBody>
-													<p><b>What You'll Be Doing</b></p>
+														<p>
+															<b>What You'll Be Doing</b>
+														</p>
 														<p className='ptext'>
-														As a Software Engineer, you will be a member of one of our central assembly line teams such as a component development and automation test team. You will be part of the  weekly product release cycles and thereby ensure that features/plugins development/bug fixing as quickly as possible for our clients and that you are constantly improving the quality of our products. You will have aggressive daily and weekly targets to work against and you can expect to receive daily and weekly feedback about your performance. The regular feedback is used to help you improve immediately and to help you resolve blockers which may be slowing down your performance.
+															As a Software Engineer, you will be a member of one of our
+															central assembly line teams such as a component development
+															and automation test team. You will be part of the weekly
+															product release cycles and thereby ensure that
+															features/plugins development/bug fixing as quickly as
+															possible for our clients and that you are constantly
+															improving the quality of our products. You will have
+															aggressive daily and weekly targets to work against and you
+															can expect to receive daily and weekly feedback about your
+															performance. The regular feedback is used to help you
+															improve immediately and to help you resolve blockers which
+															may be slowing down your performance.
 														</p>
 														<ul>
-													<p><b>Key Responsibilities</b></p>
-<li>Deliver a consistently high-quality components/plugins  which has a high “First Time Acceptance Rate” from the engineering leadership.</li>
-<li>Implement Framework and Libraries developed by Architect.</li>
-<li>Comply with engineering process playbooks.</li>
-<li>Design APIs and Build RESTful Services.</li>
-<li>Develop and maintain CI-CD pipeline for our services to rapidly and safely deploy code and configuration.</li>
-<li>Ensuring that your output meets the teams quality bars before being passed on to further stages within the process.</li>
-<li>Meeting your goals, which are set by your manager, on a daily and weekly basis.</li>
-<li>Escalating issues to your manager as soon as a risk is identified or as soon as you are blocked in your work.</li>
-<li>Private/Public cloud provisioning/troubleshooting.</li>
-<li>Expertise and hands on experience on Linux/UNIX.</li>
-<li>Develop comprehensive monitoring solutions to provide full visibility to the different platform components using tools and services like Kubernetes, Prometheus, Grafana, ELK, and other similar tools.</li>
-<li>Integrate different components and develop new services with a focus on open source to allow a minimal friction developer interaction with the platform and application services.</li>
-<li>Experience creating automated tests as part of the development lifecycle.</li>
-<li>Full working knowledge of Git Version Control.</li>
-<li>Keep up to date with the latest Software Engineering trends.</li>
+															<p>
+																<b>Key Responsibilities</b>
+															</p>
+															<li>
+																Deliver a consistently high-quality components/plugins
+																which has a high “First Time Acceptance Rate” from the
+																engineering leadership.
+															</li>
+															<li>
+																Implement Framework and Libraries developed by
+																Architect.
+															</li>
+															<li>Comply with engineering process playbooks.</li>
+															<li>Design APIs and Build RESTful Services.</li>
+															<li>
+																Develop and maintain CI-CD pipeline for our services to
+																rapidly and safely deploy code and configuration.
+															</li>
+															<li>
+																Ensuring that your output meets the teams quality bars
+																before being passed on to further stages within the
+																process.
+															</li>
+															<li>
+																Meeting your goals, which are set by your manager, on a
+																daily and weekly basis.
+															</li>
+															<li>
+																Escalating issues to your manager as soon as a risk is
+																identified or as soon as you are blocked in your work.
+															</li>
+															<li>Private/Public cloud provisioning/troubleshooting.</li>
+															<li>Expertise and hands on experience on Linux/UNIX.</li>
+															<li>
+																Develop comprehensive monitoring solutions to provide
+																full visibility to the different platform components
+																using tools and services like Kubernetes, Prometheus,
+																Grafana, ELK, and other similar tools.
+															</li>
+															<li>
+																Integrate different components and develop new services
+																with a focus on open source to allow a minimal friction
+																developer interaction with the platform and application
+																services.
+															</li>
+															<li>
+																Experience creating automated tests as part of the
+																development lifecycle.
+															</li>
+															<li>Full working knowledge of Git Version Control.</li>
+															<li>
+																Keep up to date with the latest Software Engineering
+																trends.
+															</li>
 														</ul>
 														<ul>
-														<p><b>Candidate Requirements</b></p>
-<li>9+ years of hands-on software engineering experience in the following: Some of the technologies currently used within Engineering include Java, Scala, Kotlin, Python, Javascript, Typescript, React, Angular, SQL, Spring Boot, ElasticSearch, Docker, NoSQL DBs (Cassandra, Couchbase, MongoDB, DynamoDB), RDBMS (MS SQL, MySQL, PostgreSQL, Oracle), HTML, CSS, and a wide array of AWS services (Lambda, ECS, S3, SQS, Kinesis, DynamoDB, Neptune, Poly, etc..).</li>
-<li>5+ Years in hard core product development, developed features and modules from scratch, have contributed significantly in GitHub and Open Source ecosystem.</li>
-<li>Proficient leadership and analytical skills.</li>
-<li>Ability/Passion to learn new languages and technologies as needed.</li>
-<li>Demonstrate success as a problem solver.</li>
-<li>Be a result oriented individual.</li>
-<li>Comfortable “working virtually” with teammates and customers around the world.</li>
-<li>Please share your GitHub or any open source product contribution link, this is must to have.</li>
-<li>Bachelor’s Degree in Engineering, Information Systems, Decision Sciences, Mathematics, Statistics or related field, or a combination of education and work experience that provides the necessary skills to perform the essential job functions.</li>
+															<p>
+																<b>Candidate Requirements</b>
+															</p>
+															<li>
+																9+ years of hands-on software engineering experience in
+																the following: Some of the technologies currently used
+																within Engineering include Java, Scala, Kotlin, Python,
+																Javascript, Typescript, React, Angular, SQL, Spring
+																Boot, ElasticSearch, Docker, NoSQL DBs (Cassandra,
+																Couchbase, MongoDB, DynamoDB), RDBMS (MS SQL, MySQL,
+																PostgreSQL, Oracle), HTML, CSS, and a wide array of AWS
+																services (Lambda, ECS, S3, SQS, Kinesis, DynamoDB,
+																Neptune, Poly, etc..).
+															</li>
+															<li>
+																5+ Years in hard core product development, developed
+																features and modules from scratch, have contributed
+																significantly in GitHub and Open Source ecosystem.
+															</li>
+															<li>Proficient leadership and analytical skills.</li>
+															<li>
+																Ability/Passion to learn new languages and technologies
+																as needed.
+															</li>
+															<li>Demonstrate success as a problem solver.</li>
+															<li>Be a result oriented individual.</li>
+															<li>
+																Comfortable “working virtually” with teammates and
+																customers around the world.
+															</li>
+															<li>
+																Please share your GitHub or any open source product
+																contribution link, this is must to have.
+															</li>
+															<li>
+																Bachelor’s Degree in Engineering, Information Systems,
+																Decision Sciences, Mathematics, Statistics or related
+																field, or a combination of education and work experience
+																that provides the necessary skills to perform the
+																essential job functions.
+															</li>
 														</ul>
 													</CardBody>
 												</Card>
 											</Collapse>
 										</div>
 									</div>
-										<div>
+									<div>
 										<div>
 											<Button
 												color='primary'
@@ -178,12 +249,19 @@ export class Careers extends React.Component {
 														<p className='ptext'>
 															<b>
 																Infrastructure Engineer<br />
-																Master's with 3 years experience or Bachelors with 5 years experience.<br
-																/>
-																Major: CS, Applied CS or equivalent.<br/> Other suitable qualifications acceptable -
+																Master's with 3 years experience or Bachelors with 5
+																years experience.<br />
+																Major: CS, Applied CS or equivalent.<br /> Other
+																suitable qualifications acceptable -
 															</b>
 															<br />
-															 Princeton, NJ. Job entails working with & requires experience including: EMC, Hitachi, NetApp, AIX, Linux, Windows, Solaris, Shell Scripting, Python, NFS, CIFS, TCP/IP, emcopy, rsync, SnapMirror, RoboCopy & Data ONTAP. Must have experience in planning, designing & implementing cross-platform NAS data migration projects. Relocation & travel to unanticipated locations within USA possible.<br />
+															Princeton, NJ. Job entails working with & requires
+															experience including: EMC, Hitachi, NetApp, AIX, Linux,
+															Windows, Solaris, Shell Scripting, Python, NFS, CIFS,
+															TCP/IP, emcopy, rsync, SnapMirror, RoboCopy & Data ONTAP.
+															Must have experience in planning, designing & implementing
+															cross-platform NAS data migration projects. Relocation &
+															travel to unanticipated locations within USA possible.<br />
 															<b>Send resumes to </b>info@synectiks.com<br />
 															<b>
 																Synectiks Inc., Attn: HR, 300 Alexander Park Dr., Suite
@@ -295,8 +373,8 @@ export class Careers extends React.Component {
 														<p className='ptext'>
 															<b>
 																Infrastructure Engineer<br />
-																Master’s with 3 years experience or Bachelor’s with 5 years experience.<br
-																/>
+																Master’s with 3 years experience or Bachelor’s with 5
+																years experience.<br />
 																Major: CS, Engg, Math or equivalent.<br />
 																Other suitable qualifications acceptable –{' '}
 															</b>
@@ -325,7 +403,7 @@ export class Careers extends React.Component {
 									</div>
 								</div>
 								{/*  */}
-								<h3>Life at SYNECTIKS!</h3>
+								<h5 className='ft'>Life at SYNECTIKS!</h5>
 								<p className='lineHeight-24 pb-3 ptext'>
 									<i>Be Happy, Healthy and Inspired!</i>
 									<br />
@@ -336,7 +414,7 @@ export class Careers extends React.Component {
 									refresh and thrive.
 									<br />{' '}
 								</p>
-								<h3>SYNECTIKS for All!</h3>
+								<h5 className='ft'>SYNECTIKS for All!</h5>
 								<p className='lineHeight-24 ptext'>
 									SYNECTIKS is proud to be an equal opportunity workplace. We take great care to
 									evaluate all employees and job applicants equally, based on competence and
@@ -387,7 +465,7 @@ const CareerWrapper = styled.div`
 		padding: 1rem;
 	}
 	@media (min-width: 576px) {
-		padding: 3rem 4rem;
+		padding: 2.5rem 4rem;
 		.ptext {
 			text-align: justify;
 		}

@@ -23,17 +23,20 @@ import '../../components/fonts.css';
 const AboutUs = ({ location }) => {
 	return (
 		<Layout>
-				<Helmet>
-<meta name='description' content="Synectiks builds open source software that helps enterprises to migrate and modernize their business rapidly at optimal economy. Customers use our migration and management software platform, Xformation to migrate and modernize their business and create affordable and powerful custom solutions that bring simplicity and absolute confidence to a data-driven decision making. Committed to codifying our know-how, once we solve a problem, we automate the solution. When running our products and solutions in mission-critical environments, our community knows that they can turn to us for world-class support. Customers avoid vendor lock-in and save (much) money! Our open product driven solution approach rapidly delivers high quality solutions and reduce at least 50% time & money compare to typical managed services delivery model."/>
-<link rel='canonical' href='https://www.synectiks.com/about-us/index.html'/>
-</Helmet>
+			<Helmet>
+				<meta
+					name='description'
+					content='Synectiks builds open source software that helps enterprises to migrate and modernize their business rapidly at optimal economy. Customers use our migration and management software platform, Xformation to migrate and modernize their business and create affordable and powerful custom solutions that bring simplicity and absolute confidence to a data-driven decision making. Committed to codifying our know-how, once we solve a problem, we automate the solution. When running our products and solutions in mission-critical environments, our community knows that they can turn to us for world-class support. Customers avoid vendor lock-in and save (much) money! Our open product driven solution approach rapidly delivers high quality solutions and reduce at least 50% time & money compare to typical managed services delivery model.'
+				/>
+				<link rel='canonical' href='https://www.synectiks.com/about-us/index.html' />
+			</Helmet>
 			<AboutWrapper>
 				<SEO title='About Synectiks' />
 				<div className=''>
 					<BreadCrumbs title='Home' subtitle='What We Do' pageTitle='About Us' />
-				</div>
-				<div className='pt-md-4'>
 					<h1>Mission Statement!</h1>
+				</div>
+				<div className=''>
 					<p className='ptext'>
 						Since <span className='fweit'>2006</span> as an Open Product based Cloud Solution provider, we
 						help enterprises take advantage of public & private cloud and its infinite resources to migrate
@@ -41,7 +44,7 @@ const AboutUs = ({ location }) => {
 					</p>
 				</div>
 				<div className='pt-md-4'>
-					<h2>We’ve always done things differently</h2>
+					<h5 className='ft'>We’ve always done things differently</h5>
 					<p className='ptext'>
 						Synectiks builds open source software that helps enterprises to migrate and modernize their
 						business rapidly at optimal economy. Customers use our migration and management software
@@ -55,7 +58,7 @@ const AboutUs = ({ location }) => {
 					</p>
 				</div>
 				<div className='pt-md-4'>
-					<h2 className='py-2 py-md-2'>Our Passionate Global Team</h2>
+					<h5 className='py-2 py-md-2 ft'>Our Passionate Global Team</h5>
 					<img src={team} alt='Synectiks Team' className='my-2 my-md-4 W-100 box-shadow' width='100%' />
 					<p className='mt-md-3'>
 						Our passionate global team is a real good mix of Highly Experienced product developers who has
@@ -67,7 +70,9 @@ const AboutUs = ({ location }) => {
 				</div>
 				<div className='container-fluid'>
 					<div className='hybmt mt-2 mt-md-4'>
-						<h3>Top 12 reasons to select us as your cloud migration and modernization partner! </h3>
+						<h5 className='ft'>
+							Top 12 reasons to select us as your cloud migration and modernization partner!{' '}
+						</h5>
 						<div className='my-4'>
 							<div className='row'>
 								<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
@@ -252,7 +257,7 @@ const AboutWrapper = styled.div`
 		.ptext {
 			text-align: justify;
 		}
-		padding: 3rem 4rem;
+		padding: 2.5rem 4rem;
 
 		.blockquote-custom {
 			position: relative;

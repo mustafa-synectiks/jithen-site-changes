@@ -12,15 +12,15 @@ const Realtime = () => {
 	return (
 		<Layout>
 			<RealtimeWrapper>
-			<Helmet>
-			<link rel='canonical' href='https://www.synectiks.com/realtime/index.html'/>
-			</Helmet>
+				<Helmet>
+					<link rel='canonical' href='https://www.synectiks.com/realtime/index.html' />
+				</Helmet>
 				<SEO title='Realtime' />
 				<div className='realTime_wrap'>
-					<CaseBreadCrumbs title='Home' casetitle='What We Do' subtitle='Case Studies' pageTitle='Realtime' />
+					<CaseBreadCrumbs title='Home' casetitle='Resources' subtitle='Case Studies' pageTitle='Realtime' />
 					<h1>Realtime Monitoring</h1>
 					<div className='realTime_image'>
-						<h3>Reliance Jio Case study</h3>
+						<h5 className='ft'>Reliance Jio Case study</h5>
 						<p className='blueBorder pl-2 pl-md-5 py-1 py-3'>
 							The leadership took a decision to become hardware/OS/Operation/vendor agnostic and achieve
 							scalability and reliability across the organization. We helped them with all the
@@ -32,23 +32,23 @@ const Realtime = () => {
 					</div>
 					<div className='realTime_div d-flex flex-column flex-md-row justify-content-around py-1 py-md-5'>
 						<div className='column w-100 px-1 px-5 orangeBorder'>
-							<h4>Industry</h4>
+							<h5 className='ft'>Industry</h5>
 							<p>Telecom.</p>
 						</div>
 						<div className='column w-100 px-1 px-5 blueBorder'>
-							<h4> Business Objective</h4>
+							<h5 className='ft'> Business Objective</h5>
 							<p>
 								Transformation towards becoming hardware / Os / Vender / Operation agnostic. Make
 								everything software defined.
 							</p>
 						</div>
 						<div className='column w-100 px-1 px-5 redBorder'>
-							<h4>Technologies</h4>
+							<h5 className='ft'>Technologies</h5>
 							<p>AWS, Infrastructure as a code, microservices, DevOps.</p>
 						</div>
 					</div>
 					<div>
-						<h4>Overview</h4>
+						<h5 className='ft'>Overview</h5>
 						<p>
 							Reliance Jio Infocom Limited is a leading mobile network operator in India. We all know that
 							their network is enormous and immense and too often the operations team has to handle
@@ -61,7 +61,7 @@ const Realtime = () => {
 							is 100% scalable was a tough part for us. Once we succeeded in gaining their trust, we moved
 							on to analyze and plan a panacea that was expected by the telecom company.
 						</p>
-						<h4>Challenges</h4>
+						<h5 className='ft'>Challenges</h5>
 						<p>
 							<b> Licensed Monitoring Software:</b> Reliance Jio was mostly using licensed products for
 							more than 30 applications to maintain a large amount of data. Most of these applications
@@ -78,7 +78,7 @@ const Realtime = () => {
 						</p>
 					</div>
 					<div>
-						<h4>Solutions</h4>
+						<h5 className='ft'>Solutions</h5>
 						<ul>
 							<li>
 								We designed and developed a real-time monitoring framework for business use case
@@ -96,7 +96,9 @@ const Realtime = () => {
 						</ul>
 					</div>
 					<div>
-						<h4>How did we handle the problem and customized a tool for better visibility?</h4>
+						<h5 className='ft'>
+							How did we handle the problem and customized a tool for better visibility?
+						</h5>
 						<p>
 							We used Prometheus a powerful systems & service monitoring tool and Influxdb as a time
 							series database, with Grafana metric analysis for visualizing time series data. We hosted
@@ -106,7 +108,9 @@ const Realtime = () => {
 							built on intelligent data stored in time series database and this resulted in important
 							business monitoring views.
 						</p>
-						<h4>How did Synectiks Consolidate, Validate and Outline the issues of Large Motor Systems?</h4>
+						<h5 className='ft'>
+							How did Synectiks Consolidate, Validate and Outline the issues of Large Motor Systems?
+						</h5>
 						<p>
 							We believe in harvesting information as much as possible that will yield a better solution.
 							That is exactly what we did with Large Motor Company. Upon analyzing their queries on a
@@ -121,7 +125,7 @@ const Realtime = () => {
 							required data security, governance and compliance requirements in the cloud.
 						</p>
 
-						<h4>OUTCOME</h4>
+						<h5 className='ft'>OUTCOME</h5>
 						<p>
 							The telecom company was able to achieve a 100% open and highly scalable monitoring platform.
 							We helped them in harvesting right business insights in real time that responds to their
