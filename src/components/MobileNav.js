@@ -189,16 +189,6 @@ const MobileHeader = () => {
 									<Container fluid={true}>
 										<Row>
 											<Col className='p-0'>
-												<NavDropdown.Item href='/landing-page/index.html' className='pl-2  '>
-													Hosted Infrastructure & Business Continuity
-													{/* <GoTriangleLeft className='icon-fnt ml-2 h5 mt-2' /> */}
-												</NavDropdown.Item>
-												<NavDropdown.Item
-													className='main-sub-menu pl-2'
-													href='/business-cyber-sub-landing/index.html'>
-													Business Continuity & Cyber Security
-													{/* <GoTriangleLeft className='icon-fnt ml-2 h5 mt-2' /> */}
-												</NavDropdown.Item>
 												<NavDropdown.Item
 													className='main-sub-menu p-2'
 													href='/protect-cloud/index.html'>

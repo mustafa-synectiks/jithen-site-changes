@@ -959,7 +959,7 @@ ul.tabList.nav.flex-column {
 		margin:0 auto;
 }
 	.microImage{
-		width: 50%;
+		width: 33%;
 		margin:0 auto;
 	}
 	.topNav{
@@ -1030,7 +1030,7 @@ ul.tabList.nav.flex-column {
     cursor: pointer;
   }
  .tab-content>.active{
-        padding:0rem 1rem;
+        padding:0rem 0rem;
       }
 	}
   a#bgL,a#bgLL,a#bgLLL{

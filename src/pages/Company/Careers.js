@@ -135,7 +135,7 @@ export class Careers extends React.Component {
 																<b>Key Responsibilities</b>
 															</p>
 															<li>
-																Deliver a consistently high-quality components/plugins
+																Deliver consistently high-quality components/plugins
 																which has a high “First Time Acceptance Rate” from the
 																engineering leadership.
 															</li>

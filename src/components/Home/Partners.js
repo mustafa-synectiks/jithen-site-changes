@@ -29,12 +29,6 @@ const Partners = () => {
 					<img src={acro} alt='acronis' className='w-100' />
 				</div>
 			</div>
-			<div>
-				{' '}
-				<div className='w-75 mx-auto mb-2 mb-md-0'>
-					<img src={vmware} alt='acronis' className='w-100' />
-				</div>
-			</div>
 		</div>
 	);
 };

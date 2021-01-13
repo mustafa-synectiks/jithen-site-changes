@@ -47,9 +47,9 @@ const AboutUs = ({ location }) => {
 					<h5 className='ft'>We’ve always done things differently</h5>
 					<p className='ptext'>
 						Synectiks builds open source software that helps enterprises to migrate and modernize their
-						business rapidly at optimal economy. Customers use our migration and management software
+						business rapidly at an optimal economy. Customers use our migration and management software
 						platform, Xformation to migrate and modernize their business and create affordable and powerful
-						custom solutions that bring simplicity and absolute confidence to a data-driven decision making.
+						custom solutions that bring simplicity and absolute confidence to data-driven decision making.
 						Committed to codifying our know-how, once we solve a problem, we automate the solution. When
 						running our products and solutions in mission-critical environments, our community knows that
 						they can turn to us for world-class support. Customers avoid vendor lock-in and save (much)

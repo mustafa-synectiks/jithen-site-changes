@@ -37,8 +37,8 @@ const SecureBusiness = () => {
 				<div className='container-fluid my-n5'>
 					<div className='row justify-content-center align-items-center'>
 						<div className='col-md-6 py-4 px-0'>
-							<div className='excerpt'>
-								<a href='/business-cyber-sub-landing/index.html'>Protected Cloud:</a>
+							<div className='excerpt mt-4 mt-md-0'>
+								<a href='/protect-cloud/index.html'>Protected Cloud:</a>
 								<p>
 									ALL-IN-ONE Web-Based innovative powerful integrated solution with one-agent on any
 									given Server/End-point device to serve all Backup & Disaster Recovery needs along
@@ -48,7 +48,7 @@ const SecureBusiness = () => {
 								</p>
 							</div>
 							<div className='excerpt'>
-								<a href='/iaas/index.html'>BAckup as a Service:</a>
+								<a href='/business/index.html'>Backup as a Service:</a>
 								<p>
 									Reliable, Secure & Affordable Cloud Backup Solution with AI-based Ransomware
 									protection. Synectiks backup solutions provide exceptional, customizable backup and
@@ -57,7 +57,7 @@ const SecureBusiness = () => {
 								</p>
 							</div>
 							<div className='excerpt'>
-								<a href='/digital-workspace/index.html'>Disaster Recovery as a Service:</a>
+								<a href='/disaster-service/index.html'>Disaster Recovery as a Service:</a>
 								<p>
 									Protection for on-premises and cloud workloads with a turn-key disaster recovery
 									solution. Protect your workloads when disaster strikes by instantly spinning up

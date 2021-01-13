@@ -24,7 +24,7 @@ const SecureBusiness = () => {
 						{/* <h2>Secure Hosted Cloud Infrastructure & Business Continuity Solutions</h2> */}
 						<p>
 							Capture true value of cloud with highly secured, scalable, and customizable SYNECT<span className='text-danger'>I</span>KS
-							Hosted Cloud Solutions at an affordable pricing. Modern, Innovative could solutions for wide
+							Hosted Cloud Solutions at an affordable pricing. Modern, Innovative cloud solutions for wide
 							range of Server workloads, Cloud-Hosted Desktops/Workspaces, and Containers along with
 							highly Secure Backup & Disaster Recovery options meeting SOC2 & HIPPA compliance standards.
 						</p>
@@ -46,8 +46,9 @@ const SecureBusiness = () => {
 							<div className='excerpt'>
 								<a href='/iaas/index.html'>Secure & Custom Hosted Infrastructure:</a>
 								<p>
-									Meet modern IT demands with a scale-out, cost-efficient, and multi-purpose Cloud
-									solution.
+									Meet modern IT demands with a scalable, cost-efficient, and multi-purpose cloud
+									solution. Synectiks Secure Cloud Hosted Services supports a wide variety of
+									workloads with a high degree of control, security, and simplicity.
 								</p>
 							</div>
 							<div className='excerpt'>

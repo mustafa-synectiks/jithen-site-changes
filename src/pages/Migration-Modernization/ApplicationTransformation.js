@@ -321,7 +321,7 @@ const ApplicationTransformation = () => {
 											<div>
 												<p className='ptext'>
 													Synectiks Application transformation services provide customer the
-													ability to optimize the existing application as follows:{' '}
+													ability to optimize the existing application as follows:
 												</p>
 												<ul>
 													<li>
@@ -341,7 +341,7 @@ const ApplicationTransformation = () => {
 												</ul>
 												<p className='ptext'>
 													Synectiks accelerated migration and modernization services allow
-													customers to leverage the data processing benefits of cloud sooner,
+													customer to leverage the data processing benefits of cloud sooner,
 													providing cost-savings and solving scalability issues. Following are
 													the values delivered
 												</p>

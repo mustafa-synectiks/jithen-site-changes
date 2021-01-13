@@ -962,7 +962,7 @@ ul.tabList.nav.flex-column {
 	font-size: 2rem;
     color: rgba(0,0,0,0.5);
 		margin: 10px 5px;
-		display:none;
+		display:block;
 }
 		.bottomColh3{
 		width: 10%;
@@ -1181,6 +1181,12 @@ h4{
 }
 }
 @media(min-width:768px){
+		.svgcolor{
+	font-size: 2rem;
+    color: rgba(0,0,0,0.5);
+		margin: 10px 5px;
+		display:none;
+}
 	a#bgLLL.active:after{
     top: 100%;
 	left: 50%;

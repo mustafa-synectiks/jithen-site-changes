@@ -429,7 +429,7 @@ const Tabs = () => {
 									<div className='py-1 py-md-3 h-100'>
 										<div className='border-right text-center'>
 											<a
-												href='aws-managed-services/index.html'
+												href='/aws-managed-services/index.html'
 												className='text-center heading-h3 h6'>
 												AWS managed Services
 											</a>

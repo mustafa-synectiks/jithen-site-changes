@@ -52,8 +52,8 @@ export class OfficeMigraton extends React.Component {
 									<p className='lineHeight-24 ptext'>
 										With a certified team of Microsoft Partner Professionals, SYNECTIKS delivers on
 										all Microsoft Cloud Solutions, including Office 365, SharePoint, Skype for
-										Business, Teams, Power BI, Microsoft 365 (Office 365 + Enterprise Mobility +
-										Security) and Azure.
+										Business, Teams, Power BI, Microsoft 365 (Windows 10 + Office 365 + Enterprise
+										Mobility + Security) and Azure.
 										<br />
 									</p>
 									<p className='lineHeight-24'>Imagine what we can do for you!</p>
@@ -103,7 +103,7 @@ export class OfficeMigraton extends React.Component {
 										</p>
 										<p>
 											Work Anywhere, Anytime, on Any Device with Office 365. Empower your
-											employees the tools they need.
+											employees with the tools they need.
 										</p>
 									</div>
 								</div>
@@ -158,7 +158,7 @@ export class OfficeMigraton extends React.Component {
 											</li>
 											<li>
 												<b>Migration Assistance:</b> Let our dedicated team of specialists help
-												you plan and perform your email data migration.
+												you plan and perform your office 365 workload migration.
 											</li>
 											<li>
 												<b>Dedicated to Your Success:</b> It’s our mission to enable your
@@ -166,7 +166,7 @@ export class OfficeMigraton extends React.Component {
 												technologies &amp; tools to deliver the desired results.
 											</li>
 											<li>
-												<b>Licensing Management:</b> We can provide all required Office 365
+												<b>License Management:</b> We can provide all required Office 365
 												licensing for your organization on one consolidated invoice.
 											</li>
 										</ul>
