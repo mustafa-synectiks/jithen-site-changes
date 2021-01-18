@@ -95,24 +95,24 @@ const ProtectCloud = () => {
 											Eliminate security breaches, downtime and data loss. Protect Cloud is the
 											only solution that natively integrates cloud security, data protection and
 											management to protect endpoints, systems and data. Integration and
-											automation provide unmatched protection making it simple to manage all the
+											automation provide unmatched protection, making it simple to manage all the
 											devices in your environment.
 										</p>
 
 										<p>
-											<strong>Protect Cloud</strong> is a SaaS based readily available ALL-IN-ONE
-											Web-Based innovative powerful integrated solution with one-agent on any
-											given Server/End-point device to serve all Backup & Disaster Recovery needs
-											along with basic necessary features like Anti-Virus, Anti-Malware,
-											vulnerability Assessment, Windows- Patch management, Remote Diagnostic
-											assistance and URL-filtering. All devices in your infrastructure are easily
-											managed from a single web console and well protected to meet all Business
-											continuity, Security, and compliances requirements.
+											<strong>Protect Cloud</strong> is a SaaS based readily available Innovative
+											and powerful web-based ALL-IN-ONE solution, with one-agent on any given
+											Server/End-point device to serve all Backup & Disaster Recovery needs along
+											with basic necessary features like Anti-Virus, Anti-Malware, vulnerability
+											Assessment, Windows- Patch management, Remote Diagnostic assistance and
+											URL-filtering. All devices in your infrastructure are easily managed from a
+											single web console and well protected to meet all Business continuity,
+											Security, and compliance requirements.
 										</p>
 										<p>
-											No need to get software’s from multiple vendors & No need to install
-											multiple agents on the same machine to have all basic security and
-											protection features. <br />
+											Maintain all the basic security and protection features with a single
+											solution, and avoid the hassle of purchasing multiple software from vendors
+											and installing multiple agents on the same machine. <br />
 											Pick and choose the required license type for each server/end-point device
 											from the following, mix and match the licenses as needed for each device in
 											your environment:
@@ -121,9 +121,6 @@ const ProtectCloud = () => {
 									<div>
 										<h5 className='ft'>Editions: Feature Comparison </h5>
 										<div className='table-img my-3 my-md-0 text-center'>
-											<span className='text-info'>
-												* View table in landscape mode for better view.
-											</span>
 											<img src={timg} alt='' />
 										</div>
 										<Table border='1' className='protect-table'>
@@ -507,7 +504,7 @@ const ProtectCloud = () => {
 											Contact us at &nbsp;
 											<a href='mailto:info@synectiks.com' target='_top'>
 												info@synectiks.com
-											</a>&nbsp; to setup a quick <strong>Protect Cloud </strong>Trail and check
+											</a>&nbsp; to setup a quick <strong>Protect Cloud </strong>trial and check
 											out all the rich protect features and manage all your devices in your
 											environment using one readily available secure web-console.
 										</p>
@@ -723,10 +720,10 @@ const ProctectCloudWrapper = styled.div`
 
 	@media (min-width: 576px) {
 		.protect-table {
-			display: block;
+			display: none;
 		}
 		.table-img {
-			display: none;
+			display: block;
 		}
 		tr:nth-child(even) {
 			background: #ccc;
@@ -921,6 +918,12 @@ const ProctectCloudWrapper = styled.div`
 		}
 	}
 	@media (min-width: 768px) {
+		.protect-table {
+			display: block;
+		}
+		.table-img {
+			display: none;
+		}
 		a#bgL.active:after {
 			top: 100%;
 			left: 50%;

@@ -23,13 +23,13 @@ const SecureBusiness = () => {
 					<div className='row pt-2'>
 						{/* <h2>Secure Hosted Cloud Infrastructure & Business Continuity Solutions</h2> */}
 						<p>
-							Build Business Resiliency with modern Synectiks-Business Continuity solutions. Synectiks
+							Build Business Resilience with modern Synectiks-Business Continuity solutions. Synectiks
 							-Protect Cloud changes the game by integrating Data protection with high security. This
 							synergy eliminates the complexity and makes security a center point of your solutions,
-							keeping your Business protected and within you budget with no compromise on quality. With
+							keeping your Business protected and within your budget with no compromise on quality. With
 							its full-stack anti-malware protection and comprehensive endpoint management, Synectiks
 							-Protect Cloud combats advanced cyberattacks with a unique integration of protection
-							technologies while simplifying daily IT operations, endpoint deployments and management, and
+							technologies while simplifying daily IT operations, endpoint deployments, management, and
 							reporting.
 						</p>
 					</div>
@@ -38,13 +38,12 @@ const SecureBusiness = () => {
 					<div className='row justify-content-center align-items-center'>
 						<div className='col-md-6 py-4 px-0'>
 							<div className='excerpt mt-4 mt-md-0'>
-								<a href='/protect-cloud/index.html'>Protected Cloud:</a>
+								<a href='/protect-cloud/index.html'>Protect Cloud:</a>
 								<p>
-									ALL-IN-ONE Web-Based innovative powerful integrated solution with one-agent on any
-									given Server/End-point device to serve all Backup & Disaster Recovery needs along
-									with basic necessary features like Anti-Virus, Anti-Malware, Vulnerability
-									Assessment, Windows- Patch management, Remote Diagnostic assistance, and
-									URL-filtering.
+									Innovative and powerful web-based ALL-IN-ONE solution with one-agent on any given
+									Server/End-point device to serve all Backup & Disaster Recovery needs along with
+									basic necessary features like Anti-Virus, Anti-Malware, Vulnerability Assessment,
+									Windows- Patch management, Remote Diagnostic assistance, and URL-filtering.
 								</p>
 							</div>
 							<div className='excerpt'>
@@ -52,24 +51,24 @@ const SecureBusiness = () => {
 								<p>
 									Reliable, Secure & Affordable Cloud Backup Solution with AI-based Ransomware
 									protection. Synectiks backup solutions provide exceptional, customizable backup and
-									storage management solutions for any system setup: physical servers, virtual
-									machines, PCs, business-critical applications, Databases and more.
+									storage management for any system setup: physical servers, virtual machines, PCs,
+									business-critical applications, Databases and more.
 								</p>
 							</div>
 							<div className='excerpt'>
 								<a href='/disaster-service/index.html'>Disaster Recovery as a Service:</a>
 								<p>
 									Protection for on-premises and cloud workloads with a turn-key disaster recovery
-									solution. Protect your workloads when disaster strikes by instantly spinning up
+									solution. Protect your workloads when disaster strikes, by instantly spinning up
 									systems in our Disaster Recovery Cloud. Adding this service ensures the data is
-									immediately available – and with Synectiks it’s as easy as flipping a switch. With
+									immediately available – and with Synectiks, it’s as easy as flipping a switch. With
 									an easy-to-use user interface, you can effortlessly automate runbooks, testing, and
 									failover to the Disaster Recovery Cloud during a DR event.
 								</p>
 							</div>
 						</div>
 						<div className='col-md-6 py-4 px-0'>
-							<img src={syn} alt='' className='w-75' />
+							<img src={syn} alt='' className='w-60' />
 						</div>
 					</div>
 				</div>
@@ -82,6 +81,9 @@ export default SecureBusiness;
 
 const SecureWrapper = styled.section`
 	/* background-color: rgba(221, 121, 231, .7); */
+	.w-60 {
+		width: 100%;
+	}
 	padding: 2rem 1rem;
 	h2 {
 		font-weight: 400 !important;
@@ -92,6 +94,9 @@ const SecureWrapper = styled.section`
 		letter-spacing: normal !important;
 	}
 	@media (min-width: 576px) {
+		.w-60 {
+			width: 60%;
+		}
 		h2 {
 			font-weight: 400 !important;
 			font-style: normal !important;

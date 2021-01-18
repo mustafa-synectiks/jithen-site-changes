@@ -70,7 +70,7 @@ const Header = () => {
 													AWS Managed Services
 												</NavDropdown.Item>
 												<NavDropdown.Item className='p-2' href='/office-migration/index.html'>
-													O365 Migration
+													Microsoft 365 Services
 												</NavDropdown.Item>
 											</Col>
 											<Col className='p-0 bcdl mx-md-3 pl-md-3'>

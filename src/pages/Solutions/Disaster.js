@@ -74,7 +74,7 @@ const DisasterRecovery = () => {
 							subtitle='Business Continuity & Cyber Security'
 							pageTitle='Secure Cloud Disaster Recovery as a Service'
 						/>
-						<h1>Secure Cloud Disaster Recovery as a Service</h1>
+						<h1>Cloud Disaster Recovery as a Service</h1>
 					</div>
 					<Row className='d-flex justify-content-start'>
 						<div className='px-2 px-md-0 mb-3 col-md-12'>
@@ -84,14 +84,13 @@ const DisasterRecovery = () => {
 										<div className='w-100  pl-3 pr-3 text-black'>
 											<p className='lineHeight-24 ptext mt-1 mt-md-2'>
 												Protection for on-premises and cloud workloads with a turn-key Disaster
-												Recovery solution.
-												<br />
-												Disaster recovery with the flip of a switch. Protect your workloads when
-												disaster strikes by instantly spinning up systems in our Disaster
-												Recovery Cloud. Adding this service ensures the data is immediately
-												available – and with Synectiks it’s as easy as flipping a switch. With
-												an easy-to-use user interface, you can effortlessly automate runbooks,
-												testing, and failover to the Disaster Recovery Cloud during a DR event.
+												Recovery solution. Disaster recovery with the flip of a switch. Protect
+												your workloads when disaster strikes, by instantly spinning up systems
+												in our Disaster Recovery Cloud. Adding this service ensures the data is
+												immediately available – and with Synectiks, it’s as easy as flipping a
+												switch. With an easy-to-use user interface, you can effortlessly
+												automate runbooks, testing, and failover to the Disaster Recovery Cloud
+												during a DR event.
 											</p>
 										</div>
 										{/* <div className='w-100 ml-md-auto' data-aos='fade-up'>
@@ -124,8 +123,8 @@ const DisasterRecovery = () => {
 										<div>
 											<h5>No-Disaster Recovery Cloud Compute Reservation Cost</h5>
 											<p className='mt-2 pcenter'>
-												Only pay when you use the compute resources in the disaster recovery
-												cloud billed in hourly increments
+												Pay only when you use the compute resources in the disaster recovery
+												cloud, billed in hourly increments.
 											</p>
 										</div>
 									</div>
@@ -201,7 +200,7 @@ const DisasterRecovery = () => {
 										<div>
 											<h5>Support</h5>
 											<p className='mt-2 pcenter'>
-												Follow the Sun model - 24/7/365 days support from both onshore and
+												Follow the Sun model - 24 / 7 / 365 days support from both onshore and
 												offshore Teams.
 											</p>
 										</div>
@@ -240,7 +239,7 @@ const DisasterRecoveryWrapper = styled.div`
 		width: 100%;
 	}
 	.pcenter {
-		text-align: center;
+		text-align: left;
 	}
 	padding: 5rem 1rem;
 	.topNav {

@@ -71,7 +71,7 @@ const Business = () => {
 							subtitle='Business Continuity & Cyber Security'
 							pageTitle='Secure Cloud Backup as a Service'
 						/>
-						<h1>Secure Cloud Backup as a Service </h1>
+						<h1>Cloud Backup as a Service </h1>
 					</div>
 					<Row className='d-flex justify-content-start'>
 						<div className='px-2 px-md-0 mb-3 col-md-12'>
@@ -83,14 +83,14 @@ const Business = () => {
 												Secure, Reliable & Very Affordable Cloud Backup Solution.
 											</h5>
 											<p className='lineHeight-24 ptext mt-md-4 mt-1'>
-												At Synectiks, Data Protection is topmost priority and is monitored with
-												utmost vigilance. Synectiks Cloud Backup with front line innovation
-												reinforcement arrangements offers a simple, secure and moderate cloud
+												At Synectiks, Data Protection is the topmost priority and is monitored
+												with utmost vigilance. Synectiks Cloud Backup with front line innovation
+												reinforcement arrangements offer a simple, secure and moderate cloud
 												offsite backup needs. You can have your backup offsite with sureness at
 												Synectiks Cloud establishment at Preferred Geo Locations. Synectiks
 												backup solutions provide exceptional, customizable backup and storage
-												management solutions for any system setup: physical servers, virtual
-												machines, PCs, business-critical applications, Databases and more.
+												management for any system setup: physical servers, virtual machines,
+												PCs, business-critical applications, Databases and more.
 											</p>
 										</div>
 										{/* <div className='w-100 ml-md-auto' data-aos='fade-up'>
@@ -110,9 +110,9 @@ const Business = () => {
 											<p className='mt-2 pcenter'>
 												Make sure your cloud backup provider offers strong security, including
 												encryption. It doesn't matter how well you have protected your primary
-												systems if your backup systems present an easy target for attackers. Any
-												cloud backup service you use needs to have the same level of security
-												that your primary systems have.
+												systems, if your backup systems present an easy target for attackers.
+												Any cloud backup service you use needs to have the same level of
+												security that your primary systems have.
 												<br />
 												END to END Encryption: In-Flight and Data-At-Rest Encryption.
 												<br />
@@ -163,12 +163,12 @@ const Business = () => {
 											<h5>Multi Secure Geo Locations</h5>
 											<p className='mt-2 pcenter'>
 												We at Synectiks aim for 3-2-1 rule of Thumb to protect the Data, which
-												implies that you should always have three copies of your data, that you
+												implies that is should always have three copies of your data, that you
 												keep it backed up on at least two different types of storage media, and
-												that you have at least one copy of the data offsite.
-												<br />Synectiks have different backup Secure Geo locations with
-												different power grids to make sure your data is available when disaster
-												strike in one location.
+												with at least one copy of the data offsite.
+												<br />Synectiks has different backup Secure Geo locations with different
+												power grids to make sure your data is available when disaster strike in
+												one location.
 											</p>
 										</div>
 									</div>
@@ -198,7 +198,7 @@ const Business = () => {
 										<div>
 											<h5>Support</h5>
 											<p className='mt-2 pcenter'>
-												Follow the Sun model - 24/7/365 days support from both onshore and
+												Follow the Sun model - 24 / 7 / 365 days support from both onshore and
 												offshore Teams.
 											</p>
 										</div>
@@ -240,7 +240,7 @@ const BusinessWrapper = styled.div`
 		width: 100%;
 	}
 	.pcenter {
-		text-align: center;
+		text-align: left;
 	}
 	padding: 5rem 1rem;
 	.topNav {

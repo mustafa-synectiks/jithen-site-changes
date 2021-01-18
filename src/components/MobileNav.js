@@ -219,7 +219,7 @@ const MobileHeader = () => {
 													AWS Managed Services
 												</NavDropdown.Item>
 												<NavDropdown.Item className='p-2' href='/office-migration/index.html'>
-													O365 Migration
+													Microsoft 365 Services
 												</NavDropdown.Item>
 											</Col>
 										</Row>

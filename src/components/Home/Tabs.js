@@ -125,7 +125,7 @@ const Tabs = () => {
 										<a href='/infrastructure/index.html' className='text-center heading-h3 h6'>
 											Infrastructure <br />Transformation
 										</a>
-										<p className='f-14 px-2 px-md-4'>
+										<p className='f-14 px-2 px-md-4 text-left'>
 											Ensure every bit of your hardware environment is directly supporting your
 											business objectives. The transition from a hardware-centric to a
 											software-defined organization makes a huge difference in CapEx and OpEx.
@@ -141,7 +141,7 @@ const Tabs = () => {
 											className='text-center heading-h3 h6'>
 											Application<br /> Transformation
 										</a>
-										<p className='f-14 px-4'>
+										<p className='f-14 px-4 text-left'>
 											Applications that power your enterprise are key to generating a strong
 											competitive advantage. Bring innovation, agility and outstanding customer
 											experience through modern architectures and a cloud-first approach.
@@ -157,7 +157,7 @@ const Tabs = () => {
 											className='text-center heading-h3 h6'>
 											DevOps <br />Transformation
 										</a>
-										<p className='f-14 px-1 px-md-4'>
+										<p className='f-14 px-1 px-md-4 text-left'>
 											Adopting a DevOps culture starts by transforming your people, technology and
 											processes. Accelerate your DevOps adaption by using our open Automation
 											platform and skilled resources.
@@ -219,7 +219,7 @@ const Tabs = () => {
 											className='text-center heading-h3 h6'>
 											Business Continuity & Cyber Security Services
 										</a>
-										<p className='f-14 px-2 px-md-4'>
+										<p className='f-14 px-2 px-md-4 text-left'>
 											Build Business Resiliency with modern Synectiks-Business Continuity
 											solutions. Synectiks -Protect Cloud changes the game by integrating Data
 											protection with high security. This synergy eliminates the complexity and
@@ -235,7 +235,7 @@ const Tabs = () => {
 										<a href='/iaas/index.html' className='text-center heading-h3 h6'>
 											Secure & Custom Hosted Infrastructure Services
 										</a>
-										<p className='f-14 px-4'>
+										<p className='f-14 px-4 text-left'>
 											Synectiks Secure Cloud Hosted Services supports a wide variety of workloads
 											& Disaster Recovery with a high degree of control, security, and simplicity.
 											Supports your mission-critical applications and workloads with instant and
@@ -250,7 +250,7 @@ const Tabs = () => {
 										<a href='/digital-workspace/index.html' className='text-center heading-h3 h6'>
 											Cloud-Hosted Virtual Desktop Services
 										</a>
-										<p className='f-14 px-1 px-md-4'>
+										<p className='f-14 px-1 px-md-4 text-left'>
 											Synectiks Cloud-Hosted Virtual Desktop Service is a modern platform for
 											secure delivery of virtual desktops and apps. Our best-in-class
 											virtualization technologies enables scalability, uptime at an affordable
@@ -271,7 +271,7 @@ const Tabs = () => {
 											className='text-center heading-h3 h6'>
 											AWS Managed Services
 										</a>
-										<p className='f-14 px-1 px-md-4'>
+										<p className='f-14 px-1 px-md-4 text-left'>
 											SYNECTIKS aws Managed Services enables companies to accelerate the adoption
 											of the public cloud, lower operating costs, and mitigate security and
 											compliance risks in a cost-effective monthly consumption model. As AWS

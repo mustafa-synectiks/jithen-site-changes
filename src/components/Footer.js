@@ -34,7 +34,10 @@ export class Footer extends React.Component {
 							&nbsp;<u>Privacy&nbsp;Policy.</u>&nbsp;
 						</a>
 					</p>
-					<MdClose className='closeBtn' type='submit' id='hide' />
+					{/* <MdClose className='closeBtn' type='submit' id='hide' /> */}
+					<button className='closeBtn' type='submit' id='hide'>
+						X
+					</button>
 				</div>
 
 				<div className='d-sm-flex justify-content-sm-between d-md-flex  justify-content-md-center d-lg-flex justify-content-lg-center d-xl-flex justify-content-xl-center bgFooter px-2 pt-2 pb-3 px-md-5 pt-md-5'>
@@ -145,17 +148,17 @@ const FooterWrapper = styled.div`
 		}
 
 		.prvtpolicy {
-			height: 45px;
+			height: 60px;
 			line-height: 10px;
 			margin-top: 0px;
 			padding: 0px 30px;
-			display: none;
+			display: block;
 			#hide {
 				position: absolute;
-				top: 0;
-				right: 0;
+				top: 8%;
+				right: 2%;
 				padding: 10px;
-				font-size: 2.5rem;
+				font-size: 1.1rem;
 				margin-top: 5px;
 			}
 		}
@@ -166,9 +169,10 @@ const FooterWrapper = styled.div`
 		}
 
 		.fsize08 {
-			font-size: 8px;
+			font-size: 8px !important;
 			position: relative;
 			top: 0px;
+			line-height: 18px;
 		}
 	}
 	@media (min-width: 576px) {
@@ -178,14 +182,22 @@ const FooterWrapper = styled.div`
 			position: relative;
 			top: 0%;
 		}
+		.fsize08 {
+			font-size: 14px !important;
+			position: relative;
+			top: 0%;
+			line-height: 24px;
+		}
 		.prvtpolicy {
 			height: 40px;
 			padding: 0;
-			display: none;
+			display: block;
 			#hide {
 				position: absolute;
 				top: 0;
-				right: 0;
+				right: 2%;
+				font-size: 1.3rem;
+				font-weight: 500;
 			}
 		}
 		.ptext {

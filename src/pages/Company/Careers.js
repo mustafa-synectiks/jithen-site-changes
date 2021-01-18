@@ -17,11 +17,13 @@ export class Careers extends React.Component {
 		this.toggle3 = this.toggle3.bind(this);
 		this.toggle4 = this.toggle4.bind(this);
 		this.toggle5 = this.toggle5.bind(this);
+		this.toggle6 = this.toggle6.bind(this);
 		this.state = { collapse: false };
 		this.state = { collapse2: false };
 		this.state = { collapse3: false };
 		this.state = { collapse4: false };
 		this.state = { collapse5: false };
+		this.state = { collapse6: false };
 	}
 	toggle() {
 		this.setState((state) => ({ collapse: !state.collapse }));
@@ -37,6 +39,9 @@ export class Careers extends React.Component {
 	}
 	toggle5() {
 		this.setState((state) => ({ collapse5: !state.collapse5 }));
+	}
+	toggle6() {
+		this.setState((state) => ({ collapse6: !state.collapse6 }));
 	}
 	componentDidMount() {
 		window.scrollTo(0, 0);
@@ -101,6 +106,48 @@ export class Careers extends React.Component {
 										<h5 className='ft'>Open positions in all locations</h5>
 									</p>
 
+									<div>
+										<div>
+											<Button
+												color='primary'
+												className='career-btn text-left'
+												onClick={this.toggle6}
+												style={{ marginBottom: '1rem' }}>
+												Infrastructure&nbsp;Engineer
+											</Button>
+											<Collapse isOpen={this.state.collapse6} className='pb-3'>
+												<Card>
+													<CardBody>
+														<p className='ptext'>
+															<b>
+																Infrastructure Engineer<br />
+																Master’s w/ 3 yrs exp.<br />
+																Major: Electrical Engg, Comp Sci, Comp Engg or equiv -
+															</b>
+															<br />
+															Princeton, NJ. Job entails working w/ & requires exp
+															including: EMC – VMAX, VMAX3; HDS – VSP, G Series; NetApp;
+															Tegile Storage, VMWare vSAN, Cloud Storage - AWS S3, All
+															Flash Storage, Cisco, Cumulus, FortiGate, VMware, RedHat
+															KVM, Acronis, Linux, Solaris, Perl, UNIX Shell, Windows
+															Batch, OpenStack, symcli, SRDF, SnapView, Clone, Open
+															Replicator; HDS - Command Suite, HTSM, Volume Migration
+															Utility, Universal Volume Manager, ServiceNow & JIRA Tools.
+															Must have experience in installing, configuring, admin &
+															supporting VMware Compute & Desktop Virtualization
+															infrastructure. Relocation & travel to unanticipated
+															locations within USA possible.<br />
+															<b>Send resumes to </b>info@synectiks.com<br />
+															<b>
+																Synectiks Inc., Attn: HR, 300 Alexander Park Dr., Suite
+																215, Princeton, NJ 08540.
+															</b>
+														</p>
+													</CardBody>
+												</Card>
+											</Collapse>
+										</div>
+									</div>
 									<div>
 										<div>
 											<Button
@@ -467,7 +514,7 @@ const CareerWrapper = styled.div`
 	@media (min-width: 576px) {
 		padding: 2.5rem 4rem;
 		.ptext {
-			text-align: justify;
+			text-align: left;
 		}
 		.career-btn {
 			width: 25%;

@@ -80,14 +80,14 @@ const AboutUs = ({ location }) => {
 										<img src={EX} alt='Experience' className='tw m-0' />
 										<h4 className='my-2 my-md-3'>Experience</h4>
 									</div>
-									<p> 10+ Large Scale Hybrid Cloud Transformation</p>
+									<p className='text-left'> 10+ Large Scale Hybrid Cloud Transformation</p>
 								</div>
 								<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 									<div className='d-flex align-items-center flex-column'>
 										<img src={EXP} alt='Expertise' className='tw m-0' />
 										<h4 className='my-2 my-md-4'>Expertise</h4>
 									</div>
-									<p>
+									<p className='text-left'>
 										Experience Teams with a proven track record of CloudOps delivery enabled with
 										DevSecOps Capabilities
 									</p>
@@ -97,7 +97,7 @@ const AboutUs = ({ location }) => {
 										<img src={TM} alt='Time and Money' className='tw m-0' />
 										<h4 className='my-2 my-md-3'>Time & Money</h4>
 									</div>
-									<p>
+									<p className='text-left'>
 										Our open Product Driven Delivery Model allows customers to quickly build,
 										deliver and orchestrate cross cloud services @50% time & cost.
 									</p>
@@ -111,7 +111,7 @@ const AboutUs = ({ location }) => {
 										<img src={EE} alt='E2E Solutions' className='tw m-0' />
 										<h4 className='my-4'>E2E Solution</h4>
 									</div>
-									<p>
+									<p className='text-left'>
 										Single point of contact for Application Migration, Transformation and
 										Integration to cloud-native Apps services.
 									</p>
@@ -121,7 +121,7 @@ const AboutUs = ({ location }) => {
 										<img src={SCP} alt='Single Control plane' className='tw m-0' />
 										<h4 className='my-3'>Single Control plane</h4>
 									</div>
-									<p>
+									<p className='text-left'>
 										Xformation is a single interface and platform to manage all your workloads
 										distributed across multiple clouds and boundaries within a single control plane.
 									</p>
@@ -131,7 +131,7 @@ const AboutUs = ({ location }) => {
 										<img src={CS} alt='Compliance & Security' className='tw m-0' />
 										<h4 className='my-4'>Compliance & Security</h4>
 									</div>
-									<p>
+									<p className='text-left'>
 										Our compliance and security assessment tools makes sure your hybrid cloud
 										journey meet your business compliance.
 									</p>
@@ -146,7 +146,7 @@ const AboutUs = ({ location }) => {
 										<img src={EA} alt='Extreme Automation' className='tw m-0' />
 										<h4 className='my-3'>Extreme Automation</h4>
 									</div>
-									<p>
+									<p className='text-left'>
 										Use our existing automation capabilities to automate infrastructure, operations,
 										security in the hybrid IT environment.
 									</p>
@@ -156,7 +156,7 @@ const AboutUs = ({ location }) => {
 										<img src={PCP} alt='Public Cloud Partnership' className='tw m-0' />
 										<h4 className='my-4'>Public Cloud Partnership</h4>
 									</div>
-									<p>
+									<p className='text-left'>
 										Our advanced partnership with major public cloud providers help you to get
 										support at every stage.
 									</p>
@@ -168,7 +168,7 @@ const AboutUs = ({ location }) => {
 												<img src={DE} alt='Demo Environment' className='tw m-0' />
 												<h4 className='my-3'>Demo Environment</h4>
 											</div>
-											<p>
+											<p className='text-left'>
 												Avail the opportunity to quickly create demo hybrid cloud setup in our
 												existing hybrid IT environment and testify your key business use cases.
 											</p>
@@ -184,21 +184,23 @@ const AboutUs = ({ location }) => {
 										<img src={WO} alt='Optimization Service' className='tw m-0' />
 										<h4 className='my-4'>Optimization Service</h4>
 									</div>
-									<p>We do optimal resource pooling from multiple clouds.</p>
+									<p className='text-left'>We do optimal resource pooling from multiple clouds.</p>
 								</div>
 								<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 									<div className='d-flex align-items-center flex-column'>
 										<img src={EM} alt='Engagement Model' className='tw m-0' />
 										<h4 className='my-3'>Engagement Model</h4>
 									</div>
-									<p>Our every engagement focused on empowerment – not dependency</p>
+									<p className='text-left'>
+										Our every engagement focused on empowerment – not dependency
+									</p>
 								</div>
 								<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 									<div className='d-flex align-items-center flex-column'>
 										<img src={LTR} alt='Long Term Retention' className='tw m-0' />
 										<h4 className='my-4'>Long Term Retention</h4>
 									</div>
-									<p>100% Customer Retention Rate.</p>
+									<p className='text-left'>100% Customer Retention Rate.</p>
 								</div>
 							</div>
 						</div>

@@ -104,6 +104,7 @@ body {
 	word-break: break-word;
 	color: var(--textColor);
 	text-rendering: optimizeLegibility;
+	text-align: left !important;
 }
 .hx1 {
 	background: rgb(44, 117, 162);

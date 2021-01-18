@@ -809,7 +809,7 @@ const Hybridcloud = () => {
 															<img src={EX} alt='Experience' className='tw m-0' />
 															<h5 className='my-2 my-md-3'>Experience</h5>
 														</div>
-														<p className='text-center'>
+														<p className='text-left'>
 															10+ Large Scale Hybrid Cloud Transformation
 														</p>
 													</div>
@@ -818,7 +818,7 @@ const Hybridcloud = () => {
 															<img src={EXP} alt='Expertise' className='tw m-0' />
 															<h5 className='my-2 my-md-4'>Expertise</h5>
 														</div>
-														<p>
+														<p className='text-left'>
 															Experience Team with a proven track record of CloudOps
 															delivery enabled with DevSecOps Capabilities
 														</p>
@@ -828,7 +828,7 @@ const Hybridcloud = () => {
 															<img src={TM} alt='Time & Money' className='tw m-0' />
 															<h5 className='my-2 my-md-3'>Time & Money</h5>
 														</div>
-														<p>
+														<p className='text-left'>
 															Our open Product Driven Delivery Model allows customers to
 															quickly build, deliver and orchestrate cross cloud services
 															@50% time & cost.
@@ -843,7 +843,7 @@ const Hybridcloud = () => {
 															<img src={EE} alt='E2E Solution' className='tw m-0' />
 															<h5 className='my-4'>E2E Solution</h5>
 														</div>
-														<p>
+														<p className='text-left'>
 															Single point of contact for Application Migration,
 															Transformation and Integration to cloud-native Apps
 															services.
@@ -858,7 +858,7 @@ const Hybridcloud = () => {
 															/>
 															<h5 className='my-3'>Single Control plane</h5>
 														</div>
-														<p>
+														<p className='text-left'>
 															Xformation is a single interface and platform to manage all
 															your workloads distributed across multiple clouds and
 															boundaries within a single control plane.
@@ -874,7 +874,7 @@ const Hybridcloud = () => {
 															/>
 															<h5 className='my-2 my-md-4'>Compliance & Security</h5>
 														</div>
-														<p>
+														<p className='text-left'>
 															Our compliance and security assessment tools make sure your
 															hybrid cloud journey meets your business compliance.
 														</p>
@@ -889,7 +889,7 @@ const Hybridcloud = () => {
 															<img src={EA} alt='Extreme Automation' className='tw m-0' />
 															<h5 className='my-2 my-md-3'>Extreme Automation</h5>
 														</div>
-														<p>
+														<p className='text-left'>
 															Use our existing automation capabilities to automate
 															infrastructure, operations, security in hybrid IT
 															environment.
@@ -904,7 +904,7 @@ const Hybridcloud = () => {
 															/>
 															<h5 className='my-2 my-md-4'>Public Cloud Partnership</h5>
 														</div>
-														<p>
+														<p className='text-left'>
 															Our advanced partnership with major public cloud providers
 															help you to get support at every stage.
 														</p>
@@ -920,7 +920,7 @@ const Hybridcloud = () => {
 																	/>
 																	<h5 className='my-2 my-md-3'>Demo Environment</h5>
 																</div>
-																<p>
+																<p className='text-left'>
 																	Avail the opportunity to quickly create a demo
 																	hybrid cloud setup in our existing hybrid IT
 																	environment and testify to you key business use
@@ -942,14 +942,16 @@ const Hybridcloud = () => {
 															/>
 															<h5 className='my-2 my-md-4'>Optimization Service</h5>
 														</div>
-														<p>We do optimal resource pooling from multiple clouds.</p>
+														<p className='text-left'>
+															We do optimal resource pooling from multiple clouds.
+														</p>
 													</div>
 													<div className='col-sm-4 col-md-4 text-center'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={EM} alt='Engagement Model' className='tw m-0' />
 															<h5 className='my-2 my-md-3'>Engagement Model</h5>
 														</div>
-														<p>
+														<p className='text-left'>
 															Our every engagement focused on empowerment – not dependency
 														</p>
 													</div>
@@ -962,7 +964,7 @@ const Hybridcloud = () => {
 															/>
 															<h5 className='my-2 my-md-4'>Long Term Retention</h5>
 														</div>
-														<p>100% Customer Retention Rate.</p>
+														<p className='text-left'>100% Customer Retention Rate.</p>
 													</div>
 												</div>
 												<p className='ptext'>
@@ -1196,7 +1198,7 @@ p{
 
 @media (min-width: 576px){
 	.ptext{
-		text-align: justify;
+		text-align: left;
 	}
 	padding: 2.5rem 4rem;
 	.topNav{

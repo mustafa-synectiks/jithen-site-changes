@@ -740,7 +740,7 @@ const DevopsTransformation = ({ location }) => {
 														<img src={Expertise} alt='Expertise' className='tw m-0 h-75' />
 														<h5 className='mb-4'>Expertise</h5>
 													</div>
-													<p>
+													<p className='text-left'>
 														Experience Team with a proven track record of CloudOps delivery
 														enabled with DevSecOps Capabilities.
 													</p>
@@ -750,7 +750,7 @@ const DevopsTransformation = ({ location }) => {
 														<img src={Experience} alt='Experience' className='tw m-0' />
 														<h5 className='mt-3'>Experience</h5>
 													</div>
-													<p>
+													<p className='text-left'>
 														We have done large Transformation projects with Toyota, Reliance
 														and cultural challenges effectively and brought the changes,
 														resulting significant improvement and savings.
@@ -762,7 +762,7 @@ const DevopsTransformation = ({ location }) => {
 														<img src={Contribution} alt='Contribution' className='tw m-0' />
 														<h5 className='mt-3'>Contribution</h5>
 													</div>
-													<p>
+													<p className='text-left'>
 														We are continuously contributing an open XFormation platform
 														that is accelerating the transformation @50% Time & Cost.
 													</p>
@@ -776,7 +776,9 @@ const DevopsTransformation = ({ location }) => {
 													<img src={Engagement} alt='Engagement Model' className='tw m-0' />
 													<h5 className='mt-3'>Engagement Model</h5>
 												</div>
-												<p>Our every engagement focused on empowerment, not dependency.</p>
+												<p className='text-left'>
+													Our every engagement focused on empowerment, not dependency.
+												</p>
 											</div>
 											<div className='col-sm-4 col-md-4 text-center'>
 												<div className='d-flex align-items-center flex-column'>
@@ -787,7 +789,7 @@ const DevopsTransformation = ({ location }) => {
 													/>
 													<h5 className=''>Public Cloud Partnership</h5>
 												</div>
-												<p>
+												<p className='text-left'>
 													Our advanced partnership with major public cloud providers help you
 													to get support at every stage.
 												</p>
@@ -801,7 +803,7 @@ const DevopsTransformation = ({ location }) => {
 													/>
 													<h5 className='mt-2'>Long Term Retention</h5>
 												</div>
-												<p>100% Customer Retention Rate.</p>
+												<p className='text-left'>100% Customer Retention Rate.</p>
 											</div>
 										</div>
 										<div className='row mt-5'>
@@ -810,7 +812,7 @@ const DevopsTransformation = ({ location }) => {
 													<img src={E2E} alt='E2E Solution' className='tw m-0' />
 													<h5 className='mt-3'>E2E Solution</h5>
 												</div>
-												<p>
+												<p className='text-left'>
 													Single point of contact for Application Migration, Transformation
 													and Integration to cloud-native Apps services.
 												</p>
@@ -820,13 +822,13 @@ const DevopsTransformation = ({ location }) => {
 													<img src={Extreme} alt='Extreme Automation' className='tw m-0' />
 													<h5 className=''>Extreme Automation</h5>
 												</div>
-												<p>
+												<p className='text-left'>
 													Use our existing automation capabilities to automate infrastructure
 													, operations, security in hybrid IT environment.
 												</p>
 											</div>
 											<div className='px-2 px-md-0'>
-												<p>
+												<p className='text-left'>
 													Finally, we help you to do people / process / technology
 													transformation it all at a lower cost using CloudOps delivery
 													enabled with DevSecOps capabilities and extreme automation from our

@@ -42,14 +42,16 @@ const Layout = ({ children }) => {
 			// $('#hide').click(function() {
 			// 	$('.prvtpolicy').hide();
 			// });
-			const showMsg = sessionStorage.getItem('showMsg');
+			const showMsg = localStorage.getItem('showMsg');
 			if (showMsg !== 'false') {
 				$('.prvtpolicy').show();
+			} else {
+				$('.prvtpolicy').hide();
 			}
 			$('#hide').on('click', function() {
 				$('.prvtpolicy').hide();
 				// $('.prvtpolicy').fadeOut('slow');
-				sessionStorage.setItem('showMsg', 'false');
+				localStorage.setItem('showMsg', 'false');
 			});
 			// $(window).unload(function(){
 			// 	localStorage.clear(showMsg);
@@ -313,12 +315,12 @@ const Layout = ({ children }) => {
 			}
 
 			// 	// uncomment this to make pause on mouseover
-			// $elem.on('mouseover', function() {
-			// 	isPause = true;
-			// });
-			// $elem.on('mouseout', function() {
-			// 	isPause = false;
-			// });
+			$elem.on('mouseover', function() {
+				isPause = true;
+			});
+			$elem.on('mouseout', function() {
+				isPause = false;
+			});
 		});
 		// OWL V1.3
 		$('.navbar-collapse a').click(function() {

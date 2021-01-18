@@ -164,10 +164,9 @@ const ApplicationTransformation = () => {
 													Synectiks has a proven approach to help you migrate, modernize, and
 													digitally transform your business. We can help you modernize your
 													application portfolio based on APIs, microservices, containers and
-													DevOps for faster marketing or less time to market, improved user
-													experience and optimized cost. Application Transformation Services
-													provide customer the ability to optimize the existing application as
-													follows:
+													DevOps for less time to market, improved user experience and
+													optimized cost. Application Transformation Services provide customer
+													the ability to optimize the existing application as follows:
 												</p>
 												<ul className='ptext'>
 													<li>
@@ -480,7 +479,7 @@ const ApplicationTransformation = () => {
 																<img src={EX} alt='Experience' className='tw m-0' />
 																<h4 className='my-2 my-md-3'>Experience</h4>
 															</div>
-															<p className='text-center'>
+															<p className='text-left'>
 																Large Scale modernization and consolidation experience
 															</p>
 														</div>
@@ -493,7 +492,7 @@ const ApplicationTransformation = () => {
 																/>
 																<h4 className='my-2 my-md-3'>Artifacts</h4>
 															</div>
-															<p className='text-center'>
+															<p className='text-left'>
 																App blocks and Automation Bots available in Xformation
 																platform accelerate application modernization effort by
 																50%.
@@ -504,7 +503,7 @@ const ApplicationTransformation = () => {
 																<img src={advisory} alt='Advisory' className='tw m-0' />
 																<h4 className='my-2 my-md-3'>Advisory</h4>
 															</div>
-															<p className='text-center'>
+															<p className='text-left'>
 																Quick Discovery / Assessment and application
 																modernization and migration plan built in weeks, not
 																months.
@@ -532,7 +531,7 @@ const ApplicationTransformation = () => {
 																/>
 																<h4 className='my-2 my-md-3'>Economics</h4>
 															</div>
-															<p className='text-center'>
+															<p className='text-left'>
 																Our open product-based solution delivery approach
 																reduces 50% time & money from any managed services
 																partner.
@@ -547,7 +546,7 @@ const ApplicationTransformation = () => {
 																/>
 																<h4 className='my-2 my-md-3'>Innovations</h4>
 															</div>
-															<p className='text-center'>
+															<p className='text-left'>
 																Use our deep expertise on cloud-native services
 																especially container ecosystem, a serverless ecosystem
 																to deliver services to customer at optimal speed and
@@ -565,7 +564,7 @@ const ApplicationTransformation = () => {
 																/>
 																<h4 className='my-2 my-md-3'>Continuous Delivery</h4>
 															</div>
-															<p className='text-center'>
+															<p className='text-left'>
 																Deliver applications seamlessly across clouds and
 																geographies using existing delivery blueprints ensuring
 																optimal quality and resilience.
@@ -580,7 +579,7 @@ const ApplicationTransformation = () => {
 																/>
 																<h4 className='my-2 my-md-3'> Security & Compliance</h4>
 															</div>
-															<p className='text-center'>
+															<p className='text-left'>
 																Avail our built in application security blueprints right
 																from the start to deliver application that adheres your
 																enterprise security & compliance guidelines.
@@ -591,7 +590,7 @@ const ApplicationTransformation = () => {
 																<img src={EM} alt='Engagement' className='tw m-0' />
 																<h4 className='my-2 my-md-3'>Engagement</h4>
 															</div>
-															<p className='text-center'>
+															<p className='text-left'>
 																Our every engagement is focused on empowerment, not
 																dependency.
 															</p>
@@ -913,7 +912,7 @@ ul.tabList.nav.flex-column {
 		flex-flow: column;
 	}
 	.ptext{
-		text-align: justify;
+		text-align: left;
 	}
 	padding:2.5rem 4rem;
 	.w-hndr{

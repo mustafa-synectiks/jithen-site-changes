@@ -67,14 +67,14 @@ const Iaas = () => {
 									<div className='text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex'>
 										<div className='w-100  pl-3 pr-3 text-black'>
 											<p className='lineHeight-24 ptext mt-md-2 mt-1'>
-												Synectiks Secure Cloud Hosted Services supports a wide variety of
+												Synectiks Secure Cloud Hosted Services support a wide variety of
 												workloads & Disaster Recovery with a high degree of control, security,
-												and simplicity. Supports your mission-critical applications and
-												workloads with instant and scalable infrastructure meeting business
-												compliance standards. With Synectiks Cloud Hosted Services, you can
-												focus on your business needs instead of spending the time and money it
-												takes to plan, procure, secure, and manage the right infrastructure to
-												meet your business demands.
+												and simplicity. Support your mission-critical applications and workloads
+												with instant and scalable infrastructure, meeting business compliance
+												standards. With Synectiks Cloud Hosted Services, you can focus on your
+												business needs instead of spending the time and money it takes to plan,
+												procure, secure, and manage the right infrastructure that meets your
+												business demands.
 											</p>
 										</div>
 										{/* <div className='w-100 ml-md-auto' data-aos='fade-up'>
@@ -136,7 +136,7 @@ const Iaas = () => {
 											<p className='mt-2 pcenter'>
 												Your mission-critical applications powered by Linux, Windows, major
 												Applications and Databases, Synectiks offers support for these and other
-												workloads, including your favorite Open Source Technologies, choose from
+												workloads, including your favorite Open Source Technologies. Choose from
 												a wide variety of Virtual Machine Configuration and Storage Performance
 												classes configured for specific types of workloads.
 											</p>
@@ -152,9 +152,9 @@ const Iaas = () => {
 											<h5>Storage</h5>
 											<p className='mt-2 pcenter'>
 												Safeguard data at rest with AES-256 encryption. Scale from terabytes to
-												tens of petabytes for seamless business growth. No Capex. We offer a
+												tens of petabytes for seamless business growth. No CapEx. We offer a
 												wide variety of Storage Solutions at an Aggressive and Affordable
-												Monthly Pricing:
+												Monthly Pricing.
 											</p>
 											<small>
 												S3 Storage as low as $0.015 per GB with no Ingress & Egress Charges
@@ -173,7 +173,7 @@ const Iaas = () => {
 										<div>
 											<h5>Multi-Secure Geo Locations</h5>
 											<p className='mt-2 pcenter'>
-												Different Secure Geo Locations for Customers to choose from. Each
+												Multiple Secure Geo Locations for Customers to choose from. Each
 												location separated by Seismic Zone, Power Grid to make sure your
 												Infrastructure is always available when disaster strikes at one
 												location.
@@ -196,7 +196,7 @@ const Iaas = () => {
 											<h5>Secure Backup & Disaster Recovery Options</h5>
 											<p className='mt-2 pcenter'>
 												Business Continuity is one of our important core values in the Hosted
-												Cloud Solution. Whether its mission critical server or any end point
+												Cloud Solution, whether it is a mission critical server or any end point
 												device. Choose from the wide variety of Cloud Backup & Disaster Recovery
 												Options available with an in-built Cyber Protection feature.
 											</p>
@@ -207,10 +207,9 @@ const Iaas = () => {
 										<div>
 											<h5>Cloud Migration & Modernization</h5>
 											<p className='mt-2 pcenter'>
-												Our Expert Migration & Application Development professional Teams can
-												Modernize your Legacy/Current Infrastructure & Applications using
-												cloud-native technologies and deliver predictive and deterministic
-												business outcome.
+												Our Expert Migration & Application Development Teams can Modernize your
+												Legacy/Current Infrastructure & Applications using cloud-native
+												technologies and deliver predictive and deterministic business outcome.
 											</p>
 										</div>
 									</div>
@@ -226,7 +225,7 @@ const Iaas = () => {
 										<div>
 											<h5>Support</h5>
 											<p className='mt-2 pcenter'>
-												Follow the Sun-Model - 24/7/365 Support from On-shore and Off-shore
+												Follow the Sun-Model - 24 / 7 / 365 Support from On-shore and Off-shore
 												Teams.
 											</p>
 										</div>
@@ -265,7 +264,7 @@ const IaasWrapper = styled.div`
 		width: 100%;
 	}
 	.pcenter {
-		text-align: center;
+		text-align: left;
 	}
 	padding: 5rem 1rem;
 	.topNav {

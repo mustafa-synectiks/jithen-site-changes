@@ -8,15 +8,15 @@ module.exports = {
 	},
 	pathPrefix: '/next',
 	plugins: [
-		// {
-		// 	resolve: `gatsby-plugin-google-analytics`,
-		// 	options: {
-		// 		trackingId: 'UA-162017401-1',
-		// 		head: true,
-		// 		anonymize: true,
-		// 		respectDNT: true
-		// 	}
-		// },
+		{
+			resolve: `gatsby-plugin-google-analytics`,
+			options: {
+				trackingId: 'UA-162017401-1',
+				head: true,
+				anonymize: true,
+				respectDNT: true
+			}
+		},
 		`gatsby-plugin-sitemap`,
 		`gatsby-plugin-netlify-cms`,
 		`gatsby-remark-responsive-iframe`,
@@ -43,14 +43,14 @@ module.exports = {
 				// optional: if you are using path prefix
 			}
 		},
-		// {
-		// 	resolve: 'gatsby-plugin-robots-txt',
-		// 	options: {
-		// 		host: 'https://synectiks.com',
-		// 		sitemap: 'https://synectiks.com/sitemap.xml',
-		// 		policy: [ { userAgent: '*', allow: '/' } ]
-		// 	}
-		// },
+		{
+			resolve: 'gatsby-plugin-robots-txt',
+			options: {
+				host: 'https://synectiks.com',
+				sitemap: 'https://synectiks.com/sitemap.xml',
+				policy: [ { userAgent: '*', allow: '/' } ]
+			}
+		},
 		{
 			resolve: `gatsby-plugin-styled-components`,
 			options: {
@@ -61,9 +61,10 @@ module.exports = {
 			resolve: `gatsby-plugin-s3`,
 			options: {
 				// bucketName: 'synectiks-testwebsite',
-				bucketName: 'test-mustafa'
-				// protocol: 'https',
-				// hostname: 'synectiks.com'
+				// bucketName: 'test-mustafa',
+				bucketName: 'synectiks-latest-website',
+				protocol: 'https',
+				hostname: 'synectiks.com'
 			}
 		},
 		{
@@ -101,12 +102,12 @@ module.exports = {
 				path: `${__dirname}/src/routes.js`
 			}
 		},
-		// {
-		// 	resolve: 'gatsby-plugin-zopfli',
-		// 	options: {
-		// 		extensions: [ 'css', 'html', 'js', 'svg' ]
-		// 	}
-		// },
+		{
+			resolve: 'gatsby-plugin-zopfli',
+			options: {
+				extensions: [ 'css', 'html', 'js', 'svg' ]
+			}
+		},
 		`gatsby-plugin-meta-redirect`
 	]
 };

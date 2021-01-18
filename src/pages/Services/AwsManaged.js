@@ -130,78 +130,9 @@ export class AwsManaged extends React.Component {
 								</div>
 							</div>
 						</div>
-
-						<div className='w-100  text-black ptext psl py-5'>
+						<div className='w-100  text-black ptext psl py-5 desk-block'>
 							<h3 className=''>AWS Managed Services Features</h3>
-							<div className='col-lg-12 d-flex flex-col flex-column flex-md-row  desk-block'>
-								<div className='pt-3 col-sm-4 px-0 d-flex'>
-									<img src={bullet} alt='' className='w-aws-8' />
-
-									<a className='navlink navfont noLine'>Provisioning</a>
-								</div>
-								<div className='pt-3 col-sm-4 px-0 d-flex'>
-									<img src={bullet} alt='' className='w-aws-8' />
-
-									<a className='navlink navfont noLine'>Security and Access Management</a>
-								</div>
-								<div className='pt-3 col-sm-4  px-0 d-flex'>
-									<img src={bullet} alt='' className='w-aws-8' />
-
-									<a className='navlink navfont noLine'>Cost</a>
-								</div>
-							</div>
 							<div className='col-lg-12 d-flex flex-col flex-column flex-md-row'>
-								<div className='pt-3 col-sm-4  px-0  d-flex'>
-									<img src={bullet} alt='' className='w-aws-8' />
-
-									<a className='navlink navfont noLine'>Monitoring and Event Management</a>
-								</div>
-								<div className='pt-3 col-sm-4  px-0 d-flex'>
-									<img src={bullet} alt='' className='w-aws-8' />
-
-									<a className='navlink navfont noLine'>Compliance</a>
-								</div>
-								<div className='pt-3 col-sm-4  px-0 d-flex'>
-									<img src={bullet} alt='' className='w-aws-8' />
-
-									<a className='navlink navfont noLine'>24 x 7 Service Desk</a>
-								</div>
-							</div>
-							<div className='col-lg-12 d-flex flex-col flex-column flex-md-row'>
-								<div className='pt-3 col-sm-4  px-0  d-flex'>
-									<img src={bullet} alt='' className='w-aws-8' />
-
-									<a className='navlink navfont noLine'>Patch and Continuity Management</a>
-								</div>
-								<div className='pt-3 col-sm-4  px-0 d-flex'>
-									<img src={bullet} alt='' className='w-aws-8' />
-
-									<a className='navlink navfont noLine'>Change Management</a>
-								</div>
-								<div className='pt-3 col-sm-4 px-0  d-flex'>
-									<img src={bullet} alt='' className='w-aws-8' />
-
-									<a className='navlink navfont noLine'>Enterprise Support</a>
-								</div>
-							</div>
-							<div className='col-lg-12 d-flex flex-col flex-column flex-md-row'>
-								<div className='pt-3 col-sm-4  px-0  d-flex'>
-									<img src={bullet} alt='' className='w-aws-8' />
-
-									<a className='navlink navfont noLine'>Availability</a>
-								</div>
-								<div className='pt-3 col-sm-4  px-0 d-flex'>
-									<img src={bullet} alt='' className='w-aws-8' />
-
-									<a className='navlink navfont noLine'>Incident Management</a>
-								</div>
-								<div className='pt-3 col-sm-4  px-0 d-flex'>
-									<img src={bullet} alt='' className='w-aws-8' />
-
-									<a className='navlink navfont noLine'>Firewall Management</a>
-								</div>
-							</div>
-							<div className='col-lg-12 d-flex flex-col flex-column flex-md-row  desk-block'>
 								<div className='pt-3 col-sm-4 px-0 d-flex'>
 									<img src={bullet} alt='' className='w-aws-8' />
 
@@ -271,8 +202,8 @@ export class AwsManaged extends React.Component {
 							</div>
 						</div>
 
-						<div className='mobile-view'>
-							<img src={awsM} alt='' />
+						<div className='mobile-view w-100 py-3'>
+							<img src={awsM} alt='' className='w-75' />
 						</div>
 
 						<div className='bg-lightgrey text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex psl psr'>

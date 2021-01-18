@@ -85,7 +85,7 @@ const Daas = () => {
 											<p className='lineHeight-24 ptext mt-md-2 mt-1'>
 												Synectiks Cloud-Hosted Virtual Desktop Service is a modern platform for
 												secure delivery of virtual desktops and apps. Our best-in-class
-												virtualization technologies enables scalability, uptime at an affordable
+												virtualization technologies enable scalability, uptime at an affordable
 												price. Powered by VMware Blast Extreme protocol, delivers an immersive,
 												feature-rich user experience for end users across devices, locations,
 												media and network connections. Enabled by enterprise-grade management
@@ -111,8 +111,8 @@ const Daas = () => {
 												Easy access to corporate apps and data from any device increases
 												end-user productivity and engagement, but it also requires the highest
 												level of security. Our best-in-class Virtual desktop technologies
-												provides IT with a modern, streamlined approach to deliver, protect and
-												manage Windows and Linux desktops and applications while containing
+												provide IT with a modern, streamlined approach to deliver, protect and
+												manage Windows and Linux desktops, and applications while containing
 												costs and ensuring that end users can work anytime, anywhere, on any
 												device.
 											</p>
@@ -145,8 +145,8 @@ const Daas = () => {
 												feature-rich user experience across devices, locations, media and
 												network connections. Remote and mobile workers enjoy workstation-class
 												performance and rich graphics with the Blast Extreme protocol, which
-												offers dynamic optimization in non-ideal, high-latency, low-bandwidth
-												network conditions.
+												offers dynamic optimization even in non-ideal, high-latency,
+												low-bandwidth network conditions.
 											</p>
 										</div>
 									</div>
@@ -155,7 +155,7 @@ const Daas = () => {
 										<div>
 											<h5>Support</h5>
 											<p className='mt-2 pcenter'>
-												Follow the Sun model - 24/7/365 days support from both onshore and
+												Follow the Sun model - 24 / 7 / 365 days support from both onshore and
 												offshore Teams.
 											</p>
 										</div>
@@ -194,7 +194,7 @@ const DaasWrapper = styled.div`
 		width: 100%;
 	}
 	.pcenter {
-		text-align: center;
+		text-align: left;
 	}
 	padding: 5rem 1rem;
 	.topNav {

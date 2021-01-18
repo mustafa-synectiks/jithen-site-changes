@@ -33,7 +33,7 @@ const SecureBusiness = () => {
 				<div className='container-fluid my-n5'>
 					<div className='row justify-content-center align-items-center'>
 						<div className='col-md-6 py-4 px-0'>
-							<div className='excerpt'>
+							<div className='excerpt mt-3 mt-md-0'>
 								<a href='/business-cyber-sub-landing/index.html'>
 									Business Continuity & Cyber Security:
 								</a>

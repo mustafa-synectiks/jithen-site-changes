@@ -25,9 +25,9 @@ export class OfficeMigraton extends React.Component {
 				</Helmet>
 				<OfficeMigratonWrapper>
 					<div>
-						<SEO title='Office 365' />
-						<BreadCrumbs title='Home' subtitle='Cloud Services' pageTitle='Office Migration' />
-						<h1>Office 365</h1>
+						<SEO title='Microsoft 365 Services' />
+						<BreadCrumbs title='Home' subtitle='Cloud Services' pageTitle='Microsoft 365 Services' />
+						<h1>Microsoft 365 Services</h1>
 					</div>
 					<div className='bg-lightgrey'>
 						<div class=''>
@@ -68,7 +68,7 @@ export class OfficeMigraton extends React.Component {
 										<h5 className='ft'>
 											We can help accelerate your move to a digital workplace through our:
 										</h5>
-										<ul className='lineHeight-34'>
+										<ul className='lineHeight-34 text-left'>
 											<li>
 												Experience in unlocking the full productivity potential of Office 365
 											</li>
@@ -101,7 +101,7 @@ export class OfficeMigraton extends React.Component {
 										<p>
 											<b>Work Better Together</b>
 										</p>
-										<p>
+										<p className='text-left'>
 											Work Anywhere, Anytime, on Any Device with Office 365. Empower your
 											employees with the tools they need.
 										</p>
@@ -113,7 +113,7 @@ export class OfficeMigraton extends React.Component {
 										<p>
 											<b>Get More Done</b>
 										</p>
-										<p>
+										<p className='text-left'>
 											Enjoy access to the latest versions, security updates and feature releases.
 										</p>
 									</div>
@@ -124,7 +124,7 @@ export class OfficeMigraton extends React.Component {
 										<p>
 											<b>Work Securely</b>
 										</p>
-										<p>
+										<p className='text-left'>
 											Work and Share files confidently with built-in security and privacy controls
 											that help keep your data safe and secure.
 										</p>
@@ -135,7 +135,7 @@ export class OfficeMigraton extends React.Component {
 										<p>
 											<b>Simplified for You</b>
 										</p>
-										<p>
+										<p className='text-left'>
 											Choose solutions that are right for your business. Get more value for your
 											money.
 										</p>
@@ -207,7 +207,7 @@ const OfficeMigratonWrapper = styled.div`
 	@media (min-width: 576px) {
 		padding: 2.5rem 4rem;
 		.ptext {
-			text-align: justify;
+			text-align: left;
 		}
 	}
 `;

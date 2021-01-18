@@ -573,7 +573,7 @@ const Infrastructure = () => {
 															<img src={EX} alt='Experience' className='tw m-0' />
 															<h5 className='my-2 my-md-3'>Experience</h5>
 														</div>
-														<p className='text-center'>
+														<p className='text-left'>
 															Large Scale modernization and consolidation experience
 														</p>
 													</div>
@@ -582,7 +582,7 @@ const Infrastructure = () => {
 															<img src={artifact} alt='Artifacts' className='tw m-0' />
 															<h5 className='my-2 my-md-3'>Artifacts</h5>
 														</div>
-														<p className='text-center'>
+														<p className='text-left'>
 															Transformation Blueprints and Automation Bots available in
 															Xformation platform accelerate transformation effort.
 														</p>
@@ -592,7 +592,7 @@ const Infrastructure = () => {
 															<img src={advisory} alt='Advisory' className='tw m-0' />
 															<h5 className='my-2 my-md-3'>Advisory</h5>
 														</div>
-														<p className='text-center'>
+														<p className='text-left'>
 															Quick Discovery / Assessment and transformation plan built
 															in weeks, not months.
 														</p>
@@ -604,7 +604,7 @@ const Infrastructure = () => {
 															<img src={pay} alt='Pay As You Use' className='tw m-0' />
 															<h5 className='my-2 my-md-3'>Pay As You Use</h5>
 														</div>
-														<p className='text-center'>
+														<p className='text-left'>
 															Move to consumption model economics across all IT, use our
 															available blueprints that reduce any stranded capacity.
 														</p>
@@ -614,7 +614,7 @@ const Infrastructure = () => {
 															<img src={economics} alt='Economics' className='tw m-0' />
 															<h5 className='my-2 my-md-3'>Economics</h5>
 														</div>
-														<p className='text-center'>
+														<p className='text-left'>
 															Upto 50% Lower TCO of IT by having aggregated infrastructure
 															and fluid resource pools optimize use of compute, storage
 															and fabric resources.
@@ -625,7 +625,7 @@ const Infrastructure = () => {
 															<img src={operate} alt='Operation' className='tw m-0' />
 															<h5 className='my-2 my-md-3'>Operation</h5>
 														</div>
-														<p className='text-center'>
+														<p className='text-left'>
 															Upto 40% improvement in IT staff productivity by using our
 															automations that unify administration and simplify
 															management.
@@ -638,7 +638,7 @@ const Infrastructure = () => {
 															<img src={innovation} alt='Innovation' className='tw m-0' />
 															<h5 className='my-2 my-md-3'>Innovation</h5>
 														</div>
-														<p className='text-center'>
+														<p className='text-left'>
 															2–3X acceleration in continuous improvement cycles
 														</p>
 													</div>
@@ -651,7 +651,7 @@ const Infrastructure = () => {
 															/>
 															<h5 className='my-2 my-md-3'>Security & Compliance</h5>
 														</div>
-														<p className='text-center'>
+														<p className='text-left'>
 															Provision and change infrastructure through well-defined
 															blueprints and pipelines that adhere to highest level of
 															security & compliance.
@@ -662,7 +662,7 @@ const Infrastructure = () => {
 															<img src={EM} alt='Engagement' className='tw m-0' />
 															<h5 className='my-2 my-md-3'>Engagement</h5>
 														</div>
-														<p className='text-center'>
+														<p className='text-left'>
 															Our every engagement is focused on empowerment, not
 															dependency.
 														</p>
@@ -773,7 +773,7 @@ const HybridWrapper = styled.div`{
 	text-align: left;
 }
 .ptexticon{
-	text-align: center;
+	text-align: left;
 }
 	padding: 5rem 1rem;
 ul{
@@ -1019,10 +1019,10 @@ ul.tabList.nav.flex-column {
 		width: 75%;
 	}
 	.ptext{
-	text-align: justify;
+	text-align: left;
 }
 .ptexticon{
-	text-align: justify;
+	text-align: left;
 }
 	padding: 2.5rem 4rem;
 .disimal{
