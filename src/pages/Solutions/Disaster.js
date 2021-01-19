@@ -72,7 +72,7 @@ const DisasterRecovery = () => {
 						<BreadCrumbs
 							title='Home'
 							subtitle='Business Continuity & Cyber Security'
-							pageTitle='Secure Cloud Disaster Recovery as a Service'
+							pageTitle='Cloud Disaster Recovery as a Service'
 						/>
 						<h1>Cloud Disaster Recovery as a Service</h1>
 					</div>

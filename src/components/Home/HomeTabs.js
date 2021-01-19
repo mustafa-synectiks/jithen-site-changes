@@ -394,7 +394,7 @@ const Tabs = () => {
 											<a href='/iaas/index.html' className='text-center heading-h3 h6'>
 												Secure & Custom Hosted Infrastructure Services
 											</a>
-											<p className='f-14 px-4 text-left'>
+											<p className='f-14 px-2 px-4 text-left'>
 												Synectiks Secure Cloud Hosted Services supports a wide variety of
 												workloads & Disaster Recovery with a high degree of control, security,
 												and simplicity. Supports your mission-critical applications and

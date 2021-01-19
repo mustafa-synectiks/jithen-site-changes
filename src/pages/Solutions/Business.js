@@ -69,7 +69,7 @@ const Business = () => {
 						<BreadCrumbs
 							title='Home'
 							subtitle='Business Continuity & Cyber Security'
-							pageTitle='Secure Cloud Backup as a Service'
+							pageTitle='Cloud Backup as a Service'
 						/>
 						<h1>Cloud Backup as a Service </h1>
 					</div>

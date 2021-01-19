@@ -82,19 +82,19 @@ module.exports = {
 			}
 		},
 
-		// {
-		// 	resolve: `gatsby-plugin-manifest`,
-		// 	options: {
-		// 		name: `Synectiks`,
-		// 		short_name: `synectiks`,
-		// 		start_url: `/`,
-		// 		background_color: `#663399`,
-		// 		theme_color: `#663399`,
-		// 		display: `minimal-ui`,
-		// 		icon: `src/favicon/android-icon-36x36.png`
-		// 		// This path is relative to the root of the site.
-		// 	}
-		// },
+		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				name: `Synectiks`,
+				short_name: `synectiks`,
+				start_url: `/`,
+				background_color: `#663399`,
+				theme_color: `#663399`,
+				display: `minimal-ui`,
+				icon: `src/favicon/android-icon-36x36.png`
+				// This path is relative to the root of the site.
+			}
+		},
 		{
 			resolve: `gatsby-plugin-routes`,
 			options: {

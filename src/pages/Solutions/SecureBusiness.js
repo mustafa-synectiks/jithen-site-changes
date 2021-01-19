@@ -35,7 +35,7 @@ const SecureBusiness = () => {
 						<div className='col-md-6 py-4 px-0'>
 							<div className='excerpt mt-3 mt-md-0'>
 								<a href='/business-cyber-sub-landing/index.html'>
-									Business Continuity & Cyber Security:
+									Business Continuity & Cyber Security
 								</a>
 								<p>
 									Build Business Resiliency with modern Synectiks-Business Continuity solutions.
@@ -44,7 +44,7 @@ const SecureBusiness = () => {
 								</p>
 							</div>
 							<div className='excerpt'>
-								<a href='/iaas/index.html'>Secure & Custom Hosted Infrastructure:</a>
+								<a href='/iaas/index.html'>Secure & Custom Hosted Infrastructure</a>
 								<p>
 									Meet modern IT demands with a scalable, cost-efficient, and multi-purpose cloud
 									solution. Synectiks Secure Cloud Hosted Services supports a wide variety of
@@ -52,7 +52,7 @@ const SecureBusiness = () => {
 								</p>
 							</div>
 							<div className='excerpt'>
-								<a href='/digital-workspace/index.html'>Cloud-Hosted Virtual Desktop:</a>
+								<a href='/digital-workspace/index.html'>Cloud-Hosted Virtual Desktop</a>
 								<p>
 									Synectiks is an efficient Desktop as a Service provider that scales your workspace
 									to the cloud, driving the highest performance in speed, uptime and scalability at an
@@ -65,6 +65,19 @@ const SecureBusiness = () => {
 						</div>
 					</div>
 				</div>
+				<Helmet>
+					<script
+						dangerouslySetInnerHTML={{
+							__html: `
+            var vv_base_id = 'q00IB13hyn';
+var vv_ext_id = '5d53ed9a';
+var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
+(function () {
+var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
+        `
+						}}
+					/>
+				</Helmet>
 			</SecureWrapper>
 		</Layout>
 	);
