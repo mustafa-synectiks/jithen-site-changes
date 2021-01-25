@@ -152,7 +152,7 @@ const FooterWrapper = styled.div`
 			line-height: 10px;
 			margin-top: 0px;
 			padding: 0px 30px;
-			display: block;
+			display: none;
 			#hide {
 				position: absolute;
 				top: 8%;
@@ -191,7 +191,7 @@ const FooterWrapper = styled.div`
 		.prvtpolicy {
 			height: 40px;
 			padding: 0;
-			display: block;
+			display: none;
 			#hide {
 				position: absolute;
 				top: 0;

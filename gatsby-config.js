@@ -3,8 +3,7 @@ module.exports = {
 		title: `Synectiks - Cloud Solutions`,
 		description: `As an Open Product based Cloud Solution provider, we help enterprises take advantage of public & private cloud and its infinite resources to migrate and modernize their business so that they outperform their peers by becoming truly disruptive.`,
 		author: `Synectiks`,
-		// siteUrl: `https://synectiks.com`
-		siteUrl: `https://localhost.com`
+		siteUrl: `https://synectiks.com`
 	},
 	pathPrefix: '/next',
 	plugins: [
@@ -18,7 +17,6 @@ module.exports = {
 			}
 		},
 		`gatsby-plugin-sitemap`,
-		`gatsby-plugin-netlify-cms`,
 		`gatsby-remark-responsive-iframe`,
 		`gatsby-plugin-react-helmet`,
 		`gatsby-transformer-sharp`,
@@ -60,8 +58,6 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-s3`,
 			options: {
-				// bucketName: 'synectiks-testwebsite',
-				// bucketName: 'test-mustafa',
 				bucketName: 'synectiks-latest-website',
 				protocol: 'https',
 				hostname: 'synectiks.com'

@@ -121,8 +121,8 @@ const CaseStudy = () => {
 										<h3 className='textColor'>Disaster Recovery</h3>
 										<p className='pr-5 textColor'>
 											Lightweight disaster recovery platform for indian Defense.
-											<br />
-											<br />
+											{/* <br />
+											<br /> */}
 										</p>
 										<span className='noLine fw300'>
 											Read More <i className='fa fa-arrow-right' />
