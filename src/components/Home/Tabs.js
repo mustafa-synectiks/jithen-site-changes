@@ -211,7 +211,7 @@ const Tabs = () => {
 							</p>
 						</Row>
 						<Row>
-							<Col sm='12' md='3' className='p-1'>
+							<Col sm='12' md='4' className='p-1'>
 								<div className='py-1 py-md-3 h-100'>
 									<div className='border-right text-center'>
 										<a
@@ -229,7 +229,7 @@ const Tabs = () => {
 									</div>
 								</div>
 							</Col>
-							<Col sm='12' md='3' className='p-1'>
+							<Col sm='12' md='4' className='p-1'>
 								<div className='py-3 h-100'>
 									<div className='border-right text-center'>
 										<a href='/iaas/index.html' className='text-center heading-h3 h6'>
@@ -244,7 +244,7 @@ const Tabs = () => {
 									</div>
 								</div>
 							</Col>
-							<Col sm='12' md='3' className='p-1'>
+							{/* <Col sm='12' md='3' className='p-1'>
 								<div className='py-1 py-md-3 h-100'>
 									<div className='border-right text-center'>
 										<a href='/digital-workspace/index.html' className='text-center heading-h3 h6'>
@@ -262,8 +262,8 @@ const Tabs = () => {
 										</p>
 									</div>
 								</div>
-							</Col>
-							<Col sm='12' md='3' className='p-1'>
+							</Col> */}
+							<Col sm='12' md='4' className='p-1'>
 								<div className='py-1 py-md-3 h-100'>
 									<div className='text-center'>
 										<a

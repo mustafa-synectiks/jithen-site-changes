@@ -83,11 +83,11 @@ const Header = () => {
 												<NavDropdown.Item className='main-sub-menu p-2' href='/iaas/index.html'>
 													Secure & Custom Hosted Infrastructure
 												</NavDropdown.Item>
-												<NavDropdown.Item
+												{/* <NavDropdown.Item
 													className='main-sub-menu p-2'
 													href='/digital-workspace/index.html'>
 													Cloud-Hosted Virtual Desktop
-												</NavDropdown.Item>
+												</NavDropdown.Item> */}
 											</Col>
 											<Col className='p-0 bcdl pl-md-2'>
 												<NavDropdown.Item

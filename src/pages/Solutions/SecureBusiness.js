@@ -51,14 +51,14 @@ const SecureBusiness = () => {
 									workloads with a high degree of control, security, and simplicity.
 								</p>
 							</div>
-							<div className='excerpt'>
+							{/* <div className='excerpt'>
 								<a href='/digital-workspace/index.html'>Cloud-Hosted Virtual Desktop</a>
 								<p>
 									Synectiks is an efficient Desktop as a Service provider that scales your workspace
 									to the cloud, driving the highest performance in speed, uptime and scalability at an
 									affordable price.
 								</p>
-							</div>
+							</div> */}
 						</div>
 						<div className='col-md-6 py-4 px-0'>
 							<img src={syn} alt='' className='w-75' />

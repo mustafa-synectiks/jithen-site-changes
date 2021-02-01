@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../../components/layout.js';
 import styled from 'styled-components';
 import HomeTabs from '../../components/Home/HomeTabs';
+import MobTabs from '../../pages/Company/MobTab.js';
 import Tabs from '../../components/Home/Tabs';
 import SEO from '../../components/seo.js';
 import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
@@ -39,7 +40,8 @@ const AreaOfExpertise = ({ location }) => {
 					<h5 className='text-center my-2 my-md-4 py-2 py-md-4 ft'>
 						Area of Expertise for Outcome-based Solution offerings
 					</h5>
-					<HomeTabs />
+					{/* <HomeTabs /> */}
+					<MobTabs />
 					<Tabs />
 				</div>
 			</AreaOfExpertiseWrapper>

@@ -116,6 +116,11 @@ module.exports = [
 		component: path.resolve(`src/pages/Company/Careers.js`)
 	},
 	{
+		// 23WL
+		path: '/Mobtab/index.html',
+		component: path.resolve(`src/pages/Company/MobTab.js`)
+	},
+	{
 		// 24WL
 		path: '/software-defined/index.html',
 		component: path.resolve(`src/pages/CaseStudies/Softwaredefined.js`)
@@ -145,6 +150,7 @@ module.exports = [
 		path: '/disaster-recovery/index.html',
 		component: path.resolve(`src/pages/CaseStudies/Disasterrecovery.js`)
 	}
+
 	// {
 	// 	path: '/private-cloud-hosting-services/index.html',
 	// 	component: path.resolve(`src/pages/Services/PrimaryCloudHostingServices.js`)

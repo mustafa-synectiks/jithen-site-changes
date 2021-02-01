@@ -11,7 +11,7 @@ import hx6 from '../../images/areofxpertise/RAD.svg';
 import hx7 from '../../images/areofxpertise/DevOps.svg';
 import classnames from 'classnames';
 import { Accordion, Card } from 'react-bootstrap/Accordion';
-const Tabs = () => {
+const HomeTabs = () => {
 	// (function() {
 	// 	'use strict';
 
@@ -107,345 +107,97 @@ const Tabs = () => {
 	};
 	return (
 		<TabsWrapper>
-			<div id='accordion' role='tablist'>
-				<div className='card '>
-					<div className='card-header' role='tab' id='headingTwo'>
-						<a
-							className='collapsed'
-							data-toggle='collapse'
-							href='#collapseTwo'
-							aria-expanded='false'
-							aria-controls='collapseTwo'>
-							Transformation
-						</a>
+			<div className='card-body pl-3 pr-3'>
+				<div className='d-flex flex-column flex-nowrap bg-white'>
+					<div className='col order-1'>
+						<ul id='categories' className='clr ml-n5'>
+							<li className='pusher' />
+							<li>
+								<div className='thx1' onClick={tabHex1}>
+									<img src={thc1} alt='Microservices' />
+								</div>
+							</li>
+							<li>
+								<div className='thx2' onClick={tabHex2}>
+									<img src={hx7} alt='Devops' />
+								</div>
+							</li>
+							<li>
+								<div className='thx3' onClick={tabHex3}>
+									<img src={hx6} alt='RAD' />
+								</div>
+							</li>
+							<li>
+								<div>
+									<img src={hx2} alt='Area Of Expertise' className='ctc-cent' />
+									{/* <h3 className='heading-h3 ctc-cent'>Area Of Expertise</h3> */}
+								</div>
+							</li>
+							<li>
+								<div className='thx4' onClick={tabHex4}>
+									<img src={hx3} alt='Cloud' />
+								</div>
+							</li>
+							<li className='pusher' />
+							<li>
+								<div className='thx5' onClick={tabHex5}>
+									<img src={hx5} alt='Analytics' />
+								</div>
+							</li>
+							<li>
+								<div className='thx6' onClick={tabHex6}>
+									<img src={hx4} alt='Monitoring' />
+								</div>
+							</li>
+						</ul>
+						<h6 className='text-center mt-5'>Click on each Hexagon to know more!</h6>
 					</div>
-					<div
-						id='collapseTwo'
-						className='collapse'
-						role='tabpanel'
-						aria-labelledby='headingTwo'
-						data-parent='#accordion'>
-						<div className='card-body pl-4 pr-3'>
-							<div className='row'>
-								<div className='col-sm-12'>
-									<h5 className='text-center ft'>Transformation Services </h5>
-									<p className='py-1 py-md-3'>
-										Synectiks Transformation services elevate your business by optimizing every
-										aspect of your operations for the public cloud or Hybrid cloud – your people,
-										infrastructure, applications and data.
-									</p>
-								</div>
-							</div>
-							<div className='row'>
-								<div className='col-sm-12  p-1'>
-									<div className='py-1'>
-										<div className='border-bottom my-n1 my-md-n0 text-center'>
-											<a href='/infrastructure/index.html' className='text-center heading-h3'>
-												Infrastructure Transformation
-											</a>
-											<p className='ptext  f-14 px-2 px-md-4 text-left'>
-												Ensure every bit of your hardware environment is directly supporting
-												your business objectives. The transition from a hardware-centric to a
-												software-defined organization makes a huge difference in CapEx and OpEx.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div className='col-sm-12  p-1'>
-									<div className='py-1'>
-										<div className='border-bottom my-n1 my-md-n0 text-center'>
-											<a
-												href='/application-transformation/index.html'
-												className='text-center heading-h3'>
-												Application Transformation
-											</a>
-											<p className='ptext  f-14 px-1 px-md-4 text-left'>
-												Applications that power your enterprise are key to generating a strong
-												competitive advantage. Bring innovation, agility and outstanding
-												customer experience through modern architectures and a cloud-first
-												approach.
-											</p>
-										</div>
-									</div>
-								</div>
-
-								<div className='col-sm-12  p-1'>
-									<div className='py-1'>
-										<div className='border-bottom my-n1 my-md-n0 text-center'>
-											<a
-												href='/devops-transformation/index.html'
-												className='text-center heading-h3'>
-												DevOps Transformation
-											</a>
-											<p className='ptext  f-14 px-1 px-md-4 text-left'>
-												Adopting a DevOps culture starts by transforming your people, technology
-												and processes. Accelerate your DevOps adaption by using our open
-												Automation platform and skilled resources.
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+					<div className='col order-0 text-center my-4'>
+						<h2 className=' text-center'>Expertise</h2>
+						<p className='text-uppercase text-center'>
+							Delivering purpose-built solutions based on open products and frameworks
+						</p>
 					</div>
-				</div>
-
-				<div className='card my-4'>
-					<div className='card-header' role='tab' id='headingOne'>
-						<a data-toggle='collapse' href='#collapseOne' aria-expanded='false' aria-controls='collapseOne'>
-							Open Platform
-						</a>
-					</div>
-
-					<div
-						id='collapseOne'
-						className='collapse'
-						role='tabpanel'
-						aria-labelledby='headingOne'
-						data-parent='#accordion'>
-						<div className='card-body pl-4 pr-3'>
-							<div className='p-2 p-md-4'>
-								<img src={PoweredBySynectiks} width='100%' alt='Xformation' className='w-100' />
-							</div>
-							<h2>What is Xformation?</h2>
-							<p>
-								It's a platform that provides peace of mind, governance, efficiency and control of
-								multi-cloud environments. Xformation helps you to migrate and modernize your legacy
-								business, take advantage of cloud and microservice architecture and thereby accelerate
-								your transformation journey @50% time & cost.  <br />{' '}
-								<span className='h5 b'>Its primary goals are:</span>
+					<div className='col order-2'>
+						<div className='show' id='thc1'>
+							<h2 className=' text-center text-light'>Microservices</h2>
+							<p className=' text-center'>
+								Modernization traditional application and legacy infrastructure.
 							</p>
-							<ul className='showul'>
-								<li>Accelerated Cloud Adoption</li>
-								<li>Multi-cloud container orchestration</li>
-								<li>App-centric Optimization </li>
-								<li>Continuous Delivery / Compliance / Automation.</li>
-								<li> Automated Performance Monitoring and Cost Control</li>
-							</ul>
 						</div>
-					</div>
-				</div>
-
-				<div className='card'>
-					<div className='card-header' role='tab' id='headingThree'>
-						<a
-							className='collapsed'
-							data-toggle='collapse'
-							href='#collapseThree'
-							aria-expanded='false'
-							aria-controls='collapseThree'>
-							Solutions
-						</a>
-					</div>
-					<div
-						id='collapseThree'
-						className='collapse'
-						role='tabpanel'
-						aria-labelledby='headingThree'
-						data-parent='#accordion'>
-						<div className='card-body pl-3 pr-3'>
-							<div className='d-flex flex-column flex-nowrap bg-white'>
-								<div className='col order-1'>
-									<ul id='categories' className='clr ml-n5'>
-										<li className='pusher' />
-										<li>
-											<div className='thx1' onClick={tabHex1}>
-												<img src={thc1} alt='Microservices' />
-											</div>
-										</li>
-										<li>
-											<div className='thx2' onClick={tabHex2}>
-												<img src={hx7} alt='Devops' />
-											</div>
-										</li>
-										<li>
-											<div className='thx3' onClick={tabHex3}>
-												<img src={hx6} alt='RAD' />
-											</div>
-										</li>
-										<li>
-											<div>
-												<img src={hx2} alt='Area Of Expertise' className='ctc-cent' />
-												{/* <h3 className='heading-h3 ctc-cent'>Area Of Expertise</h3> */}
-											</div>
-										</li>
-										<li>
-											<div className='thx4' onClick={tabHex4}>
-												<img src={hx3} alt='Cloud' />
-											</div>
-										</li>
-										<li className='pusher' />
-										<li>
-											<div className='thx5' onClick={tabHex5}>
-												<img src={hx5} alt='Analytics' />
-											</div>
-										</li>
-										<li>
-											<div className='thx6' onClick={tabHex6}>
-												<img src={hx4} alt='Monitoring' />
-											</div>
-										</li>
-									</ul>
-									<h6 className='text-center mt-5'>Click on each Hexagon to know more!</h6>
-								</div>
-								<div className='col order-0 text-center my-4'>
-									<h2 className=' text-center'>Expertise</h2>
-									<p className='text-uppercase text-center'>
-										Delivering purpose-built solutions based on open products and frameworks
-									</p>
-								</div>
-								<div className='col order-2'>
-									<div className='show' id='thc1'>
-										<h2 className=' text-center text-light'>Microservices</h2>
-										<p className=' text-center'>
-											Modernization traditional application and legacy infrastructure.
-										</p>
-									</div>
-									<div className='hide' id='thc2'>
-										<h2 className=' text-center text-light'>DevOps</h2>
-										<p className=' text-center'>
-											Empowering Organization to adopt DevOps culture with through specialized
-											people, tools and training.
-										</p>
-									</div>
-									<div className='hide' id='thc3'>
-										<h2 className=' text-center text-light'>Cloud</h2>
-										<p className=' text-center'>
-											Accelerating cloud adoption and software defined transformation through open
-											Accelerating cloud adoption and software defined transformation through open
-											tools and frameworks.
-										</p>
-									</div>
-									<div className='hide' id='thc4'>
-										<h2 className=' text-center text-light'>Monitoring</h2>
-										<p className=' text-center'>
-											Develop purpose-build monitoring solutions based on proven open frameworks.
-										</p>
-									</div>
-									<div className='hide' id='thc5'>
-										<h2 className=' text-center text-light'>Analytics</h2>
-										<p className=' text-center'>
-											Develop purpose-built Fast Data and Big Data solutions based on proven open
-											frameworks.
-										</p>
-									</div>
-									<div className='hide' id='thc6'>
-										<h2 className=' text-center text-light'>RAD</h2>
-										<p className=' text-center'>
-											Rapidly build App Blocks based business application in predictable and
-											deterministic way.
-										</p>
-									</div>
-								</div>
-							</div>
+						<div className='hide' id='thc2'>
+							<h2 className=' text-center text-light'>DevOps</h2>
+							<p className=' text-center'>
+								Empowering Organization to adopt DevOps culture with through specialized people, tools
+								and training.
+							</p>
 						</div>
-					</div>
-				</div>
-
-				<div className='card mt-4'>
-					<div className='card-header' role='tab' id='headingFour'>
-						<a
-							className='collapsed'
-							data-toggle='collapse'
-							href='#collapseFour'
-							aria-expanded='false'
-							aria-controls='collapseFour'>
-							Cloud Services
-						</a>
-					</div>
-					<div
-						id='collapseFour'
-						className='collapse'
-						role='tabpanel'
-						aria-labelledby='headingFour'
-						data-parent='#accordion'>
-						<div className='card-body pl-3 pr-3'>
-							<Row className='px-3'>
-								<p>
-									Capture true value of cloud with highly secured, scalable, and customizable
-									SYNECTIKS Hosted Cloud Solutions at an affordable pricing. Modern, Innovative could
-									solutions for wide range of Server workloads, Cloud-Hosted Desktops/Workspaces, and
-									Containers along with highly Secure Backup & Disaster Recovery options meeting SOC2
-									& HIPPA compliance standards.
-								</p>
-							</Row>
-							<Row>
-								<Col sm='12' className='p-1'>
-									<div className='py-1 py-md-3 h-100'>
-										<div className='border-right text-center'>
-											<a
-												href='/business-cyber-sub-landing/index.html'
-												className='text-center heading-h3 h6'>
-												Business Continuity & Cyber Security Services
-											</a>
-											<p className='f-14 px-2 px-md-4 text-left'>
-												Build Business Resiliency with modern Synectiks-Business Continuity
-												solutions. Synectiks -Protect Cloud changes the game by integrating Data
-												protection with high security. This synergy eliminates the complexity
-												and makes security a center point of your solutions, keeping your
-												Business protected and within you budget with no compromise on quality.
-											</p>
-										</div>
-									</div>
-								</Col>
-								<Col sm='12' className='p-1'>
-									<div className='py-3 h-100'>
-										<div className='border-right text-center'>
-											<a href='/iaas/index.html' className='text-center heading-h3 h6'>
-												Secure & Custom Hosted Infrastructure Services
-											</a>
-											<p className='f-14 px-2 px-4 text-left'>
-												Synectiks Secure Cloud Hosted Services supports a wide variety of
-												workloads & Disaster Recovery with a high degree of control, security,
-												and simplicity. Supports your mission-critical applications and
-												workloads with instant and scalable infrastructure meeting business
-												compliance standards.
-											</p>
-										</div>
-									</div>
-								</Col>
-								<Col sm='12' className='p-1'>
-									<div className='py-1 py-md-3 h-100'>
-										<div className='border-right text-center'>
-											<a
-												href='/digital-workspace/index.html'
-												className='text-center heading-h3 h6'>
-												Cloud-Hosted Virtual Desktop <br />Services
-											</a>
-											<p className='f-14 px-1 px-md-4 text-left'>
-												Synectiks Cloud-Hosted Virtual Desktop Service is a modern platform for
-												secure delivery of virtual desktops and apps. Our best-in-class
-												virtualization technologies enables scalability, uptime at an affordable
-												price. Powered by VMware Blast Extreme protocol, delivers an immersive,
-												feature-rich user experience for end users across devices, locations,
-												media and network connections.
-												<br />
-												<br />
-											</p>
-										</div>
-									</div>
-								</Col>
-								<Col sm='12' className='p-1'>
-									<div className='py-1 py-md-3 h-100'>
-										<div className='border-right text-center'>
-											<a
-												href='/aws-managed-services/index.html'
-												className='text-center heading-h3 h6'>
-												AWS managed Services
-											</a>
-											<p className='f-14 px-1 px-md-4 text-left'>
-												SYNECTIKS aws Managed Services enables companies to accelerate the
-												adoption of the public cloud, lower operating costs, and mitigate
-												security and compliance risks in a cost-effective monthly consumption
-												model. As AWS Consulting Services Partner, our experts ensure that your
-												workloads meet the requirements of the AWS Well-Architected Framework
-												for efficient migration and operation in the AWS secured landing zones.
-												<br />
-											</p>
-										</div>
-									</div>
-								</Col>
-							</Row>
+						<div className='hide' id='thc3'>
+							<h2 className=' text-center text-light'>Cloud</h2>
+							<p className=' text-center'>
+								Accelerating cloud adoption and software defined transformation through open
+								Accelerating cloud adoption and software defined transformation through open tools and
+								frameworks.
+							</p>
+						</div>
+						<div className='hide' id='thc4'>
+							<h2 className=' text-center text-light'>Monitoring</h2>
+							<p className=' text-center'>
+								Develop purpose-build monitoring solutions based on proven open frameworks.
+							</p>
+						</div>
+						<div className='hide' id='thc5'>
+							<h2 className=' text-center text-light'>Analytics</h2>
+							<p className=' text-center'>
+								Develop purpose-built Fast Data and Big Data solutions based on proven open frameworks.
+							</p>
+						</div>
+						<div className='hide' id='thc6'>
+							<h2 className=' text-center text-light'>RAD</h2>
+							<p className=' text-center'>
+								Rapidly build App Blocks based business application in predictable and deterministic
+								way.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -453,7 +205,7 @@ const Tabs = () => {
 		</TabsWrapper>
 	);
 };
-export default Tabs;
+export default HomeTabs;
 
 const TabsWrapper = styled.section`
 	width: 100%;
@@ -809,6 +561,7 @@ const TabsWrapper = styled.section`
 		margin-top: 0.5rem;
 	}
 	@media (min-width: 576px) {
+		display:none !important;
 		#accordion {
 			display: block;
 		}

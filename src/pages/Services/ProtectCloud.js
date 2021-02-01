@@ -90,7 +90,19 @@ const ProtectCloud = () => {
 											alt='Antivirus,Anti-Malware,Exploit Prevention,Ransomware Protection,Security Vulnerability Assessment,Patch Management,URL-filtering,Data protection Map,Remote desktop & Remote assistance,Backup,Disaster Recovery'
 										/> */}
 									</div>
-									<div className='text-black py-4'>
+									<p className='text-center mt-3 mb-0'>
+										Request for a{' '}
+										<a
+											href='https://synectiks.com/Contact-us.html'
+											className='btn btn-primary py-0'>
+											Quick Demo
+										</a>{' '}
+									</p>
+									{/* <div className='d-flex flex-wrap justify-content-center align-items-baseline mt-2'>
+										<h5 className='text-center ft mr-2'>Request for a</h5>
+										<a className='btn btn-primary text-white'>Quick Demo</a>
+									</div> */}
+									<div className='text-black py-2 py-md-4'>
 										<p className='lineHeight-24 ptext mt-md-4 mt-1'>
 											Eliminate security breaches, downtime and data loss. Protect Cloud is the
 											only solution that natively integrates cloud security, data protection and
@@ -500,13 +512,24 @@ const ProtectCloud = () => {
 
 									<div>
 										{' '}
-										<p>
+										{/* <p>
 											Contact us at &nbsp;
 											<a href='mailto:info@synectiks.com' target='_top'>
 												info@synectiks.com
 											</a>&nbsp; to setup a quick <strong>Protect Cloud </strong>trial and check
 											out all the rich protect features and manage all your devices in your
 											environment using one readily available secure web-console.
+										</p> */}
+										<p>
+											Contact us for a{' '}
+											<a
+												href='https://synectiks.com/Contact-us.html'
+												className='btn btn-primary py-1'>
+												Quick Demo
+											</a>{' '}
+											and check out all Protect Cloud rich security features and how to manage all
+											end-devices in an environment using SaaS based readily available
+											web-console.
 										</p>
 									</div>
 								</div>

@@ -31,6 +31,7 @@ import HomeTabs from './Home/HomeTabs';
 import Tabs from './Home/Tabs';
 import Partners from './Home/Partners';
 import GetInTouch from './Home/Getintouch.js';
+import MobTabs from '../pages/Company/MobTab.js';
 import SEO from '../components/seo.js';
 import SuccessStories from './Home/SuccessStories';
 import {
@@ -229,7 +230,8 @@ microsoft cloud service provider,
 					<div className='tabsHeading'>
 						<h2 className='py-3'>Areas of Expertise for Outcome Based Solution Offerings</h2>
 					</div>
-					<HomeTabs />
+					{/* <HomeTabs /> */}
+					<MobTabs />
 					<Tabs />
 				</div>
 				<div className='container-fluid bgOrange px-3 px-md-5 pt-0 pb-0 pt-md-2 pb-md-4'>
