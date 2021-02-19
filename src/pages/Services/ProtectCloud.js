@@ -69,7 +69,7 @@ const ProtectCloud = () => {
 				<link rel='canonical' href='https://synectiks.com/private-cloud-hosting-services/index.html' />
 			</Helmet>
 			<ProctectCloudWrapper>
-				<SEO title='Cloud-Hosted Virtual Desktop' />
+				<SEO title='Protect  Cloud' />
 				<div className='bg-lightgrey container-fluid p-0'>
 					<div className='text-justify'>
 						<BreadCrumbs

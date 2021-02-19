@@ -16,7 +16,7 @@ const SecureBusiness = () => {
 						subtitle='Cloud Services'
 						pageTitle='Business Continuity & Cyber Security'
 					/>
-					<SEO title='Secure Hosted & Business Continuity' />
+					<SEO title='Business Continuity & Cyber Security' />
 					<h1>Business Continuity & Cyber Security</h1>
 				</div>
 				<div className='container-fluid mx-0'>

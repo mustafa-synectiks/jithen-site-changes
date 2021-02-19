@@ -19,7 +19,7 @@ const AreaOfExpertise = ({ location }) => {
 				/>
 				<link rel='canonical' href='https://synectiks.com/area-expertise/index.html' />
 			</Helmet>
-			<SEO title='Area of Expertise' />
+			<SEO title='What We Do' />
 			<AreaOfExpertiseWrapper>
 				<div className=''>
 					<BreadCrumbs title='Home' subtitle='What We Do' />

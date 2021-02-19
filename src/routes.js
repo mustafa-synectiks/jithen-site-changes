@@ -22,12 +22,12 @@ module.exports = [
 	},
 	{
 		// 5WL
-		path: '/business-cyber-sub-landing/index.html',
+		path: '/business-continuity-cyber-security/index.html',
 		component: path.resolve(`src/pages/Solutions/Sublanding.js`)
 	},
 	{
 		// 6WL
-		path: '/landing-page/index.html',
+		path: '/synectiks-hosted-infrastructure-business-continuity/index.html',
 		component: path.resolve(`src/pages/Solutions/SecureBusiness.js`)
 	},
 	{
@@ -37,12 +37,12 @@ module.exports = [
 	},
 	{
 		// 8WL
-		path: '/office-migration/index.html',
+		path: '/microsoft-365-services/index.html',
 		component: path.resolve(`src/pages/Services/OfficeMigration.js`)
 	},
 	{
 		// 9WL
-		path: '/iaas/index.html',
+		path: '/secure-custom-hosted-infrastructure/index.html',
 		component: path.resolve(`src/pages/Services/Iaass.js`)
 	},
 	{
@@ -57,17 +57,17 @@ module.exports = [
 	},
 	{
 		// 12WL
-		path: '/business/index.html',
+		path: '/cloud-backup-service/index.html',
 		component: path.resolve(`src/pages/Solutions/Business.js`)
 	},
 	{
 		// 13WL
-		path: '/disaster-service/index.html',
+		path: '/cloud-disaster-recovery-service/index.html',
 		component: path.resolve(`src/pages/Solutions/Disaster.js`)
 	},
 	{
 		// 14WL
-		path: '/infrastructure/index.html',
+		path: '/infrastructure-transformation/index.html',
 		component: path.resolve(`src/pages/Migration-Modernization/InfraSturctureTransformation.js`)
 	},
 	{

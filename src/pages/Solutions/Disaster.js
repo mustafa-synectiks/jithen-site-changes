@@ -65,7 +65,7 @@ const DisasterRecovery = () => {
 				/>
 				<link rel='canonical' href='https://synectiks.com/private-cloud-hosting-services/index.html' />
 			</Helmet>
-			<SEO title='Cloud-Hosted Virtual Desktop' />
+			<SEO title='Cloud Disaster Recovery as a Service' />
 			<DisasterRecoveryWrapper>
 				<div className='bg-lightgrey container-fluid p-0'>
 					<div>

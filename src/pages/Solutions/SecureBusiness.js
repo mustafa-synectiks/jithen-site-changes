@@ -5,7 +5,8 @@ import styled from 'styled-components';
 // import syn from '../../images/secure-cyber.svg';
 import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
 import SEO from '../../components/seo.js';
-import syn from '../../images/secure-hosted.svg';
+// import syn from '../../images/secure-hosted.svg';
+import syn from '../../images/secure-no-vdi.png';
 const SecureBusiness = () => {
 	return (
 		<Layout>
@@ -16,7 +17,7 @@ const SecureBusiness = () => {
 						subtitle='Cloud Services'
 						pageTitle='Synectiks Hosted Infrastructure & Business Continuity'
 					/>
-					<SEO title='Secure Hosted & Business Continuity' />
+					<SEO title='Synectiks Hosted Infrastructure & Business Continuity' />
 					<h1>Synectiks Hosted Infrastructure & Business Continuity</h1>
 				</div>
 				<div className='container-fluid mx-0'>
@@ -30,7 +31,7 @@ const SecureBusiness = () => {
 						</p>
 					</div>
 				</div>
-				<div className='container-fluid my-n5'>
+				<div className='container-fluid my-n5 my-md-2'>
 					<div className='row justify-content-center align-items-center'>
 						<div className='col-md-6 py-4 px-0'>
 							<div className='excerpt mt-3 mt-md-0'>
@@ -60,8 +61,8 @@ const SecureBusiness = () => {
 								</p>
 							</div> */}
 						</div>
-						<div className='col-md-6 py-4 px-0'>
-							<img src={syn} alt='' className='w-75' />
+						<div className='col-md-6 py-4 px-0 '>
+							<img src={syn} alt='' className='w-65' />
 						</div>
 					</div>
 				</div>
@@ -97,6 +98,9 @@ const SecureWrapper = styled.section`
 		letter-spacing: normal !important;
 	}
 	@media (min-width: 576px) {
+		.w-65 {
+			width: 55% !important;
+		}
 		h2 {
 			font-weight: 400 !important;
 			font-style: normal !important;

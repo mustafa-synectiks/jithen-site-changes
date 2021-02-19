@@ -57,10 +57,10 @@ class MobTabs extends React.Component {
 						name='description'
 						content='Work where you’re encouraged to explore your passions, where your skills are nurtured and respected. Introduce with leading-edge technologies on absolutely the coolest undertakings you&#39;ll be able to envision. What&#39;s more, get the tools you have to continue learning and developing, so you remain consistently on top of things while making a difference in the world.'
 					/>
-					<link rel='canonical' href='https://synectiks.com/careers/index.html' />
+					<link rel='canonical' href='https://synectiks.com/area-expertise/index.html' />
 				</Helmet>
 
-				<SEO title='Careers' />
+				{/* <SEO title='What We Do' /> */}
 				<div className='bg-lightgrey disMob'>
 					<div className='container-fluid p-0'>
 						<div className='w-100  text-black ptext'>
@@ -95,7 +95,6 @@ class MobTabs extends React.Component {
 															<div className='py-1'>
 																<div className='border-bottom my-n1 my-md-n0 text-center'>
 																	<a
-																		id='headingOne'
 																		href='/infrastructure/index.html'
 																		className='text-center heading-h3'>
 																		Infrastructure Transformation

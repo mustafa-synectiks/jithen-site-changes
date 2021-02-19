@@ -1,6 +1,6 @@
 module.exports = {
 	siteMetadata: {
-		title: `Synectiks - Cloud Solutions`,
+		title: `Innovative Cloud Solutions`,
 		description: `As an Open Product based Cloud Solution provider, we help enterprises take advantage of public & private cloud and its infinite resources to migrate and modernize their business so that they outperform their peers by becoming truly disruptive.`,
 		author: `Synectiks`,
 		siteUrl: `https://synectiks.com`

@@ -59,7 +59,7 @@ const Header = () => {
 										<Row>
 											<Col className='p-0'>
 												<NavDropdown.Item
-													href='/landing-page/index.html'
+													href='/synectiks-hosted-infrastructure-business-continuity/index.html'
 													className='pl-2 lt-colr py-0'>
 													Hosted Infrastructure & Business Continuity
 													<GoTriangleLeft className='icon-fnt ml-2 h5 mt-2' />
@@ -69,18 +69,22 @@ const Header = () => {
 													href='/aws-managed-services/index.html'>
 													AWS Managed Services
 												</NavDropdown.Item>
-												<NavDropdown.Item className='p-2' href='/office-migration/index.html'>
+												<NavDropdown.Item
+													className='p-2'
+													href='/microsoft-365-services/index.html'>
 													Microsoft 365 Services
 												</NavDropdown.Item>
 											</Col>
 											<Col className='p-0 bcdl mx-md-3 pl-md-3'>
 												<NavDropdown.Item
 													className='main-sub-menu pl-2 py-0 lt-colr '
-													href='/business-cyber-sub-landing/index.html'>
+													href='/business-continuity-cyber-security/index.html'>
 													Business Continuity & Cyber Security
 													<GoTriangleLeft className='icon-fnt ml-2 h5 mt-2' />
 												</NavDropdown.Item>
-												<NavDropdown.Item className='main-sub-menu p-2' href='/iaas/index.html'>
+												<NavDropdown.Item
+													className='main-sub-menu p-2'
+													href='/secure-custom-hosted-infrastructure/index.html'>
 													Secure & Custom Hosted Infrastructure
 												</NavDropdown.Item>
 												{/* <NavDropdown.Item
@@ -97,12 +101,12 @@ const Header = () => {
 												</NavDropdown.Item>
 												<NavDropdown.Item
 													className='main-sub-menu p-2'
-													href='/business/index.html'>
+													href='/cloud-backup-service/index.html'>
 													Backup as a Service
 												</NavDropdown.Item>
 												<NavDropdown.Item
 													className='main-sub-menu p-2'
-													href='/disaster-service/index.html'>
+													href='/cloud-disaster-recovery-service/index.html'>
 													Disaster Recovery as a Service
 												</NavDropdown.Item>
 											</Col>
@@ -113,7 +117,7 @@ const Header = () => {
 									className='ml-01'
 									title='Migration & Modernization'
 									id='basic-nav-dropdown'>
-									<NavDropdown.Item href='/infrastructure/index.html'>
+									<NavDropdown.Item href='/infrastructure-transformation/index.html'>
 										Infrastructure Transformation
 									</NavDropdown.Item>
 									<NavDropdown.Item href='/application-transformation/index.html'>
