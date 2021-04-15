@@ -361,7 +361,12 @@ body {
 .textKeep {
 	word-break: keep-all;
 }
-
+.topRight img {
+	width: 9.8vw;
+}
+.ModalTop {
+	top: 15rem;
+}
 a#tab1:not(.active) .arrow-down {
 	position: relative;
 	z-index: 1;
@@ -1465,6 +1470,12 @@ overflow: hidden;
 .modal-dialog {
 	max-width: 60em !important;
 }
+.pformFrame {
+	border: none;
+}
+/* .modaldiag {
+	max-width: 42rem !important;
+} */
 .menulist {
 	display: none;
 	/* padding-inline-start: 0.75em; */

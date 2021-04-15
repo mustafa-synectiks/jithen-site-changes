@@ -18,27 +18,30 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header = () => {
 	return (
-		<HeaderNav>
-			{/* <div className=''> */}
-			<div className='FixedHeader'>
-				<div className='bg-top pt-2 pl-md-0 py-md-1'>
-					<Topbar />
-				</div>
-				{/* <DesktopNavMenu />
+    <HeaderNav>
+      {/* <div className=''> */}
+      <div className="FixedHeader">
+        <div className="bg-top pt-2 pl-md-0 py-md-1">
+          <Topbar />
+        </div>
+        {/* <DesktopNavMenu />
 				<MobileNavMenu /> */}
-				<Navbar expand='lg' className='z pl-3 pr-3 px-md-5'>
-					<Container fluid={true}>
-						<Navbar.Brand href='/'>
-							<img src={logo} alt='synectiks' />
-						</Navbar.Brand>
-						<Navbar.Toggle className='navbar-toggler-right' aria-controls='basic-navbar-nav'>
-							{/* <span className='navbar-toggler-icon' /> */}
-							<AiOutlineMenu className='navbar-toggler-icon' />
-							<AiOutlineClose className='my-1 mx-2 close' />
-						</Navbar.Toggle>
-						<Navbar.Collapse id='basic-navbar-nav'>
-							<Nav className='ml-auto' as='ul' id='navitemlink'>
-								{/*
+        <Navbar expand="lg" className="z pl-3 pr-3 px-md-5">
+          <Container fluid={true}>
+            <Navbar.Brand href="/">
+              <img src={logo} alt="synectiks" />
+            </Navbar.Brand>
+            <Navbar.Toggle
+              className="navbar-toggler-right"
+              aria-controls="basic-navbar-nav"
+            >
+              {/* <span className='navbar-toggler-icon' /> */}
+              <AiOutlineMenu className="navbar-toggler-icon" />
+              <AiOutlineClose className="my-1 mx-2 close" />
+            </Navbar.Toggle>
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="ml-auto" as="ul" id="navitemlink">
+                {/*
 								<NavDropdown
 									title='What we Do'
 									href='/area-expertise/index.html'
@@ -48,107 +51,152 @@ const Header = () => {
 									</NavDropdown.Item>
 								</NavDropdown>
 									 */}
-								<Nav.Item as='li'>
-									<Nav.Link className='fnt-nav w-mx' href='/what-we-do/index.html'>
-										WHAT WE DO
-									</Nav.Link>
-								</Nav.Item>
+                <Nav.Item as="li">
+                  <Nav.Link
+                    className="fnt-nav w-mx"
+                    href="/what-we-do/index.html"
+                  >
+                    WHAT WE DO
+                  </Nav.Link>
+                </Nav.Item>
 
-								<NavDropdown title='Cloud Services' id='basic-nav-dropdown' className='main-tab'>
-									<Container fluid={true}>
-										<Row>
-											<Col className='p-0'>
-												<NavDropdown.Item
-													href='/synectiks-hosted-infrastructure-business-continuity/index.html'
-													className='pl-2 lt-colr py-0'>
-													Hosted Infrastructure & Business Continuity
-													<GoTriangleLeft className='icon-fnt ml-2 h5 mt-2' />
-												</NavDropdown.Item>
-												<NavDropdown.Item
-													className='p-2'
-													href='/aws-managed-services/index.html'>
-													AWS Managed Services
-												</NavDropdown.Item>
-												<NavDropdown.Item
-													className='p-2'
-													href='/microsoft-365-services/index.html'>
-													Microsoft 365 Services
-												</NavDropdown.Item>
-											</Col>
-											<Col className='p-0 bcdl mx-md-3 pl-md-3'>
-												<NavDropdown.Item
-													className='main-sub-menu pl-2 py-0 lt-colr '
-													href='/business-continuity-cyber-security/index.html'>
-													Business Continuity & Cyber Security
-													<GoTriangleLeft className='icon-fnt ml-2 h5 mt-2' />
-												</NavDropdown.Item>
-												<NavDropdown.Item
-													className='main-sub-menu p-2'
-													href='/secure-custom-hosted-infrastructure/index.html'>
-													Secure & Custom Hosted Infrastructure
-												</NavDropdown.Item>
-												{/* <NavDropdown.Item
+                <NavDropdown
+                  title="Cloud Services"
+                  id="basic-nav-dropdown"
+                  className="main-tab"
+                >
+                  <Container fluid={true}>
+                    <Row>
+                      <Col className="p-0">
+                        <NavDropdown.Item
+                          href="/synectiks-hosted-infrastructure-business-continuity/index.html"
+                          className="pl-2 lt-colr py-0"
+                        >
+                          Hosted Infrastructure & Business Continuity
+                          <GoTriangleLeft className="icon-fnt ml-2 h5 mt-2" />
+                        </NavDropdown.Item>
+                        <NavDropdown.Item
+                          className="p-2"
+                          href="/aws-managed-services/index.html"
+                        >
+                          AWS Managed Services
+                        </NavDropdown.Item>
+                        <NavDropdown.Item
+                          className="p-2"
+                          href="/microsoft-365-services/index.html"
+                        >
+                          Microsoft 365 Services
+                        </NavDropdown.Item>
+                      </Col>
+                      <Col className="p-0 bcdl mx-md-3 pl-md-3">
+                        <NavDropdown.Item
+                          className="main-sub-menu pl-2 py-0 lt-colr "
+                          href="/business-continuity-cyber-security/index.html"
+                        >
+                          Business Continuity & Cyber Security
+                          <GoTriangleLeft className="icon-fnt ml-2 h5 mt-2" />
+                        </NavDropdown.Item>
+                        <NavDropdown.Item
+                          className="main-sub-menu p-2"
+                          href="/secure-custom-hosted-infrastructure/index.html"
+                        >
+                          Secure & Custom Hosted Infrastructure
+                        </NavDropdown.Item>
+                        {/* <NavDropdown.Item
 													className='main-sub-menu p-2'
 													href='/digital-workspace/index.html'>
 													Cloud-Hosted Virtual Desktop
 												</NavDropdown.Item> */}
-											</Col>
-											<Col className='p-0 bcdl pl-md-2'>
-												<NavDropdown.Item
-													className='main-sub-menu p-2'
-													href='/protect-cloud/index.html'>
-													Protect Cloud
-												</NavDropdown.Item>
-												<NavDropdown.Item
-													className='main-sub-menu p-2'
-													href='/cloud-backup-service/index.html'>
-													Backup as a Service
-												</NavDropdown.Item>
-												<NavDropdown.Item
-													className='main-sub-menu p-2'
-													href='/cloud-disaster-recovery-service/index.html'>
-													Disaster Recovery as a Service
-												</NavDropdown.Item>
-											</Col>
-										</Row>
-									</Container>
-								</NavDropdown>
-								<NavDropdown
-									className='ml-01'
-									title='Migration & Modernization'
-									id='basic-nav-dropdown'>
-									<NavDropdown.Item href='/infrastructure-transformation/index.html'>
-										Infrastructure Transformation
-									</NavDropdown.Item>
-									<NavDropdown.Item href='/application-transformation/index.html'>
-										Application Transformation
-									</NavDropdown.Item>
-									<NavDropdown.Item href='/devops-transformation/index.html'>
-										DevOps Transformation
-									</NavDropdown.Item>
-								</NavDropdown>
+                      </Col>
+                      <Col className="p-0 bcdl pl-md-2">
+                        <NavDropdown.Item
+                          className="main-sub-menu p-2"
+                          href="/protect-cloud/index.html"
+                        >
+                          Protect Cloud
+                        </NavDropdown.Item>
+                        <NavDropdown.Item
+                          className="main-sub-menu p-2"
+                          href="/cloud-backup-service/index.html"
+                        >
+                          Backup as a Service
+                        </NavDropdown.Item>
+                        <NavDropdown.Item
+                          className="main-sub-menu p-2"
+                          href="/cloud-disaster-recovery-service/index.html"
+                        >
+                          Disaster Recovery as a Service
+                        </NavDropdown.Item>
+                      </Col>
+                    </Row>
+                  </Container>
+                </NavDropdown>
+                <NavDropdown
+                  className="ml-01"
+                  title="Migration & Modernization"
+                  id="basic-nav-dropdown"
+                >
+                  <NavDropdown.Item href="/infrastructure-transformation/index.html">
+                    Infrastructure Transformation
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/application-transformation/index.html">
+                    Application Transformation
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/devops-transformation/index.html">
+                    DevOps Transformation
+                  </NavDropdown.Item>
+                </NavDropdown>
 
-								<NavDropdown className='ml-01' title='Solutions' id='basic-nav-dropdown'>
-									<NavDropdown.Item href='/microservices/index.html'>Microservices</NavDropdown.Item>
-									<NavDropdown.Item href='/hybrid-cloud/index.html'>Hybrid Cloud</NavDropdown.Item>
-								</NavDropdown>
-								<NavDropdown className='ml-01' title='Resources' id='basic-nav-dropdown'>
-									<NavDropdown.Item href='/featured/index.html'>Featured</NavDropdown.Item>
-									<NavDropdown.Item href='/blog/index.html'>Blog</NavDropdown.Item>
-									<NavDropdown.Item href='/casestudy/index.html'>Case Studies</NavDropdown.Item>
-								</NavDropdown>
-								<NavDropdown className='ml-01' title='Company' id='basic-nav-dropdown'>
-									<NavDropdown.Item href='/about-us/index.html'>About Us</NavDropdown.Item>
-									<NavDropdown.Item href='/careers/index.html'>Careers</NavDropdown.Item>
-									<NavDropdown.Item href='/Contact-us.html'>Contact Us</NavDropdown.Item>
-								</NavDropdown>
-							</Nav>
-						</Navbar.Collapse>
-					</Container>
-				</Navbar>
-			</div>
-		</HeaderNav>
-	);
+                <NavDropdown
+                  className="ml-01"
+                  title="Solutions"
+                  id="basic-nav-dropdown"
+                >
+                  <NavDropdown.Item href="/microservices/index.html">
+                    Microservices
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/hybrid-cloud/index.html">
+                    Hybrid Cloud
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown
+                  className="ml-01"
+                  title="Resources"
+                  id="basic-nav-dropdown"
+                >
+                  <NavDropdown.Item href="/featured/index.html">
+                    Featured
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/blog/index.html">
+                    Blog
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/casestudy/index.html">
+                    Case Studies
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown
+                  className="ml-01"
+                  title="Company"
+                  id="basic-nav-dropdown"
+                >
+                  <NavDropdown.Item href="/about-us/index.html">
+                    About Us
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/careers/index.html">
+                    Careers
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/contact/index.html">
+                    Contact Us
+                  </NavDropdown.Item>
+                  {/* <NavDropdown.Item href='/Contact-us.html'>Contact Us</NavDropdown.Item> */}
+                </NavDropdown>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      </div>
+    </HeaderNav>
+  );
 };
 
 Header.propTypes = {

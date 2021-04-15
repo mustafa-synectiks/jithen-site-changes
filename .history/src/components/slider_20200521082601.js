@@ -31,33 +31,35 @@ import Tabs from './Home/Tabs';
 import Partners from './Home/Partners';
 import GetInTouch from './Home/Getintouch.js';
 import SEO from '../components/seo.js';
-import SuccessStories from './Home/SuccessStories'
+import SuccessStories from './Home/SuccessStories';
 import {
-	TabContent,
-	TabPane,
-	Nav,
-	NavItem,
-	NavLink,
-	Card,
-	Button,
-	CardTitle,
-	CardText,
-	Row,
-	Col,
-	Jumbotron
+  TabContent,
+  TabPane,
+  Nav,
+  NavItem,
+  NavLink,
+  Card,
+  Button,
+  CardTitle,
+  CardText,
+  Row,
+  Col,
+  Jumbotron
 } from 'reactstrap';
 import classnames from 'classnames';
 const Slider = () => {
-	const [ activeTab, setActiveTab ] = useState('1');
+  const [activeTab, setActiveTab] = useState('1');
 
-	const toggle = (tab) => {
-		if (activeTab !== tab) setActiveTab(tab);
-	};
-	return (
-		<HomeWrapper>
-		<Helmet>
-		<link rel='canonical' href='https://synectiks.com'/>
-		  <meta name="keywords" content="cloud migration strategy,
+  const toggle = tab => {
+    if (activeTab !== tab) setActiveTab(tab);
+  };
+  return (
+    <HomeWrapper>
+      <Helmet>
+        <link rel="canonical" href="https://synectiks.com" />
+        <meta
+          name="keywords"
+          content="cloud migration strategy,
 cloud migration services,
 aws cloud migration,
 how will you design a aws cloud migration of a legacy system,
@@ -99,117 +101,142 @@ cloud infrastructure services,
 cloud servers providers,
 infrastructure cloud,
 microsoft cloud service provider,
-"/>
-		<meta name='description' content="As an Open Product based Cloud Solution provider, we help enterprises take advantage of public & private cloud and its infinite resources to migrate and modernize their business so that they outperform their peers by becoming truly disruptive." />
-		</Helmet>
-			<div className='container-fluid'>
-				<div className='row'>
-					<div id='owl-demo' className='owl-carousel owl-theme'>
-						<div className='item'>
-							<div className='caption'>
-								<h3 className='animated delay-1s slow fadeInRight'>
-									Accelerate your migration <br />& modernization Journey
-								</h3>
-								<p className='animated delay-2s slow fadeInRight'>
-									synectiks open xformation Platform and <br />
-									deep expertise make your cloud transformation <br />
-									safe and agile.
-								</p>
-									<a className='animated delay-3s slow fadeInRight btn btn-primary'
-									href='https://synectiks.com/infrastructure/index.html'>
-									Learn More
-								</a>
-							</div>
-							<img src={Slider1} alt='Accelerate your migration and modernization journey' />
-						</div>
-						<div className='item'>
-							<div className='caption'>
-								<h3 className=''>
-									Optimize <br />DevOps transformation
-								</h3>
-								<p className=''>
-									we accelerate organization evolution <br />through open platform and <br />skilled
-									resources.
-								</p>
-								<a
-									href='https://synectiks.com/devops-transformation/index.html'
-									className='btn btn-primary'>
-									Learn More
-								</a>
-							</div>
+"
+        />
+        <meta
+          name="description"
+          content="As an Open Product based Cloud Solution provider, we help enterprises take advantage of public & private cloud and its infinite resources to migrate and modernize their business so that they outperform their peers by becoming truly disruptive."
+        />
+      </Helmet>
+      <div className="container-fluid">
+        <div className="row">
+          <div id="owl-demo" className="owl-carousel owl-theme">
+            <div className="item">
+              <div className="caption">
+                <h3 className="animated delay-1s slow fadeInRight">
+                  Accelerate your migration <br />& modernization Journey
+                </h3>
+                <p className="animated delay-2s slow fadeInRight">
+                  synectiks open xformation Platform and <br />
+                  deep expertise make your cloud transformation <br />
+                  safe and agile.
+                </p>
+                <a
+                  className="animated delay-3s slow fadeInRight btn btn-primary"
+                  href="https://synectiks.com/infrastructure/index.html"
+                >
+                  Learn More
+                </a>
+              </div>
+              <img
+                src={Slider1}
+                alt="Accelerate your migration and modernization journey"
+              />
+            </div>
+            <div className="item">
+              <div className="caption">
+                <h3 className="">
+                  Optimize <br />
+                  DevOps transformation
+                </h3>
+                <p className="">
+                  we accelerate organization evolution <br />
+                  through open platform and <br />
+                  skilled resources.
+                </p>
+                <a
+                  href="https://synectiks.com/devops-transformation/index.html"
+                  className="btn btn-primary"
+                >
+                  Learn More
+                </a>
+              </div>
 
-							<img src={Slider2} alt='Optimize Devops Transformation' />
-						</div>
-						<div className='item'>
-							<div className='caption'>
-								<h3 className=''>
-									modernize your business, <br />adopt cloud native <br />microservices architecture
-								</h3>
-								<p className=''>
-									accelerate high performance reliable <br /> application delivery using microservices
-									<br />across clouds.
-								</p>
-								<a href='https://synectiks.com/microservices/index.html' className='btn btn-primary'>
-									Learn More
-								</a>
-							</div>
+              <img src={Slider2} alt="Optimize Devops Transformation" />
+            </div>
+            <div className="item">
+              <div className="caption">
+                <h3 className="">
+                  modernize your business, <br />
+                  adopt cloud native <br />
+                  microservices architecture
+                </h3>
+                <p className="">
+                  accelerate high performance reliable <br /> application
+                  delivery using microservices
+                  <br />
+                  across clouds.
+                </p>
+                <a
+                  href="https://synectiks.com/microservices/index.html"
+                  className="btn btn-primary"
+                >
+                  Learn More
+                </a>
+              </div>
 
-							<img
-								src={Slider3}
-								alt='modernize your business, adopt cloud native microservices architecture'
-							/>
-						</div>
-					</div>
-					<div id='progbar' />
-				</div>
-			</div>
-			<div className='container-fluid bgBlue px-2 px-md-5 '>
-				<div className='row'>
-					<div className='col heading1 mt-3 mt-md-0 pt-4 pt-md-0'>
-						<h1 className='textWhite text-left px-1 px-md-3'>
-							We’ve always done things differently<span className='fa-3x l-0'>...</span>
-						</h1>
-						<div className='circleFlex'>
-							<ScrollAnimation animateIn='fadeInUp'>
-								<div className='circle'>
-									<img src={circle1} alt='open platform' />
-								</div>
-							</ScrollAnimation>
-							<ScrollAnimation animateIn='fadeInUp'>
-								<div className='circle'>
-									<img src={circle2} alt='transformation' />
-								</div>
-							</ScrollAnimation>
-							<ScrollAnimation animateIn='fadeInUp'>
-								<div className='circle'>
-									<img src={circle3} alt='solutions' />
-								</div>
-							</ScrollAnimation>
-						</div>
-						<div className='circletext px-1 px-md-3'>
-							<p className='text-light'>
-								As an Open Product based Cloud Solution provider, we help enterprises take advantage of
-								public & private cloud and its infinite resources to migrate and modernize their
-								business so that they outperform their peers by becoming truly disruptive.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div className='bgMain'>
-				<div className='container-fluid bgWhite pt-0 px-0 pb-3 pb-md-0 p-md-5'>
-					<div className='tabsHeading'>
-						<h2 className='py-3'>Area Of Expertise For Outcome Based Solution Offerings</h2>
-					</div>
-					<HomeTabs />
-					<Tabs />
-				</div>
-				<div className='container-fluid bgOrange px-3 px-md-5 pt-0 pb-0 pt-md-2 pb-md-4'>
-					<h2 className='text-capitalize textWhite pb-0 pb-md-3 text-center'>Our Partners</h2>
-					<Partners />
-				</div>
-				<SuccessStories/>
-	{/* <div>
+              <img
+                src={Slider3}
+                alt="modernize your business, adopt cloud native microservices architecture"
+              />
+            </div>
+          </div>
+          <div id="progbar" />
+        </div>
+      </div>
+      <div className="container-fluid bgBlue px-2 px-md-5 ">
+        <div className="row">
+          <div className="col heading1 mt-3 mt-md-0 pt-4 pt-md-0">
+            <h1 className="textWhite text-left px-1 px-md-3">
+              We’ve always done things differently
+              <span className="fa-3x l-0">...</span>
+            </h1>
+            <div className="circleFlex">
+              <ScrollAnimation animateIn="fadeInUp">
+                <div className="circle">
+                  <img src={circle1} alt="open platform" />
+                </div>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="fadeInUp">
+                <div className="circle">
+                  <img src={circle2} alt="transformation" />
+                </div>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="fadeInUp">
+                <div className="circle">
+                  <img src={circle3} alt="solutions" />
+                </div>
+              </ScrollAnimation>
+            </div>
+            <div className="circletext px-1 px-md-3">
+              <p className="text-light">
+                As an Open Product based Cloud Solution provider, we help
+                enterprises take advantage of public & private cloud and its
+                infinite resources to migrate and modernize their business so
+                that they outperform their peers by becoming truly disruptive.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bgMain">
+        <div className="container-fluid bgWhite pt-0 px-0 pb-3 pb-md-0 p-md-5">
+          <div className="tabsHeading">
+            <h2 className="py-3">
+              Area Of Expertise For Outcome Based Solution Offerings
+            </h2>
+          </div>
+          <HomeTabs />
+          <Tabs />
+        </div>
+        <div className="container-fluid bgOrange px-3 px-md-5 pt-0 pb-0 pt-md-2 pb-md-4">
+          <h2 className="text-capitalize textWhite pb-0 pb-md-3 text-center">
+            Our Partners
+          </h2>
+          <Partners />
+        </div>
+        <SuccessStories />
+        {/* <div>
 				<div className='container-fluid bgWhiteGradient px-3 py-1 px-md-5 py-md-4'>
 					<div className='row'>
 						<div className='content d-flex flex-column flex-md-row align-items-center'>
@@ -331,10 +358,10 @@ microsoft cloud service provider,
 					</div>
 				</div>
 	</div> */}
-				<div>
-					<GetInTouch />
-				</div>
-				{/* <div className=''>
+        <div>
+          <GetInTouch />
+        </div>
+        {/* <div className=''>
 					<div className='text-center fixed-bottom Footerbg prvtpolicy'>
 						<p className='mb-1 pt-2 px-3 fsize08'>
 							We use cookies to make sure you have better experience on our website. Read about how we use
@@ -347,22 +374,10 @@ microsoft cloud service provider,
 						<MdClose className='closeBtn' type='submit' id='hide'/>
 					</div>
 				</div> */}
-			</div>
-			<Helmet>
-				<script
-					dangerouslySetInnerHTML={{
-						__html: `
-            var vv_base_id = 'q00IB13hyn';
-var vv_ext_id = '5d53ed9a';
-var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
-(function () {
-var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
-        `
-					}}
-				/>
-			</Helmet>
-		</HomeWrapper>
-	);
+      </div>
+      <Helmet></Helmet>
+    </HomeWrapper>
+  );
 };
 
 export default Slider;

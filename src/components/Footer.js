@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Social from './social-icons';
+import UsChamber from '../images/uschamber.png';
 import logo from '../images/Synectiks Logo/synectiks-text-logo.png';
 import { MdArrowForward, MdArrowBack, MdClose } from 'react-icons/md';
 import './layout.css';
@@ -75,7 +76,14 @@ export class Footer extends React.Component {
 					</div>
 					<div className='w-35vw mx-0 ml-md-3 pl-1 pl-md- my-4 my-md-0'>
 						<div className='ml-0 ml-md-5'>
-							<h4 className='text-light text-capitalize mb-2'>
+							<a href='http://www.uschamber.com' className='topRight'>
+								<img
+									alt='U.S. Chamber of Commerce Member 2021'
+									title='U.S. Chamber of Commerce Member 2021'
+									src='https://www.uschamber.com/sticker/image?i=n1&m=10038883'
+								/>
+							</a>
+							<h4 className='text-light text-capitalize mb-2 mt-3'>
 								<a
 									href='https://synectiks.com/privacy-policy/index.html'
 									className='text-light text-underline h4'>

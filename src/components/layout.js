@@ -27,7 +27,82 @@ const Layout = ({ children }) => {
 				}
 			});
 		});
+		// Form
+		var validationArr = {
+			f: false,
+			// l: false,
+			c: false,
+			// mb: false,
+			ml: false,
+			// src: false,
+			inds: false
+		};
 
+		function f() {
+			let f = document.getElementById('first_name');
+			let fn = document.getElementsByClassName('error');
+			if (f.value.length === 0) {
+				fn[0].innerHTML = 'Please Enter Your Name';
+				validationArr['f'] = false;
+				// enableDisableButton();
+			} else if (f.value.length < 3) {
+				fn[0].innerHTML = 'Please Enter Your Correct Name';
+				validationArr['f'] = false;
+				// enableDisableButton();
+			} else {
+				fn[0].innerHTML = '';
+				validationArr['f'] = true;
+				// enableDisableButton();
+			}
+		}
+
+		function ml(vEmail) {
+			let ml = document.getElementById('email');
+			let fn = document.getElementsByClassName('errorml');
+			let valEmail = /^([\w-\.]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)(?!yahoo.co.in)(?!aol.com)(?!abc.com)(?!xyz.com)(?!pqr.com)(?!rediffmail.com)(?!live.com)(?!outlook.com)(?!me.com)(?!msn.com)(?!ymail.com)([\w-]+\.)+[\w-]{2,3})?$/;
+			if (!vEmail.match(valEmail)) {
+				fn[0].innerHTML = 'Please Enter Email Id';
+				validationArr['ml'] = false;
+				// enableDisableButton();
+			} else {
+				if (ml.value.length === 0) {
+					fn[0].innerHTML = 'Please Enter Email Id';
+					validationArr['ml'] = false;
+					// enableDisableButton();
+				} else {
+					fn[0].innerHTML = '';
+					validationArr['ml'] = true;
+					// enableDisableButton();
+				}
+			}
+		}
+
+		var isDataValid = false;
+		function enableDisableButton() {
+			var isValid = true;
+			var $submitBtn = $('#submit-btn');
+			for (var i in validationArr) {
+				isValid = isValid && validationArr[i];
+			}
+			isDataValid = isValid;
+			if (isValid) {
+				$submitBtn.removeAttr('disabled');
+			} else {
+				$submitBtn.attr('disabled', true);
+			}
+		}
+
+		function addEventListner() {
+			$('#Pform').on('submit', function(e) {
+				if (!isDataValid) {
+					e.preventDefault();
+				}
+			});
+		}
+
+		addEventListner();
+
+		// Form
 		// changes url on tab click
 		$('.nav').click(function(e) {
 			e.preventDefault();
@@ -315,12 +390,12 @@ const Layout = ({ children }) => {
 			}
 
 			// 	// uncomment this to make pause on mouseover
-			$elem.on('mouseover', function() {
-				isPause = true;
-			});
-			$elem.on('mouseout', function() {
-				isPause = false;
-			});
+			// $elem.on('mouseover', function() {
+			// 	isPause = true;
+			// });
+			// $elem.on('mouseout', function() {
+			// 	isPause = false;
+			// });
 		});
 		// OWL V1.3
 		$('.navbar-collapse a').click(function() {
