@@ -598,13 +598,10 @@ const ProtectCloud = props => {
 
                   <div>
                     <p>
-                      Contact us for a{' '}
-                      <a className="btn btn-primary text-white py-1">
-                        Quick Demo
-                      </a>{' '}
-                      and check out all Protect Cloud rich security features and
-                      how to manage all end-devices in an environment using SaaS
-                      based readily available web-console.
+                      Contact us for a Quick Demo and check out all Protect
+                      Cloud rich security features and how to manage all
+                      end-devices in an environment using SaaS based readily
+                      available web-console.
                     </p>
                   </div>
                 </div>

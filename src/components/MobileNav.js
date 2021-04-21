@@ -309,10 +309,12 @@ const MobileHeader = () => {
                   <NavDropdown.Item href="/careers/index.html">
                     Careers
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/contact/index.html">
+                  {/* <NavDropdown.Item href="/contact/index.html">
+                    Contact Us
+                  </NavDropdown.Item> */}
+                  <NavDropdown.Item href="/Contact-us.html">
                     Contact Us
                   </NavDropdown.Item>
-                  {/* <NavDropdown.Item href='/Contact-us.html'>Contact Us</NavDropdown.Item> */}
                 </NavDropdown>
               </Nav>
             </Navbar.Collapse>

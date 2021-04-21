@@ -625,10 +625,11 @@ const DevopsTransformation = ({ location }) => {
                           </div>
                         </div>
                       </div>
-                      <h5 className="py-2 py-md-5">
-                        For your self-assessment, please refer &nbsp;
+                      {/*   <h5 className="py-2 py-md-5">
+                        For your self-assessment, please refer &nbsp; DevOps
+                        assessment Questionnaires
                         <a href="">DevOps assessment Questionnaires</a>
-                      </h5>
+                      </h5>*/}
                       <p className="ptext">
                         The standard maturity model-based assessment will
                         clearly give you insights on the current and future

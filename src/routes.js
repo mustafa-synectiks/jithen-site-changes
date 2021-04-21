@@ -158,8 +158,15 @@ module.exports = [
   },
   {
     // 30WL
-    path: '/contact/index.html',
+    path: '/Contact-us.html',
+    // path: '/contact/index.html',
     component: path.resolve(`src/pages/Company/Contact.js`)
+  },
+  {
+    // 30WL
+    path: '/Thankyou.html',
+    // path: '/contact/index.html',
+    component: path.resolve(`src/pages/Company/Thankyou.js`)
   }
 
   // {

@@ -1,7 +1,17 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Navbar, Nav, NavDropdown, Container, DropdownButton, ButtonGroup, Grid, Row, Col } from 'react-bootstrap';
+import {
+  Navbar,
+  Nav,
+  NavDropdown,
+  Container,
+  DropdownButton,
+  ButtonGroup,
+  Grid,
+  Row,
+  Col
+} from 'react-bootstrap';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { BsArrowRight } from 'react-icons/bs';
 import { GoTriangleLeft } from 'react-icons/go';
@@ -17,7 +27,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // }
 
 const Header = () => {
-	return (
+  return (
     <HeaderNav>
       {/* <div className=''> */}
       <div className="FixedHeader">
@@ -185,10 +195,12 @@ const Header = () => {
                   <NavDropdown.Item href="/careers/index.html">
                     Careers
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/contact/index.html">
+                  {/* <NavDropdown.Item href="/contact/index.html">
+                    Contact Us
+                  </NavDropdown.Item> */}
+                  <NavDropdown.Item href="/Contact-us.html">
                     Contact Us
                   </NavDropdown.Item>
-                  {/* <NavDropdown.Item href='/Contact-us.html'>Contact Us</NavDropdown.Item> */}
                 </NavDropdown>
               </Nav>
             </Navbar.Collapse>
@@ -200,111 +212,111 @@ const Header = () => {
 };
 
 Header.propTypes = {
-	siteTitle: PropTypes.string
+  siteTitle: PropTypes.string
 };
 
 Header.defaultProps = {
-	siteTitle: ``
+  siteTitle: ``
 };
 export default Header;
 
 const HeaderNav = styled.div`
-	display: none !important;
-	.main-tab {
-		margin-left: -12px !important;
-	}
-	.icon-fnt {
-		font-size: 2rem;
-		color: white;
-		margin-right: -2.2rem;
-	}
-	.fnt-nav {
-		font-size: 14px;
-		margin-top: 2px;
-		margin-left: 8px;
-	}
-	.bcdr {
-		border-right: 1px solid rgba(0, 0, 0, 0.09) !important;
-	}
-	.bcdl {
-		border-left: 1px solid rgba(0, 0, 0, 0.09) !important;
-	}
-	.lt-colr {
-		background: rgba(0, 0, 0, 0.09) !important;
-		color: rgba(0, 0, 0, 0.5);
-	}
-	.lt-colr:hover {
-		background: #fbba00 !important;
-		color: rgba(0, 0, 0, 0.5);
-	}
-	/* a.main-sub-menu.dropdown-item {
+  display: none !important;
+  .main-tab {
+    margin-left: -12px !important;
+  }
+  .icon-fnt {
+    font-size: 2rem;
+    color: white;
+    margin-right: -2.2rem;
+  }
+  .fnt-nav {
+    font-size: 14px;
+    margin-top: 2px;
+    margin-left: 8px;
+  }
+  .bcdr {
+    border-right: 1px solid rgba(0, 0, 0, 0.09) !important;
+  }
+  .bcdl {
+    border-left: 1px solid rgba(0, 0, 0, 0.09) !important;
+  }
+  .lt-colr {
+    background: rgba(0, 0, 0, 0.09) !important;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .lt-colr:hover {
+    background: #fbba00 !important;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  /* a.main-sub-menu.dropdown-item {
 		padding-left: 0rem;
 		font-size: 0.8rem;
 	} */
-	a.sublist.dropdown-item {
-		padding-left: 5rem;
-		font-size: 0.7rem;
-	}
-	.navbar-light .navbar-toggler {
-		color: rgba(0, 0, 0, .5);
-		border-color: rgba(0, 0, 0, 0);
-	}
-	.navbar-toggler > .close {
-		display: inline;
-	}
-	.navbar-toggler > .navbar-toggler-icon {
-		display: none;
-	}
-	.navbar-toggler:not(.collapsed) > .close {
-		display: none;
-	}
-	.navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
-		display: inline;
-		background-image: none;
-	}
-	.card-header {
-		padding: .75rem 9.25rem !important;
-	}
-	.bg-top {
-		background: var(--synectiksBlue) !important;
-	}
+  a.sublist.dropdown-item {
+    padding-left: 5rem;
+    font-size: 0.7rem;
+  }
+  .navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0);
+  }
+  .navbar-toggler > .close {
+    display: inline;
+  }
+  .navbar-toggler > .navbar-toggler-icon {
+    display: none;
+  }
+  .navbar-toggler:not(.collapsed) > .close {
+    display: none;
+  }
+  .navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
+    display: inline;
+    background-image: none;
+  }
+  .card-header {
+    padding: 0.75rem 9.25rem !important;
+  }
+  .bg-top {
+    background: var(--synectiksBlue) !important;
+  }
 
-	.ml-01 {
-		margin-left: -10px !important;
-	}
-	@media (min-width: 576px) {
-		display: block !important;
-		.ml-01 {
-			margin-left: 0px !important;
-		}
-		.main-tab {
-			margin-left: 0 !important;
-		}
-		.main-tab.dropdown.nav-item > .dropdown-menu {
-			width: max-content;
-			position: absolute;
-			left: -15rem;
-		}
-		.nav-item > a.active,
-		.nav-item > a:active {
-			background-color: #c9ddf1 !important;
-			border-radius: 0.25rem;
-			height: 2.75rem;
-		}
-		.bg-top {
-			background: var(--synectiksBlue) !important;
-			height: auto;
-		}
-		.px-5 {
-			padding-left: 3.75rem !important;
-			padding-right: 3.75rem !important;
-		}
-		.dropdown-item {
-			background-color: var(--synectiksWhite);
-			color: var(--textColor);
-		}
-		.dropdown-menu {
-			background: var(--synectiksWhite);
-		}
-	}
+  .ml-01 {
+    margin-left: -10px !important;
+  }
+  @media (min-width: 576px) {
+    display: block !important;
+    .ml-01 {
+      margin-left: 0px !important;
+    }
+    .main-tab {
+      margin-left: 0 !important;
+    }
+    .main-tab.dropdown.nav-item > .dropdown-menu {
+      width: max-content;
+      position: absolute;
+      left: -15rem;
+    }
+    .nav-item > a.active,
+    .nav-item > a:active {
+      background-color: #c9ddf1 !important;
+      border-radius: 0.25rem;
+      height: 2.75rem;
+    }
+    .bg-top {
+      background: var(--synectiksBlue) !important;
+      height: auto;
+    }
+    .px-5 {
+      padding-left: 3.75rem !important;
+      padding-right: 3.75rem !important;
+    }
+    .dropdown-item {
+      background-color: var(--synectiksWhite);
+      color: var(--textColor);
+    }
+    .dropdown-menu {
+      background: var(--synectiksWhite);
+    }
+  }
 `;
