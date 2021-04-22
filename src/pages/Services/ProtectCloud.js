@@ -10,7 +10,11 @@ import {
   Table
 } from 'reactstrap';
 import { FaBars } from 'react-icons/fa';
-import { AiOutlineCheck, AiOutlineLine } from 'react-icons/ai';
+import {
+  AiOutlineCheck,
+  AiOutlineLine,
+  AiOutlineWarning
+} from 'react-icons/ai';
 import '../../components/layout.css';
 import styled from 'styled-components';
 import self from '../../images/ManagedBackup/Self Service Portal.png';
@@ -59,9 +63,18 @@ import {
 } from 'reactstrap';
 import SEO from '../../components/seo.js';
 import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
+import { useForm } from 'react-hook-form';
 
-const ProtectCloud = props => {
-  const { buttonLabel, className } = props;
+const postData = () => {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve({ success: true });
+    }, 100);
+  });
+};
+
+const ProtectCloud = () => {
+  // const { buttonLabel, className } = props;
   const [modal, setModal] = useState(false);
 
   const toggleModal = () => setModal(!modal);
@@ -81,9 +94,23 @@ const ProtectCloud = props => {
     window.scroll(0, 0);
   };
 
-  function thankyou() {
-    alert('You Have Requested a Demo.');
-  }
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting }
+  } = useForm();
+
+  const [isSuccessfullySubmitted, setIsSuccessfullySubmitted] = useState(false);
+  const submitForm = async data => {
+    console.log('Submission starting', data);
+    const result = await postData(data);
+    console.log('Submitting complete', result.success);
+    setIsSuccessfullySubmitted(result.success);
+    reset();
+    console.log(data);
+  };
+
   return (
     <Layout>
       <Helmet>
@@ -128,51 +155,87 @@ const ProtectCloud = props => {
 
                   <div className="text-black py-2 py-md-4">
                     <form
-                      form="pform"
-                      id="pform"
-                      name="demo"
+                      form="Protectform"
+                      id="Protectform"
+                      name="Protectform"
                       className="was-validated"
-                      // action='javascript:alert("You requested Demo successfully");'
-                      onSubmit="thankYou()"
+                      action="#"
+                      onSubmit={handleSubmit(submitForm)}
                     >
                       <div className="row">
                         <div className="text-left  col field-group">
-                          <label for="name">Your Name *</label>
+                          <label htmlFor="name">Your Name *</label>
                           <input
                             id="name"
                             maxlength="80"
-                            name="name"
                             size="20"
                             type="text"
-                            onblur="f()"
-                            required
+                            {...register('first_name', {
+                              required: true,
+                              minLength: 2,
+                              MaxLength: 80
+                            })}
+                            disabled={isSubmitting || isSuccessfullySubmitted}
                           />
-                          <div className="error" />
+                          <div className="error">
+                            {errors.first_name && (
+                              <div className="d-flex align-items-baseline">
+                                <AiOutlineWarning className="mr-2" />
+                                <p>Enter Your Name</p>
+                              </div>
+                            )}
+                          </div>
                         </div>
                         <div className="text-left  col field-group">
                           <label for="email">Email *</label>
                           <input
                             id="email"
-                            min=""
-                            name="email"
                             size="20"
                             type="text"
-                            onblur="ml(this.value)"
-                            required
+                            {...register('email', {
+                              required: true,
+                              pattern: {
+                                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
+                              }
+                            })}
+                            size="20"
+                            type="text"
+                            disabled={isSubmitting || isSuccessfullySubmitted}
                           />
-                          <div className="errorml" />
+                          <div className="errorml">
+                            {errors.email && (
+                              <div className="d-flex align-items-baseline">
+                                <AiOutlineWarning className="mr-2" />
+                                <p>Enter Your Email Id</p>
+                              </div>
+                            )}
+                          </div>
                         </div>
                         <div className="text-left  col field-group">
-                          <input
+                          <button
                             type="submit"
                             name="submit"
                             value="Submit"
                             className="btn btn-primary w-100 pos-3"
                             id="submit-btn"
-                            onclick="clear();"
-                          />
+                          >
+                            Submit
+                          </button>
                         </div>
                       </div>
+                      {isSuccessfullySubmitted && (
+                        <div className="alert alert-success" role="alert">
+                          <div className="text-center">
+                            <h1 className="alert-heading text-capitalize text-center">
+                              We have recieved your request for demo
+                            </h1>
+                            <hr />
+                            <h3 className="text-capitalize text-center">
+                              we will get back to you soon !
+                            </h3>
+                          </div>
+                        </div>
+                      )}
                     </form>
 
                     <p className="lineHeight-24 ptext mt-md-4 mt-1">

@@ -4,6 +4,8 @@ import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { AiOutlineWarning } from 'react-icons/ai';
+import { useHistory } from 'react-router-dom';
+
 // const schema = yup.object().shape({
 //   name: yup
 //     .string()
@@ -22,24 +24,39 @@ import { AiOutlineWarning } from 'react-icons/ai';
 //   description: yup.string()
 // });
 
+const postData = () => {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve({ success: true });
+    }, 100);
+  });
+};
+
 const FlavorForm = () => {
   const {
     register,
     handleSubmit,
     reset,
-    formState: { errors }
+    formState: { errors, isSubmitting }
   } = useForm();
   //   {
   //   resolver: yupResolver(schema)
   // }
+  const [isSuccessfullySubmitted, setIsSuccessfullySubmitted] = useState(false);
   const [state, setState] = useState('');
   const handleChange = event => {
     setState({ value: event.target.value });
   };
   console.log(errors);
+  const history = useHistory();
 
-  const submitForm = data => {
+  const submitForm = async data => {
+    console.log('Submission starting', data);
+    const result = await postData(data);
+    console.log('Submitting complete', result.success);
+    setIsSuccessfullySubmitted(result.success);
     reset();
+    // history.push('/Thankyou.html');npm run deploy
     console.log(data);
   };
   return (
@@ -86,9 +103,9 @@ const FlavorForm = () => {
           form="Cform"
           id="Cform"
           action="https://synectiks.com/Thankyou.html"
+          onSubmit={handleSubmit(submitForm)}
           // action="https://synectiks.com/Thankyou.html"
           // action="#"
-          onSubmit={handleSubmit(submitForm)}
           className="was-validated"
         >
           <input
@@ -105,15 +122,20 @@ const FlavorForm = () => {
             <div className="text-left  col-sm-4  col-md-6 col-lg-6 col-xl-6 field-group">
               <label htmlFor="name">Your Name *</label>
               <input
-                id="name"
-                maxLength="80"
+                // id="name"
+                // maxLength="80"
                 // name="name"
-                {...register('name', { required: true, minLength: 2 })}
                 size="20"
                 type="text"
+                {...register('first_name', {
+                  required: true,
+                  minLength: 2,
+                  MaxLength: 80
+                })}
+                disabled={isSubmitting || isSuccessfullySubmitted}
               />
               <div className="error">
-                {errors.name && (
+                {errors.first_name && (
                   <div className="d-flex align-items-baseline">
                     <AiOutlineWarning className="mr-2" />
                     <p>Enter Your Name</p>
@@ -126,10 +148,16 @@ const FlavorForm = () => {
               <label htmlFor="email">Email *</label>
               <input
                 id="email"
-                min=""
-                {...register('email', { required: true })}
+                {...register('email', {
+                  required: true,
+                  pattern: {
+                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                    message: 'invalid email address'
+                  }
+                })}
                 size="20"
                 type="text"
+                disabled={isSubmitting || isSuccessfullySubmitted}
               />
               <div className="errorml">
                 {errors.email && (
@@ -151,9 +179,9 @@ const FlavorForm = () => {
                 {...register('company', { required: true })}
                 size="20"
                 type="text"
+                disabled={isSubmitting || isSuccessfullySubmitted}
               />
               <div className="errorc">
-                {' '}
                 {errors.company && (
                   <div className="d-flex align-items-baseline">
                     <AiOutlineWarning className="mr-2" />
@@ -172,6 +200,7 @@ const FlavorForm = () => {
                 {...register('mobile', { required: false, minLength: 10 })}
                 size="20"
                 type="tel"
+                disabled={isSubmitting || isSuccessfullySubmitted}
               />
               <div className="errormb">
                 {errors.mobile && (
@@ -190,8 +219,9 @@ const FlavorForm = () => {
                 id="service"
                 {...register('service', { required: true })}
                 // value={this.state.value}
-                onChange={handleChange}
+                onBlur={handleChange}
                 // onChange={this.handleChange}
+                disabled={isSubmitting || isSuccessfullySubmitted}
               >
                 <option value="">--None--</option>
                 <option value="Microservices">&nbsp;Microservices</option>
@@ -244,6 +274,7 @@ const FlavorForm = () => {
                   cols="40"
                   placeholder="Write Others's description If selected"
                   id="des"
+                  disabled={isSubmitting || isSuccessfullySubmitted}
 
                   // className={this.state.value !== 'Others' ? 'hide' : ''}
                 ></textarea>
@@ -272,6 +303,19 @@ const FlavorForm = () => {
               </button>
             </div>
           </div>
+          {isSuccessfullySubmitted && (
+            <div className="alert alert-success" role="alert">
+              <div className="text-center">
+                <h1 className="alert-heading text-capitalize text-center">
+                  Thank You For Contacting Us
+                </h1>
+                <hr />
+                <h3 className="text-capitalize text-center">
+                  we will get back to you soon !
+                </h3>
+              </div>
+            </div>
+          )}
         </form>
       </div>
     </Layout>
