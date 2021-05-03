@@ -217,19 +217,19 @@ const MobileHeader = () => {
                         </NavDropdown.Item>
                         <NavDropdown.Item
                           className="main-sub-menu p-2"
-                          href="/business/index.html"
+                          href="/cloud-backup-service/index.html"
                         >
                           Backup as a Service
                         </NavDropdown.Item>
                         <NavDropdown.Item
                           className="main-sub-menu p-2"
-                          href="/disaster-service/index.html"
+                          href="/cloud-disaster-recovery-service/index.html"
                         >
                           Disaster Recovery as a Service
                         </NavDropdown.Item>
                         <NavDropdown.Item
                           className="main-sub-menu p-2"
-                          href="/iaas/index.html"
+                          href="/secure-custom-hosted-infrastructure/index.html"
                         >
                           Secure & Custom Hosted Infrastructure
                         </NavDropdown.Item>

@@ -86,13 +86,13 @@ const Header = () => {
                           <GoTriangleLeft className="icon-fnt ml-2 h5 mt-2" />
                         </NavDropdown.Item>
                         <NavDropdown.Item
-                          className="p-2"
+                          className="p-1"
                           href="/aws-managed-services/index.html"
                         >
                           AWS Managed Services
                         </NavDropdown.Item>
                         <NavDropdown.Item
-                          className="p-2"
+                          className="p-1"
                           href="/microsoft-365-services/index.html"
                         >
                           Microsoft 365 Services
@@ -107,7 +107,7 @@ const Header = () => {
                           <GoTriangleLeft className="icon-fnt ml-2 h5 mt-2" />
                         </NavDropdown.Item>
                         <NavDropdown.Item
-                          className="main-sub-menu p-2"
+                          className="main-sub-menu p-1"
                           href="/secure-custom-hosted-infrastructure/index.html"
                         >
                           Secure & Custom Hosted Infrastructure
@@ -126,13 +126,13 @@ const Header = () => {
                           Protect Cloud
                         </NavDropdown.Item>
                         <NavDropdown.Item
-                          className="main-sub-menu p-2"
+                          className="main-sub-menu p-1"
                           href="/cloud-backup-service/index.html"
                         >
                           Backup as a Service
                         </NavDropdown.Item>
                         <NavDropdown.Item
-                          className="main-sub-menu p-2"
+                          className="main-sub-menu p-1"
                           href="/cloud-disaster-recovery-service/index.html"
                         >
                           Disaster Recovery as a Service

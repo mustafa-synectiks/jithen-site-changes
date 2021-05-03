@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from '../../components/layout';
+import Swal from 'sweetalert2';
+
 import {
   Button,
   Modal,
@@ -148,9 +150,7 @@ const ProtectCloud = () => {
 
                   <div className="text-center mt-3 mb-0">
                     Request for a{' '}
-                    <a className="btn btn-primary text-white py-0">
-                      Quick Demo
-                    </a>{' '}
+                    <span className="text-primary">Quick Demo</span>
                   </div>
 
                   <div className="text-black py-2 py-md-4">
@@ -195,7 +195,8 @@ const ProtectCloud = () => {
                             {...register('email', {
                               required: true,
                               pattern: {
-                                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
+                                // value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
+                                value: /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/
                               }
                             })}
                             size="20"
@@ -212,15 +213,13 @@ const ProtectCloud = () => {
                           </div>
                         </div>
                         <div className="text-left  col field-group">
-                          <button
+                          <input
                             type="submit"
                             name="submit"
                             value="Submit"
                             className="btn btn-primary w-100 pos-3"
                             id="submit-btn"
-                          >
-                            Submit
-                          </button>
+                          />
                         </div>
                       </div>
                       {isSuccessfullySubmitted && (
@@ -237,6 +236,7 @@ const ProtectCloud = () => {
                         </div>
                       )}
                     </form>
+                    <div></div>
 
                     <p className="lineHeight-24 ptext mt-md-4 mt-1">
                       Eliminate security breaches, downtime and data loss.
@@ -673,6 +673,37 @@ const ProtectCloud = () => {
           </Row>
         </div>
       </ProctectCloudWrapper>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            var vv_base_id = 'q00IB13hyn';
+var vv_ext_id = '5d53ed9a';
+var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
+(function () {
+var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
+`
+        }}
+      />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+          var vvfc_BaseURL = (("https:" == document.location.protocol) ? "https://forms.id-visitors.com/FrontEndWeb/" : "http://forms.id-visitors.com/FrontEndWeb/");
+var vvfc_ServiceURL = vvfc_BaseURL + 'ProcessFormCapture.aspx';
+var vvfc_ScriptURL = vvfc_BaseURL + 'Scripts/vvfcscript.js';
+var trackedForms = ['Protectform'];
+var options = { accountId: 'q00IB13hyn', serviceURL: vvfc_ServiceURL, pollInterval: 5000,
+forms: [{ id: 'Protectform', ignoreFields: ['__VIEWSTATE', '__VIEWSTATEGENERATOR', '__EVENTVALIDATION'], accountFormId: '608098e368b5f7088c48551f' } ]};
+(function (src) {
+var vvscript = document.createElement('script');
+vvscript.type = 'text/javascript';
+vvscript.async = true; vvscript.src = src;
+var scriptElements = document.getElementsByTagName('script');
+var lastScriptElement = scriptElements[scriptElements.length - 1];
+lastScriptElement.parentNode.insertBefore(vvscript, lastScriptElement.nextSibling);
+})(vvfc_ScriptURL);
+           `
+        }}
+      />
     </Layout>
   );
 };
