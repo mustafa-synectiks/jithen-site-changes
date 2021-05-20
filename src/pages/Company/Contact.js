@@ -5,7 +5,7 @@ import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { AiOutlineWarning } from 'react-icons/ai';
 import { useHistory } from 'react-router-dom';
-import Helmet from 'react-helmet'
+import Helmet from 'react-helmet';
 
 // const schema = yup.object().shape({
 //   name: yup
@@ -317,8 +317,18 @@ const FlavorForm = () => {
             </div>
           )}
         </form>
-
-       <script
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            var vv_base_id = 'q00IB13hyn';
+var vv_ext_id = '5d53ed9a';
+var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
+(function () {
+var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
+`
+          }}
+        />
+        <script
           dangerouslySetInnerHTML={{
             __html: `
              var vvfc_BaseURL = (("https:" == document.location.protocol) ? "https://forms.id-visitors.com/FrontEndWeb/" : "http://forms.id-visitors.com/FrontEndWeb/");

@@ -11,46 +11,46 @@ import PoweredBySynectiks from '../../images/HomePage/PoweredBySynectiks.png';
 import HomeTabs from '../../components/Home/HomeTabs.js';
 
 class MobTabs extends React.Component {
-	state;
-	constructor(props) {
-		super(props);
-		this.toggle = this.toggle.bind(this);
-		this.toggle2 = this.toggle2.bind(this);
-		this.toggle3 = this.toggle3.bind(this);
-		this.toggle4 = this.toggle4.bind(this);
-		this.toggle5 = this.toggle5.bind(this);
-		this.toggle6 = this.toggle6.bind(this);
-		this.state = { collapse: false };
-		this.state = { collapse2: false };
-		this.state = { collapse3: false };
-		this.state = { collapse4: false };
-		this.state = { collapse5: false };
-		this.state = { collapse6: false };
-	}
-	toggle() {
-		this.setState((state) => ({ collapse: !state.collapse }));
-	}
-	toggle2() {
-		this.setState((state) => ({ collapse2: !state.collapse2 }));
-	}
-	toggle3() {
-		this.setState((state) => ({ collapse3: !state.collapse3 }));
-	}
-	toggle4() {
-		this.setState((state) => ({ collapse4: !state.collapse4 }));
-	}
-	toggle5() {
-		this.setState((state) => ({ collapse5: !state.collapse5 }));
-	}
-	toggle6() {
-		this.setState((state) => ({ collapse6: !state.collapse6 }));
-	}
-	componentDidMount() {
-		window.scrollTo(0, 0);
-	}
+  state;
+  constructor(props) {
+    super(props);
+    this.toggle = this.toggle.bind(this);
+    this.toggle2 = this.toggle2.bind(this);
+    this.toggle3 = this.toggle3.bind(this);
+    this.toggle4 = this.toggle4.bind(this);
+    this.toggle5 = this.toggle5.bind(this);
+    this.toggle6 = this.toggle6.bind(this);
+    this.state = { collapse: false };
+    this.state = { collapse2: false };
+    this.state = { collapse3: false };
+    this.state = { collapse4: false };
+    this.state = { collapse5: false };
+    this.state = { collapse6: false };
+  }
+  toggle() {
+    this.setState(state => ({ collapse: !state.collapse }));
+  }
+  toggle2() {
+    this.setState(state => ({ collapse2: !state.collapse2 }));
+  }
+  toggle3() {
+    this.setState(state => ({ collapse3: !state.collapse3 }));
+  }
+  toggle4() {
+    this.setState(state => ({ collapse4: !state.collapse4 }));
+  }
+  toggle5() {
+    this.setState(state => ({ collapse5: !state.collapse5 }));
+  }
+  toggle6() {
+    this.setState(state => ({ collapse6: !state.collapse6 }));
+  }
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
 
-	render() {
-		return (
+  render() {
+    return (
       <CareerWrapper>
         <Helmet>
           <meta
@@ -62,7 +62,6 @@ class MobTabs extends React.Component {
             href="https://synectiks.com/area-expertise/index.html"
           />
         </Helmet>
-
         {/* <SEO title='What We Do' /> */}
         <div className="bg-lightgrey disMob">
           <div className="container-fluid p-0">
@@ -374,72 +373,71 @@ class MobTabs extends React.Component {
             </div>
           </div>
         </div>
-        <Helmet>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-            var vv_base_id = 'q00IB13hyn';
-var vv_ext_id = '5d53ed9a';
-var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
-(function () {
-var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
-        `
-            }}
-          />
-        </Helmet>
+        //{' '}
+        {/* <script
+//           dangerouslySetInnerHTML={{
+//             __html: `
+//             var vv_base_id = 'q00IB13hyn';
+// var vv_ext_id = '5d53ed9a';
+// var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
+// (function () {
+// var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
+//         `
+//           }}
+//         /> */}
       </CareerWrapper>
     );
-	}
+  }
 }
 
 export default MobTabs;
 
 const CareerWrapper = styled.div`
-	/* .disMob {
+  /* .disMob {
 		display: none !important;
 	} */
-	 {
-		#headingThree {
-			background: var(--synectiksBlue);
-			color: var(--synectiksWhite);
-			border: var(--synectiksBlue);
-		}
-		#headingTwo {
-			background: var(--synectiksRed);
-			color: var(--synectiksWhite);
-			border: var(--synectiksRed);
-		}
-		#headingOne {
-			background: var(--synectiksOrange);
-			color: var(--synectiksWhite);
-			border: var(--synectiksOrange);
-		}
-		#headingFour {
-			background: var(--synectiksGreen);
-			color: var(--synectiksWhite);
-			border: var(--synectiksGreen);
-		}
-		margin-bottom: -3rem !important;
-		.ptext {
-			text-align: left;
-		}
-		.career-btn {
-			width: 100%;
-		}
+   {
+    #headingThree {
+      background: var(--synectiksBlue);
+      color: var(--synectiksWhite);
+      border: var(--synectiksBlue);
+    }
+    #headingTwo {
+      background: var(--synectiksRed);
+      color: var(--synectiksWhite);
+      border: var(--synectiksRed);
+    }
+    #headingOne {
+      background: var(--synectiksOrange);
+      color: var(--synectiksWhite);
+      border: var(--synectiksOrange);
+    }
+    #headingFour {
+      background: var(--synectiksGreen);
+      color: var(--synectiksWhite);
+      border: var(--synectiksGreen);
+    }
+    margin-bottom: -3rem !important;
+    .ptext {
+      text-align: left;
+    }
+    .career-btn {
+      width: 100%;
+    }
 
-		/* padding: 1rem; */
-	}
-	@media (min-width: 576px) {
-		.disMob {
-			display: none !important;
-		}
-		margin-bottom: 2rem !important;
-		/* padding: 2.5rem 4rem; */
-		.ptext {
-			text-align: left;
-		}
-		.career-btn {
-			width: 25%;
-		}
-	}
+    /* padding: 1rem; */
+  }
+  @media (min-width: 576px) {
+    .disMob {
+      display: none !important;
+    }
+    margin-bottom: 2rem !important;
+    /* padding: 2.5rem 4rem; */
+    .ptext {
+      text-align: left;
+    }
+    .career-btn {
+      width: 25%;
+    }
+  }
 `;

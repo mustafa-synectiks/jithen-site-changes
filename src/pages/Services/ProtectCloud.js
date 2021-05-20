@@ -701,7 +701,8 @@ var scriptElements = document.getElementsByTagName('script');
 var lastScriptElement = scriptElements[scriptElements.length - 1];
 lastScriptElement.parentNode.insertBefore(vvscript, lastScriptElement.nextSibling);
 })(vvfc_ScriptURL);
-           `
+
+`
         }}
       />
     </Layout>

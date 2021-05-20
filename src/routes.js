@@ -47,11 +47,11 @@ module.exports = [
     path: '/secure-custom-hosted-infrastructure/index.html',
     component: path.resolve(`src/pages/Services/Iaass.js`)
   },
-  {
-    // 10WL
-    path: '/digital-workspace/index.html',
-    component: path.resolve(`src/pages/Solutions/Daas.js`)
-  },
+  // {
+  //   // 10WL
+  //   path: '/digital-workspace/index.html',
+  //   component: path.resolve(`src/pages/Solutions/Daas.js`)RUEWJMNR
+  // },
   {
     // 11WL
     path: '/protect-cloud/index.html',
