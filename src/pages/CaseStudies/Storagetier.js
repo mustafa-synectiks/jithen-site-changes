@@ -148,7 +148,7 @@ const Storagetier = () => {
           </div>
         </div>
       </StorageWrapper>
-      <script
+      {/* <script
         dangerouslySetInnerHTML={{
           __html: `
             var vv_base_id = 'q00IB13hyn';
@@ -158,7 +158,7 @@ var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.i
 var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
 `
         }}
-      />
+      /> */}
     </Layout>
   );
 };
