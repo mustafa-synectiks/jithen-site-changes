@@ -11,6 +11,7 @@
 		"browserslist": "^4.8.7",
 		"caniuse-lite": "^1.0.30001030",
 		"classnames": "^2.2.6",
+		"cordova-res": "^0.15.3",
 		"formik": "^1.5.8",
 		"gatsby": "^2.20.18",
 		"gatsby-background-image": "^0.8.12",

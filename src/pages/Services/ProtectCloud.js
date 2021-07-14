@@ -49,6 +49,7 @@ import EndComputing from '../../images/EndComputing.svg';
 import EndSecurity from '../../images/EndSecurity.svg';
 import DigitalWorkspace from '../../images/DigitalWorkspace.svg';
 import ProCloud from '../../images/Protect_Cloud_Updated.jpg';
+import circleProduct from '../../images/Protect_Cloud.png';
 import vdi from '../../images/protect-cloud.jpg';
 import timg from '../../images/table-img.png';
 import {
@@ -149,7 +150,7 @@ const ProtectCloud = () => {
                   </div>
 
                   <div className="text-center mt-3 mb-0">
-                    Request for a{' '}
+                    Request for a
                     <span className="text-primary">Quick Demo</span>
                   </div>
 
@@ -272,11 +273,17 @@ const ProtectCloud = () => {
                     </p>
                   </div>
                   <div>
-                    <h5 className="ft">Editions: Feature Comparison </h5>
+                    {/* <h5 className="ft">Editions: Feature Comparison </h5> */}
                     <div className="table-img my-3 my-md-0 text-center">
-                      <img src={timg} alt="" />
+                      {/* <img src={timg} alt="" /> */}
+                      <img
+                        src="https://res.cloudinary.com/papu/image/upload/c_scale,w_1024/v1626266094/synectiks-website/Protect_Cloud_djjrco.webp"
+                        alt=""
+                        className="rnd-pic"
+                      />
+                      {/* <img src={circleProduct} alt="" className="rnd-pic" /> */}
                     </div>
-                    <Table border="1" className="protect-table">
+                    {/* <Table border="1" className="protect-table">
                       <thead rowspan="2">
                         <th />
                         <th className="tdfont bxl bxr">Features</th>
@@ -657,6 +664,7 @@ const ProtectCloud = () => {
                         </tr>
                       </tbody>
                     </Table>
+                   */}
                   </div>
 
                   <div>
@@ -901,6 +909,9 @@ const ProctectCloudWrapper = styled.div`
     }
     .table-img {
       display: block;
+      img {
+        width: 100%;
+      }
     }
     tr:nth-child(even) {
       background: #ccc;
@@ -1099,7 +1110,11 @@ const ProctectCloudWrapper = styled.div`
       display: block;
     }
     .table-img {
-      display: none;
+      display: block;
+      img {
+        width: 75%;
+        margin: 0 auto;
+      }
     }
     a#bgL.active:after {
       top: 100%;
@@ -1171,6 +1186,10 @@ const ProctectCloudWrapper = styled.div`
       margin-right: 2rem;
       margin-bottom: 10px;
     }
+    .rnd-pic {
+      width: 75%;
+      margin: 0 auto;
+    }
   }
   @media (min-width: 1024px) {
     .himage {
@@ -1180,6 +1199,10 @@ const ProctectCloudWrapper = styled.div`
       float: left;
       margin-right: 2rem;
       margin-bottom: 10px;
+    }
+    .rnd-pic {
+      width: 75%;
+      margin: 0 auto;
     }
   }
 `;
