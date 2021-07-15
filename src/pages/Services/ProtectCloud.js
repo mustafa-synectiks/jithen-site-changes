@@ -1112,7 +1112,7 @@ const ProctectCloudWrapper = styled.div`
     .table-img {
       display: block;
       img {
-        width: 75%;
+        width: 45%;
         margin: 0 auto;
       }
     }
@@ -1187,7 +1187,7 @@ const ProctectCloudWrapper = styled.div`
       margin-bottom: 10px;
     }
     .rnd-pic {
-      width: 75%;
+      width: 45%;
       margin: 0 auto;
     }
   }
@@ -1201,7 +1201,7 @@ const ProctectCloudWrapper = styled.div`
       margin-bottom: 10px;
     }
     .rnd-pic {
-      width: 75%;
+      width: 45%;
       margin: 0 auto;
     }
   }
