@@ -928,8 +928,7 @@ p{
 		/* OWL Carousel v1 */
 		.owl-pagination {
 			display: flex;
-			justify-
-			content: space-evenly;
+			justify-content: space-evenly;
 			flex-direction: column;
 			align-items: flex-end;
 			position: absolute;

@@ -2,7 +2,14 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from '../../components/layout';
 import Swal from 'sweetalert2';
-
+import {
+  Magnifier,
+  GlassMagnifier,
+  SideBySideMagnifier,
+  PictureInPictureMagnifier,
+  MOUSE_ACTIVATION,
+  TOUCH_ACTIVATION
+} from 'react-image-magnifiers';
 import {
   Button,
   Modal,
@@ -273,17 +280,34 @@ const ProtectCloud = () => {
                     </p>
                   </div>
                   <div>
-                    {/* <h5 className="ft">Editions: Feature Comparison </h5> */}
+                    <h5 className="ft">Editions: Feature Comparison </h5>
                     <div className="table-img my-3 my-md-0 text-center">
-                      {/* <img src={timg} alt="" /> */}
-                      <img
+                      {/* <div style={{ width: '700px', margin: '0 auto' }}>
+                        <GlassMagnifier
+                          imageSrc="https://res.cloudinary.com/papu/image/upload/v1626334354/synectiks-website/Protect_Cloud-thumb_ri0kr1.jpg"
+                          imageAlt="Example"
+                          largeImageSrc="https://res.cloudinary.com/papu/image/upload/c_scale,w_1024/v1626266094/synectiks-website/Protect_Cloud_djjrco.webp" // Optional
+                        />
+                      </div> */}
+
+                      {/* <div style={{ width: '700px', margin: '0 auto' }}>
+                        <Magnifier
+                          imageSrc="https://res.cloudinary.com/papu/image/upload/v1626334354/synectiks-website/Protect_Cloud-thumb_ri0kr1.jpg"
+                          imageAlt="Example"
+                          largeImageSrc="https://res.cloudinary.com/papu/image/upload/c_scale,w_1024/v1626266094/synectiks-website/Protect_Cloud_djjrco.webp" // Optional
+                          mouseActivation={MOUSE_ACTIVATION.CLICK} // Optional
+                          touchActivation={TOUCH_ACTIVATION.TAP} // Optional
+                        />
+                      </div> */}
+                      <img src={timg} alt="" />
+                      {/* <img
                         src="https://res.cloudinary.com/papu/image/upload/c_scale,w_1024/v1626266094/synectiks-website/Protect_Cloud_djjrco.webp"
                         alt=""
                         className="rnd-pic"
-                      />
+                      /> */}
                       {/* <img src={circleProduct} alt="" className="rnd-pic" /> */}
                     </div>
-                    {/* <Table border="1" className="protect-table">
+                    <Table border="1" className="protect-table">
                       <thead rowspan="2">
                         <th />
                         <th className="tdfont bxl bxr">Features</th>
@@ -664,7 +688,6 @@ const ProtectCloud = () => {
                         </tr>
                       </tbody>
                     </Table>
-                   */}
                   </div>
 
                   <div>
@@ -1112,7 +1135,8 @@ const ProctectCloudWrapper = styled.div`
     .table-img {
       display: block;
       img {
-        width: 45%;
+        width: 100%;
+        display: none;
         margin: 0 auto;
       }
     }
@@ -1124,7 +1148,7 @@ const ProctectCloudWrapper = styled.div`
       height: 0;
       width: 0;
       position: absolute;
-      pointer-events: none;
+      ypointer-events: none;
       border-color: rgba(136, 183, 213, 0);
       border-top-color: var(--synectiksBlue);
       border-width: 20px;
