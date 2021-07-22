@@ -56,7 +56,8 @@ import EndComputing from '../../images/EndComputing.svg';
 import EndSecurity from '../../images/EndSecurity.svg';
 import DigitalWorkspace from '../../images/DigitalWorkspace.svg';
 import ProCloud from '../../images/Protect_Cloud_Updated.jpg';
-import circleProduct from '../../images/Protect_Cloud.png';
+import largeImg from "../../images/large-img.png";
+import smallImg from '../../images/small-img.png'
 import vdi from '../../images/protect-cloud.jpg';
 import timg from '../../images/table-img.png';
 import {
@@ -282,13 +283,15 @@ const ProtectCloud = () => {
                   <div>
                     <h5 className="ft">Editions: Feature Comparison </h5>
                     <div className="table-img my-3 my-md-0 text-center">
-                      {/* <div style={{ width: '700px', margin: '0 auto' }}>
+                      <div style={{ width: '700px', margin: '0 auto' }}>
                         <GlassMagnifier
-                          imageSrc="https://res.cloudinary.com/papu/image/upload/v1626334354/synectiks-website/Protect_Cloud-thumb_ri0kr1.jpg"
+                          imageSrc="https://res.cloudinary.com/papu/image/upload/c_scale,w_700/v1626544028/synectiks-website/Protect_Cloud_1_bp66ra.jpg"
                           imageAlt="Example"
-                          largeImageSrc="https://res.cloudinary.com/papu/image/upload/c_scale,w_1024/v1626266094/synectiks-website/Protect_Cloud_djjrco.webp" // Optional
+                          largeImageSrc="https://res.cloudinary.com/papu/image/upload/c_scale,w_1224/v1626951869/synectiks-website/Protect_Cloud_1_bp66ra_wu3pgq.jpg" // Optional
+                          magnifierSize ='45%'
+                          square= 'true'
                         />
-                      </div> */}
+                      </div>
 
                       {/* <div style={{ width: '700px', margin: '0 auto' }}>
                         <Magnifier
@@ -296,10 +299,11 @@ const ProtectCloud = () => {
                           imageAlt="Example"
                           largeImageSrc="https://res.cloudinary.com/papu/image/upload/c_scale,w_1024/v1626266094/synectiks-website/Protect_Cloud_djjrco.webp" // Optional
                           mouseActivation={MOUSE_ACTIVATION.CLICK} // Optional
-                          touchActivation={TOUCH_ACTIVATION.TAP} // Optional
+                          touchActivation={TOUCH_ACTIVATION.TAP}
+                           // Optional
                         />
                       </div> */}
-                      <img src={timg} alt="" />
+                      {/* <img src={timg} alt="" /> */}
                       {/* <img
                         src="https://res.cloudinary.com/papu/image/upload/c_scale,w_1024/v1626266094/synectiks-website/Protect_Cloud_djjrco.webp"
                         alt=""
@@ -307,7 +311,7 @@ const ProtectCloud = () => {
                       /> */}
                       {/* <img src={circleProduct} alt="" className="rnd-pic" /> */}
                     </div>
-                    <Table border="1" className="protect-table">
+                    {/* <Table border="1" className="protect-table">
                       <thead rowspan="2">
                         <th />
                         <th className="tdfont bxl bxr">Features</th>
@@ -687,7 +691,7 @@ const ProtectCloud = () => {
                           </td>
                         </tr>
                       </tbody>
-                    </Table>
+                    </Table> */}
                   </div>
 
                   <div>
